@@ -1,0 +1,588 @@
+id_food,food_item,category,calories_kcal,protein_g,carbohydrates_g,fat_g,fiber_g,sugars_g,sodium_mg,cholesterol_mg,source
+1,Scrambled Eggs (2 large),Protein/Dairy,180.0,12.0,2.0,14.0,0.0,1.0,180.0,370.0,Daily Food & Nutrition Dataset
+2,Whole Wheat Toast (1 slice),Grain,80.0,4.0,14.0,1.0,2.0,2.0,140.0,0.0,Daily Food & Nutrition Dataset
+3,Coffee (black),Beverage,5.0,0.3,0.0,0.1,0.0,0.0,5.0,0.0,Daily Food & Nutrition Dataset
+4,Banana,Fruit,105.0,1.3,27.0,0.4,3.1,14.0,1.0,0.0,Daily Food & Nutrition Dataset
+5,Grilled Chicken Salad,Meal/Protein,350.0,30.0,10.0,20.0,5.0,4.0,400.0,80.0,Daily Food & Nutrition Dataset
+6,Apple,Fruit,95.0,0.5,25.0,0.3,4.4,19.0,2.0,0.0,Daily Food & Nutrition Dataset
+7,Salmon (4oz grilled),Protein/Fish,230.0,25.0,0.0,14.0,0.0,0.0,60.0,60.0,Daily Food & Nutrition Dataset
+8,Quinoa (1 cup cooked),Grain,222.0,8.0,39.0,3.6,5.0,1.0,13.0,0.0,Daily Food & Nutrition Dataset
+9,Steamed Broccoli (1 cup),Vegetable,55.0,3.7,11.2,0.6,5.1,2.0,40.0,0.0,Daily Food & Nutrition Dataset
+10,Greek Yogurt (plain 1 cup),Dairy,150.0,25.0,8.0,3.0,0.0,7.0,85.0,10.0,Daily Food & Nutrition Dataset
+11,Oatmeal (1 cup cooked),Grain,160.0,6.0,28.0,3.0,4.0,1.0,2.0,0.0,Daily Food & Nutrition Dataset
+12,Blueberries (1/2 cup),Fruit,42.0,0.5,11.0,0.2,1.8,7.0,1.0,0.0,Daily Food & Nutrition Dataset
+13,Almonds (1 oz),Nut,164.0,6.0,6.0,14.0,3.5,1.0,1.0,0.0,Daily Food & Nutrition Dataset
+14,Turkey Sandwich (on wheat),Meal/Processed,340.0,22.0,34.0,12.0,5.0,6.0,850.0,50.0,Daily Food & Nutrition Dataset
+15,Carrot Sticks (1 cup),Vegetable,52.0,1.2,12.3,0.3,3.6,6.0,88.0,0.0,Daily Food & Nutrition Dataset
+16,Spaghetti Bolognese,Meal/Pasta,460.0,20.0,55.0,18.0,6.0,10.0,700.0,50.0,Daily Food & Nutrition Dataset
+17,Side Salad (light dressing),Vegetable,70.0,2.0,8.0,4.0,3.0,3.0,150.0,0.0,Daily Food & Nutrition Dataset
+18,Protein Shake (Whey),Supplement,120.0,24.0,3.0,1.0,1.0,2.0,160.0,5.0,Daily Food & Nutrition Dataset
+19,Cereal (Frosted Flakes 1 cup),Grain/Processed,130.0,2.0,31.0,0.0,1.0,11.0,190.0,0.0,Daily Food & Nutrition Dataset
+20,Lentil Soup (1 can),Meal/Legume,230.0,15.0,35.0,3.0,12.0,6.0,650.0,0.0,Daily Food & Nutrition Dataset
+21,White Rice (1 cup cooked),Grain,204.0,4.2,44.5,0.4,0.6,0.1,2.0,0.0,Daily Food & Nutrition Dataset
+22,Tofu Stir-fry,Meal/Vegetarian,400.0,18.0,30.0,22.0,7.0,9.0,500.0,0.0,Daily Food & Nutrition Dataset
+23,Orange,Fruit,62.0,1.2,15.4,0.2,3.1,12.0,0.0,0.0,Daily Food & Nutrition Dataset
+24,Bagel (plain),Grain,270.0,11.0,55.0,1.5,2.0,5.0,430.0,0.0,Daily Food & Nutrition Dataset
+25,Cream Cheese (2 tbsp),Dairy,100.0,2.0,2.0,10.0,0.0,1.0,90.0,30.0,Daily Food & Nutrition Dataset
+26,Tuna Salad (1/2 cup),Meal/Fish,190.0,19.0,2.0,12.0,1.0,1.0,400.0,30.0,Daily Food & Nutrition Dataset
+27,Crackers (5 whole wheat),Grain/Processed,90.0,2.0,14.0,3.0,2.0,0.0,180.0,0.0,Daily Food & Nutrition Dataset
+28,Beef Steak (6oz sirloin),Protein/Meat,270.0,42.0,0.0,10.0,0.0,0.0,90.0,115.0,Daily Food & Nutrition Dataset
+29,Baked Potato (medium),Vegetable,160.0,4.3,36.0,0.2,3.8,1.0,17.0,0.0,Daily Food & Nutrition Dataset
+30,Ice Cream (1/2 cup vanilla),Dairy/Dessert,145.0,2.5,17.0,7.5,0.5,16.0,55.0,30.0,Daily Food & Nutrition Dataset
+31,Pizza (1 slice pepperoni),Meal/Processed,290.0,12.0,34.0,12.0,2.0,4.0,720.0,35.0,Daily Food & Nutrition Dataset
+32,Avocado Toast (1 slice),Meal/Vegetarian,260.0,7.0,28.0,15.0,10.0,1.0,350.0,0.0,Daily Food & Nutrition Dataset
+33,Hard-Boiled Egg (1 large),Protein,78.0,6.3,0.6,5.3,0.0,0.5,62.0,187.0,Daily Food & Nutrition Dataset
+34,Chicken Wrap (with tortilla),Meal/Processed,410.0,25.0,38.0,17.0,5.0,3.0,780.0,60.0,Daily Food & Nutrition Dataset
+35,Grapes (1 cup),Fruit,104.0,1.1,27.0,0.2,1.4,23.0,3.0,0.0,Daily Food & Nutrition Dataset
+36,Cottage Cheese (1/2 cup),Dairy,90.0,12.0,5.0,3.0,0.0,4.0,400.0,10.0,Daily Food & Nutrition Dataset
+37,Burger (cheeseburger),Meal/Processed,550.0,30.0,40.0,30.0,3.0,7.0,1100.0,90.0,Daily Food & Nutrition Dataset
+38,French Fries (medium),Vegetable/Processed,340.0,4.0,44.0,17.0,4.0,0.3,230.0,0.0,Daily Food & Nutrition Dataset
+39,Protein Bar,Supplement/Processed,210.0,20.0,22.0,7.0,6.0,1.0,180.0,5.0,Daily Food & Nutrition Dataset
+40,Black Beans (1/2 cup),Legume,114.0,7.6,20.4,0.5,7.5,0.3,1.0,0.0,Daily Food & Nutrition Dataset
+41,Salsa (1/4 cup),Vegetable,20.0,0.8,4.5,0.1,1.0,3.0,250.0,0.0,Daily Food & Nutrition Dataset
+42,Chicken Noodle Soup (1 can),Meal/Processed,150.0,7.0,18.0,5.0,2.0,2.0,890.0,15.0,Daily Food & Nutrition Dataset
+43,Peanut Butter (2 tbsp),Nut,190.0,7.0,8.0,16.0,2.0,3.0,140.0,0.0,Daily Food & Nutrition Dataset
+44,Celery Sticks (1 cup),Vegetable,14.0,0.6,3.0,0.2,1.4,1.2,77.0,0.0,Daily Food & Nutrition Dataset
+45,Cod (4oz baked),Protein/Fish,95.0,20.0,0.0,0.8,0.0,0.0,95.0,55.0,Daily Food & Nutrition Dataset
+46,Green Beans (1 cup),Vegetable,31.0,1.8,7.0,0.2,2.7,3.3,6.0,0.0,Daily Food & Nutrition Dataset
+47,Chocolate Chip Cookie (1 large),Dessert,220.0,2.5,30.0,11.0,1.5,19.0,160.0,20.0,Daily Food & Nutrition Dataset
+48,Shrimp (3oz steamed),Protein/Fish,84.0,20.0,0.2,0.2,0.0,0.0,100.0,161.0,Daily Food & Nutrition Dataset
+49,Pancakes (2 medium),Grain,180.0,5.0,30.0,5.0,1.0,6.0,450.0,25.0,Daily Food & Nutrition Dataset
+50,Maple Syrup (2 tbsp),Condiment,104.0,0.0,27.0,0.0,0.0,24.0,2.0,0.0,Daily Food & Nutrition Dataset
+51,Sausage Link (1 cooked),Protein/Meat,85.0,5.0,1.0,7.0,0.0,0.5,300.0,20.0,Daily Food & Nutrition Dataset
+52,Smoothie (Fruit & Yogurt),Beverage/Meal,280.0,12.0,55.0,3.0,7.0,40.0,70.0,5.0,Daily Food & Nutrition Dataset
+53,Tofu (4oz firm),Protein/Vegetarian,90.0,10.0,3.0,5.0,2.0,1.0,10.0,0.0,Daily Food & Nutrition Dataset
+54,Brown Rice (1 cup cooked),Grain,215.0,5.0,45.0,1.8,3.5,0.4,10.0,0.0,Daily Food & Nutrition Dataset
+55,Bell Pepper (1 medium red),Vegetable,31.0,1.2,6.0,0.3,2.1,4.2,4.0,0.0,Daily Food & Nutrition Dataset
+56,Hummus (2 tbsp),Legume,70.0,2.0,4.0,5.0,2.0,0.0,130.0,0.0,Daily Food & Nutrition Dataset
+57,Pita Bread (1 whole wheat),Grain,170.0,6.0,35.0,1.5,5.0,2.0,320.0,0.0,Daily Food & Nutrition Dataset
+58,Pork Chop (4oz grilled),Protein/Meat,220.0,30.0,0.0,10.0,0.0,0.0,70.0,85.0,Daily Food & Nutrition Dataset
+59,Mashed Potatoes (1 cup),Vegetable,230.0,4.0,35.0,8.0,3.0,2.0,350.0,15.0,Daily Food & Nutrition Dataset
+60,Corn (1 cup),Vegetable,132.0,4.7,30.0,1.8,3.6,8.9,2.0,0.0,Daily Food & Nutrition Dataset
+61,Soda (1 can Coke),Beverage,140.0,0.0,39.0,0.0,0.0,39.0,45.0,0.0,Daily Food & Nutrition Dataset
+62,Pretzels (1 oz),Grain/Processed,110.0,3.0,23.0,1.0,1.0,1.0,450.0,0.0,Daily Food & Nutrition Dataset
+63,Cheddar Cheese (1 oz),Dairy,115.0,7.0,1.0,9.5,0.0,0.5,180.0,30.0,Daily Food & Nutrition Dataset
+64,Caesar Salad (with chicken),Meal/Protein,470.0,30.0,15.0,30.0,3.0,3.0,890.0,75.0,Daily Food & Nutrition Dataset
+65,Orange Juice (1 cup),Beverage,112.0,1.7,25.8,0.5,0.7,20.8,2.0,0.0,Daily Food & Nutrition Dataset
+66,Bacon (2 slices cooked),Protein/Meat,86.0,6.0,0.2,6.8,0.0,0.1,330.0,18.0,Daily Food & Nutrition Dataset
+67,Waffles (2 homemade),Grain,220.0,6.0,28.0,9.0,1.5,3.0,420.0,45.0,Daily Food & Nutrition Dataset
+68,Pear,Fruit,101.0,0.6,27.0,0.2,5.5,16.0,2.0,0.0,Daily Food & Nutrition Dataset
+69,Chicken Breast (4oz roasted),Protein/Meat,185.0,35.0,0.0,4.0,0.0,0.0,80.0,95.0,Daily Food & Nutrition Dataset
+70,Mixed Nuts (1/4 cup),Nut,200.0,6.0,8.0,18.0,3.0,2.0,1.0,0.0,Daily Food & Nutrition Dataset
+71,Tilapia (4oz baked),Protein/Fish,110.0,22.0,0.0,2.5,0.0,0.0,50.0,50.0,Daily Food & Nutrition Dataset
+72,Asparagus (1 cup steamed),Vegetable,40.0,4.3,7.4,0.4,3.6,3.5,4.0,0.0,Daily Food & Nutrition Dataset
+73,Sweet Potato (1 medium baked),Vegetable,103.0,2.3,23.6,0.2,3.8,7.4,41.0,0.0,Daily Food & Nutrition Dataset
+74,Popcorn (3 cups air-popped),Grain,93.0,3.0,18.6,1.1,3.6,0.1,2.0,0.0,Daily Food & Nutrition Dataset
+75,Raisins (1/4 cup),Fruit,130.0,1.3,34.0,0.2,1.6,25.0,5.0,0.0,Daily Food & Nutrition Dataset
+76,Macaroni & Cheese (1 cup),Meal/Pasta,350.0,10.0,40.0,17.0,2.0,5.0,750.0,40.0,Daily Food & Nutrition Dataset
+77,Tomato Soup (1 can),Meal/Vegetable,170.0,4.0,25.0,6.0,4.0,15.0,900.0,10.0,Daily Food & Nutrition Dataset
+78,Grilled Cheese Sandwich,Meal/Processed,390.0,15.0,32.0,22.0,3.0,4.0,800.0,60.0,Daily Food & Nutrition Dataset
+79,Beef Tacos (2 hard shell),Meal/Meat,380.0,18.0,28.0,22.0,5.0,3.0,600.0,50.0,Daily Food & Nutrition Dataset
+80,Refried Beans (1/2 cup),Legume,115.0,7.0,19.0,1.0,6.0,1.0,480.0,0.0,Daily Food & Nutrition Dataset
+81,Guacamole (1/4 cup),Vegetable/Condiment,90.0,1.0,4.0,8.0,3.0,0.5,120.0,0.0,Daily Food & Nutrition Dataset
+82,Watermelon (1 cup diced),Fruit,46.0,0.9,11.5,0.2,0.6,9.4,2.0,0.0,Daily Food & Nutrition Dataset
+83,English Muffin (whole wheat),Grain,134.0,6.0,26.0,1.0,4.4,1.0,210.0,0.0,Daily Food & Nutrition Dataset
+84,Peanut Butter & Jelly Sandwich,Meal/Processed,390.0,12.0,50.0,17.0,5.0,20.0,450.0,0.0,Daily Food & Nutrition Dataset
+85,Clam Chowder (1 cup),Meal/Seafood,200.0,10.0,18.0,9.0,1.0,2.0,870.0,30.0,Daily Food & Nutrition Dataset
+86,Iced Tea (Sweetened 16oz),Beverage,180.0,0.0,46.0,0.0,0.0,46.0,15.0,0.0,Daily Food & Nutrition Dataset
+87,Lasagna (1 serving meat),Meal/Pasta,350.0,20.0,30.0,17.0,4.0,7.0,850.0,55.0,Daily Food & Nutrition Dataset
+88,Garlic Bread (1 slice),Grain,150.0,4.0,18.0,7.0,1.0,1.0,310.0,0.0,Daily Food & Nutrition Dataset
+89,Chocolate Milk (1 cup),Beverage/Dairy,200.0,8.0,26.0,8.0,1.0,24.0,160.0,30.0,Daily Food & Nutrition Dataset
+90,White Bread (1 slice),Grain,70.0,2.0,13.0,1.0,0.6,1.2,140.0,0.0,Daily Food & Nutrition Dataset
+91,Jelly (1 tbsp grape),Condiment,50.0,0.0,13.0,0.0,0.1,12.0,5.0,0.0,Daily Food & Nutrition Dataset
+92,Veggie Burger (1 patty),Protein/Vegetarian,120.0,11.0,10.0,4.0,5.0,1.0,350.0,0.0,Daily Food & Nutrition Dataset
+93,Bun (hamburger),Grain,140.0,4.0,26.0,2.0,1.0,4.0,260.0,0.0,Daily Food & Nutrition Dataset
+94,Ketchup (1 tbsp),Condiment,20.0,0.2,5.0,0.1,0.2,4.0,160.0,0.0,Daily Food & Nutrition Dataset
+95,Muffin (Blueberry 1 large),Grain/Dessert,380.0,5.0,55.0,16.0,2.0,30.0,350.0,50.0,Daily Food & Nutrition Dataset
+96,Coffee (with cream/sugar),Beverage,50.0,0.5,5.0,3.0,0.0,4.5,10.0,10.0,Daily Food & Nutrition Dataset
+97,Potato Chips (1 oz),Snack/Processed,160.0,2.0,15.0,10.0,1.0,0.5,170.0,0.0,Daily Food & Nutrition Dataset
+98,Tzatziki Sauce (2 tbsp),Condiment/Dairy,30.0,1.5,2.0,2.0,0.0,1.5,100.0,5.0,Daily Food & Nutrition Dataset
+99,Scallops (3oz seared),Protein/Seafood,95.0,17.0,5.0,1.0,0.0,0.0,180.0,35.0,Daily Food & Nutrition Dataset
+100,Risotto (Mushroom 1 cup),Meal/Grain,250.0,7.0,35.0,9.0,3.0,3.0,600.0,20.0,Daily Food & Nutrition Dataset
+101,Caprese Salad,Meal/Vegetable,240.0,10.0,8.0,18.0,2.0,5.0,350.0,40.0,Daily Food & Nutrition Dataset
+102,Balsamic Vinaigrette (2 tbsp),Condiment,90.0,0.0,3.0,9.0,0.0,2.5,300.0,0.0,Daily Food & Nutrition Dataset
+103,Cherries (1 cup),Fruit,77.0,1.6,19.0,0.5,2.5,15.0,0.0,0.0,Daily Food & Nutrition Dataset
+104,Turkey Bacon (2 slices),Protein/Meat,70.0,6.0,1.0,5.0,0.0,0.5,360.0,30.0,Daily Food & Nutrition Dataset
+105,Grits (1 cup cooked),Grain,150.0,3.0,32.0,1.0,2.0,0.5,320.0,0.0,Daily Food & Nutrition Dataset
+106,Butter (1 tbsp),Condiment/Dairy,100.0,0.1,0.0,11.0,0.0,0.0,82.0,30.0,Daily Food & Nutrition Dataset
+107,Meatball Sub (6 inch),Meal/Processed,580.0,28.0,55.0,27.0,6.0,10.0,1200.0,70.0,Daily Food & Nutrition Dataset
+108,Kiwifruit (1 medium),Fruit,46.0,0.9,11.1,0.4,2.3,6.7,2.0,0.0,Daily Food & Nutrition Dataset
+109,Beef Jerky (1 oz),Snack/Processed,116.0,9.4,3.1,7.2,0.5,2.5,590.0,30.0,Daily Food & Nutrition Dataset
+110,Figs (2 medium),Fruit,74.0,0.6,19.2,0.3,2.9,16.2,2.0,0.0,Daily Food & Nutrition Dataset
+111,Lobster (3oz steamed),Protein/Seafood,76.0,16.0,0.0,0.7,0.0,0.0,250.0,125.0,Daily Food & Nutrition Dataset
+112,Melted Butter (for lobster),Condiment,200.0,0.2,0.0,22.0,0.0,0.0,164.0,60.0,Daily Food & Nutrition Dataset
+113,Corn on the Cob (1 large),Vegetable,125.0,5.0,29.0,1.5,3.0,5.0,2.0,0.0,Daily Food & Nutrition Dataset
+114,Vegetable Soup (1 can),Meal/Vegetable,140.0,4.0,22.0,4.0,6.0,8.0,780.0,5.0,Daily Food & Nutrition Dataset
+115,Saltine Crackers (5 crackers),Grain/Processed,60.0,1.0,10.0,1.5,0.5,0.0,140.0,0.0,Daily Food & Nutrition Dataset
+116,Mango (1 cup slices),Fruit,99.0,1.4,24.7,0.6,2.6,22.5,2.0,0.0,Daily Food & Nutrition Dataset
+117,Cheesecake (1 slice),Dessert,320.0,5.0,28.0,21.0,1.0,20.0,280.0,65.0,Daily Food & Nutrition Dataset
+118,Pad Thai (Chicken 1.5 cups),Meal/Pasta,550.0,25.0,60.0,22.0,5.0,10.0,950.0,70.0,Daily Food & Nutrition Dataset
+119,Spring Roll (Veg 2 rolls),Snack/Processed,180.0,4.0,25.0,7.0,3.0,3.0,450.0,0.0,Daily Food & Nutrition Dataset
+120,Coconut Water (1 cup),Beverage,46.0,1.7,8.9,0.5,2.6,6.3,252.0,0.0,Daily Food & Nutrition Dataset
+121,Kimchi (1/2 cup),Vegetable,22.0,1.7,4.0,0.4,2.4,1.5,750.0,0.0,Daily Food & Nutrition Dataset
+122,Sashimi (Salmon 3 pcs),Protein/Fish,120.0,18.0,0.0,5.0,0.0,0.0,45.0,40.0,Daily Food & Nutrition Dataset
+123,Wasabi (1 tsp),Condiment,10.0,0.1,2.2,0.1,0.3,1.0,40.0,0.0,Daily Food & Nutrition Dataset
+124,Seaweed Salad (1/2 cup),Vegetable,60.0,2.0,8.0,3.0,2.0,4.0,350.0,0.0,Daily Food & Nutrition Dataset
+125,French Onion Soup (1 cup),Meal,150.0,6.0,15.0,7.0,2.0,5.0,800.0,20.0,Daily Food & Nutrition Dataset
+126,Croutons (1/4 cup),Grain,50.0,1.5,7.0,2.0,0.5,0.5,140.0,0.0,Daily Food & Nutrition Dataset
+127,Shepherd's Pie (1 serving),Meal/Meat,400.0,20.0,35.0,20.0,6.0,7.0,850.0,55.0,Daily Food & Nutrition Dataset
+128,Green Peas (1/2 cup),Legume,62.0,4.1,11.1,0.2,4.4,4.2,2.0,0.0,Daily Food & Nutrition Dataset
+129,Apple Pie (1 slice),Dessert,410.0,3.0,58.0,19.0,3.0,25.0,320.0,0.0,Daily Food & Nutrition Dataset
+130,Gin & Tonic (1 drink),Beverage,170.0,0.0,13.0,0.0,0.0,13.0,2.0,0.0,Daily Food & Nutrition Dataset
+131,Red Wine (5 oz glass),Beverage,125.0,0.1,3.8,0.0,0.0,0.9,6.0,0.0,Daily Food & Nutrition Dataset
+132,Halibut (4oz baked),Protein/Fish,125.0,24.0,0.0,2.5,0.0,0.0,60.0,40.0,Daily Food & Nutrition Dataset
+133,Quinoa Salad (1 cup),Meal/Vegetarian,260.0,9.0,32.0,12.0,6.0,4.0,300.0,0.0,Daily Food & Nutrition Dataset
+134,Lemonade (1 cup),Beverage,99.0,0.1,26.0,0.0,0.1,25.0,30.0,0.0,Daily Food & Nutrition Dataset
+135,Pistachios (1 oz shelled),Nut,159.0,5.7,7.7,12.8,3.0,2.2,2.0,0.0,Daily Food & Nutrition Dataset
+136,Oat Milk (1 cup),Beverage/Dairy-Alt,120.0,3.0,16.0,5.0,2.0,7.0,100.0,0.0,Daily Food & Nutrition Dataset
+137,Biscuits and Gravy (1 serving),Meal/Processed,480.0,10.0,45.0,28.0,2.0,3.0,1100.0,35.0,Daily Food & Nutrition Dataset
+138,Avocado (1/2 fruit),Fruit,160.0,2.0,8.5,14.7,6.7,0.7,7.0,0.0,Daily Food & Nutrition Dataset
+139,Corn Flakes (1 cup),Grain,100.0,2.0,24.0,0.0,1.0,3.0,200.0,0.0,Daily Food & Nutrition Dataset
+140,T-Bone Steak (6oz),Protein/Meat,460.0,38.0,0.0,33.0,0.0,0.0,110.0,105.0,Daily Food & Nutrition Dataset
+141,Creamed Spinach (1/2 cup),Vegetable,190.0,5.0,8.0,16.0,3.0,2.0,450.0,50.0,Daily Food & Nutrition Dataset
+142,Pecans (1 oz),Nut,196.0,2.6,3.9,20.4,2.7,1.1,0.0,0.0,Daily Food & Nutrition Dataset
+143,Fruit Cocktail (canned 1 cup),Fruit,110.0,1.0,28.0,0.0,2.0,26.0,10.0,0.0,Daily Food & Nutrition Dataset
+144,Ramen (Instant 1 pack),Meal/Processed,380.0,9.0,53.0,14.0,2.0,2.0,1580.0,0.0,Daily Food & Nutrition Dataset
+145,Mocha Latte (16oz),Beverage,360.0,12.0,48.0,15.0,2.0,42.0,150.0,45.0,Daily Food & Nutrition Dataset
+146,Cucumber Slices (1 cup),Vegetable,16.0,0.7,3.6,0.1,0.5,1.7,2.0,0.0,Daily Food & Nutrition Dataset
+147,Feta Cheese (1 oz),Dairy,75.0,4.0,1.2,6.1,0.0,0.7,316.0,25.0,Daily Food & Nutrition Dataset
+148,Olives (Kalamata 5 large),Fruit,35.0,0.2,1.0,3.5,0.5,0.0,210.0,0.0,Daily Food & Nutrition Dataset
+149,Chicken Alfredo (1.5 cups),Meal/Pasta,680.0,35.0,45.0,38.0,4.0,5.0,980.0,120.0,Daily Food & Nutrition Dataset
+150,Breadstick (1 large),Grain,160.0,4.0,28.0,3.0,1.0,2.0,350.0,0.0,Daily Food & Nutrition Dataset
+151,Cobb Salad,Meal/Protein,510.0,30.0,12.0,38.0,7.0,6.0,800.0,210.0,Daily Food & Nutrition Dataset
+152,Blue Cheese Dressing (2 tbsp),Condiment,150.0,1.0,2.0,16.0,0.0,1.0,320.0,10.0,Daily Food & Nutrition Dataset
+153,Mandarin Orange (1 medium),Fruit,37.0,0.6,9.3,0.2,1.3,7.3,1.0,0.0,Daily Food & Nutrition Dataset
+154,Cashews (1 oz roasted),Nut,163.0,4.3,9.2,13.1,0.9,1.4,140.0,0.0,Daily Food & Nutrition Dataset
+155,Eggo Waffle (2 waffles),Grain/Processed,180.0,4.0,30.0,5.0,1.0,4.0,400.0,0.0,Daily Food & Nutrition Dataset
+156,Diet Soda (1 can),Beverage,0.0,0.0,0.0,0.0,0.0,0.0,40.0,0.0,Daily Food & Nutrition Dataset
+157,Pulled Pork Sandwich,Meal/Meat,480.0,25.0,48.0,20.0,3.0,15.0,900.0,75.0,Daily Food & Nutrition Dataset
+158,Macadamia Nuts (1 oz),Nut,204.0,2.2,3.9,21.5,2.4,1.3,1.0,0.0,Daily Food & Nutrition Dataset
+159,Crab Cakes (2 medium),Meal/Seafood,340.0,20.0,18.0,20.0,1.0,2.0,700.0,120.0,Daily Food & Nutrition Dataset
+160,Tartar Sauce (2 tbsp),Condiment,60.0,0.2,2.0,5.5,0.1,1.5,180.0,5.0,Daily Food & Nutrition Dataset
+161,Lemon Bar (1 square),Dessert,150.0,1.5,22.0,6.0,0.5,15.0,80.0,30.0,Daily Food & Nutrition Dataset
+162,Almond Milk (Unsweetened 1 cup),Beverage/Dairy-Alt,30.0,1.0,1.0,2.5,1.0,0.0,160.0,0.0,Daily Food & Nutrition Dataset
+163,Rice Krispies (1.5 cups),Grain,160.0,3.0,37.0,0.5,0.5,4.0,290.0,0.0,Daily Food & Nutrition Dataset
+164,Sugar (1 tsp for cereal),Condiment,16.0,0.0,4.0,0.0,0.0,4.0,0.0,0.0,Daily Food & Nutrition Dataset
+165,Tuna (Canned 3oz in water),Protein/Fish,90.0,20.0,0.0,1.0,0.0,0.0,250.0,35.0,Daily Food & Nutrition Dataset
+166,Mayonnaise (1 tbsp),Condiment,90.0,0.1,0.1,10.0,0.0,0.1,70.0,5.0,Daily Food & Nutrition Dataset
+167,Pickle (1 spear dill),Vegetable,5.0,0.2,1.0,0.1,0.3,0.5,300.0,0.0,Daily Food & Nutrition Dataset
+168,Lobster Bisque (1 cup),Meal/Seafood,250.0,8.0,12.0,18.0,1.0,3.0,850.0,50.0,Daily Food & Nutrition Dataset
+169,Reuben Sandwich,Meal/Processed,650.0,28.0,35.0,40.0,5.0,6.0,1500.0,100.0,Daily Food & Nutrition Dataset
+170,Sauerkraut (1/4 cup side),Vegetable,7.0,0.3,1.5,0.0,1.0,0.6,234.0,0.0,Daily Food & Nutrition Dataset
+171,Mushroom (White 1 cup sliced),Vegetable,15.0,2.2,2.3,0.2,0.7,1.4,4.0,0.0,Daily Food & Nutrition Dataset
+172,Soy Milk (Original 1 cup),Beverage/Dairy-Alt,110.0,8.0,9.0,4.5,2.0,6.0,125.0,0.0,Daily Food & Nutrition Dataset
+173,Chicken Tikka Masala (1.5 cups),Meal/Meat,480.0,30.0,20.0,30.0,5.0,8.0,900.0,95.0,Daily Food & Nutrition Dataset
+174,Naan Bread (1 piece),Grain,260.0,8.0,45.0,5.0,2.0,3.0,450.0,10.0,Daily Food & Nutrition Dataset
+175,Cucumber Salad (1/2 cup),Vegetable,40.0,1.0,5.0,2.0,1.0,4.0,200.0,0.0,Daily Food & Nutrition Dataset
+176,Vodka Soda (1 drink),Beverage,100.0,0.0,0.0,0.0,0.0,0.0,5.0,0.0,Daily Food & Nutrition Dataset
+177,Chocolate Croissant,Dessert,350.0,6.0,40.0,19.0,3.0,15.0,300.0,40.0,Daily Food & Nutrition Dataset
+178,Sweet & Sour Chicken (1 cup),Meal/Processed,380.0,18.0,45.0,15.0,3.0,25.0,750.0,50.0,Daily Food & Nutrition Dataset
+179,Egg Drop Soup (1 cup),Meal/Vegetable,65.0,5.0,6.0,2.0,0.5,1.0,780.0,50.0,Daily Food & Nutrition Dataset
+180,String Cheese (1 stick),Dairy,80.0,6.0,1.0,6.0,0.0,0.0,210.0,20.0,Daily Food & Nutrition Dataset
+181,Turkey Burger (1 patty),Protein/Meat,160.0,22.0,2.0,8.0,0.0,1.0,400.0,70.0,Daily Food & Nutrition Dataset
+182,Potato Salad (1/2 cup),Meal/Vegetable,180.0,2.0,19.0,11.0,2.0,3.0,500.0,10.0,Daily Food & Nutrition Dataset
+183,Cranberry Juice (1 cup),Beverage,130.0,0.0,33.0,0.0,0.0,30.0,10.0,0.0,Daily Food & Nutrition Dataset
+184,Chicken Piccata (1 serving),Meal/Meat,350.0,30.0,10.0,20.0,1.0,2.0,600.0,90.0,Daily Food & Nutrition Dataset
+185,Angel Hair Pasta (1 cup),Grain,200.0,7.0,42.0,1.0,2.0,1.0,1.0,0.0,Daily Food & Nutrition Dataset
+186,Olive Oil (1 tbsp),Condiment,120.0,0.0,0.0,14.0,0.0,0.0,0.0,0.0,Daily Food & Nutrition Dataset
+187,Garlic (1 clove),Vegetable,4.0,0.2,0.9,0.0,0.1,0.0,1.0,0.0,Daily Food & Nutrition Dataset
+188,Salami (3 slices),Protein/Processed,110.0,6.0,1.0,9.0,0.0,0.5,500.0,30.0,Daily Food & Nutrition Dataset
+189,Provolone Cheese (1 slice),Dairy,100.0,7.0,1.0,8.0,0.0,0.5,250.0,20.0,Daily Food & Nutrition Dataset
+190,Ginger Ale (1 can),Beverage,124.0,0.0,32.0,0.0,0.0,31.0,40.0,0.0,Daily Food & Nutrition Dataset
+191,Shrimp Scampi (1 cup),Meal/Seafood,380.0,22.0,40.0,15.0,3.0,3.0,750.0,140.0,Daily Food & Nutrition Dataset
+192,Tiramisu (1 slice),Dessert,450.0,7.0,42.0,28.0,2.0,25.0,150.0,180.0,Daily Food & Nutrition Dataset
+193,Cereal Bar (Fruit),Snack/Processed,140.0,2.0,30.0,3.0,1.0,15.0,110.0,0.0,Daily Food & Nutrition Dataset
+194,Veal Parmesan (1 serving),Meal/Meat,550.0,40.0,30.0,30.0,4.0,7.0,1100.0,130.0,Daily Food & Nutrition Dataset
+195,Spaghetti (side),Grain,100.0,3.5,21.0,0.5,1.0,0.5,0.0,0.0,Daily Food & Nutrition Dataset
+196,Hot Chocolate (1 cup),Beverage,200.0,3.0,30.0,8.0,2.0,25.0,160.0,10.0,Daily Food & Nutrition Dataset
+197,Coconut Shrimp (5 pcs),Meal/Seafood,320.0,10.0,25.0,20.0,3.0,8.0,600.0,80.0,Daily Food & Nutrition Dataset
+198,Sweet Chili Sauce (2 tbsp),Condiment,70.0,0.0,17.0,0.0,0.5,16.0,450.0,0.0,Daily Food & Nutrition Dataset
+199,White Wine (5 oz glass),Beverage,121.0,0.1,3.8,0.0,0.0,1.4,5.0,0.0,Daily Food & Nutrition Dataset
+200,Trail Mix (1/4 cup),Snack/Processed,190.0,5.0,20.0,12.0,3.0,14.0,50.0,0.0,Daily Food & Nutrition Dataset
+201,Onion Rings (6 rings),Snack/Processed,280.0,4.0,30.0,16.0,3.0,4.0,500.0,0.0,Daily Food & Nutrition Dataset
+202,Poached Egg (1 large),Protein,72.0,6.3,0.4,4.8,0.0,0.4,140.0,185.0,Daily Food & Nutrition Dataset
+203,Canadian Bacon (2 slices),Protein/Meat,80.0,12.0,1.0,3.0,0.0,1.0,650.0,40.0,Daily Food & Nutrition Dataset
+204,Eggs Benedict (1 serving),Meal/Protein,600.0,25.0,30.0,40.0,3.0,4.0,1100.0,450.0,Daily Food & Nutrition Dataset
+205,Hollandaise Sauce (2 tbsp),Condiment,110.0,1.0,0.5,12.0,0.0,0.2,150.0,50.0,Daily Food & Nutrition Dataset
+206,Spinach Artichoke Dip (1/4 cup),Snack/Processed,160.0,5.0,6.0,14.0,2.0,2.0,350.0,30.0,Daily Food & Nutrition Dataset
+207,Tortilla Chips (1 oz),Snack/Processed,140.0,2.0,19.0,7.0,2.0,0.5,120.0,0.0,Daily Food & Nutrition Dataset
+208,Chicken Kebab (2 skewers),Meal/Meat,280.0,30.0,8.0,14.0,3.0,4.0,500.0,85.0,Daily Food & Nutrition Dataset
+209,Bell Peppers & Onions (sautéed),Vegetable,60.0,1.5,10.0,2.0,3.0,6.0,30.0,0.0,Daily Food & Nutrition Dataset
+210,Hummus Wrap (large),Meal/Vegetarian,450.0,15.0,60.0,18.0,12.0,5.0,800.0,0.0,Daily Food & Nutrition Dataset
+211,Kombucha (1 cup),Beverage,30.0,0.0,7.0,0.0,0.0,6.0,10.0,0.0,Daily Food & Nutrition Dataset
+212,Beef Stroganoff (1.5 cups),Meal/Pasta,550.0,30.0,40.0,28.0,4.0,6.0,900.0,100.0,Daily Food & Nutrition Dataset
+213,Egg Noodles (1 cup cooked),Grain,220.0,8.0,40.0,3.0,2.0,2.0,20.0,50.0,Daily Food & Nutrition Dataset
+214,Cottage Cheese (1 cup low fat),Dairy,160.0,28.0,6.0,2.5,0.0,4.0,820.0,10.0,Daily Food & Nutrition Dataset
+215,Tomato (1 medium sliced),Vegetable,22.0,1.1,4.8,0.2,1.5,3.2,6.0,0.0,Daily Food & Nutrition Dataset
+216,Black Pepper (1 tsp),Condiment,6.0,0.2,1.5,0.1,0.6,0.0,0.0,0.0,Daily Food & Nutrition Dataset
+217,Chocolate Pudding (1/2 cup),Dessert,150.0,2.0,28.0,4.0,2.0,22.0,130.0,2.0,Daily Food & Nutrition Dataset
+218,Mackerel (3oz cooked),Protein/Fish,175.0,16.0,0.0,12.0,0.0,0.0,75.0,65.0,Daily Food & Nutrition Dataset
+219,Collard Greens (1 cup cooked),Vegetable,60.0,5.0,10.0,1.0,7.0,1.0,40.0,0.0,Daily Food & Nutrition Dataset
+220,Ham (3oz deli sliced),Protein/Meat,110.0,16.0,2.0,4.0,0.0,1.5,950.0,45.0,Daily Food & Nutrition Dataset
+221,Swiss Cheese (1 slice),Dairy,106.0,7.6,1.0,8.0,0.0,0.4,54.0,26.0,Daily Food & Nutrition Dataset
+222,Rye Bread (1 slice),Grain,83.0,2.7,15.5,1.1,1.9,1.2,170.0,0.0,Daily Food & Nutrition Dataset
+223,Potato Leek Soup (1 cup),Meal/Vegetable,180.0,4.0,25.0,7.0,3.0,4.0,650.0,15.0,Daily Food & Nutrition Dataset
+224,Brie Cheese (1 oz),Dairy,95.0,6.0,0.1,7.9,0.0,0.1,178.0,28.0,Daily Food & Nutrition Dataset
+225,Water Cracker (5 crackers),Grain/Processed,70.0,1.5,12.0,1.5,0.5,0.0,150.0,0.0,Daily Food & Nutrition Dataset
+226,Grapefruit (1/2 medium),Fruit,52.0,1.1,13.2,0.2,2.0,8.5,0.0,0.0,Daily Food & Nutrition Dataset
+227,Veggie Straws (1 oz),Snack/Processed,130.0,1.0,17.0,7.0,1.0,1.0,220.0,0.0,Daily Food & Nutrition Dataset
+228,Fish Tacos (2 tacos),Meal/Fish,420.0,25.0,40.0,18.0,6.0,5.0,700.0,60.0,Daily Food & Nutrition Dataset
+229,Cabbage Slaw (side),Vegetable,60.0,1.0,8.0,3.0,2.0,5.0,120.0,5.0,Daily Food & Nutrition Dataset
+230,Lime (juice of 1),Condiment,11.0,0.2,3.7,0.0,0.4,0.7,1.0,0.0,Daily Food & Nutrition Dataset
+231,Beer (12 oz light),Beverage,103.0,0.9,5.8,0.0,0.0,0.3,10.0,0.0,Daily Food & Nutrition Dataset
+232,Danish (Cheese 1 medium),Dessert,340.0,7.0,38.0,18.0,2.0,16.0,300.0,55.0,Daily Food & Nutrition Dataset
+233,Kefir (Plain 1 cup),Beverage/Dairy,104.0,10.0,10.0,2.5,0.0,9.0,100.0,10.0,Daily Food & Nutrition Dataset
+234,Gnocchi (1 cup),Meal/Pasta,210.0,4.5,45.0,1.5,3.0,2.0,480.0,0.0,Daily Food & Nutrition Dataset
+235,Pesto Sauce (1/4 cup),Condiment,260.0,5.0,4.0,26.0,2.0,1.0,550.0,5.0,Daily Food & Nutrition Dataset
+236,Pine Nuts (1 tbsp),Nut,95.0,2.0,2.0,10.0,0.5,0.5,0.0,0.0,Daily Food & Nutrition Dataset
+237,Chai Latte (12 oz),Beverage,190.0,7.0,32.0,4.0,1.0,30.0,105.0,15.0,Daily Food & Nutrition Dataset
+238,Manicotti (2 shells cheese),Meal/Pasta,380.0,20.0,35.0,18.0,4.0,7.0,650.0,60.0,Daily Food & Nutrition Dataset
+239,Italian Sausage (1 link),Protein/Meat,200.0,12.0,3.0,16.0,0.0,1.0,550.0,50.0,Daily Food & Nutrition Dataset
+240,Jicama (1 cup sticks),Vegetable,46.0,0.9,10.6,0.1,5.8,2.1,5.0,0.0,Daily Food & Nutrition Dataset
+241,Chili Powder (1 tsp),Condiment,8.0,0.3,1.4,0.4,0.9,0.2,10.0,0.0,Daily Food & Nutrition Dataset
+242,Ants on a Log (4 pcs),Snack,180.0,6.0,12.0,12.0,3.0,7.0,120.0,0.0,Daily Food & Nutrition Dataset
+243,Split Pea Soup (1 cup),Meal/Legume,180.0,11.0,30.0,2.0,10.0,6.0,700.0,5.0,Daily Food & Nutrition Dataset
+244,Ham & Cheese Croissant,Meal/Processed,400.0,15.0,35.0,22.0,2.0,6.0,750.0,60.0,Daily Food & Nutrition Dataset
+245,Espresso (double shot),Beverage,5.0,0.5,0.0,0.1,0.0,0.0,1.0,0.0,Daily Food & Nutrition Dataset
+246,Ricotta Cheese (1/4 cup),Dairy,85.0,5.5,2.5,6.0,0.0,1.0,50.0,24.0,Daily Food & Nutrition Dataset
+247,Chicken & Rice Soup (1 can),Meal/Processed,130.0,7.0,18.0,3.0,2.0,2.0,850.0,15.0,Daily Food & Nutrition Dataset
+248,Salt (1/4 tsp),Condiment,0.0,0.0,0.0,0.0,0.0,0.0,580.0,0.0,Daily Food & Nutrition Dataset
+249,Guava,Fruit,68.0,2.6,14.3,0.9,5.4,8.9,3.0,0.0,Daily Food & Nutrition Dataset
+250,Club Sandwich,Meal/Processed,580.0,35.0,40.0,30.0,5.0,7.0,1300.0,95.0,Daily Food & Nutrition Dataset
+251,Pickle (1 whole dill),Vegetable,17.0,0.8,3.7,0.2,1.5,1.7,1200.0,0.0,Daily Food & Nutrition Dataset
+252,Turkey Chili (1 cup),Meal/Meat,250.0,22.0,25.0,7.0,8.0,6.0,750.0,50.0,Daily Food & Nutrition Dataset
+253,Sour Cream (2 tbsp),Condiment/Dairy,60.0,0.8,1.3,5.8,0.0,0.8,25.0,12.0,Daily Food & Nutrition Dataset
+254,Shredded Cheese (Cheddar 1/4 cup),Dairy,115.0,7.0,1.0,9.5,0.0,0.5,180.0,30.0,Daily Food & Nutrition Dataset
+255,Matcha Latte (12 oz),Beverage,180.0,6.0,28.0,5.0,2.0,25.0,90.0,20.0,Daily Food & Nutrition Dataset
+256,Chocolate Donut (1 medium),Dessert,300.0,4.0,35.0,17.0,2.0,18.0,230.0,20.0,Daily Food & Nutrition Dataset
+257,Tuna Melt,Meal/Processed,450.0,25.0,32.0,25.0,3.0,4.0,900.0,50.0,Daily Food & Nutrition Dataset
+258,Apple Cider (1 cup),Beverage,117.0,0.1,29.0,0.3,0.5,27.0,10.0,0.0,Daily Food & Nutrition Dataset
+259,Beef Burrito (large),Meal/Processed,650.0,30.0,70.0,28.0,10.0,5.0,1400.0,70.0,Daily Food & Nutrition Dataset
+260,Pico de Gallo (1/4 cup),Condiment,15.0,0.5,3.0,0.0,1.0,2.0,200.0,0.0,Daily Food & Nutrition Dataset
+261,Corn Tortilla (1 medium),Grain,52.0,1.4,11.2,0.7,1.5,0.2,4.0,0.0,Daily Food & Nutrition Dataset
+262,Mussels (3oz steamed),Protein/Seafood,146.0,20.0,6.0,4.0,0.0,0.0,310.0,48.0,Daily Food & Nutrition Dataset
+263,White Wine Sauce (1/4 cup),Condiment,80.0,1.0,4.0,6.0,0.5,2.0,300.0,5.0,Daily Food & Nutrition Dataset
+264,French Bread (2 slices),Grain,180.0,6.0,36.0,1.0,2.0,2.0,380.0,0.0,Daily Food & Nutrition Dataset
+265,Blackberries (1 cup),Fruit,62.0,2.0,13.8,0.7,7.6,4.9,1.0,0.0,Daily Food & Nutrition Dataset
+266,Cheese Danish,Dessert,340.0,7.0,38.0,18.0,2.0,16.0,300.0,55.0,Daily Food & Nutrition Dataset
+267,Chicken Salad Sandwich,Meal/Processed,420.0,20.0,35.0,20.0,3.0,5.0,850.0,60.0,Daily Food & Nutrition Dataset
+268,Soyrizo (2 oz),Protein/Vegetarian,140.0,10.0,6.0,9.0,3.0,2.0,450.0,0.0,Daily Food & Nutrition Dataset
+269,Hash Browns (1 cup),Vegetable,330.0,3.0,38.0,19.0,3.0,1.0,550.0,0.0,Daily Food & Nutrition Dataset
+270,Ketchup (1 packet),Condiment,10.0,0.1,2.5,0.0,0.1,2.0,90.0,0.0,Daily Food & Nutrition Dataset
+271,Philly Cheesesteak (6 inch),Meal/Processed,500.0,25.0,40.0,28.0,3.0,5.0,1100.0,70.0,Daily Food & Nutrition Dataset
+272,Cheese Whiz (2 tbsp),Condiment/Processed,90.0,4.0,3.0,7.0,0.0,2.0,540.0,20.0,Daily Food & Nutrition Dataset
+273,Onions (sautéed 1/4 cup),Vegetable,30.0,0.5,5.0,1.0,1.0,3.0,5.0,0.0,Daily Food & Nutrition Dataset
+274,Raspberries (1 cup),Fruit,64.0,1.5,14.7,0.8,8.0,5.4,1.0,0.0,Daily Food & Nutrition Dataset
+275,Cheesy Grits (1 cup),Meal/Grain,210.0,6.0,34.0,6.0,2.0,1.0,550.0,20.0,Daily Food & Nutrition Dataset
+276,Collard Greens (with ham hock),Vegetable,180.0,10.0,15.0,9.0,8.0,3.0,600.0,30.0,Daily Food & Nutrition Dataset
+277,Fried Okra (1 cup),Vegetable,220.0,4.0,25.0,12.0,5.0,3.0,450.0,10.0,Daily Food & Nutrition Dataset
+278,Sweet Tea (16 oz),Beverage,180.0,0.0,46.0,0.0,0.0,46.0,15.0,0.0,Daily Food & Nutrition Dataset
+279,Gyro (1 sandwich),Meal/Meat,600.0,25.0,55.0,30.0,5.0,6.0,1200.0,80.0,Daily Food & Nutrition Dataset
+280,Pita Bread (White 1 large),Grain,220.0,7.0,45.0,2.0,2.0,2.0,440.0,0.0,Daily Food & Nutrition Dataset
+281,Baklava (1 piece),Dessert,280.0,3.0,30.0,18.0,2.0,20.0,80.0,10.0,Daily Food & Nutrition Dataset
+282,Coconut (shredded 1/4 cup),Fruit,110.0,1.0,4.5,10.5,2.0,1.5,3.0,0.0,Daily Food & Nutrition Dataset
+283,S'more (1 serving),Dessert,140.0,2.0,25.0,4.0,1.0,15.0,90.0,0.0,Daily Food & Nutrition Dataset
+284,Graham Cracker (1 large rectangle),Grain/Processed,60.0,1.0,11.0,1.5,0.5,4.0,70.0,0.0,Daily Food & Nutrition Dataset
+285,Marshmallow (1 large),Dessert,23.0,0.1,5.8,0.0,0.0,4.0,5.0,0.0,Daily Food & Nutrition Dataset
+286,Chocolate (Hershey's bar 1 segment),Dessert,25.0,0.3,3.0,1.5,0.2,2.8,4.0,1.0,Daily Food & Nutrition Dataset
+287,Chicken Parm Sandwich,Meal/Processed,650.0,40.0,55.0,30.0,6.0,9.0,1400.0,100.0,Daily Food & Nutrition Dataset
+288,Mozzarella (1 slice),Dairy,80.0,6.0,1.0,6.0,0.0,0.5,150.0,20.0,Daily Food & Nutrition Dataset
+289,Bread Roll (hoagie),Grain,200.0,6.0,38.0,2.0,2.0,3.0,400.0,0.0,Daily Food & Nutrition Dataset
+290,Artichoke (1 medium steamed),Vegetable,60.0,4.2,13.4,0.2,6.9,1.2,112.0,0.0,Daily Food & Nutrition Dataset
+291,Mayonnaise (1 tbsp for dipping),Condiment,90.0,0.1,0.1,10.0,0.0,0.1,70.0,5.0,Daily Food & Nutrition Dataset
+292,Calamari (fried 3oz),Meal/Seafood,150.0,13.0,8.0,7.0,1.0,1.0,600.0,220.0,Daily Food & Nutrition Dataset
+293,Lemon Wedge (for calamari),Condiment,3.0,0.1,1.0,0.0,0.3,0.2,0.0,0.0,Daily Food & Nutrition Dataset
+294,Root Beer (1 can),Beverage,150.0,0.0,40.0,0.0,0.0,40.0,55.0,0.0,Daily Food & Nutrition Dataset
+295,Chicken McNuggets (6 pcs),Meal/Processed,270.0,15.0,16.0,16.0,1.0,0.0,500.0,40.0,Daily Food & Nutrition Dataset
+296,BBQ Sauce (2 tbsp),Condiment,60.0,0.5,15.0,0.0,0.5,12.0,350.0,0.0,Daily Food & Nutrition Dataset
+297,Honey (1 tbsp),Condiment,64.0,0.1,17.3,0.0,0.0,17.2,1.0,0.0,Daily Food & Nutrition Dataset
+298,Tofu Scramble,Meal/Vegetarian,250.0,20.0,8.0,16.0,4.0,3.0,300.0,0.0,Daily Food & Nutrition Dataset
+299,Turmeric (1 tsp),Condiment,9.0,0.3,1.9,0.1,0.7,0.1,1.0,0.0,Daily Food & Nutrition Dataset
+300,Nutritional Yeast (1 tbsp),Condiment,20.0,3.0,2.0,0.0,1.0,0.0,10.0,0.0,Daily Food & Nutrition Dataset
+301,Seitan (3oz),Protein/Vegetarian,90.0,18.0,4.0,1.0,1.0,1.0,300.0,0.0,Daily Food & Nutrition Dataset
+302,Vegetable Broth (1 cup),Beverage,15.0,1.0,3.0,0.0,1.0,2.0,550.0,0.0,Daily Food & Nutrition Dataset
+303,Mashed Cauliflower (1 cup),Vegetable,140.0,5.0,12.0,8.0,5.0,4.0,400.0,25.0,Daily Food & Nutrition Dataset
+304,Peanut Sauce (2 tbsp),Condiment,80.0,2.0,4.0,6.0,1.0,3.0,250.0,0.0,Daily Food & Nutrition Dataset
+305,Tempeh (3oz),Protein/Vegetarian,160.0,16.0,8.0,9.0,5.0,0.0,10.0,0.0,Daily Food & Nutrition Dataset
+306,Sauerkraut (1/2 cup),Vegetable,14.0,0.7,3.1,0.1,2.0,1.2,468.0,0.0,Daily Food & Nutrition Dataset
+307,Rye Crispbread (2 slices),Grain,70.0,2.0,14.0,0.5,3.0,0.0,120.0,0.0,Daily Food & Nutrition Dataset
+308,Capers (1 tbsp),Condiment,2.0,0.2,0.4,0.1,0.3,0.1,200.0,0.0,Daily Food & Nutrition Dataset
+309,Chicken Liver (2 oz cooked),Protein/Meat,91.0,13.6,0.6,3.6,0.0,0.0,50.0,320.0,Daily Food & Nutrition Dataset
+310,Onion (1/2 cup raw chopped),Vegetable,32.0,0.9,7.5,0.1,1.4,3.8,3.0,0.0,Daily Food & Nutrition Dataset
+311,Bok Choy (1 cup steamed),Vegetable,10.0,1.5,2.0,0.1,1.0,1.0,40.0,0.0,Daily Food & Nutrition Dataset
+312,Gummy Bears (10 pcs),Snack/Dessert,100.0,2.0,22.0,0.0,0.0,15.0,10.0,0.0,Daily Food & Nutrition Dataset
+313,Whiskey (1.5 oz shot),Beverage,105.0,0.0,0.1,0.0,0.0,0.1,1.0,0.0,Daily Food & Nutrition Dataset
+314,Dates (2 medium Medjool),Fruit,133.0,0.8,36.0,0.1,3.2,32.0,1.0,0.0,Daily Food & Nutrition Dataset
+315,Tahini (1 tbsp),Condiment,89.0,2.6,3.2,8.0,1.4,0.1,17.0,0.0,Daily Food & Nutrition Dataset
+316,Chickpeas (1/2 cup canned),Legume,135.0,7.0,22.0,2.0,6.0,3.0,250.0,0.0,Daily Food & Nutrition Dataset
+317,Lettuce (Romaine 2 cups),Vegetable,16.0,1.0,3.0,0.3,2.0,1.0,10.0,0.0,Daily Food & Nutrition Dataset
+318,Italian Dressing (2 tbsp),Condiment,70.0,0.0,3.0,7.0,0.0,2.0,300.0,0.0,Daily Food & Nutrition Dataset
+319,Turkey Sausage (1 patty),Protein/Meat,70.0,9.0,1.0,4.0,0.0,0.5,280.0,35.0,Daily Food & Nutrition Dataset
+320,Maple Syrup (1 tbsp),Condiment,52.0,0.0,13.5,0.0,0.0,12.0,1.0,0.0,Daily Food & Nutrition Dataset
+321,Quesadilla (Cheese 1 medium),Meal/Processed,400.0,18.0,35.0,22.0,3.0,2.0,700.0,50.0,Daily Food & Nutrition Dataset
+322,Sour Cream (1 tbsp),Condiment/Dairy,30.0,0.4,0.6,2.9,0.0,0.4,12.0,6.0,Daily Food & Nutrition Dataset
+323,Salsa (2 tbsp),Condiment,10.0,0.5,2.0,0.0,0.5,1.0,120.0,0.0,Daily Food & Nutrition Dataset
+324,Red Cabbage (1 cup raw),Vegetable,22.0,1.1,5.2,0.1,1.6,2.8,8.0,0.0,Daily Food & Nutrition Dataset
+325,Duck (3oz roasted),Protein/Meat,285.0,16.0,0.0,24.0,0.0,0.0,65.0,72.0,Daily Food & Nutrition Dataset
+326,Orange Sauce (1/4 cup for duck),Condiment,90.0,0.5,22.0,0.0,0.5,20.0,200.0,0.0,Daily Food & Nutrition Dataset
+327,Wild Rice (1 cup cooked),Grain,166.0,6.5,35.0,0.6,3.0,1.2,5.0,0.0,Daily Food & Nutrition Dataset
+328,Cupcake (Vanilla 1 medium),Dessert,240.0,2.0,35.0,11.0,1.0,25.0,200.0,30.0,Daily Food & Nutrition Dataset
+329,Frosting (Vanilla 2 tbsp),Condiment,140.0,0.0,22.0,6.0,0.0,22.0,65.0,0.0,Daily Food & Nutrition Dataset
+330,Hot Sauce (1 tsp Tabasco),Condiment,0.0,0.0,0.0,0.0,0.0,0.0,35.0,0.0,Daily Food & Nutrition Dataset
+331,Bison Burger (1 patty),Protein/Meat,150.0,22.0,0.0,7.0,0.0,0.0,65.0,70.0,Daily Food & Nutrition Dataset
+332,Pretzel Bun (1 medium),Grain,230.0,8.0,45.0,2.0,2.0,4.0,550.0,0.0,Daily Food & Nutrition Dataset
+333,Spicy Mustard (1 tbsp),Condiment,10.0,0.5,1.0,0.5,0.5,0.0,120.0,0.0,Daily Food & Nutrition Dataset
+334,Pasta Salad (1 cup),Meal/Pasta,280.0,8.0,30.0,14.0,4.0,5.0,450.0,10.0,Daily Food & Nutrition Dataset
+335,Pepperoncini (2 peppers),Vegetable,10.0,0.5,2.0,0.0,1.0,1.0,350.0,0.0,Daily Food & Nutrition Dataset
+336,Coconut Milk (1/4 cup canned),Condiment,111.0,1.1,2.9,11.6,0.5,1.5,8.0,0.0,Daily Food & Nutrition Dataset
+337,Green Curry Paste (1 tbsp),Condiment,30.0,0.5,2.0,2.5,1.0,1.0,400.0,0.0,Daily Food & Nutrition Dataset
+338,Chicken Thigh (1 roasted),Protein/Meat,210.0,24.0,0.0,13.0,0.0,0.0,90.0,120.0,Daily Food & Nutrition Dataset
+339,Jasmine Rice (1 cup cooked),Grain,205.0,4.3,45.0,0.4,0.6,0.0,2.0,0.0,Daily Food & Nutrition Dataset
+340,Thai Iced Tea (1 glass),Beverage,250.0,3.0,35.0,12.0,0.0,33.0,50.0,35.0,Daily Food & Nutrition Dataset
+341,Papaya (1 cup cubes),Fruit,62.0,0.6,15.7,0.4,2.5,11.0,12.0,0.0,Daily Food & Nutrition Dataset
+342,Lime Juice (1 tbsp),Condiment,4.0,0.1,1.3,0.0,0.1,0.2,0.0,0.0,Daily Food & Nutrition Dataset
+343,Macaroni Salad (1 cup),Meal/Pasta,380.0,8.0,30.0,25.0,3.0,6.0,750.0,20.0,Daily Food & Nutrition Dataset
+344,Celery (1 stalk),Vegetable,6.0,0.3,1.2,0.1,0.6,0.5,32.0,0.0,Daily Food & Nutrition Dataset
+345,Blue Cheese (1 oz),Dairy,100.0,6.0,0.7,8.0,0.0,0.1,325.0,21.0,Daily Food & Nutrition Dataset
+346,Dark Chocolate (1 oz 70%),Dessert,170.0,2.2,13.0,12.0,3.0,7.0,5.0,0.0,Daily Food & Nutrition Dataset
+347,Acai Bowl (1 serving),Meal/Fruit,350.0,5.0,60.0,12.0,10.0,30.0,40.0,0.0,Daily Food & Nutrition Dataset
+348,Granola (1/4 cup topping),Grain,120.0,3.0,15.0,6.0,3.0,7.0,20.0,0.0,Daily Food & Nutrition Dataset
+349,Coconut Flakes (1 tbsp topping),Fruit,35.0,0.3,1.5,3.3,0.7,0.5,1.0,0.0,Daily Food & Nutrition Dataset
+350,Honey (1 tsp drizzle),Condiment,21.0,0.0,5.8,0.0,0.0,5.8,0.0,0.0,Daily Food & Nutrition Dataset
+351,Shrimp Cocktail (4 large shrimp),Protein/Seafood,60.0,10.0,1.0,1.0,0.0,0.5,300.0,110.0,Daily Food & Nutrition Dataset
+352,Cocktail Sauce (2 tbsp),Condiment,30.0,0.5,7.0,0.0,0.5,5.0,450.0,0.0,Daily Food & Nutrition Dataset
+353,Pork Bun (1 steamed),Meal/Processed,220.0,8.0,30.0,8.0,2.0,6.0,400.0,20.0,Daily Food & Nutrition Dataset
+354,Dim Sum (Siu Mai 3 pcs),Meal/Processed,180.0,12.0,10.0,10.0,2.0,1.0,550.0,60.0,Daily Food & Nutrition Dataset
+355,Soy Sauce (1 tbsp for dipping),Condiment,9.0,1.0,1.0,0.0,0.1,0.4,920.0,0.0,Daily Food & Nutrition Dataset
+356,Oyster (1 medium raw),Protein/Seafood,8.0,1.0,0.5,0.2,0.0,0.0,50.0,10.0,Daily Food & Nutrition Dataset
+357,Mignonette Sauce (1 tbsp),Condiment,5.0,0.0,1.0,0.0,0.0,0.5,30.0,0.0,Daily Food & Nutrition Dataset
+358,Beef Pho (1 large bowl),Meal/Soup,450.0,30.0,55.0,12.0,4.0,5.0,1500.0,60.0,Daily Food & Nutrition Dataset
+359,Bean Sprouts (1/4 cup garnish),Vegetable,8.0,0.8,1.5,0.1,0.4,1.0,1.0,0.0,Daily Food & Nutrition Dataset
+360,Thai Basil (garnish),Condiment,1.0,0.1,0.0,0.0,0.0,0.0,0.0,0.0,Daily Food & Nutrition Dataset
+361,Lime Wedge (garnish),Condiment,3.0,0.1,1.0,0.0,0.3,0.2,0.0,0.0,Daily Food & Nutrition Dataset
+362,Jalapeno (1 tbsp sliced),Vegetable,4.0,0.1,0.8,0.1,0.4,0.5,1.0,0.0,Daily Food & Nutrition Dataset
+363,Hoisin Sauce (1 tbsp),Condiment,35.0,0.3,8.0,0.2,0.1,5.0,220.0,0.0,Daily Food & Nutrition Dataset
+364,Sriracha (1 tsp),Condiment,5.0,0.1,1.0,0.1,0.1,0.8,80.0,0.0,Daily Food & Nutrition Dataset
+365,Crepe (1 plain),Grain,90.0,3.5,14.0,2.0,0.5,3.0,100.0,25.0,Daily Food & Nutrition Dataset
+366,Nutella (1 tbsp),Condiment,100.0,1.5,11.0,6.0,1.0,10.0,10.0,0.0,Daily Food & Nutrition Dataset
+367,Powdered Sugar (1 tsp),Condiment,10.0,0.0,2.5,0.0,0.0,2.5,0.0,0.0,Daily Food & Nutrition Dataset
+368,Sake (3 oz),Beverage,117.0,0.4,3.8,0.0,0.0,0.0,4.0,0.0,Daily Food & Nutrition Dataset
+369,Edamame (in pod 1 cup),Legume,120.0,11.0,9.0,5.0,5.0,2.0,9.0,0.0,Daily Food & Nutrition Dataset
+370,Sea Salt (coarse 1/4 tsp),Condiment,0.0,0.0,0.0,0.0,0.0,0.0,550.0,0.0,Daily Food & Nutrition Dataset
+371,Biryani (Chicken 1.5 cups),Meal/Meat,520.0,28.0,60.0,18.0,5.0,6.0,900.0,75.0,Daily Food & Nutrition Dataset
+372,Raita (2 tbsp),Condiment/Dairy,30.0,1.0,2.0,2.0,0.5,1.5,100.0,5.0,Daily Food & Nutrition Dataset
+373,Lassi (Mango 1 cup),Beverage,180.0,5.0,30.0,4.0,1.0,28.0,60.0,15.0,Daily Food & Nutrition Dataset
+374,Samosa (1 piece vegetable),Snack/Processed,130.0,2.0,18.0,6.0,2.0,1.0,300.0,0.0,Daily Food & Nutrition Dataset
+375,Tamarind Chutney (1 tbsp),Condiment,20.0,0.1,5.0,0.0,0.5,4.0,120.0,0.0,Daily Food & Nutrition Dataset
+376,Mint Chutney (1 tbsp),Condiment,5.0,0.2,0.5,0.0,0.3,0.2,150.0,0.0,Daily Food & Nutrition Dataset
+377,Pani Puri (6 pcs),Snack/Processed,200.0,4.0,35.0,5.0,3.0,2.0,400.0,0.0,Daily Food & Nutrition Dataset
+378,Passion Fruit (1 fruit),Fruit,17.0,0.4,4.2,0.1,1.9,2.0,5.0,0.0,Daily Food & Nutrition Dataset
+379,Kimchi Jjigae (1 bowl),Meal/Soup,350.0,15.0,20.0,22.0,5.0,6.0,1200.0,30.0,Daily Food & Nutrition Dataset
+380,Silken Tofu (3oz in soup),Protein/Vegetarian,45.0,5.0,2.0,2.5,0.5,1.0,5.0,0.0,Daily Food & Nutrition Dataset
+381,Pork Belly (1 oz in soup),Protein/Meat,145.0,3.0,0.0,15.0,0.0,0.0,150.0,20.0,Daily Food & Nutrition Dataset
+382,Gochugaru (1 tsp),Condiment,10.0,0.3,1.8,0.3,0.5,0.3,1.0,0.0,Daily Food & Nutrition Dataset
+383,Gochujang (1 tbsp),Condiment,30.0,0.5,6.0,0.0,0.5,4.0,200.0,0.0,Daily Food & Nutrition Dataset
+384,Sesame Oil (1 tsp),Condiment,40.0,0.0,0.0,4.5,0.0,0.0,0.0,0.0,Daily Food & Nutrition Dataset
+385,Fish Sauce (1 tsp),Condiment,5.0,0.4,0.5,0.0,0.0,0.4,450.0,0.0,Daily Food & Nutrition Dataset
+386,Green Onion (1 tbsp garnish),Vegetable,3.0,0.2,0.7,0.0,0.2,0.2,0.0,0.0,Daily Food & Nutrition Dataset
+387,Kombucha (16 oz),Beverage,60.0,0.0,14.0,0.0,0.0,12.0,20.0,0.0,Daily Food & Nutrition Dataset
+388,Beef Wellington (1 slice),Meal/Meat,600.0,30.0,35.0,38.0,4.0,4.0,850.0,100.0,Daily Food & Nutrition Dataset
+389,Pate (Mushroom 2 tbsp),Condiment,70.0,1.0,2.0,7.0,1.0,1.0,100.0,0.0,Daily Food & Nutrition Dataset
+390,Puff Pastry (1 oz wrapper),Grain,115.0,1.5,9.0,8.0,0.5,0.0,100.0,0.0,Daily Food & Nutrition Dataset
+391,Prosciutto (1 slice),Protein/Meat,35.0,4.0,0.0,2.5,0.0,0.0,280.0,10.0,Daily Food & Nutrition Dataset
+392,Asparagus (6 spears roasted),Vegetable,40.0,4.0,4.0,2.0,3.0,2.0,150.0,0.0,Daily Food & Nutrition Dataset
+393,Hollandaise Sauce (1 tbsp),Condiment,55.0,0.5,0.2,6.0,0.0,0.1,75.0,25.0,Daily Food & Nutrition Dataset
+394,Flan (1 slice),Dessert,220.0,6.0,35.0,7.0,0.0,33.0,80.0,90.0,Daily Food & Nutrition Dataset
+395,Caramel Sauce (1 tbsp),Condiment,60.0,0.0,13.0,1.0,0.0,12.0,30.0,5.0,Daily Food & Nutrition Dataset
+396,Congee (1 cup plain),Meal/Grain,130.0,2.5,28.0,1.0,1.0,0.5,300.0,0.0,Daily Food & Nutrition Dataset
+397,Pickled Radish (1/4 cup),Vegetable,15.0,0.5,3.0,0.0,1.0,2.0,250.0,0.0,Daily Food & Nutrition Dataset
+398,Pork Floss (1 tbsp),Protein/Meat,50.0,4.0,3.0,2.0,0.0,2.5,150.0,10.0,Daily Food & Nutrition Dataset
+399,Century Egg (1 egg),Protein,100.0,7.0,1.0,7.0,0.0,0.5,300.0,200.0,Daily Food & Nutrition Dataset
+400,Arugula (2 cups),Vegetable,10.0,1.0,0.8,0.2,0.4,0.4,6.0,0.0,Daily Food & Nutrition Dataset
+401,Goat Cheese (1 oz),Dairy,103.0,6.1,0.1,8.5,0.0,0.1,146.0,22.0,Daily Food & Nutrition Dataset
+402,Beets (1/2 cup roasted),Vegetable,30.0,0.8,6.8,0.1,1.4,5.8,50.0,0.0,Daily Food & Nutrition Dataset
+403,Walnuts (1 tbsp chopped),Nut,46.0,1.1,1.0,4.6,0.5,0.2,0.0,0.0,Daily Food & Nutrition Dataset
+404,Balsamic Glaze (1 tbsp),Condiment,40.0,0.0,9.0,0.0,0.0,8.0,10.0,0.0,Daily Food & Nutrition Dataset
+405,Bobotie (1 serving),Meal/Meat,450.0,25.0,30.0,25.0,5.0,15.0,700.0,150.0,Daily Food & Nutrition Dataset
+406,Yellow Rice (1 cup),Grain,230.0,4.0,50.0,1.0,2.0,1.0,300.0,0.0,Daily Food & Nutrition Dataset
+407,Chutney (Mango 1 tbsp),Condiment,45.0,0.1,11.0,0.1,0.5,10.0,180.0,0.0,Daily Food & Nutrition Dataset
+408,Malva Pudding (1 slice),Dessert,380.0,5.0,60.0,14.0,2.0,40.0,350.0,60.0,Daily Food & Nutrition Dataset
+409,Custard (1/4 cup),Condiment,80.0,3.0,10.0,3.0,0.0,8.0,40.0,40.0,Daily Food & Nutrition Dataset
+410,Bubble Tea (16 oz milk tea),Beverage,320.0,2.0,70.0,4.0,1.0,60.0,100.0,10.0,Daily Food & Nutrition Dataset
+411,Tapioca Pearls (1/4 cup boba),Condiment,100.0,0.0,25.0,0.0,0.0,20.0,5.0,0.0,Daily Food & Nutrition Dataset
+412,Paella (1.5 cups seafood),Meal/Rice,550.0,30.0,70.0,18.0,6.0,5.0,1200.0,110.0,Daily Food & Nutrition Dataset
+413,Chorizo (1 oz in paella),Protein/Meat,130.0,6.0,1.0,11.0,0.0,0.5,350.0,30.0,Daily Food & Nutrition Dataset
+414,Saffron (pinch),Condiment,1.0,0.0,0.1,0.0,0.0,0.0,0.0,0.0,Daily Food & Nutrition Dataset
+415,Aioli (Garlic 1 tbsp),Condiment,95.0,0.1,0.5,10.5,0.0,0.1,70.0,5.0,Daily Food & Nutrition Dataset
+416,Gazpacho (1 cup),Meal/Soup,90.0,2.0,12.0,4.0,3.0,7.0,600.0,0.0,Daily Food & Nutrition Dataset
+417,Croutons (Garlic 1/4 cup),Grain,50.0,1.5,7.0,2.0,0.5,0.5,140.0,0.0,Daily Food & Nutrition Dataset
+418,Olive Oil (1 tsp garnish),Condiment,40.0,0.0,0.0,4.5,0.0,0.0,0.0,0.0,Daily Food & Nutrition Dataset
+419,Churros (2 sticks),Dessert,240.0,3.0,30.0,12.0,1.5,10.0,200.0,20.0,Daily Food & Nutrition Dataset
+420,Chocolate Sauce (1 tbsp dipping),Condiment,50.0,0.5,10.0,1.5,1.0,8.0,5.0,0.0,Daily Food & Nutrition Dataset
+421,Cinnamon Sugar (1 tsp),Condiment,20.0,0.0,5.0,0.0,0.0,5.0,0.0,0.0,Daily Food & Nutrition Dataset
+422,Horchata (1 cup),Beverage,140.0,2.0,25.0,3.0,1.0,22.0,30.0,5.0,Daily Food & Nutrition Dataset
+423,Ceviche (1 cup fish),Meal/Fish,180.0,25.0,15.0,2.0,3.0,4.0,700.0,45.0,Daily Food & Nutrition Dataset
+424,Red Onion (1/4 cup in ceviche),Vegetable,16.0,0.3,3.7,0.0,0.4,1.8,1.0,0.0,Daily Food & Nutrition Dataset
+425,Cilantro (2 tbsp garnish),Condiment,1.0,0.1,0.0,0.0,0.1,0.0,0.0,0.0,Daily Food & Nutrition Dataset
+426,Corn Nuts (1 oz),Snack/Processed,130.0,2.0,23.0,4.0,2.0,0.0,180.0,0.0,Daily Food & Nutrition Dataset
+427,Lomo Saltado (1.5 cups),Meal/Meat,500.0,35.0,45.0,22.0,5.0,6.0,1100.0,90.0,Daily Food & Nutrition Dataset
+428,French Fries (as side),Vegetable/Processed,200.0,2.0,25.0,10.0,2.0,0.2,130.0,0.0,Daily Food & Nutrition Dataset
+429,Soy Sauce (1 tbsp in stir-fry),Condiment,9.0,1.0,1.0,0.0,0.1,0.4,920.0,0.0,Daily Food & Nutrition Dataset
+430,Aji Amarillo Paste (1 tsp),Condiment,5.0,0.1,1.0,0.0,0.5,0.5,50.0,0.0,Daily Food & Nutrition Dataset
+431,Pisco Sour (1 drink),Beverage,250.0,1.0,25.0,0.0,0.0,24.0,5.0,5.0,Daily Food & Nutrition Dataset
+432,Egg White (in drink),Condiment,17.0,3.6,0.2,0.0,0.0,0.2,55.0,0.0,Daily Food & Nutrition Dataset
+433,Angostura Bitters (dash),Condiment,5.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Daily Food & Nutrition Dataset
+434,Alfajores (1 cookie),Dessert,180.0,2.0,22.0,10.0,1.0,15.0,60.0,20.0,Daily Food & Nutrition Dataset
+435,Dulce de Leche (1 tbsp filling),Condiment,65.0,1.0,12.0,1.5,0.0,10.0,30.0,5.0,Daily Food & Nutrition Dataset
+436,Coconut (shredded garnish),Fruit,10.0,0.1,0.5,1.0,0.2,0.1,0.0,0.0,Daily Food & Nutrition Dataset
+437,Mate (1 cup),Beverage,5.0,0.2,1.0,0.0,0.0,0.0,2.0,0.0,Daily Food & Nutrition Dataset
+438,Media Luna (1 pastry),Grain,190.0,4.0,25.0,8.0,1.0,9.0,150.0,25.0,Daily Food & Nutrition Dataset
+439,Chimichurri (1 tbsp),Condiment,45.0,0.1,0.5,4.5,0.2,0.1,100.0,0.0,Daily Food & Nutrition Dataset
+440,Skirt Steak (4oz grilled),Protein/Meat,240.0,26.0,0.0,15.0,0.0,0.0,70.0,80.0,Daily Food & Nutrition Dataset
+441,Provoleta (1 oz grilled cheese),Dairy,100.0,7.0,1.0,8.0,0.0,0.5,250.0,20.0,Daily Food & Nutrition Dataset
+442,Oregano (1 tsp),Condiment,3.0,0.1,0.7,0.0,0.2,0.0,0.0,0.0,Daily Food & Nutrition Dataset
+443,Empanada (Beef 1 medium),Meal/Processed,290.0,10.0,28.0,16.0,3.0,3.0,550.0,30.0,Daily Food & Nutrition Dataset
+444,Chicken Milanesa (1 serving),Meal/Meat,450.0,35.0,30.0,22.0,3.0,2.0,700.0,100.0,Daily Food & Nutrition Dataset
+445,Mashed Potatoes (side),Vegetable,150.0,3.0,25.0,4.0,2.0,2.0,300.0,10.0,Daily Food & Nutrition Dataset
+446,Choripan (1 sandwich),Meal/Processed,550.0,20.0,40.0,35.0,3.0,4.0,1100.0,80.0,Daily Food & Nutrition Dataset
+447,Baguette (slice),Grain,70.0,2.5,14.0,0.5,0.6,0.5,150.0,0.0,Daily Food & Nutrition Dataset
+448,Pizza (Margherita 1 slice),Meal/Processed,250.0,12.0,30.0,10.0,3.0,4.0,600.0,25.0,Daily Food & Nutrition Dataset
+449,Fresh Mozzarella (1 oz),Dairy,72.0,5.0,0.8,5.0,0.0,0.3,138.0,22.0,Daily Food & Nutrition Dataset
+450,Basil (2 tbsp fresh),Condiment,1.0,0.1,0.1,0.0,0.1,0.0,0.0,0.0,Daily Food & Nutrition Dataset
+451,Carbonara (1.5 cups),Meal/Pasta,650.0,25.0,60.0,35.0,4.0,4.0,900.0,250.0,Daily Food & Nutrition Dataset
+452,Guanciale (1 oz),Protein/Meat,170.0,3.0,0.0,18.0,0.0,0.0,450.0,35.0,Daily Food & Nutrition Dataset
+453,Pecorino Cheese (1 tbsp),Dairy,25.0,1.5,0.1,2.0,0.0,0.0,110.0,6.0,Daily Food & Nutrition Dataset
+454,Black Pepper (1/4 tsp),Condiment,1.0,0.0,0.2,0.0,0.1,0.0,0.0,0.0,Daily Food & Nutrition Dataset
+455,Egg Yolk (1 large in sauce),Protein,55.0,2.7,0.6,4.5,0.0,0.3,8.0,184.0,Daily Food & Nutrition Dataset
+456,Supplì (1 piece fried rice ball),Snack/Processed,200.0,8.0,25.0,8.0,2.0,2.0,400.0,25.0,Daily Food & Nutrition Dataset
+457,Aperol Spritz (1 drink),Beverage,180.0,0.0,20.0,0.0,0.0,20.0,10.0,0.0,Daily Food & Nutrition Dataset
+458,Prosecco (3 oz),Beverage,70.0,0.0,2.0,0.0,0.0,1.5,5.0,0.0,Daily Food & Nutrition Dataset
+459,Club Soda (2 oz),Beverage,0.0,0.0,0.0,0.0,0.0,0.0,20.0,0.0,Daily Food & Nutrition Dataset
+460,Orange Slice (garnish),Fruit,5.0,0.1,1.0,0.0,0.2,0.8,0.0,0.0,Daily Food & Nutrition Dataset
+461,Tagliatelle al Ragù (Bolognese),Meal/Pasta,550.0,28.0,65.0,20.0,7.0,8.0,850.0,70.0,Daily Food & Nutrition Dataset
+462,Ground Beef (2 oz in sauce),Protein/Meat,140.0,11.0,0.0,10.0,0.0,0.0,40.0,35.0,Daily Food & Nutrition Dataset
+463,Pancetta (0.5 oz in sauce),Protein/Meat,45.0,1.5,0.0,4.5,0.0,0.0,160.0,10.0,Daily Food & Nutrition Dataset
+464,Carrot (1/4 minced in sauce),Vegetable,10.0,0.2,2.4,0.1,0.7,1.2,17.0,0.0,Daily Food & Nutrition Dataset
+465,Celery (1/4 stalk minced),Vegetable,2.0,0.1,0.4,0.0,0.2,0.2,12.0,0.0,Daily Food & Nutrition Dataset
+466,Onion (1/8 minced in sauce),Vegetable,5.0,0.1,1.2,0.0,0.2,0.6,1.0,0.0,Daily Food & Nutrition Dataset
+467,Crushed Tomatoes (1/2 cup sauce),Vegetable,20.0,1.0,4.0,0.0,1.5,3.0,200.0,0.0,Daily Food & Nutrition Dataset
+468,Parmigiano-Reggiano (1 tbsp),Dairy,22.0,2.0,0.2,1.5,0.0,0.0,95.0,4.0,Daily Food & Nutrition Dataset
+469,Cannoli (1 medium),Dessert,240.0,5.0,25.0,13.0,1.0,18.0,100.0,30.0,Daily Food & Nutrition Dataset
+470,Ricotta (filling 1 oz),Dairy,49.0,3.2,0.8,3.8,0.0,0.1,23.0,14.0,Daily Food & Nutrition Dataset
+471,Pistachio (garnish),Nut,10.0,0.4,0.5,0.8,0.2,0.1,0.0,0.0,Daily Food & Nutrition Dataset
+472,Biscotti (1 cookie),Dessert,110.0,2.0,18.0,4.0,1.0,9.0,50.0,15.0,Daily Food & Nutrition Dataset
+473,Espresso (for dipping),Beverage,2.0,0.2,0.0,0.0,0.0,0.0,1.0,0.0,Daily Food & Nutrition Dataset
+474,Focaccia (1 square),Grain,250.0,8.0,40.0,7.0,2.0,2.0,500.0,0.0,Daily Food & Nutrition Dataset
+475,Rosemary (1 tsp topping),Condiment,1.0,0.0,0.2,0.0,0.1,0.0,0.0,0.0,Daily Food & Nutrition Dataset
+476,Coarse Salt (garnish),Condiment,0.0,0.0,0.0,0.0,0.0,0.0,200.0,0.0,Daily Food & Nutrition Dataset
+477,Olive Oil (1 tbsp drizzle),Condiment,120.0,0.0,0.0,14.0,0.0,0.0,0.0,0.0,Daily Food & Nutrition Dataset
+478,Bruschetta (2 pcs),Snack/Appetizer,180.0,4.0,25.0,7.0,3.0,4.0,350.0,0.0,Daily Food & Nutrition Dataset
+479,Balsamic Glaze (1 tsp),Condiment,13.0,0.0,3.0,0.0,0.0,2.7,3.0,0.0,Daily Food & Nutrition Dataset
+480,Ribollita (1.5 cups soup),Meal/Soup,350.0,15.0,55.0,8.0,14.0,10.0,900.0,5.0,Daily Food & Nutrition Dataset
+481,Cannellini Beans (1/2 cup in soup),Legume,105.0,7.0,20.0,0.5,6.0,1.0,230.0,0.0,Daily Food & Nutrition Dataset
+482,Kale (1 cup in soup),Vegetable,33.0,2.9,6.0,0.6,2.0,1.0,29.0,0.0,Daily Food & Nutrition Dataset
+483,Stale Bread (1/2 cup in soup),Grain,80.0,3.0,15.0,1.0,1.0,1.5,160.0,0.0,Daily Food & Nutrition Dataset
+484,Polenta (1 cup creamy),Meal/Grain,150.0,3.0,32.0,1.0,3.0,1.0,350.0,5.0,Daily Food & Nutrition Dataset
+485,Gorgonzola Cheese (1 oz),Dairy,100.0,6.0,0.7,8.0,0.0,0.1,325.0,21.0,Daily Food & Nutrition Dataset
+486,Negroni (1 drink),Beverage,190.0,0.0,15.0,0.0,0.0,15.0,5.0,0.0,Daily Food & Nutrition Dataset
+487,Gin (1 oz),Beverage,70.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Daily Food & Nutrition Dataset
+488,Campari (1 oz),Beverage,80.0,0.0,10.0,0.0,0.0,10.0,5.0,0.0,Daily Food & Nutrition Dataset
+489,Sweet Vermouth (1 oz),Beverage,40.0,0.0,5.0,0.0,0.0,5.0,0.0,0.0,Daily Food & Nutrition Dataset
+490,Orange Peel (garnish),Condiment,1.0,0.0,0.2,0.0,0.1,0.0,0.0,0.0,Daily Food & Nutrition Dataset
+491,Osso Buco (1 serving),Meal/Meat,550.0,45.0,15.0,30.0,4.0,6.0,900.0,150.0,Daily Food & Nutrition Dataset
+492,Gremolata (1 tbsp),Condiment,15.0,0.5,1.0,1.0,0.5,0.5,5.0,0.0,Daily Food & Nutrition Dataset
+493,Risotto alla Milanese (1 cup),Meal/Rice,350.0,10.0,50.0,12.0,3.0,3.0,700.0,30.0,Daily Food & Nutrition Dataset
+494,Saffron (pinch in risotto),Condiment,1.0,0.0,0.1,0.0,0.0,0.0,0.0,0.0,Daily Food & Nutrition Dataset
+495,Panettone (1 slice),Dessert,320.0,6.0,50.0,12.0,3.0,25.0,200.0,70.0,Daily Food & Nutrition Dataset
+496,Candied Fruit (1 tbsp),Fruit,30.0,0.0,8.0,0.0,0.5,8.0,5.0,0.0,Daily Food & Nutrition Dataset
+497,Amaretti Cookie (2 cookies),Dessert,90.0,2.0,12.0,4.0,1.0,10.0,10.0,0.0,Daily Food & Nutrition Dataset
+498,Limoncello (1.5 oz shot),Beverage,150.0,0.0,18.0,0.0,0.0,18.0,0.0,0.0,Daily Food & Nutrition Dataset
+499,Panna Cotta (1 serving),Dessert,300.0,4.0,25.0,20.0,0.0,22.0,50.0,70.0,Daily Food & Nutrition Dataset
+500,Berry Coulis (1 tbsp),Condiment,20.0,0.0,5.0,0.0,0.5,4.5,0.0,0.0,Daily Food & Nutrition Dataset
+501,Saltimbocca (1 serving),Meal/Meat,380.0,38.0,5.0,22.0,0.5,1.0,850.0,120.0,Daily Food & Nutrition Dataset
+502,Prosciutto (1 slice wrapper),Protein/Meat,35.0,4.0,0.0,2.5,0.0,0.0,280.0,10.0,Daily Food & Nutrition Dataset
+503,Sage (2 leaves),Condiment,1.0,0.0,0.1,0.0,0.1,0.0,0.0,0.0,Daily Food & Nutrition Dataset
+504,Polenta (grilled 1 slice),Meal/Grain,120.0,2.5,25.0,1.0,2.0,0.5,300.0,0.0,Daily Food & Nutrition Dataset
+505,Caponata (1/2 cup),Meal/Vegetable,180.0,2.0,15.0,14.0,5.0,9.0,400.0,0.0,Daily Food & Nutrition Dataset
+506,Eggplant (1/2 cup in caponata),Vegetable,40.0,0.5,6.0,2.0,2.0,3.0,150.0,0.0,Daily Food & Nutrition Dataset
+507,Pine Nuts (1/2 tbsp),Nut,48.0,1.0,1.0,5.0,0.2,0.2,0.0,0.0,Daily Food & Nutrition Dataset
+508,Raisins (1 tbsp),Fruit,27.0,0.3,7.0,0.0,0.3,6.0,1.0,0.0,Daily Food & Nutrition Dataset
+509,Gelato (Pistachio 1/2 cup),Dessert,220.0,5.0,24.0,12.0,2.0,20.0,60.0,40.0,Daily Food & Nutrition Dataset
+510,Waffle Cone (1 small),Grain,70.0,1.0,13.0,1.5,0.5,7.0,30.0,5.0,Daily Food & Nutrition Dataset
+511,Cacio e Pepe (1.5 cups),Meal/Pasta,500.0,18.0,65.0,19.0,4.0,3.0,700.0,50.0,Daily Food & Nutrition Dataset
+512,Pecorino Romano (1/4 cup),Dairy,110.0,7.5,1.0,8.5,0.0,0.0,450.0,25.0,Daily Food & Nutrition Dataset
+513,Black Pepper (1/2 tsp),Condiment,3.0,0.1,0.7,0.0,0.3,0.0,0.0,0.0,Daily Food & Nutrition Dataset
+514,Fiorentina Steak (3oz portion),Protein/Meat,230.0,24.0,0.0,15.0,0.0,0.0,60.0,75.0,Daily Food & Nutrition Dataset
+515,Rosemary (garnish),Condiment,1.0,0.0,0.2,0.0,0.1,0.0,0.0,0.0,Daily Food & Nutrition Dataset
+516,White Beans (Tuscan style 1/2 cup),Legume,150.0,8.0,20.0,4.0,7.0,2.0,350.0,0.0,Daily Food & Nutrition Dataset
+517,Garlic (1 clove in beans),Vegetable,4.0,0.2,0.9,0.0,0.1,0.0,1.0,0.0,Daily Food & Nutrition Dataset
+518,Sage (in beans),Condiment,1.0,0.0,0.1,0.0,0.1,0.0,0.0,0.0,Daily Food & Nutrition Dataset
+519,Arancini (1 large ball),Snack/Processed,250.0,9.0,30.0,10.0,3.0,3.0,500.0,30.0,Daily Food & Nutrition Dataset
+520,Ragù (filling 1 tbsp),Condiment,25.0,1.5,1.0,1.5,0.5,0.5,60.0,5.0,Daily Food & Nutrition Dataset
+521,Mozzarella (filling 0.5 oz),Dairy,40.0,3.0,0.5,3.0,0.0,0.2,75.0,10.0,Daily Food & Nutrition Dataset
+522,Breadcrumbs (coating),Grain,25.0,0.5,4.0,0.5,0.5,0.5,50.0,0.0,Daily Food & Nutrition Dataset
+523,Campari & Soda (1 drink),Beverage,85.0,0.0,10.0,0.0,0.0,10.0,25.0,0.0,Daily Food & Nutrition Dataset
+524,Olive (garnish),Fruit,5.0,0.0,0.1,0.5,0.1,0.0,30.0,0.0,Daily Food & Nutrition Dataset
+525,Vitello Tonnato (1 serving),Meal/Meat,380.0,35.0,3.0,25.0,0.5,1.0,600.0,110.0,Daily Food & Nutrition Dataset
+526,Tuna Sauce (2 tbsp),Condiment,100.0,4.0,1.0,9.0,0.0,0.5,200.0,15.0,Daily Food & Nutrition Dataset
+527,Capers (garnish),Condiment,2.0,0.2,0.4,0.1,0.3,0.1,200.0,0.0,Daily Food & Nutrition Dataset
+528,Lemon Slice (garnish),Condiment,1.0,0.0,0.3,0.0,0.1,0.1,0.0,0.0,Daily Food & Nutrition Dataset
+529,Gnocchi alla Sorrentina (1.5 cups),Meal/Pasta,450.0,15.0,60.0,18.0,6.0,9.0,800.0,40.0,Daily Food & Nutrition Dataset
+530,Tomato Sauce (1/2 cup),Condiment,40.0,1.5,7.0,1.0,2.0,4.0,350.0,0.0,Daily Food & Nutrition Dataset
+531,Mozzarella (1 oz melted),Dairy,80.0,6.0,1.0,6.0,0.0,0.5,150.0,20.0,Daily Food & Nutrition Dataset
+532,Basil (fresh garnish),Condiment,1.0,0.1,0.0,0.0,0.1,0.0,0.0,0.0,Daily Food & Nutrition Dataset
+533,Pesto (1/4 cup),Condiment,290.0,5.0,4.0,29.0,2.0,1.0,600.0,5.0,Daily Food & Nutrition Dataset
+534,Pine Nuts (1 tbsp in pesto),Nut,95.0,2.0,2.0,10.0,0.5,0.5,0.0,0.0,Daily Food & Nutrition Dataset
+535,Garlic (1/2 clove in pesto),Vegetable,2.0,0.1,0.5,0.0,0.0,0.0,0.0,0.0,Daily Food & Nutrition Dataset
+536,Trofie Pasta (1 cup cooked),Grain,210.0,7.0,43.0,1.0,2.0,1.0,5.0,0.0,Daily Food & Nutrition Dataset
+537,Green Beans (1/2 cup w/ pasta),Vegetable,15.0,0.9,3.5,0.1,1.3,1.6,3.0,0.0,Daily Food & Nutrition Dataset
+538,Potato (1/2 w/ pasta),Vegetable,65.0,1.0,15.0,0.1,1.0,0.5,3.0,0.0,Daily Food & Nutrition Dataset
+539,Espresso Martini (1 drink),Beverage,280.0,0.5,25.0,0.0,0.0,25.0,5.0,0.0,Daily Food & Nutrition Dataset
+540,Vodka (1.5 oz),Beverage,97.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Daily Food & Nutrition Dataset
+541,Coffee Liqueur (1 oz),Beverage,100.0,0.0,15.0,0.0,0.0,15.0,2.0,0.0,Daily Food & Nutrition Dataset
+542,Espresso (1 oz in drink),Beverage,3.0,0.3,0.0,0.1,0.0,0.0,1.0,0.0,Daily Food & Nutrition Dataset
+543,Simple Syrup (1/2 oz),Condiment,30.0,0.0,8.0,0.0,0.0,8.0,0.0,0.0,Daily Food & Nutrition Dataset
+544,Coffee Beans (3 garnish),Snack,2.0,0.1,0.3,0.0,0.1,0.0,0.0,0.0,Daily Food & Nutrition Dataset
+545,Baba Ganoush (1/4 cup),Meal/Vegetable,100.0,2.0,8.0,7.0,4.0,2.0,300.0,0.0,Daily Food & Nutrition Dataset
+546,Pita Bread (1 white),Grain,165.0,5.5,33.0,1.2,1.5,1.5,310.0,0.0,Daily Food & Nutrition Dataset
+547,Falafel (3 pieces),Meal/Vegetarian,180.0,6.0,18.0,9.0,4.0,1.0,320.0,0.0,Daily Food & Nutrition Dataset
+548,Tahini Sauce (1 tbsp),Condiment,30.0,1.0,1.5,2.5,0.5,0.0,45.0,0.0,Daily Food & Nutrition Dataset
+549,Pickled Turnips (2 tbsp),Vegetable,10.0,0.2,2.0,0.0,0.5,1.0,200.0,0.0,Daily Food & Nutrition Dataset
+550,Shawarma (Chicken 1 wrap),Meal/Processed,550.0,30.0,50.0,25.0,6.0,5.0,1100.0,80.0,Daily Food & Nutrition Dataset
+551,Garlic Sauce (1 tbsp),Condiment,90.0,0.1,1.0,10.0,0.0,0.5,80.0,5.0,Daily Food & Nutrition Dataset
+552,Hummus (1/4 cup),Legume,130.0,5.0,10.0,8.0,4.0,1.0,250.0,0.0,Daily Food & Nutrition Dataset
+553,Tabouli (1/2 cup),Meal/Vegetarian,120.0,3.0,15.0,6.0,4.0,2.0,300.0,0.0,Daily Food & Nutrition Dataset
+554,Bulgur (1/4 cup in tabouli),Grain,76.0,2.7,16.8,0.2,4.1,0.1,4.0,0.0,Daily Food & Nutrition Dataset
+555,Parsley (1/4 cup in tabouli),Vegetable,5.0,0.3,1.0,0.1,0.5,0.1,5.0,0.0,Daily Food & Nutrition Dataset
+556,Mint (1 tbsp in tabouli),Condiment,1.0,0.1,0.1,0.0,0.1,0.0,0.0,0.0,Daily Food & Nutrition Dataset
+557,Lemon Juice (1 tbsp dressing),Condiment,4.0,0.1,1.3,0.0,0.1,0.2,0.0,0.0,Daily Food & Nutrition Dataset
+558,Olive Oil (1 tbsp dressing),Condiment,120.0,0.0,0.0,14.0,0.0,0.0,0.0,0.0,Daily Food & Nutrition Dataset
+559,Kibbeh (1 piece fried),Meal/Meat,230.0,9.0,20.0,13.0,3.0,1.0,450.0,30.0,Daily Food & Nutrition Dataset
+560,Pine Nuts (1/2 tbsp filling),Nut,48.0,1.0,1.0,5.0,0.2,0.2,0.0,0.0,Daily Food & Nutrition Dataset
+561,Ground Lamb (1 oz filling),Protein/Meat,80.0,5.5,0.0,6.0,0.0,0.0,20.0,20.0,Daily Food & Nutrition Dataset
+562,Bulgur (1 tbsp shell),Grain,15.0,0.5,3.4,0.0,0.8,0.0,1.0,0.0,Daily Food & Nutrition Dataset
+563,Lentil Soup (1 cup Middle Eastern),Meal/Legume,200.0,10.0,30.0,5.0,10.0,4.0,700.0,0.0,Daily Food & Nutrition Dataset
+564,Cumin (1 tsp),Condiment,8.0,0.3,1.5,0.5,0.4,0.1,3.0,0.0,Daily Food & Nutrition Dataset
+565,Coriander (1 tsp),Condiment,5.0,0.1,1.0,0.2,0.5,0.0,1.0,0.0,Daily Food & Nutrition Dataset
+566,Lemon Juice (1 tsp in soup),Condiment,1.0,0.0,0.4,0.0,0.0,0.1,0.0,0.0,Daily Food & Nutrition Dataset
+567,Pita Crisps (1 oz),Snack/Processed,130.0,3.0,18.0,5.0,2.0,1.0,240.0,0.0,Daily Food & Nutrition Dataset
+568,Manakeesh (Za'atar 1 small),Meal/Vegetarian,300.0,7.0,45.0,10.0,4.0,2.0,500.0,0.0,Daily Food & Nutrition Dataset
+569,Za'atar (1 tbsp),Condiment,40.0,1.0,3.0,3.0,1.5,0.0,150.0,0.0,Daily Food & Nutrition Dataset
+570,Olive Oil (1 tbsp on bread),Condiment,120.0,0.0,0.0,14.0,0.0,0.0,0.0,0.0,Daily Food & Nutrition Dataset
+571,Labneh (2 tbsp),Dairy,60.0,4.0,2.0,4.0,0.0,2.0,80.0,15.0,Daily Food & Nutrition Dataset
+572,Cucumber (1/4 cup side),Vegetable,8.0,0.3,1.8,0.0,0.2,0.8,1.0,0.0,Daily Food & Nutrition Dataset
+573,Tomato (1/4 cup side),Vegetable,8.0,0.3,1.8,0.1,0.5,1.2,2.0,0.0,Daily Food & Nutrition Dataset
+574,Olives (5 side),Fruit,35.0,0.2,1.0,3.5,0.5,0.0,210.0,0.0,Daily Food & Nutrition Dataset
+575,Mint Tea (1 cup),Beverage,2.0,0.1,0.5,0.0,0.0,0.0,5.0,0.0,Daily Food & Nutrition Dataset
+576,Stuffed Grape Leaves (3 pcs),Meal/Vegetarian,150.0,3.0,20.0,7.0,3.0,3.0,400.0,0.0,Daily Food & Nutrition Dataset
+577,Rice (1/4 cup filling),Grain,51.0,1.1,11.1,0.1,0.1,0.0,0.0,0.0,Daily Food & Nutrition Dataset
+578,Turkish Coffee (1 small cup),Beverage,5.0,0.2,0.5,0.0,0.0,0.0,1.0,0.0,Daily Food & Nutrition Dataset
+579,Cardamom (in coffee),Condiment,1.0,0.0,0.2,0.0,0.1,0.0,0.0,0.0,Daily Food & Nutrition Dataset
+580,Shish Tawook (2 skewers),Meal/Meat,300.0,35.0,5.0,16.0,1.0,2.0,600.0,100.0,Daily Food & Nutrition Dataset
+581,Garlic Sauce (Toum 1 tbsp),Condiment,90.0,0.1,1.0,10.0,0.0,0.5,80.0,5.0,Daily Food & Nutrition Dataset
+582,French Fries (side),Vegetable/Processed,340.0,4.0,44.0,17.0,4.0,0.3,230.0,0.0,Daily Food & Nutrition Dataset
+583,Pickled Cucumber (1/4 cup),Vegetable,10.0,0.5,2.0,0.0,1.0,1.0,300.0,0.0,Daily Food & Nutrition Dataset
+584,Fattoush Salad (1.5 cups),Meal/Vegetarian,250.0,5.0,25.0,15.0,6.0,5.0,500.0,0.0,Daily Food & Nutrition Dataset
+585,Fried Pita (1/2 pita in salad),Grain,80.0,2.0,12.0,3.0,1.0,0.5,150.0,0.0,Daily Food & Nutrition Dataset
+586,Sumac (1/2 tsp dressing),Condiment,5.0,0.1,1.0,0.2,0.5,0.0,1.0,0.0,Daily Food & Nutrition Dataset
+587,Pomegranate Molasses (1 tsp),Condiment,15.0,0.0,4.0,0.0,0.0,4.0,0.0,0.0,Daily Food & Nutrition Dataset

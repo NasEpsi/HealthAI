@@ -32,5 +32,19 @@ services:
       - ./backend/src:/app/src
       - ./data:/app/data
 
+  scheduler:
+    build: ./backend
+    container_name: healthai_scheduler
+    env_file: .env
+    depends_on:
+      - db
+    volumes:
+      - ./backend/src:/app/src
+      - ./data:/app/data
+    command: >
+      sh -c "echo '0 2 * * * cd /app && python -m healthai.etl.run_pipeline >> /app/data/logs/pipeline.log 2>&1' > /etc/crontabs/root
+      && mkdir -p /app/data/logs
+      && crond -f -l 8"
+
 volumes:
   pgdata:

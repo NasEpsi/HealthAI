@@ -1,0 +1,9 @@
+workout_type,count
+Strength,409
+Cardio,378
+Yoga,375
+HIIT,343
+UNKNOWN,49
+\tYoga,10
+\nStrength,10
+\tCardio,7

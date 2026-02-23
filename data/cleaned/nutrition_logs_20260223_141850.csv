@@ -1,0 +1,1774 @@
+id_nutrition_log,log_date,meal_type,water_intake_ml,id_user,id_food,food_item,category,calories_kcal,protein_g,carbohydrates_g,fat_g
+1,2026-02-23,Breakfast,250,,1,Scrambled Eggs (2 large),Protein/Dairy,180.0,12.0,2.0,14.0
+2,2026-02-23,Breakfast,0,,2,Whole Wheat Toast (1 slice),Grain,80.0,4.0,14.0,1.0
+3,2026-02-23,Breakfast,0,,3,Coffee (black),Beverage,5.0,0.3,0.0,0.1
+4,2026-02-23,Breakfast,0,,4,Banana,Fruit,105.0,1.3,27.0,0.4
+5,2026-02-23,Lunch,500,,5,Grilled Chicken Salad,Meal/Protein,350.0,30.0,10.0,20.0
+6,2026-02-23,Snack,0,,6,Apple,Fruit,95.0,0.5,25.0,0.3
+7,2026-02-23,Dinner,250,,7,Salmon (4oz grilled),Protein/Fish,230.0,25.0,0.0,14.0
+8,2026-02-23,Dinner,0,,8,Quinoa (1 cup cooked),Grain,222.0,8.0,39.0,3.6
+9,2026-02-23,Dinner,0,,9,Steamed Broccoli (1 cup),Vegetable,55.0,3.7,11.2,0.6
+10,2026-02-23,Snack,250,,10,Greek Yogurt (plain 1 cup),Dairy,150.0,25.0,8.0,3.0
+11,2026-02-23,Breakfast,250,,11,Oatmeal (1 cup cooked),Grain,160.0,6.0,28.0,3.0
+12,2026-02-23,Breakfast,0,,12,Blueberries (1/2 cup),Fruit,42.0,0.5,11.0,0.2
+13,2026-02-23,Snack,0,,13,Almonds (1 oz),Nut,164.0,6.0,6.0,14.0
+14,2026-02-23,Lunch,500,,14,Turkey Sandwich (on wheat),Meal/Processed,340.0,22.0,34.0,12.0
+15,2026-02-23,Snack,0,,15,Carrot Sticks (1 cup),Vegetable,52.0,1.2,12.3,0.3
+16,2026-02-23,Dinner,250,,16,Spaghetti Bolognese,Meal/Pasta,460.0,20.0,55.0,18.0
+17,2026-02-23,Dinner,0,,17,Side Salad (light dressing),Vegetable,70.0,2.0,8.0,4.0
+18,2026-02-23,Snack,500,,18,Protein Shake (Whey),Supplement,120.0,24.0,3.0,1.0
+19,2026-02-23,Breakfast,0,,19,Cereal (Frosted Flakes 1 cup),Grain/Processed,130.0,2.0,31.0,0.0
+20,2026-02-23,Lunch,250,,20,Lentil Soup (1 can),Meal/Legume,230.0,15.0,35.0,3.0
+21,2026-02-23,Dinner,0,,21,White Rice (1 cup cooked),Grain,204.0,4.2,44.5,0.4
+22,2026-02-23,Dinner,250,,22,Tofu Stir-fry,Meal/Vegetarian,400.0,18.0,30.0,22.0
+23,2026-02-23,Snack,0,,23,Orange,Fruit,62.0,1.2,15.4,0.2
+24,2026-02-23,Breakfast,250,,24,Bagel (plain),Grain,270.0,11.0,55.0,1.5
+25,2026-02-23,Breakfast,0,,25,Cream Cheese (2 tbsp),Dairy,100.0,2.0,2.0,10.0
+26,2026-02-23,Lunch,500,,26,Tuna Salad (1/2 cup),Meal/Fish,190.0,19.0,2.0,12.0
+27,2026-02-23,Lunch,0,,27,Crackers (5 whole wheat),Grain/Processed,90.0,2.0,14.0,3.0
+28,2026-02-23,Dinner,250,,28,Beef Steak (6oz sirloin),Protein/Meat,270.0,42.0,0.0,10.0
+29,2026-02-23,Dinner,0,,29,Baked Potato (medium),Vegetable,160.0,4.3,36.0,0.2
+30,2026-02-23,Snack,0,,30,Ice Cream (1/2 cup vanilla),Dairy/Dessert,145.0,2.5,17.0,7.5
+31,2026-02-23,Dinner,250,,31,Pizza (1 slice pepperoni),Meal/Processed,290.0,12.0,34.0,12.0
+32,2026-02-23,Breakfast,500,,32,Avocado Toast (1 slice),Meal/Vegetarian,260.0,7.0,28.0,15.0
+33,2026-02-23,Snack,0,,33,Hard-Boiled Egg (1 large),Protein,78.0,6.3,0.6,5.3
+34,2026-02-23,Lunch,250,,34,Chicken Wrap (with tortilla),Meal/Processed,410.0,25.0,38.0,17.0
+35,2026-02-23,Snack,0,,35,Grapes (1 cup),Fruit,104.0,1.1,27.0,0.2
+36,2026-02-23,Snack,0,,36,Cottage Cheese (1/2 cup),Dairy,90.0,12.0,5.0,3.0
+37,2026-02-23,Dinner,500,,37,Burger (cheeseburger),Meal/Processed,550.0,30.0,40.0,30.0
+38,2026-02-23,Dinner,0,,38,French Fries (medium),Vegetable/Processed,340.0,4.0,44.0,17.0
+39,2026-02-23,Snack,500,,39,Protein Bar,Supplement/Processed,210.0,20.0,22.0,7.0
+40,2026-02-23,Lunch,0,,40,Black Beans (1/2 cup),Legume,114.0,7.6,20.4,0.5
+41,2026-02-23,Lunch,0,,41,Salsa (1/4 cup),Vegetable,20.0,0.8,4.5,0.1
+42,2026-02-23,Lunch,250,,42,Chicken Noodle Soup (1 can),Meal/Processed,150.0,7.0,18.0,5.0
+43,2026-02-23,Snack,0,,43,Peanut Butter (2 tbsp),Nut,190.0,7.0,8.0,16.0
+44,2026-02-23,Snack,0,,44,Celery Sticks (1 cup),Vegetable,14.0,0.6,3.0,0.2
+45,2026-02-23,Dinner,250,,45,Cod (4oz baked),Protein/Fish,95.0,20.0,0.0,0.8
+46,2026-02-23,Dinner,0,,46,Green Beans (1 cup),Vegetable,31.0,1.8,7.0,0.2
+47,2026-02-23,Snack,0,,47,Chocolate Chip Cookie (1 large),Dessert,220.0,2.5,30.0,11.0
+48,2026-02-23,Dinner,250,,48,Shrimp (3oz steamed),Protein/Fish,84.0,20.0,0.2,0.2
+49,2026-02-23,Breakfast,0,,49,Pancakes (2 medium),Grain,180.0,5.0,30.0,5.0
+50,2026-02-23,Breakfast,0,,50,Maple Syrup (2 tbsp),Condiment,104.0,0.0,27.0,0.0
+51,2026-02-23,Breakfast,0,,51,Sausage Link (1 cooked),Protein/Meat,85.0,5.0,1.0,7.0
+52,2026-02-23,Breakfast,250,,52,Smoothie (Fruit & Yogurt),Beverage/Meal,280.0,12.0,55.0,3.0
+53,2026-02-23,Lunch,0,,53,Tofu (4oz firm),Protein/Vegetarian,90.0,10.0,3.0,5.0
+54,2026-02-23,Lunch,0,,54,Brown Rice (1 cup cooked),Grain,215.0,5.0,45.0,1.8
+55,2026-02-23,Lunch,0,,55,Bell Pepper (1 medium red),Vegetable,31.0,1.2,6.0,0.3
+56,2026-02-23,Snack,0,,56,Hummus (2 tbsp),Legume,70.0,2.0,4.0,5.0
+57,2026-02-23,Snack,0,,57,Pita Bread (1 whole wheat),Grain,170.0,6.0,35.0,1.5
+58,2026-02-23,Dinner,250,,58,Pork Chop (4oz grilled),Protein/Meat,220.0,30.0,0.0,10.0
+59,2026-02-23,Dinner,0,,59,Mashed Potatoes (1 cup),Vegetable,230.0,4.0,35.0,8.0
+60,2026-02-23,Dinner,0,,60,Corn (1 cup),Vegetable,132.0,4.7,30.0,1.8
+61,2026-02-23,Snack,355,,61,Soda (1 can Coke),Beverage,140.0,0.0,39.0,0.0
+62,2026-02-23,Snack,0,,62,Pretzels (1 oz),Grain/Processed,110.0,3.0,23.0,1.0
+63,2026-02-23,Snack,0,,63,Cheddar Cheese (1 oz),Dairy,115.0,7.0,1.0,9.5
+64,2026-02-23,Lunch,250,,64,Caesar Salad (with chicken),Meal/Protein,470.0,30.0,15.0,30.0
+65,2026-02-23,Breakfast,240,,65,Orange Juice (1 cup),Beverage,112.0,1.7,25.8,0.5
+66,2026-02-23,Breakfast,0,,66,Bacon (2 slices cooked),Protein/Meat,86.0,6.0,0.2,6.8
+67,2026-02-23,Breakfast,0,,67,Waffles (2 homemade),Grain,220.0,6.0,28.0,9.0
+68,2026-02-23,Snack,0,,68,Pear,Fruit,101.0,0.6,27.0,0.2
+69,2026-02-23,Lunch,500,,69,Chicken Breast (4oz roasted),Protein/Meat,185.0,35.0,0.0,4.0
+70,2026-02-23,Snack,0,,70,Mixed Nuts (1/4 cup),Nut,200.0,6.0,8.0,18.0
+71,2026-02-23,Dinner,0,,71,Tilapia (4oz baked),Protein/Fish,110.0,22.0,0.0,2.5
+72,2026-02-23,Dinner,0,,72,Asparagus (1 cup steamed),Vegetable,40.0,4.3,7.4,0.4
+73,2026-02-23,Dinner,0,,73,Sweet Potato (1 medium baked),Vegetable,103.0,2.3,23.6,0.2
+74,2026-02-23,Snack,250,,74,Popcorn (3 cups air-popped),Grain,93.0,3.0,18.6,1.1
+75,2026-02-23,Snack,0,,75,Raisins (1/4 cup),Fruit,130.0,1.3,34.0,0.2
+76,2026-02-23,Lunch,250,,76,Macaroni & Cheese (1 cup),Meal/Pasta,350.0,10.0,40.0,17.0
+77,2026-02-23,Lunch,0,,77,Tomato Soup (1 can),Meal/Vegetable,170.0,4.0,25.0,6.0
+78,2026-02-23,Lunch,0,,78,Grilled Cheese Sandwich,Meal/Processed,390.0,15.0,32.0,22.0
+79,2026-02-23,Dinner,500,,79,Beef Tacos (2 hard shell),Meal/Meat,380.0,18.0,28.0,22.0
+80,2026-02-23,Dinner,0,,80,Refried Beans (1/2 cup),Legume,115.0,7.0,19.0,1.0
+81,2026-02-23,Dinner,0,,81,Guacamole (1/4 cup),Vegetable/Condiment,90.0,1.0,4.0,8.0
+82,2026-02-23,Snack,0,,82,Watermelon (1 cup diced),Fruit,46.0,0.9,11.5,0.2
+83,2026-02-23,Breakfast,250,,83,English Muffin (whole wheat),Grain,134.0,6.0,26.0,1.0
+84,2026-02-23,Lunch,250,,84,Peanut Butter & Jelly Sandwich,Meal/Processed,390.0,12.0,50.0,17.0
+85,2026-02-23,Lunch,0,,85,Clam Chowder (1 cup),Meal/Seafood,200.0,10.0,18.0,9.0
+86,2026-02-23,Snack,500,,86,Iced Tea (Sweetened 16oz),Beverage,180.0,0.0,46.0,0.0
+87,2026-02-23,Dinner,250,,87,Lasagna (1 serving meat),Meal/Pasta,350.0,20.0,30.0,17.0
+88,2026-02-23,Dinner,0,,88,Garlic Bread (1 slice),Grain,150.0,4.0,18.0,7.0
+89,2026-02-23,Snack,0,,89,Chocolate Milk (1 cup),Beverage/Dairy,200.0,8.0,26.0,8.0
+90,2026-02-23,Breakfast,0,,90,White Bread (1 slice),Grain,70.0,2.0,13.0,1.0
+91,2026-02-23,Breakfast,0,,91,Jelly (1 tbsp grape),Condiment,50.0,0.0,13.0,0.0
+92,2026-02-23,Lunch,250,,92,Veggie Burger (1 patty),Protein/Vegetarian,120.0,11.0,10.0,4.0
+93,2026-02-23,Lunch,0,,93,Bun (hamburger),Grain,140.0,4.0,26.0,2.0
+94,2026-02-23,Lunch,0,,94,Ketchup (1 tbsp),Condiment,20.0,0.2,5.0,0.1
+95,2026-02-23,Breakfast,250,,95,Muffin (Blueberry 1 large),Grain/Dessert,380.0,5.0,55.0,16.0
+96,2026-02-23,Breakfast,250,,96,Coffee (with cream/sugar),Beverage,50.0,0.5,5.0,3.0
+97,2026-02-23,Snack,0,,97,Potato Chips (1 oz),Snack/Processed,160.0,2.0,15.0,10.0
+98,2026-02-23,Dinner,0,,98,Tzatziki Sauce (2 tbsp),Condiment/Dairy,30.0,1.5,2.0,2.0
+99,2026-02-23,Dinner,0,,99,Scallops (3oz seared),Protein/Seafood,95.0,17.0,5.0,1.0
+100,2026-02-23,Dinner,0,,100,Risotto (Mushroom 1 cup),Meal/Grain,250.0,7.0,35.0,9.0
+101,2026-02-23,Lunch,250,,101,Caprese Salad,Meal/Vegetable,240.0,10.0,8.0,18.0
+102,2026-02-23,Lunch,0,,102,Balsamic Vinaigrette (2 tbsp),Condiment,90.0,0.0,3.0,9.0
+103,2026-02-23,Snack,0,,103,Cherries (1 cup),Fruit,77.0,1.6,19.0,0.5
+104,2026-02-23,Breakfast,0,,104,Turkey Bacon (2 slices),Protein/Meat,70.0,6.0,1.0,5.0
+105,2026-02-23,Breakfast,0,,105,Grits (1 cup cooked),Grain,150.0,3.0,32.0,1.0
+106,2026-02-23,Breakfast,0,,106,Butter (1 tbsp),Condiment/Dairy,100.0,0.1,0.0,11.0
+107,2026-02-23,Lunch,500,,107,Meatball Sub (6 inch),Meal/Processed,580.0,28.0,55.0,27.0
+108,2026-02-23,Snack,0,,108,Kiwifruit (1 medium),Fruit,46.0,0.9,11.1,0.4
+109,2026-02-23,Snack,0,,109,Beef Jerky (1 oz),Snack/Processed,116.0,9.4,3.1,7.2
+110,2026-02-23,Snack,0,,110,Figs (2 medium),Fruit,74.0,0.6,19.2,0.3
+111,2026-02-23,Dinner,250,,111,Lobster (3oz steamed),Protein/Seafood,76.0,16.0,0.0,0.7
+112,2026-02-23,Dinner,0,,112,Melted Butter (for lobster),Condiment,200.0,0.2,0.0,22.0
+113,2026-02-23,Dinner,0,,113,Corn on the Cob (1 large),Vegetable,125.0,5.0,29.0,1.5
+114,2026-02-23,Lunch,250,,114,Vegetable Soup (1 can),Meal/Vegetable,140.0,4.0,22.0,4.0
+115,2026-02-23,Lunch,0,,115,Saltine Crackers (5 crackers),Grain/Processed,60.0,1.0,10.0,1.5
+116,2026-02-23,Snack,0,,116,Mango (1 cup slices),Fruit,99.0,1.4,24.7,0.6
+117,2026-02-23,Snack,250,,117,Cheesecake (1 slice),Dessert,320.0,5.0,28.0,21.0
+118,2026-02-23,Dinner,500,,118,Pad Thai (Chicken 1.5 cups),Meal/Pasta,550.0,25.0,60.0,22.0
+119,2026-02-23,Dinner,0,,119,Spring Roll (Veg 2 rolls),Snack/Processed,180.0,4.0,25.0,7.0
+120,2026-02-23,Snack,240,,120,Coconut Water (1 cup),Beverage,46.0,1.7,8.9,0.5
+121,2026-02-23,Side,0,,121,Kimchi (1/2 cup),Vegetable,22.0,1.7,4.0,0.4
+122,2026-02-23,Lunch,0,,122,Sashimi (Salmon 3 pcs),Protein/Fish,120.0,18.0,0.0,5.0
+123,2026-02-23,Lunch,0,,123,Wasabi (1 tsp),Condiment,10.0,0.1,2.2,0.1
+124,2026-02-23,Lunch,0,,124,Seaweed Salad (1/2 cup),Vegetable,60.0,2.0,8.0,3.0
+125,2026-02-23,Lunch,250,,125,French Onion Soup (1 cup),Meal,150.0,6.0,15.0,7.0
+126,2026-02-23,Lunch,0,,126,Croutons (1/4 cup),Grain,50.0,1.5,7.0,2.0
+127,2026-02-23,Dinner,250,,127,Shepherd's Pie (1 serving),Meal/Meat,400.0,20.0,35.0,20.0
+128,2026-02-23,Dinner,0,,128,Green Peas (1/2 cup),Legume,62.0,4.1,11.1,0.2
+129,2026-02-23,Snack,0,,129,Apple Pie (1 slice),Dessert,410.0,3.0,58.0,19.0
+130,2026-02-23,Snack,180,,130,Gin & Tonic (1 drink),Beverage,170.0,0.0,13.0,0.0
+131,2026-02-23,Dinner,0,,131,Red Wine (5 oz glass),Beverage,125.0,0.1,3.8,0.0
+132,2026-02-23,Dinner,250,,132,Halibut (4oz baked),Protein/Fish,125.0,24.0,0.0,2.5
+133,2026-02-23,Lunch,250,,133,Quinoa Salad (1 cup),Meal/Vegetarian,260.0,9.0,32.0,12.0
+134,2026-02-23,Snack,240,,134,Lemonade (1 cup),Beverage,99.0,0.1,26.0,0.0
+135,2026-02-23,Snack,0,,135,Pistachios (1 oz shelled),Nut,159.0,5.7,7.7,12.8
+136,2026-02-23,Breakfast,0,,136,Oat Milk (1 cup),Beverage/Dairy-Alt,120.0,3.0,16.0,5.0
+137,2026-02-23,Breakfast,250,,137,Biscuits and Gravy (1 serving),Meal/Processed,480.0,10.0,45.0,28.0
+138,2026-02-23,Breakfast,0,,138,Avocado (1/2 fruit),Fruit,160.0,2.0,8.5,14.7
+139,2026-02-23,Breakfast,0,,139,Corn Flakes (1 cup),Grain,100.0,2.0,24.0,0.0
+140,2026-02-23,Dinner,0,,140,T-Bone Steak (6oz),Protein/Meat,460.0,38.0,0.0,33.0
+141,2026-02-23,Dinner,0,,141,Creamed Spinach (1/2 cup),Vegetable,190.0,5.0,8.0,16.0
+142,2026-02-23,Snack,0,,142,Pecans (1 oz),Nut,196.0,2.6,3.9,20.4
+143,2026-02-23,Snack,0,,143,Fruit Cocktail (canned 1 cup),Fruit,110.0,1.0,28.0,0.0
+144,2026-02-23,Lunch,500,,144,Ramen (Instant 1 pack),Meal/Processed,380.0,9.0,53.0,14.0
+145,2026-02-23,Snack,473,,145,Mocha Latte (16oz),Beverage,360.0,12.0,48.0,15.0
+146,2026-02-23,Snack,0,,146,Cucumber Slices (1 cup),Vegetable,16.0,0.7,3.6,0.1
+147,2026-02-23,Lunch,0,,147,Feta Cheese (1 oz),Dairy,75.0,4.0,1.2,6.1
+148,2026-02-23,Lunch,0,,148,Olives (Kalamata 5 large),Fruit,35.0,0.2,1.0,3.5
+149,2026-02-23,Dinner,250,,149,Chicken Alfredo (1.5 cups),Meal/Pasta,680.0,35.0,45.0,38.0
+150,2026-02-23,Dinner,0,,150,Breadstick (1 large),Grain,160.0,4.0,28.0,3.0
+151,2026-02-23,Lunch,500,,151,Cobb Salad,Meal/Protein,510.0,30.0,12.0,38.0
+152,2026-02-23,Lunch,0,,152,Blue Cheese Dressing (2 tbsp),Condiment,150.0,1.0,2.0,16.0
+153,2026-02-23,Snack,0,,153,Mandarin Orange (1 medium),Fruit,37.0,0.6,9.3,0.2
+154,2026-02-23,Snack,0,,154,Cashews (1 oz roasted),Nut,163.0,4.3,9.2,13.1
+155,2026-02-23,Breakfast,0,,155,Eggo Waffle (2 waffles),Grain/Processed,180.0,4.0,30.0,5.0
+156,2026-02-23,Lunch,355,,156,Diet Soda (1 can),Beverage,0.0,0.0,0.0,0.0
+157,2026-02-23,Lunch,250,,157,Pulled Pork Sandwich,Meal/Meat,480.0,25.0,48.0,20.0
+158,2026-02-23,Snack,0,,158,Macadamia Nuts (1 oz),Nut,204.0,2.2,3.9,21.5
+159,2026-02-23,Dinner,250,,159,Crab Cakes (2 medium),Meal/Seafood,340.0,20.0,18.0,20.0
+160,2026-02-23,Dinner,0,,160,Tartar Sauce (2 tbsp),Condiment,60.0,0.2,2.0,5.5
+161,2026-02-23,Snack,0,,161,Lemon Bar (1 square),Dessert,150.0,1.5,22.0,6.0
+162,2026-02-23,Breakfast,240,,162,Almond Milk (Unsweetened 1 cup),Beverage/Dairy-Alt,30.0,1.0,1.0,2.5
+163,2026-02-23,Breakfast,0,,163,Rice Krispies (1.5 cups),Grain,160.0,3.0,37.0,0.5
+164,2026-02-23,Breakfast,0,,164,Sugar (1 tsp for cereal),Condiment,16.0,0.0,4.0,0.0
+165,2026-02-23,Lunch,0,,165,Tuna (Canned 3oz in water),Protein/Fish,90.0,20.0,0.0,1.0
+166,2026-02-23,Lunch,0,,166,Mayonnaise (1 tbsp),Condiment,90.0,0.1,0.1,10.0
+167,2026-02-23,Lunch,0,,167,Pickle (1 spear dill),Vegetable,5.0,0.2,1.0,0.1
+168,2026-02-23,Lunch,250,,168,Lobster Bisque (1 cup),Meal/Seafood,250.0,8.0,12.0,18.0
+169,2026-02-23,Lunch,500,,169,Reuben Sandwich,Meal/Processed,650.0,28.0,35.0,40.0
+170,2026-02-23,Lunch,0,,170,Sauerkraut (1/4 cup side),Vegetable,7.0,0.3,1.5,0.0
+171,2026-02-23,Dinner,0,,171,Mushroom (White 1 cup sliced),Vegetable,15.0,2.2,2.3,0.2
+172,2026-02-23,Breakfast,240,,172,Soy Milk (Original 1 cup),Beverage/Dairy-Alt,110.0,8.0,9.0,4.5
+173,2026-02-23,Dinner,250,,173,Chicken Tikka Masala (1.5 cups),Meal/Meat,480.0,30.0,20.0,30.0
+174,2026-02-23,Dinner,0,,174,Naan Bread (1 piece),Grain,260.0,8.0,45.0,5.0
+175,2026-02-23,Dinner,0,,175,Cucumber Salad (1/2 cup),Vegetable,40.0,1.0,5.0,2.0
+176,2026-02-23,Snack,180,,176,Vodka Soda (1 drink),Beverage,100.0,0.0,0.0,0.0
+177,2026-02-23,Breakfast,250,,177,Chocolate Croissant,Dessert,350.0,6.0,40.0,19.0
+178,2026-02-23,Dinner,0,,178,Sweet & Sour Chicken (1 cup),Meal/Processed,380.0,18.0,45.0,15.0
+179,2026-02-23,Dinner,0,,179,Egg Drop Soup (1 cup),Meal/Vegetable,65.0,5.0,6.0,2.0
+180,2026-02-23,Snack,0,,180,String Cheese (1 stick),Dairy,80.0,6.0,1.0,6.0
+181,2026-02-23,Lunch,250,,181,Turkey Burger (1 patty),Protein/Meat,160.0,22.0,2.0,8.0
+182,2026-02-23,Lunch,0,,182,Potato Salad (1/2 cup),Meal/Vegetable,180.0,2.0,19.0,11.0
+183,2026-02-23,Breakfast,240,,183,Cranberry Juice (1 cup),Beverage,130.0,0.0,33.0,0.0
+184,2026-02-23,Dinner,250,,184,Chicken Piccata (1 serving),Meal/Meat,350.0,30.0,10.0,20.0
+185,2026-02-23,Dinner,0,,185,Angel Hair Pasta (1 cup),Grain,200.0,7.0,42.0,1.0
+186,2026-02-23,Dinner,0,,186,Olive Oil (1 tbsp),Condiment,120.0,0.0,0.0,14.0
+187,2026-02-23,Dinner,0,,187,Garlic (1 clove),Vegetable,4.0,0.2,0.9,0.0
+188,2026-02-23,Snack,0,,188,Salami (3 slices),Protein/Processed,110.0,6.0,1.0,9.0
+189,2026-02-23,Snack,0,,189,Provolone Cheese (1 slice),Dairy,100.0,7.0,1.0,8.0
+190,2026-02-23,Snack,355,,190,Ginger Ale (1 can),Beverage,124.0,0.0,32.0,0.0
+191,2026-02-23,Dinner,0,,191,Shrimp Scampi (1 cup),Meal/Seafood,380.0,22.0,40.0,15.0
+192,2026-02-23,Snack,250,,192,Tiramisu (1 slice),Dessert,450.0,7.0,42.0,28.0
+193,2026-02-23,Breakfast,250,,193,Cereal Bar (Fruit),Snack/Processed,140.0,2.0,30.0,3.0
+194,2026-02-23,Dinner,250,,194,Veal Parmesan (1 serving),Meal/Meat,550.0,40.0,30.0,30.0
+195,2026-02-23,Dinner,0,,195,Spaghetti (side),Grain,100.0,3.5,21.0,0.5
+196,2026-02-23,Snack,240,,196,Hot Chocolate (1 cup),Beverage,200.0,3.0,30.0,8.0
+197,2026-02-23,Dinner,0,,197,Coconut Shrimp (5 pcs),Meal/Seafood,320.0,10.0,25.0,20.0
+198,2026-02-23,Dinner,0,,198,Sweet Chili Sauce (2 tbsp),Condiment,70.0,0.0,17.0,0.0
+199,2026-02-23,Dinner,0,,199,White Wine (5 oz glass),Beverage,121.0,0.1,3.8,0.0
+200,2026-02-23,Snack,250,,200,Trail Mix (1/4 cup),Snack/Processed,190.0,5.0,20.0,12.0
+201,2026-02-23,Snack,0,,201,Onion Rings (6 rings),Snack/Processed,280.0,4.0,30.0,16.0
+202,2026-02-23,Breakfast,0,,202,Poached Egg (1 large),Protein,72.0,6.3,0.4,4.8
+203,2026-02-23,Breakfast,0,,203,Canadian Bacon (2 slices),Protein/Meat,80.0,12.0,1.0,3.0
+204,2026-02-23,Breakfast,250,,204,Eggs Benedict (1 serving),Meal/Protein,600.0,25.0,30.0,40.0
+205,2026-02-23,Breakfast,0,,205,Hollandaise Sauce (2 tbsp),Condiment,110.0,1.0,0.5,12.0
+206,2026-02-23,Snack,0,,206,Spinach Artichoke Dip (1/4 cup),Snack/Processed,160.0,5.0,6.0,14.0
+207,2026-02-23,Snack,0,,207,Tortilla Chips (1 oz),Snack/Processed,140.0,2.0,19.0,7.0
+208,2026-02-23,Dinner,250,,208,Chicken Kebab (2 skewers),Meal/Meat,280.0,30.0,8.0,14.0
+209,2026-02-23,Dinner,0,,209,Bell Peppers & Onions (sautéed),Vegetable,60.0,1.5,10.0,2.0
+210,2026-02-23,Lunch,500,,210,Hummus Wrap (large),Meal/Vegetarian,450.0,15.0,60.0,18.0
+211,2026-02-23,Snack,240,,211,Kombucha (1 cup),Beverage,30.0,0.0,7.0,0.0
+212,2026-02-23,Dinner,0,,212,Beef Stroganoff (1.5 cups),Meal/Pasta,550.0,30.0,40.0,28.0
+213,2026-02-23,Dinner,0,,213,Egg Noodles (1 cup cooked),Grain,220.0,8.0,40.0,3.0
+214,2026-02-23,Lunch,250,,214,Cottage Cheese (1 cup low fat),Dairy,160.0,28.0,6.0,2.5
+215,2026-02-23,Lunch,0,,215,Tomato (1 medium sliced),Vegetable,22.0,1.1,4.8,0.2
+216,2026-02-23,Lunch,0,,216,Black Pepper (1 tsp),Condiment,6.0,0.2,1.5,0.1
+217,2026-02-23,Snack,0,,217,Chocolate Pudding (1/2 cup),Dessert,150.0,2.0,28.0,4.0
+218,2026-02-23,Dinner,0,,218,Mackerel (3oz cooked),Protein/Fish,175.0,16.0,0.0,12.0
+219,2026-02-23,Dinner,0,,219,Collard Greens (1 cup cooked),Vegetable,60.0,5.0,10.0,1.0
+220,2026-02-23,Lunch,0,,220,Ham (3oz deli sliced),Protein/Meat,110.0,16.0,2.0,4.0
+221,2026-02-23,Lunch,0,,221,Swiss Cheese (1 slice),Dairy,106.0,7.6,1.0,8.0
+222,2026-02-23,Lunch,0,,222,Rye Bread (1 slice),Grain,83.0,2.7,15.5,1.1
+223,2026-02-23,Lunch,250,,223,Potato Leek Soup (1 cup),Meal/Vegetable,180.0,4.0,25.0,7.0
+224,2026-02-23,Snack,0,,224,Brie Cheese (1 oz),Dairy,95.0,6.0,0.1,7.9
+225,2026-02-23,Snack,0,,225,Water Cracker (5 crackers),Grain/Processed,70.0,1.5,12.0,1.5
+226,2026-02-23,Breakfast,0,,226,Grapefruit (1/2 medium),Fruit,52.0,1.1,13.2,0.2
+227,2026-02-23,Snack,0,,227,Veggie Straws (1 oz),Snack/Processed,130.0,1.0,17.0,7.0
+228,2026-02-23,Dinner,500,,228,Fish Tacos (2 tacos),Meal/Fish,420.0,25.0,40.0,18.0
+229,2026-02-23,Dinner,0,,229,Cabbage Slaw (side),Vegetable,60.0,1.0,8.0,3.0
+230,2026-02-23,Dinner,0,,230,Lime (juice of 1),Condiment,11.0,0.2,3.7,0.0
+231,2026-02-23,Snack,355,,231,Beer (12 oz light),Beverage,103.0,0.9,5.8,0.0
+232,2026-02-23,Breakfast,250,,232,Danish (Cheese 1 medium),Dessert,340.0,7.0,38.0,18.0
+233,2026-02-23,Breakfast,240,,233,Kefir (Plain 1 cup),Beverage/Dairy,104.0,10.0,10.0,2.5
+234,2026-02-23,Dinner,0,,234,Gnocchi (1 cup),Meal/Pasta,210.0,4.5,45.0,1.5
+235,2026-02-23,Dinner,0,,235,Pesto Sauce (1/4 cup),Condiment,260.0,5.0,4.0,26.0
+236,2026-02-23,Dinner,0,,236,Pine Nuts (1 tbsp),Nut,95.0,2.0,2.0,10.0
+237,2026-02-23,Snack,355,,237,Chai Latte (12 oz),Beverage,190.0,7.0,32.0,4.0
+238,2026-02-23,Dinner,0,,238,Manicotti (2 shells cheese),Meal/Pasta,380.0,20.0,35.0,18.0
+239,2026-02-23,Dinner,0,,239,Italian Sausage (1 link),Protein/Meat,200.0,12.0,3.0,16.0
+240,2026-02-23,Snack,0,,240,Jicama (1 cup sticks),Vegetable,46.0,0.9,10.6,0.1
+241,2026-02-23,Snack,0,,241,Chili Powder (1 tsp),Condiment,8.0,0.3,1.4,0.4
+242,2026-02-23,Snack,250,,242,Ants on a Log (4 pcs),Snack,180.0,6.0,12.0,12.0
+243,2026-02-23,Lunch,250,,243,Split Pea Soup (1 cup),Meal/Legume,180.0,11.0,30.0,2.0
+244,2026-02-23,Breakfast,250,,244,Ham & Cheese Croissant,Meal/Processed,400.0,15.0,35.0,22.0
+245,2026-02-23,Breakfast,60,,245,Espresso (double shot),Beverage,5.0,0.5,0.0,0.1
+246,2026-02-23,Dinner,0,,246,Ricotta Cheese (1/4 cup),Dairy,85.0,5.5,2.5,6.0
+247,2026-02-23,Lunch,250,,247,Chicken & Rice Soup (1 can),Meal/Processed,130.0,7.0,18.0,3.0
+248,2026-02-23,Dinner,0,,248,Salt (1/4 tsp),Condiment,0.0,0.0,0.0,0.0
+249,2026-02-23,Snack,0,,249,Guava,Fruit,68.0,2.6,14.3,0.9
+250,2026-02-23,Lunch,500,,250,Club Sandwich,Meal/Processed,580.0,35.0,40.0,30.0
+251,2026-02-23,Snack,0,,251,Pickle (1 whole dill),Vegetable,17.0,0.8,3.7,0.2
+252,2026-02-23,Dinner,250,,252,Turkey Chili (1 cup),Meal/Meat,250.0,22.0,25.0,7.0
+253,2026-02-23,Dinner,0,,253,Sour Cream (2 tbsp),Condiment/Dairy,60.0,0.8,1.3,5.8
+254,2026-02-23,Dinner,0,,254,Shredded Cheese (Cheddar 1/4 cup),Dairy,115.0,7.0,1.0,9.5
+255,2026-02-23,Snack,355,,255,Matcha Latte (12 oz),Beverage,180.0,6.0,28.0,5.0
+256,2026-02-23,Breakfast,0,,256,Chocolate Donut (1 medium),Dessert,300.0,4.0,35.0,17.0
+257,2026-02-23,Lunch,250,,257,Tuna Melt,Meal/Processed,450.0,25.0,32.0,25.0
+258,2026-02-23,Snack,240,,258,Apple Cider (1 cup),Beverage,117.0,0.1,29.0,0.3
+259,2026-02-23,Dinner,500,,259,Beef Burrito (large),Meal/Processed,650.0,30.0,70.0,28.0
+260,2026-02-23,Dinner,0,,260,Pico de Gallo (1/4 cup),Condiment,15.0,0.5,3.0,0.0
+261,2026-02-23,Dinner,0,,261,Corn Tortilla (1 medium),Grain,52.0,1.4,11.2,0.7
+262,2026-02-23,Dinner,0,,262,Mussels (3oz steamed),Protein/Seafood,146.0,20.0,6.0,4.0
+263,2026-02-23,Dinner,0,,263,White Wine Sauce (1/4 cup),Condiment,80.0,1.0,4.0,6.0
+264,2026-02-23,Dinner,0,,264,French Bread (2 slices),Grain,180.0,6.0,36.0,1.0
+265,2026-02-23,Snack,0,,265,Blackberries (1 cup),Fruit,62.0,2.0,13.8,0.7
+266,2026-02-23,Breakfast,250,,266,Cheese Danish,Dessert,340.0,7.0,38.0,18.0
+267,2026-02-23,Lunch,250,,267,Chicken Salad Sandwich,Meal/Processed,420.0,20.0,35.0,20.0
+268,2026-02-23,Breakfast,0,,268,Soyrizo (2 oz),Protein/Vegetarian,140.0,10.0,6.0,9.0
+269,2026-02-23,Breakfast,0,,269,Hash Browns (1 cup),Vegetable,330.0,3.0,38.0,19.0
+270,2026-02-23,Breakfast,0,,270,Ketchup (1 packet),Condiment,10.0,0.1,2.5,0.0
+271,2026-02-23,Lunch,500,,271,Philly Cheesesteak (6 inch),Meal/Processed,500.0,25.0,40.0,28.0
+272,2026-02-23,Lunch,0,,272,Cheese Whiz (2 tbsp),Condiment/Processed,90.0,4.0,3.0,7.0
+273,2026-02-23,Lunch,0,,273,Onions (sautéed 1/4 cup),Vegetable,30.0,0.5,5.0,1.0
+274,2026-02-23,Snack,0,,274,Raspberries (1 cup),Fruit,64.0,1.5,14.7,0.8
+275,2026-02-23,Breakfast,0,,275,Cheesy Grits (1 cup),Meal/Grain,210.0,6.0,34.0,6.0
+276,2026-02-23,Dinner,0,,276,Collard Greens (with ham hock),Vegetable,180.0,10.0,15.0,9.0
+277,2026-02-23,Dinner,0,,277,Fried Okra (1 cup),Vegetable,220.0,4.0,25.0,12.0
+278,2026-02-23,Lunch,473,,278,Sweet Tea (16 oz),Beverage,180.0,0.0,46.0,0.0
+279,2026-02-23,Dinner,250,,279,Gyro (1 sandwich),Meal/Meat,600.0,25.0,55.0,30.0
+280,2026-02-23,Dinner,0,,280,Pita Bread (White 1 large),Grain,220.0,7.0,45.0,2.0
+281,2026-02-23,Dinner,0,,98,Tzatziki Sauce (2 tbsp),Condiment/Dairy,30.0,1.5,2.0,2.0
+282,2026-02-23,Snack,0,,281,Baklava (1 piece),Dessert,280.0,3.0,30.0,18.0
+283,2026-02-23,Snack,0,,282,Coconut (shredded 1/4 cup),Fruit,110.0,1.0,4.5,10.5
+284,2026-02-23,Snack,0,,283,S'more (1 serving),Dessert,140.0,2.0,25.0,4.0
+285,2026-02-23,Snack,0,,284,Graham Cracker (1 large rectangle),Grain/Processed,60.0,1.0,11.0,1.5
+286,2026-02-23,Snack,0,,285,Marshmallow (1 large),Dessert,23.0,0.1,5.8,0.0
+287,2026-02-23,Snack,0,,286,Chocolate (Hershey's bar 1 segment),Dessert,25.0,0.3,3.0,1.5
+288,2026-02-23,Lunch,500,,287,Chicken Parm Sandwich,Meal/Processed,650.0,40.0,55.0,30.0
+289,2026-02-23,Lunch,0,,288,Mozzarella (1 slice),Dairy,80.0,6.0,1.0,6.0
+290,2026-02-23,Lunch,0,,289,Bread Roll (hoagie),Grain,200.0,6.0,38.0,2.0
+291,2026-02-23,Dinner,0,,290,Artichoke (1 medium steamed),Vegetable,60.0,4.2,13.4,0.2
+292,2026-02-23,Dinner,0,,291,Mayonnaise (1 tbsp for dipping),Condiment,90.0,0.1,0.1,10.0
+293,2026-02-23,Dinner,0,,292,Calamari (fried 3oz),Meal/Seafood,150.0,13.0,8.0,7.0
+294,2026-02-23,Dinner,0,,293,Lemon Wedge (for calamari),Condiment,3.0,0.1,1.0,0.0
+295,2026-02-23,Snack,355,,294,Root Beer (1 can),Beverage,150.0,0.0,40.0,0.0
+296,2026-02-23,Lunch,0,,295,Chicken McNuggets (6 pcs),Meal/Processed,270.0,15.0,16.0,16.0
+297,2026-02-23,Lunch,0,,296,BBQ Sauce (2 tbsp),Condiment,60.0,0.5,15.0,0.0
+298,2026-02-23,Breakfast,0,,297,Honey (1 tbsp),Condiment,64.0,0.1,17.3,0.0
+299,2026-02-23,Breakfast,250,,298,Tofu Scramble,Meal/Vegetarian,250.0,20.0,8.0,16.0
+300,2026-02-23,Breakfast,0,,299,Turmeric (1 tsp),Condiment,9.0,0.3,1.9,0.1
+301,2026-02-23,Breakfast,0,,300,Nutritional Yeast (1 tbsp),Condiment,20.0,3.0,2.0,0.0
+302,2026-02-23,Dinner,0,,301,Seitan (3oz),Protein/Vegetarian,90.0,18.0,4.0,1.0
+303,2026-02-23,Dinner,240,,302,Vegetable Broth (1 cup),Beverage,15.0,1.0,3.0,0.0
+304,2026-02-23,Dinner,0,,303,Mashed Cauliflower (1 cup),Vegetable,140.0,5.0,12.0,8.0
+305,2026-02-23,Dinner,0,,304,Peanut Sauce (2 tbsp),Condiment,80.0,2.0,4.0,6.0
+306,2026-02-23,Lunch,0,,305,Tempeh (3oz),Protein/Vegetarian,160.0,16.0,8.0,9.0
+307,2026-02-23,Lunch,0,,306,Sauerkraut (1/2 cup),Vegetable,14.0,0.7,3.1,0.1
+308,2026-02-23,Lunch,0,,307,Rye Crispbread (2 slices),Grain,70.0,2.0,14.0,0.5
+309,2026-02-23,Dinner,0,,308,Capers (1 tbsp),Condiment,2.0,0.2,0.4,0.1
+310,2026-02-23,Dinner,0,,309,Chicken Liver (2 oz cooked),Protein/Meat,91.0,13.6,0.6,3.6
+311,2026-02-23,Dinner,0,,310,Onion (1/2 cup raw chopped),Vegetable,32.0,0.9,7.5,0.1
+312,2026-02-23,Dinner,0,,311,Bok Choy (1 cup steamed),Vegetable,10.0,1.5,2.0,0.1
+313,2026-02-23,Snack,0,,312,Gummy Bears (10 pcs),Snack/Dessert,100.0,2.0,22.0,0.0
+314,2026-02-23,Snack,0,,313,Whiskey (1.5 oz shot),Beverage,105.0,0.0,0.1,0.0
+315,2026-02-23,Snack,0,,314,Dates (2 medium Medjool),Fruit,133.0,0.8,36.0,0.1
+316,2026-02-23,Snack,0,,315,Tahini (1 tbsp),Condiment,89.0,2.6,3.2,8.0
+317,2026-02-23,Lunch,0,,316,Chickpeas (1/2 cup canned),Legume,135.0,7.0,22.0,2.0
+318,2026-02-23,Lunch,0,,317,Lettuce (Romaine 2 cups),Vegetable,16.0,1.0,3.0,0.3
+319,2026-02-23,Lunch,0,,318,Italian Dressing (2 tbsp),Condiment,70.0,0.0,3.0,7.0
+320,2026-02-23,Breakfast,0,,319,Turkey Sausage (1 patty),Protein/Meat,70.0,9.0,1.0,4.0
+321,2026-02-23,Breakfast,0,,320,Maple Syrup (1 tbsp),Condiment,52.0,0.0,13.5,0.0
+322,2026-02-23,Lunch,250,,321,Quesadilla (Cheese 1 medium),Meal/Processed,400.0,18.0,35.0,22.0
+323,2026-02-23,Lunch,0,,322,Sour Cream (1 tbsp),Condiment/Dairy,30.0,0.4,0.6,2.9
+324,2026-02-23,Lunch,0,,323,Salsa (2 tbsp),Condiment,10.0,0.5,2.0,0.0
+325,2026-02-23,Dinner,0,,324,Red Cabbage (1 cup raw),Vegetable,22.0,1.1,5.2,0.1
+326,2026-02-23,Dinner,0,,325,Duck (3oz roasted),Protein/Meat,285.0,16.0,0.0,24.0
+327,2026-02-23,Dinner,0,,326,Orange Sauce (1/4 cup for duck),Condiment,90.0,0.5,22.0,0.0
+328,2026-02-23,Dinner,0,,327,Wild Rice (1 cup cooked),Grain,166.0,6.5,35.0,0.6
+329,2026-02-23,Snack,0,,328,Cupcake (Vanilla 1 medium),Dessert,240.0,2.0,35.0,11.0
+330,2026-02-23,Snack,0,,329,Frosting (Vanilla 2 tbsp),Condiment,140.0,0.0,22.0,6.0
+331,2026-02-23,Breakfast,0,,330,Hot Sauce (1 tsp Tabasco),Condiment,0.0,0.0,0.0,0.0
+332,2026-02-23,Lunch,250,,331,Bison Burger (1 patty),Protein/Meat,150.0,22.0,0.0,7.0
+333,2026-02-23,Lunch,0,,332,Pretzel Bun (1 medium),Grain,230.0,8.0,45.0,2.0
+334,2026-02-23,Lunch,0,,333,Spicy Mustard (1 tbsp),Condiment,10.0,0.5,1.0,0.5
+335,2026-02-23,Lunch,0,,334,Pasta Salad (1 cup),Meal/Pasta,280.0,8.0,30.0,14.0
+336,2026-02-23,Lunch,0,,188,Salami (3 slices),Protein/Processed,110.0,6.0,1.0,9.0
+337,2026-02-23,Lunch,0,,335,Pepperoncini (2 peppers),Vegetable,10.0,0.5,2.0,0.0
+338,2026-02-23,Dinner,0,,336,Coconut Milk (1/4 cup canned),Condiment,111.0,1.1,2.9,11.6
+339,2026-02-23,Dinner,0,,337,Green Curry Paste (1 tbsp),Condiment,30.0,0.5,2.0,2.5
+340,2026-02-23,Dinner,0,,338,Chicken Thigh (1 roasted),Protein/Meat,210.0,24.0,0.0,13.0
+341,2026-02-23,Dinner,0,,339,Jasmine Rice (1 cup cooked),Grain,205.0,4.3,45.0,0.4
+342,2026-02-23,Snack,300,,340,Thai Iced Tea (1 glass),Beverage,250.0,3.0,35.0,12.0
+343,2026-02-23,Snack,0,,341,Papaya (1 cup cubes),Fruit,62.0,0.6,15.7,0.4
+344,2026-02-23,Snack,0,,342,Lime Juice (1 tbsp),Condiment,4.0,0.1,1.3,0.0
+345,2026-02-23,Lunch,0,,343,Macaroni Salad (1 cup),Meal/Pasta,380.0,8.0,30.0,25.0
+346,2026-02-23,Lunch,0,,344,Celery (1 stalk),Vegetable,6.0,0.3,1.2,0.1
+347,2026-02-23,Snack,0,,345,Blue Cheese (1 oz),Dairy,100.0,6.0,0.7,8.0
+348,2026-02-23,Snack,0,,346,Dark Chocolate (1 oz 70%),Dessert,170.0,2.2,13.0,12.0
+349,2026-02-23,Breakfast,250,,347,Acai Bowl (1 serving),Meal/Fruit,350.0,5.0,60.0,12.0
+350,2026-02-23,Breakfast,0,,348,Granola (1/4 cup topping),Grain,120.0,3.0,15.0,6.0
+351,2026-02-23,Breakfast,0,,349,Coconut Flakes (1 tbsp topping),Fruit,35.0,0.3,1.5,3.3
+352,2026-02-23,Breakfast,0,,350,Honey (1 tsp drizzle),Condiment,21.0,0.0,5.8,0.0
+353,2026-02-23,Snack,0,,351,Shrimp Cocktail (4 large shrimp),Protein/Seafood,60.0,10.0,1.0,1.0
+354,2026-02-23,Snack,0,,352,Cocktail Sauce (2 tbsp),Condiment,30.0,0.5,7.0,0.0
+355,2026-02-23,Lunch,0,,353,Pork Bun (1 steamed),Meal/Processed,220.0,8.0,30.0,8.0
+356,2026-02-23,Lunch,0,,354,Dim Sum (Siu Mai 3 pcs),Meal/Processed,180.0,12.0,10.0,10.0
+357,2026-02-23,Lunch,0,,355,Soy Sauce (1 tbsp for dipping),Condiment,9.0,1.0,1.0,0.0
+358,2026-02-23,Dinner,0,,356,Oyster (1 medium raw),Protein/Seafood,8.0,1.0,0.5,0.2
+359,2026-02-23,Dinner,0,,357,Mignonette Sauce (1 tbsp),Condiment,5.0,0.0,1.0,0.0
+360,2026-02-23,Dinner,500,,358,Beef Pho (1 large bowl),Meal/Soup,450.0,30.0,55.0,12.0
+361,2026-02-23,Dinner,0,,359,Bean Sprouts (1/4 cup garnish),Vegetable,8.0,0.8,1.5,0.1
+362,2026-02-23,Dinner,0,,360,Thai Basil (garnish),Condiment,1.0,0.1,0.0,0.0
+363,2026-02-23,Dinner,0,,361,Lime Wedge (garnish),Condiment,3.0,0.1,1.0,0.0
+364,2026-02-23,Dinner,0,,362,Jalapeno (1 tbsp sliced),Vegetable,4.0,0.1,0.8,0.1
+365,2026-02-23,Dinner,0,,363,Hoisin Sauce (1 tbsp),Condiment,35.0,0.3,8.0,0.2
+366,2026-02-23,Dinner,0,,364,Sriracha (1 tsp),Condiment,5.0,0.1,1.0,0.1
+367,2026-02-23,Breakfast,0,,365,Crepe (1 plain),Grain,90.0,3.5,14.0,2.0
+368,2026-02-23,Breakfast,0,,366,Nutella (1 tbsp),Condiment,100.0,1.5,11.0,6.0
+369,2026-02-23,Breakfast,0,,367,Powdered Sugar (1 tsp),Condiment,10.0,0.0,2.5,0.0
+370,2026-02-23,Dinner,0,,368,Sake (3 oz),Beverage,117.0,0.4,3.8,0.0
+371,2026-02-23,Snack,250,,369,Edamame (in pod 1 cup),Legume,120.0,11.0,9.0,5.0
+372,2026-02-23,Snack,0,,370,Sea Salt (coarse 1/4 tsp),Condiment,0.0,0.0,0.0,0.0
+373,2026-02-23,Dinner,0,,371,Biryani (Chicken 1.5 cups),Meal/Meat,520.0,28.0,60.0,18.0
+374,2026-02-23,Dinner,0,,372,Raita (2 tbsp),Condiment/Dairy,30.0,1.0,2.0,2.0
+375,2026-02-23,Snack,240,,373,Lassi (Mango 1 cup),Beverage,180.0,5.0,30.0,4.0
+376,2026-02-23,Snack,0,,374,Samosa (1 piece vegetable),Snack/Processed,130.0,2.0,18.0,6.0
+377,2026-02-23,Snack,0,,375,Tamarind Chutney (1 tbsp),Condiment,20.0,0.1,5.0,0.0
+378,2026-02-23,Snack,0,,376,Mint Chutney (1 tbsp),Condiment,5.0,0.2,0.5,0.0
+379,2026-02-23,Snack,0,,377,Pani Puri (6 pcs),Snack/Processed,200.0,4.0,35.0,5.0
+380,2026-02-23,Snack,0,,378,Passion Fruit (1 fruit),Fruit,17.0,0.4,4.2,0.1
+381,2026-02-23,Dinner,500,,379,Kimchi Jjigae (1 bowl),Meal/Soup,350.0,15.0,20.0,22.0
+382,2026-02-23,Dinner,0,,380,Silken Tofu (3oz in soup),Protein/Vegetarian,45.0,5.0,2.0,2.5
+383,2026-02-23,Dinner,0,,381,Pork Belly (1 oz in soup),Protein/Meat,145.0,3.0,0.0,15.0
+384,2026-02-23,Dinner,0,,382,Gochugaru (1 tsp),Condiment,10.0,0.3,1.8,0.3
+385,2026-02-23,Dinner,0,,383,Gochujang (1 tbsp),Condiment,30.0,0.5,6.0,0.0
+386,2026-02-23,Dinner,0,,384,Sesame Oil (1 tsp),Condiment,40.0,0.0,0.0,4.5
+387,2026-02-23,Dinner,0,,385,Fish Sauce (1 tsp),Condiment,5.0,0.4,0.5,0.0
+388,2026-02-23,Dinner,0,,386,Green Onion (1 tbsp garnish),Vegetable,3.0,0.2,0.7,0.0
+389,2026-02-23,Snack,473,,387,Kombucha (16 oz),Beverage,60.0,0.0,14.0,0.0
+390,2026-02-23,Dinner,0,,388,Beef Wellington (1 slice),Meal/Meat,600.0,30.0,35.0,38.0
+391,2026-02-23,Dinner,0,,389,Pate (Mushroom 2 tbsp),Condiment,70.0,1.0,2.0,7.0
+392,2026-02-23,Dinner,0,,390,Puff Pastry (1 oz wrapper),Grain,115.0,1.5,9.0,8.0
+393,2026-02-23,Dinner,0,,391,Prosciutto (1 slice),Protein/Meat,35.0,4.0,0.0,2.5
+394,2026-02-23,Dinner,0,,392,Asparagus (6 spears roasted),Vegetable,40.0,4.0,4.0,2.0
+395,2026-02-23,Dinner,0,,393,Hollandaise Sauce (1 tbsp),Condiment,55.0,0.5,0.2,6.0
+396,2026-02-23,Snack,0,,394,Flan (1 slice),Dessert,220.0,6.0,35.0,7.0
+397,2026-02-23,Snack,0,,395,Caramel Sauce (1 tbsp),Condiment,60.0,0.0,13.0,1.0
+398,2026-02-23,Breakfast,0,,396,Congee (1 cup plain),Meal/Grain,130.0,2.5,28.0,1.0
+399,2026-02-23,Breakfast,0,,397,Pickled Radish (1/4 cup),Vegetable,15.0,0.5,3.0,0.0
+400,2026-02-23,Breakfast,0,,398,Pork Floss (1 tbsp),Protein/Meat,50.0,4.0,3.0,2.0
+401,2026-02-23,Breakfast,0,,399,Century Egg (1 egg),Protein,100.0,7.0,1.0,7.0
+402,2026-02-23,Lunch,0,,400,Arugula (2 cups),Vegetable,10.0,1.0,0.8,0.2
+403,2026-02-23,Lunch,0,,401,Goat Cheese (1 oz),Dairy,103.0,6.1,0.1,8.5
+404,2026-02-23,Lunch,0,,402,Beets (1/2 cup roasted),Vegetable,30.0,0.8,6.8,0.1
+405,2026-02-23,Lunch,0,,403,Walnuts (1 tbsp chopped),Nut,46.0,1.1,1.0,4.6
+406,2026-02-23,Lunch,0,,404,Balsamic Glaze (1 tbsp),Condiment,40.0,0.0,9.0,0.0
+407,2026-02-23,Dinner,0,,405,Bobotie (1 serving),Meal/Meat,450.0,25.0,30.0,25.0
+408,2026-02-23,Dinner,0,,406,Yellow Rice (1 cup),Grain,230.0,4.0,50.0,1.0
+409,2026-02-23,Dinner,0,,407,Chutney (Mango 1 tbsp),Condiment,45.0,0.1,11.0,0.1
+410,2026-02-23,Snack,0,,408,Malva Pudding (1 slice),Dessert,380.0,5.0,60.0,14.0
+411,2026-02-23,Snack,0,,409,Custard (1/4 cup),Condiment,80.0,3.0,10.0,3.0
+412,2026-02-23,Snack,473,,410,Bubble Tea (16 oz milk tea),Beverage,320.0,2.0,70.0,4.0
+413,2026-02-23,Snack,0,,411,Tapioca Pearls (1/4 cup boba),Condiment,100.0,0.0,25.0,0.0
+414,2026-02-23,Dinner,0,,412,Paella (1.5 cups seafood),Meal/Rice,550.0,30.0,70.0,18.0
+415,2026-02-23,Dinner,0,,413,Chorizo (1 oz in paella),Protein/Meat,130.0,6.0,1.0,11.0
+416,2026-02-23,Dinner,0,,414,Saffron (pinch),Condiment,1.0,0.0,0.1,0.0
+417,2026-02-23,Dinner,0,,415,Aioli (Garlic 1 tbsp),Condiment,95.0,0.1,0.5,10.5
+418,2026-02-23,Lunch,240,,416,Gazpacho (1 cup),Meal/Soup,90.0,2.0,12.0,4.0
+419,2026-02-23,Lunch,0,,417,Croutons (Garlic 1/4 cup),Grain,50.0,1.5,7.0,2.0
+420,2026-02-23,Lunch,0,,418,Olive Oil (1 tsp garnish),Condiment,40.0,0.0,0.0,4.5
+421,2026-02-23,Snack,0,,419,Churros (2 sticks),Dessert,240.0,3.0,30.0,12.0
+422,2026-02-23,Snack,0,,420,Chocolate Sauce (1 tbsp dipping),Condiment,50.0,0.5,10.0,1.5
+423,2026-02-23,Snack,0,,421,Cinnamon Sugar (1 tsp),Condiment,20.0,0.0,5.0,0.0
+424,2026-02-23,Snack,240,,422,Horchata (1 cup),Beverage,140.0,2.0,25.0,3.0
+425,2026-02-23,Lunch,0,,423,Ceviche (1 cup fish),Meal/Fish,180.0,25.0,15.0,2.0
+426,2026-02-23,Lunch,0,,424,Red Onion (1/4 cup in ceviche),Vegetable,16.0,0.3,3.7,0.0
+427,2026-02-23,Lunch,0,,425,Cilantro (2 tbsp garnish),Condiment,1.0,0.1,0.0,0.0
+428,2026-02-23,Snack,0,,426,Corn Nuts (1 oz),Snack/Processed,130.0,2.0,23.0,4.0
+429,2026-02-23,Dinner,0,,427,Lomo Saltado (1.5 cups),Meal/Meat,500.0,35.0,45.0,22.0
+430,2026-02-23,Dinner,0,,428,French Fries (as side),Vegetable/Processed,200.0,2.0,25.0,10.0
+431,2026-02-23,Dinner,0,,429,Soy Sauce (1 tbsp in stir-fry),Condiment,9.0,1.0,1.0,0.0
+432,2026-02-23,Dinner,0,,430,Aji Amarillo Paste (1 tsp),Condiment,5.0,0.1,1.0,0.0
+433,2026-02-23,Snack,180,,431,Pisco Sour (1 drink),Beverage,250.0,1.0,25.0,0.0
+434,2026-02-23,Snack,0,,432,Egg White (in drink),Condiment,17.0,3.6,0.2,0.0
+435,2026-02-23,Snack,0,,433,Angostura Bitters (dash),Condiment,5.0,0.0,0.0,0.0
+436,2026-02-23,Snack,0,,434,Alfajores (1 cookie),Dessert,180.0,2.0,22.0,10.0
+437,2026-02-23,Snack,0,,435,Dulce de Leche (1 tbsp filling),Condiment,65.0,1.0,12.0,1.5
+438,2026-02-23,Snack,0,,436,Coconut (shredded garnish),Fruit,10.0,0.1,0.5,1.0
+439,2026-02-23,Breakfast,240,,437,Mate (1 cup),Beverage,5.0,0.2,1.0,0.0
+440,2026-02-23,Breakfast,0,,438,Media Luna (1 pastry),Grain,190.0,4.0,25.0,8.0
+441,2026-02-23,Dinner,0,,439,Chimichurri (1 tbsp),Condiment,45.0,0.1,0.5,4.5
+442,2026-02-23,Dinner,0,,440,Skirt Steak (4oz grilled),Protein/Meat,240.0,26.0,0.0,15.0
+443,2026-02-23,Dinner,0,,441,Provoleta (1 oz grilled cheese),Dairy,100.0,7.0,1.0,8.0
+444,2026-02-23,Dinner,0,,442,Oregano (1 tsp),Condiment,3.0,0.1,0.7,0.0
+445,2026-02-23,Lunch,0,,443,Empanada (Beef 1 medium),Meal/Processed,290.0,10.0,28.0,16.0
+446,2026-02-23,Dinner,0,,444,Chicken Milanesa (1 serving),Meal/Meat,450.0,35.0,30.0,22.0
+447,2026-02-23,Dinner,0,,445,Mashed Potatoes (side),Vegetable,150.0,3.0,25.0,4.0
+448,2026-02-23,Lunch,250,,446,Choripan (1 sandwich),Meal/Processed,550.0,20.0,40.0,35.0
+449,2026-02-23,Lunch,0,,447,Baguette (slice),Grain,70.0,2.5,14.0,0.5
+450,2026-02-23,Lunch,0,,439,Chimichurri (1 tbsp),Condiment,45.0,0.1,0.5,4.5
+451,2026-02-23,Dinner,250,,448,Pizza (Margherita 1 slice),Meal/Processed,250.0,12.0,30.0,10.0
+452,2026-02-23,Dinner,0,,449,Fresh Mozzarella (1 oz),Dairy,72.0,5.0,0.8,5.0
+453,2026-02-23,Dinner,0,,450,Basil (2 tbsp fresh),Condiment,1.0,0.1,0.1,0.0
+454,2026-02-23,Dinner,0,,451,Carbonara (1.5 cups),Meal/Pasta,650.0,25.0,60.0,35.0
+455,2026-02-23,Dinner,0,,452,Guanciale (1 oz),Protein/Meat,170.0,3.0,0.0,18.0
+456,2026-02-23,Dinner,0,,453,Pecorino Cheese (1 tbsp),Dairy,25.0,1.5,0.1,2.0
+457,2026-02-23,Dinner,0,,454,Black Pepper (1/4 tsp),Condiment,1.0,0.0,0.2,0.0
+458,2026-02-23,Dinner,0,,455,Egg Yolk (1 large in sauce),Protein,55.0,2.7,0.6,4.5
+459,2026-02-23,Snack,0,,456,Supplì (1 piece fried rice ball),Snack/Processed,200.0,8.0,25.0,8.0
+460,2026-02-23,Snack,150,,457,Aperol Spritz (1 drink),Beverage,180.0,0.0,20.0,0.0
+461,2026-02-23,Snack,0,,458,Prosecco (3 oz),Beverage,70.0,0.0,2.0,0.0
+462,2026-02-23,Snack,0,,459,Club Soda (2 oz),Beverage,0.0,0.0,0.0,0.0
+463,2026-02-23,Snack,0,,460,Orange Slice (garnish),Fruit,5.0,0.1,1.0,0.0
+464,2026-02-23,Dinner,500,,461,Tagliatelle al Ragù (Bolognese),Meal/Pasta,550.0,28.0,65.0,20.0
+465,2026-02-23,Dinner,0,,462,Ground Beef (2 oz in sauce),Protein/Meat,140.0,11.0,0.0,10.0
+466,2026-02-23,Dinner,0,,463,Pancetta (0.5 oz in sauce),Protein/Meat,45.0,1.5,0.0,4.5
+467,2026-02-23,Dinner,0,,464,Carrot (1/4 minced in sauce),Vegetable,10.0,0.2,2.4,0.1
+468,2026-02-23,Dinner,0,,465,Celery (1/4 stalk minced),Vegetable,2.0,0.1,0.4,0.0
+469,2026-02-23,Dinner,0,,466,Onion (1/8 minced in sauce),Vegetable,5.0,0.1,1.2,0.0
+470,2026-02-23,Dinner,0,,467,Crushed Tomatoes (1/2 cup sauce),Vegetable,20.0,1.0,4.0,0.0
+471,2026-02-23,Dinner,0,,468,Parmigiano-Reggiano (1 tbsp),Dairy,22.0,2.0,0.2,1.5
+472,2026-02-23,Snack,0,,469,Cannoli (1 medium),Dessert,240.0,5.0,25.0,13.0
+473,2026-02-23,Snack,0,,470,Ricotta (filling 1 oz),Dairy,49.0,3.2,0.8,3.8
+474,2026-02-23,Snack,0,,471,Pistachio (garnish),Nut,10.0,0.4,0.5,0.8
+475,2026-02-23,Snack,0,,472,Biscotti (1 cookie),Dessert,110.0,2.0,18.0,4.0
+476,2026-02-23,Snack,30,,473,Espresso (for dipping),Beverage,2.0,0.2,0.0,0.0
+477,2026-02-23,Lunch,0,,474,Focaccia (1 square),Grain,250.0,8.0,40.0,7.0
+478,2026-02-23,Lunch,0,,475,Rosemary (1 tsp topping),Condiment,1.0,0.0,0.2,0.0
+479,2026-02-23,Lunch,0,,476,Coarse Salt (garnish),Condiment,0.0,0.0,0.0,0.0
+480,2026-02-23,Lunch,0,,477,Olive Oil (1 tbsp drizzle),Condiment,120.0,0.0,0.0,14.0
+481,2026-02-23,Snack,0,,478,Bruschetta (2 pcs),Snack/Appetizer,180.0,4.0,25.0,7.0
+482,2026-02-23,Snack,0,,479,Balsamic Glaze (1 tsp),Condiment,13.0,0.0,3.0,0.0
+483,2026-02-23,Dinner,500,,480,Ribollita (1.5 cups soup),Meal/Soup,350.0,15.0,55.0,8.0
+484,2026-02-23,Dinner,0,,481,Cannellini Beans (1/2 cup in soup),Legume,105.0,7.0,20.0,0.5
+485,2026-02-23,Dinner,0,,482,Kale (1 cup in soup),Vegetable,33.0,2.9,6.0,0.6
+486,2026-02-23,Dinner,0,,483,Stale Bread (1/2 cup in soup),Grain,80.0,3.0,15.0,1.0
+487,2026-02-23,Dinner,0,,484,Polenta (1 cup creamy),Meal/Grain,150.0,3.0,32.0,1.0
+488,2026-02-23,Dinner,0,,485,Gorgonzola Cheese (1 oz),Dairy,100.0,6.0,0.7,8.0
+489,2026-02-23,Snack,90,,486,Negroni (1 drink),Beverage,190.0,0.0,15.0,0.0
+490,2026-02-23,Snack,0,,487,Gin (1 oz),Beverage,70.0,0.0,0.0,0.0
+491,2026-02-23,Snack,0,,488,Campari (1 oz),Beverage,80.0,0.0,10.0,0.0
+492,2026-02-23,Snack,0,,489,Sweet Vermouth (1 oz),Beverage,40.0,0.0,5.0,0.0
+493,2026-02-23,Snack,0,,490,Orange Peel (garnish),Condiment,1.0,0.0,0.2,0.0
+494,2026-02-23,Dinner,0,,491,Osso Buco (1 serving),Meal/Meat,550.0,45.0,15.0,30.0
+495,2026-02-23,Dinner,0,,492,Gremolata (1 tbsp),Condiment,15.0,0.5,1.0,1.0
+496,2026-02-23,Dinner,0,,493,Risotto alla Milanese (1 cup),Meal/Rice,350.0,10.0,50.0,12.0
+497,2026-02-23,Dinner,0,,494,Saffron (pinch in risotto),Condiment,1.0,0.0,0.1,0.0
+498,2026-02-23,Snack,0,,495,Panettone (1 slice),Dessert,320.0,6.0,50.0,12.0
+499,2026-02-23,Snack,0,,496,Candied Fruit (1 tbsp),Fruit,30.0,0.0,8.0,0.0
+500,2026-02-23,Snack,0,,497,Amaretti Cookie (2 cookies),Dessert,90.0,2.0,12.0,4.0
+501,2026-02-23,Snack,0,,498,Limoncello (1.5 oz shot),Beverage,150.0,0.0,18.0,0.0
+502,2026-02-23,Snack,0,,499,Panna Cotta (1 serving),Dessert,300.0,4.0,25.0,20.0
+503,2026-02-23,Snack,0,,500,Berry Coulis (1 tbsp),Condiment,20.0,0.0,5.0,0.0
+504,2026-02-23,Dinner,0,,501,Saltimbocca (1 serving),Meal/Meat,380.0,38.0,5.0,22.0
+505,2026-02-23,Dinner,0,,502,Prosciutto (1 slice wrapper),Protein/Meat,35.0,4.0,0.0,2.5
+506,2026-02-23,Dinner,0,,503,Sage (2 leaves),Condiment,1.0,0.0,0.1,0.0
+507,2026-02-23,Dinner,0,,504,Polenta (grilled 1 slice),Meal/Grain,120.0,2.5,25.0,1.0
+508,2026-02-23,Dinner,0,,505,Caponata (1/2 cup),Meal/Vegetable,180.0,2.0,15.0,14.0
+509,2026-02-23,Dinner,0,,506,Eggplant (1/2 cup in caponata),Vegetable,40.0,0.5,6.0,2.0
+510,2026-02-23,Dinner,0,,507,Pine Nuts (1/2 tbsp),Nut,48.0,1.0,1.0,5.0
+511,2026-02-23,Dinner,0,,508,Raisins (1 tbsp),Fruit,27.0,0.3,7.0,0.0
+512,2026-02-23,Snack,0,,509,Gelato (Pistachio 1/2 cup),Dessert,220.0,5.0,24.0,12.0
+513,2026-02-23,Snack,0,,510,Waffle Cone (1 small),Grain,70.0,1.0,13.0,1.5
+514,2026-02-23,Dinner,0,,511,Cacio e Pepe (1.5 cups),Meal/Pasta,500.0,18.0,65.0,19.0
+515,2026-02-23,Dinner,0,,512,Pecorino Romano (1/4 cup),Dairy,110.0,7.5,1.0,8.5
+516,2026-02-23,Dinner,0,,513,Black Pepper (1/2 tsp),Condiment,3.0,0.1,0.7,0.0
+517,2026-02-23,Dinner,0,,514,Fiorentina Steak (3oz portion),Protein/Meat,230.0,24.0,0.0,15.0
+518,2026-02-23,Dinner,0,,477,Olive Oil (1 tbsp drizzle),Condiment,120.0,0.0,0.0,14.0
+519,2026-02-23,Dinner,0,,515,Rosemary (garnish),Condiment,1.0,0.0,0.2,0.0
+520,2026-02-23,Dinner,0,,516,White Beans (Tuscan style 1/2 cup),Legume,150.0,8.0,20.0,4.0
+521,2026-02-23,Dinner,0,,517,Garlic (1 clove in beans),Vegetable,4.0,0.2,0.9,0.0
+522,2026-02-23,Dinner,0,,518,Sage (in beans),Condiment,1.0,0.0,0.1,0.0
+523,2026-02-23,Snack,0,,519,Arancini (1 large ball),Snack/Processed,250.0,9.0,30.0,10.0
+524,2026-02-23,Snack,0,,520,Ragù (filling 1 tbsp),Condiment,25.0,1.5,1.0,1.5
+525,2026-02-23,Snack,0,,521,Mozzarella (filling 0.5 oz),Dairy,40.0,3.0,0.5,3.0
+526,2026-02-23,Snack,0,,522,Breadcrumbs (coating),Grain,25.0,0.5,4.0,0.5
+527,2026-02-23,Snack,150,,523,Campari & Soda (1 drink),Beverage,85.0,0.0,10.0,0.0
+528,2026-02-23,Snack,0,,524,Olive (garnish),Fruit,5.0,0.0,0.1,0.5
+529,2026-02-23,Lunch,0,,525,Vitello Tonnato (1 serving),Meal/Meat,380.0,35.0,3.0,25.0
+530,2026-02-23,Lunch,0,,526,Tuna Sauce (2 tbsp),Condiment,100.0,4.0,1.0,9.0
+531,2026-02-23,Lunch,0,,527,Capers (garnish),Condiment,2.0,0.2,0.4,0.1
+532,2026-02-23,Lunch,0,,528,Lemon Slice (garnish),Condiment,1.0,0.0,0.3,0.0
+533,2026-02-23,Dinner,0,,529,Gnocchi alla Sorrentina (1.5 cups),Meal/Pasta,450.0,15.0,60.0,18.0
+534,2026-02-23,Dinner,0,,530,Tomato Sauce (1/2 cup),Condiment,40.0,1.5,7.0,1.0
+535,2026-02-23,Dinner,0,,531,Mozzarella (1 oz melted),Dairy,80.0,6.0,1.0,6.0
+536,2026-02-23,Dinner,0,,532,Basil (fresh garnish),Condiment,1.0,0.1,0.0,0.0
+537,2026-02-23,Dinner,0,,533,Pesto (1/4 cup),Condiment,290.0,5.0,4.0,29.0
+538,2026-02-23,Dinner,0,,534,Pine Nuts (1 tbsp in pesto),Nut,95.0,2.0,2.0,10.0
+539,2026-02-23,Dinner,0,,535,Garlic (1/2 clove in pesto),Vegetable,2.0,0.1,0.5,0.0
+540,2026-02-23,Dinner,0,,536,Trofie Pasta (1 cup cooked),Grain,210.0,7.0,43.0,1.0
+541,2026-02-23,Dinner,0,,537,Green Beans (1/2 cup w/ pasta),Vegetable,15.0,0.9,3.5,0.1
+542,2026-02-23,Dinner,0,,538,Potato (1/2 w/ pasta),Vegetable,65.0,1.0,15.0,0.1
+543,2026-02-23,Snack,120,,539,Espresso Martini (1 drink),Beverage,280.0,0.5,25.0,0.0
+544,2026-02-23,Snack,0,,540,Vodka (1.5 oz),Beverage,97.0,0.0,0.0,0.0
+545,2026-02-23,Snack,0,,541,Coffee Liqueur (1 oz),Beverage,100.0,0.0,15.0,0.0
+546,2026-02-23,Snack,0,,542,Espresso (1 oz in drink),Beverage,3.0,0.3,0.0,0.1
+547,2026-02-23,Snack,0,,543,Simple Syrup (1/2 oz),Condiment,30.0,0.0,8.0,0.0
+548,2026-02-23,Snack,0,,544,Coffee Beans (3 garnish),Snack,2.0,0.1,0.3,0.0
+549,2026-02-23,Snack,0,,545,Baba Ganoush (1/4 cup),Meal/Vegetable,100.0,2.0,8.0,7.0
+550,2026-02-23,Snack,0,,546,Pita Bread (1 white),Grain,165.0,5.5,33.0,1.2
+551,2026-02-23,Lunch,0,,547,Falafel (3 pieces),Meal/Vegetarian,180.0,6.0,18.0,9.0
+552,2026-02-23,Lunch,0,,548,Tahini Sauce (1 tbsp),Condiment,30.0,1.0,1.5,2.5
+553,2026-02-23,Lunch,0,,549,Pickled Turnips (2 tbsp),Vegetable,10.0,0.2,2.0,0.0
+554,2026-02-23,Lunch,250,,550,Shawarma (Chicken 1 wrap),Meal/Processed,550.0,30.0,50.0,25.0
+555,2026-02-23,Lunch,0,,551,Garlic Sauce (1 tbsp),Condiment,90.0,0.1,1.0,10.0
+556,2026-02-23,Lunch,0,,552,Hummus (1/4 cup),Legume,130.0,5.0,10.0,8.0
+557,2026-02-23,Lunch,0,,553,Tabouli (1/2 cup),Meal/Vegetarian,120.0,3.0,15.0,6.0
+558,2026-02-23,Lunch,0,,554,Bulgur (1/4 cup in tabouli),Grain,76.0,2.7,16.8,0.2
+559,2026-02-23,Lunch,0,,555,Parsley (1/4 cup in tabouli),Vegetable,5.0,0.3,1.0,0.1
+560,2026-02-23,Lunch,0,,556,Mint (1 tbsp in tabouli),Condiment,1.0,0.1,0.1,0.0
+561,2026-02-23,Lunch,0,,557,Lemon Juice (1 tbsp dressing),Condiment,4.0,0.1,1.3,0.0
+562,2026-02-23,Lunch,0,,558,Olive Oil (1 tbsp dressing),Condiment,120.0,0.0,0.0,14.0
+563,2026-02-23,Snack,0,,559,Kibbeh (1 piece fried),Meal/Meat,230.0,9.0,20.0,13.0
+564,2026-02-23,Snack,0,,560,Pine Nuts (1/2 tbsp filling),Nut,48.0,1.0,1.0,5.0
+565,2026-02-23,Snack,0,,561,Ground Lamb (1 oz filling),Protein/Meat,80.0,5.5,0.0,6.0
+566,2026-02-23,Snack,0,,562,Bulgur (1 tbsp shell),Grain,15.0,0.5,3.4,0.0
+567,2026-02-23,Lunch,250,,563,Lentil Soup (1 cup Middle Eastern),Meal/Legume,200.0,10.0,30.0,5.0
+568,2026-02-23,Lunch,0,,564,Cumin (1 tsp),Condiment,8.0,0.3,1.5,0.5
+569,2026-02-23,Lunch,0,,565,Coriander (1 tsp),Condiment,5.0,0.1,1.0,0.2
+570,2026-02-23,Lunch,0,,566,Lemon Juice (1 tsp in soup),Condiment,1.0,0.0,0.4,0.0
+571,2026-02-23,Lunch,0,,567,Pita Crisps (1 oz),Snack/Processed,130.0,3.0,18.0,5.0
+572,2026-02-23,Breakfast,0,,568,Manakeesh (Za'atar 1 small),Meal/Vegetarian,300.0,7.0,45.0,10.0
+573,2026-02-23,Breakfast,0,,569,Za'atar (1 tbsp),Condiment,40.0,1.0,3.0,3.0
+574,2026-02-23,Breakfast,0,,570,Olive Oil (1 tbsp on bread),Condiment,120.0,0.0,0.0,14.0
+575,2026-02-23,Breakfast,0,,571,Labneh (2 tbsp),Dairy,60.0,4.0,2.0,4.0
+576,2026-02-23,Breakfast,0,,572,Cucumber (1/4 cup side),Vegetable,8.0,0.3,1.8,0.0
+577,2026-02-23,Breakfast,0,,573,Tomato (1/4 cup side),Vegetable,8.0,0.3,1.8,0.1
+578,2026-02-23,Breakfast,0,,574,Olives (5 side),Fruit,35.0,0.2,1.0,3.5
+579,2026-02-23,Breakfast,240,,575,Mint Tea (1 cup),Beverage,2.0,0.1,0.5,0.0
+580,2026-02-23,Snack,0,,576,Stuffed Grape Leaves (3 pcs),Meal/Vegetarian,150.0,3.0,20.0,7.0
+581,2026-02-23,Snack,0,,577,Rice (1/4 cup filling),Grain,51.0,1.1,11.1,0.1
+582,2026-02-23,Snack,60,,578,Turkish Coffee (1 small cup),Beverage,5.0,0.2,0.5,0.0
+583,2026-02-23,Snack,0,,579,Cardamom (in coffee),Condiment,1.0,0.0,0.2,0.0
+584,2026-02-23,Dinner,0,,580,Shish Tawook (2 skewers),Meal/Meat,300.0,35.0,5.0,16.0
+585,2026-02-23,Dinner,0,,581,Garlic Sauce (Toum 1 tbsp),Condiment,90.0,0.1,1.0,10.0
+586,2026-02-23,Dinner,0,,582,French Fries (side),Vegetable/Processed,340.0,4.0,44.0,17.0
+587,2026-02-23,Dinner,0,,583,Pickled Cucumber (1/4 cup),Vegetable,10.0,0.5,2.0,0.0
+588,2026-02-23,Lunch,0,,584,Fattoush Salad (1.5 cups),Meal/Vegetarian,250.0,5.0,25.0,15.0
+589,2026-02-23,Lunch,0,,585,Fried Pita (1/2 pita in salad),Grain,80.0,2.0,12.0,3.0
+590,2026-02-23,Lunch,0,,586,Sumac (1/2 tsp dressing),Condiment,5.0,0.1,1.0,0.2
+591,2026-02-23,Lunch,0,,587,Pomegranate Molasses (1 tsp),Condiment,15.0,0.0,4.0,0.0
+592,2026-02-23,Breakfast,250,,1,Scrambled Eggs (2 large),Protein/Dairy,180.0,12.0,2.0,14.0
+593,2026-02-23,Breakfast,0,,2,Whole Wheat Toast (1 slice),Grain,80.0,4.0,14.0,1.0
+594,2026-02-23,Breakfast,0,,3,Coffee (black),Beverage,5.0,0.3,0.0,0.1
+595,2026-02-23,Breakfast,0,,4,Banana,Fruit,105.0,1.3,27.0,0.4
+596,2026-02-23,Lunch,500,,5,Grilled Chicken Salad,Meal/Protein,350.0,30.0,10.0,20.0
+597,2026-02-23,Snack,0,,6,Apple,Fruit,95.0,0.5,25.0,0.3
+598,2026-02-23,Dinner,250,,7,Salmon (4oz grilled),Protein/Fish,230.0,25.0,0.0,14.0
+599,2026-02-23,Dinner,0,,8,Quinoa (1 cup cooked),Grain,222.0,8.0,39.0,3.6
+600,2026-02-23,Dinner,0,,9,Steamed Broccoli (1 cup),Vegetable,55.0,3.7,11.2,0.6
+601,2026-02-23,Snack,250,,10,Greek Yogurt (plain 1 cup),Dairy,150.0,25.0,8.0,3.0
+602,2026-02-23,Breakfast,250,,11,Oatmeal (1 cup cooked),Grain,160.0,6.0,28.0,3.0
+603,2026-02-23,Breakfast,0,,12,Blueberries (1/2 cup),Fruit,42.0,0.5,11.0,0.2
+604,2026-02-23,Snack,0,,13,Almonds (1 oz),Nut,164.0,6.0,6.0,14.0
+605,2026-02-23,Lunch,500,,14,Turkey Sandwich (on wheat),Meal/Processed,340.0,22.0,34.0,12.0
+606,2026-02-23,Snack,0,,15,Carrot Sticks (1 cup),Vegetable,52.0,1.2,12.3,0.3
+607,2026-02-23,Dinner,250,,16,Spaghetti Bolognese,Meal/Pasta,460.0,20.0,55.0,18.0
+608,2026-02-23,Dinner,0,,17,Side Salad (light dressing),Vegetable,70.0,2.0,8.0,4.0
+609,2026-02-23,Snack,500,,18,Protein Shake (Whey),Supplement,120.0,24.0,3.0,1.0
+610,2026-02-23,Breakfast,0,,19,Cereal (Frosted Flakes 1 cup),Grain/Processed,130.0,2.0,31.0,0.0
+611,2026-02-23,Lunch,250,,20,Lentil Soup (1 can),Meal/Legume,230.0,15.0,35.0,3.0
+612,2026-02-23,Dinner,0,,21,White Rice (1 cup cooked),Grain,204.0,4.2,44.5,0.4
+613,2026-02-23,Dinner,250,,22,Tofu Stir-fry,Meal/Vegetarian,400.0,18.0,30.0,22.0
+614,2026-02-23,Snack,0,,23,Orange,Fruit,62.0,1.2,15.4,0.2
+615,2026-02-23,Breakfast,250,,24,Bagel (plain),Grain,270.0,11.0,55.0,1.5
+616,2026-02-23,Breakfast,0,,25,Cream Cheese (2 tbsp),Dairy,100.0,2.0,2.0,10.0
+617,2026-02-23,Lunch,500,,26,Tuna Salad (1/2 cup),Meal/Fish,190.0,19.0,2.0,12.0
+618,2026-02-23,Lunch,0,,27,Crackers (5 whole wheat),Grain/Processed,90.0,2.0,14.0,3.0
+619,2026-02-23,Dinner,250,,28,Beef Steak (6oz sirloin),Protein/Meat,270.0,42.0,0.0,10.0
+620,2026-02-23,Dinner,0,,29,Baked Potato (medium),Vegetable,160.0,4.3,36.0,0.2
+621,2026-02-23,Snack,0,,30,Ice Cream (1/2 cup vanilla),Dairy/Dessert,145.0,2.5,17.0,7.5
+622,2026-02-23,Dinner,250,,31,Pizza (1 slice pepperoni),Meal/Processed,290.0,12.0,34.0,12.0
+623,2026-02-23,Breakfast,500,,32,Avocado Toast (1 slice),Meal/Vegetarian,260.0,7.0,28.0,15.0
+624,2026-02-23,Snack,0,,33,Hard-Boiled Egg (1 large),Protein,78.0,6.3,0.6,5.3
+625,2026-02-23,Lunch,250,,34,Chicken Wrap (with tortilla),Meal/Processed,410.0,25.0,38.0,17.0
+626,2026-02-23,Snack,0,,35,Grapes (1 cup),Fruit,104.0,1.1,27.0,0.2
+627,2026-02-23,Snack,0,,36,Cottage Cheese (1/2 cup),Dairy,90.0,12.0,5.0,3.0
+628,2026-02-23,Dinner,500,,37,Burger (cheeseburger),Meal/Processed,550.0,30.0,40.0,30.0
+629,2026-02-23,Dinner,0,,38,French Fries (medium),Vegetable/Processed,340.0,4.0,44.0,17.0
+630,2026-02-23,Snack,500,,39,Protein Bar,Supplement/Processed,210.0,20.0,22.0,7.0
+631,2026-02-23,Lunch,0,,40,Black Beans (1/2 cup),Legume,114.0,7.6,20.4,0.5
+632,2026-02-23,Lunch,0,,41,Salsa (1/4 cup),Vegetable,20.0,0.8,4.5,0.1
+633,2026-02-23,Lunch,250,,42,Chicken Noodle Soup (1 can),Meal/Processed,150.0,7.0,18.0,5.0
+634,2026-02-23,Snack,0,,43,Peanut Butter (2 tbsp),Nut,190.0,7.0,8.0,16.0
+635,2026-02-23,Snack,0,,44,Celery Sticks (1 cup),Vegetable,14.0,0.6,3.0,0.2
+636,2026-02-23,Dinner,250,,45,Cod (4oz baked),Protein/Fish,95.0,20.0,0.0,0.8
+637,2026-02-23,Dinner,0,,46,Green Beans (1 cup),Vegetable,31.0,1.8,7.0,0.2
+638,2026-02-23,Snack,0,,47,Chocolate Chip Cookie (1 large),Dessert,220.0,2.5,30.0,11.0
+639,2026-02-23,Dinner,250,,48,Shrimp (3oz steamed),Protein/Fish,84.0,20.0,0.2,0.2
+640,2026-02-23,Breakfast,0,,49,Pancakes (2 medium),Grain,180.0,5.0,30.0,5.0
+641,2026-02-23,Breakfast,0,,50,Maple Syrup (2 tbsp),Condiment,104.0,0.0,27.0,0.0
+642,2026-02-23,Breakfast,0,,51,Sausage Link (1 cooked),Protein/Meat,85.0,5.0,1.0,7.0
+643,2026-02-23,Breakfast,250,,52,Smoothie (Fruit & Yogurt),Beverage/Meal,280.0,12.0,55.0,3.0
+644,2026-02-23,Lunch,0,,53,Tofu (4oz firm),Protein/Vegetarian,90.0,10.0,3.0,5.0
+645,2026-02-23,Lunch,0,,54,Brown Rice (1 cup cooked),Grain,215.0,5.0,45.0,1.8
+646,2026-02-23,Lunch,0,,55,Bell Pepper (1 medium red),Vegetable,31.0,1.2,6.0,0.3
+647,2026-02-23,Snack,0,,56,Hummus (2 tbsp),Legume,70.0,2.0,4.0,5.0
+648,2026-02-23,Snack,0,,57,Pita Bread (1 whole wheat),Grain,170.0,6.0,35.0,1.5
+649,2026-02-23,Dinner,250,,58,Pork Chop (4oz grilled),Protein/Meat,220.0,30.0,0.0,10.0
+650,2026-02-23,Dinner,0,,59,Mashed Potatoes (1 cup),Vegetable,230.0,4.0,35.0,8.0
+651,2026-02-23,Dinner,0,,60,Corn (1 cup),Vegetable,132.0,4.7,30.0,1.8
+652,2026-02-23,Snack,355,,61,Soda (1 can Coke),Beverage,140.0,0.0,39.0,0.0
+653,2026-02-23,Snack,0,,62,Pretzels (1 oz),Grain/Processed,110.0,3.0,23.0,1.0
+654,2026-02-23,Snack,0,,63,Cheddar Cheese (1 oz),Dairy,115.0,7.0,1.0,9.5
+655,2026-02-23,Lunch,250,,64,Caesar Salad (with chicken),Meal/Protein,470.0,30.0,15.0,30.0
+656,2026-02-23,Breakfast,240,,65,Orange Juice (1 cup),Beverage,112.0,1.7,25.8,0.5
+657,2026-02-23,Breakfast,0,,66,Bacon (2 slices cooked),Protein/Meat,86.0,6.0,0.2,6.8
+658,2026-02-23,Breakfast,0,,67,Waffles (2 homemade),Grain,220.0,6.0,28.0,9.0
+659,2026-02-23,Snack,0,,68,Pear,Fruit,101.0,0.6,27.0,0.2
+660,2026-02-23,Lunch,500,,69,Chicken Breast (4oz roasted),Protein/Meat,185.0,35.0,0.0,4.0
+661,2026-02-23,Snack,0,,70,Mixed Nuts (1/4 cup),Nut,200.0,6.0,8.0,18.0
+662,2026-02-23,Dinner,0,,71,Tilapia (4oz baked),Protein/Fish,110.0,22.0,0.0,2.5
+663,2026-02-23,Dinner,0,,72,Asparagus (1 cup steamed),Vegetable,40.0,4.3,7.4,0.4
+664,2026-02-23,Dinner,0,,73,Sweet Potato (1 medium baked),Vegetable,103.0,2.3,23.6,0.2
+665,2026-02-23,Snack,250,,74,Popcorn (3 cups air-popped),Grain,93.0,3.0,18.6,1.1
+666,2026-02-23,Snack,0,,75,Raisins (1/4 cup),Fruit,130.0,1.3,34.0,0.2
+667,2026-02-23,Lunch,250,,76,Macaroni & Cheese (1 cup),Meal/Pasta,350.0,10.0,40.0,17.0
+668,2026-02-23,Lunch,0,,77,Tomato Soup (1 can),Meal/Vegetable,170.0,4.0,25.0,6.0
+669,2026-02-23,Lunch,0,,78,Grilled Cheese Sandwich,Meal/Processed,390.0,15.0,32.0,22.0
+670,2026-02-23,Dinner,500,,79,Beef Tacos (2 hard shell),Meal/Meat,380.0,18.0,28.0,22.0
+671,2026-02-23,Dinner,0,,80,Refried Beans (1/2 cup),Legume,115.0,7.0,19.0,1.0
+672,2026-02-23,Dinner,0,,81,Guacamole (1/4 cup),Vegetable/Condiment,90.0,1.0,4.0,8.0
+673,2026-02-23,Snack,0,,82,Watermelon (1 cup diced),Fruit,46.0,0.9,11.5,0.2
+674,2026-02-23,Breakfast,250,,83,English Muffin (whole wheat),Grain,134.0,6.0,26.0,1.0
+675,2026-02-23,Lunch,250,,84,Peanut Butter & Jelly Sandwich,Meal/Processed,390.0,12.0,50.0,17.0
+676,2026-02-23,Lunch,0,,85,Clam Chowder (1 cup),Meal/Seafood,200.0,10.0,18.0,9.0
+677,2026-02-23,Snack,500,,86,Iced Tea (Sweetened 16oz),Beverage,180.0,0.0,46.0,0.0
+678,2026-02-23,Dinner,250,,87,Lasagna (1 serving meat),Meal/Pasta,350.0,20.0,30.0,17.0
+679,2026-02-23,Dinner,0,,88,Garlic Bread (1 slice),Grain,150.0,4.0,18.0,7.0
+680,2026-02-23,Snack,0,,89,Chocolate Milk (1 cup),Beverage/Dairy,200.0,8.0,26.0,8.0
+681,2026-02-23,Breakfast,0,,90,White Bread (1 slice),Grain,70.0,2.0,13.0,1.0
+682,2026-02-23,Breakfast,0,,91,Jelly (1 tbsp grape),Condiment,50.0,0.0,13.0,0.0
+683,2026-02-23,Lunch,250,,92,Veggie Burger (1 patty),Protein/Vegetarian,120.0,11.0,10.0,4.0
+684,2026-02-23,Lunch,0,,93,Bun (hamburger),Grain,140.0,4.0,26.0,2.0
+685,2026-02-23,Lunch,0,,94,Ketchup (1 tbsp),Condiment,20.0,0.2,5.0,0.1
+686,2026-02-23,Breakfast,250,,95,Muffin (Blueberry 1 large),Grain/Dessert,380.0,5.0,55.0,16.0
+687,2026-02-23,Breakfast,250,,96,Coffee (with cream/sugar),Beverage,50.0,0.5,5.0,3.0
+688,2026-02-23,Snack,0,,97,Potato Chips (1 oz),Snack/Processed,160.0,2.0,15.0,10.0
+689,2026-02-23,Dinner,0,,98,Tzatziki Sauce (2 tbsp),Condiment/Dairy,30.0,1.5,2.0,2.0
+690,2026-02-23,Dinner,0,,99,Scallops (3oz seared),Protein/Seafood,95.0,17.0,5.0,1.0
+691,2026-02-23,Dinner,0,,100,Risotto (Mushroom 1 cup),Meal/Grain,250.0,7.0,35.0,9.0
+692,2026-02-23,Lunch,250,,101,Caprese Salad,Meal/Vegetable,240.0,10.0,8.0,18.0
+693,2026-02-23,Lunch,0,,102,Balsamic Vinaigrette (2 tbsp),Condiment,90.0,0.0,3.0,9.0
+694,2026-02-23,Snack,0,,103,Cherries (1 cup),Fruit,77.0,1.6,19.0,0.5
+695,2026-02-23,Breakfast,0,,104,Turkey Bacon (2 slices),Protein/Meat,70.0,6.0,1.0,5.0
+696,2026-02-23,Breakfast,0,,105,Grits (1 cup cooked),Grain,150.0,3.0,32.0,1.0
+697,2026-02-23,Breakfast,0,,106,Butter (1 tbsp),Condiment/Dairy,100.0,0.1,0.0,11.0
+698,2026-02-23,Lunch,500,,107,Meatball Sub (6 inch),Meal/Processed,580.0,28.0,55.0,27.0
+699,2026-02-23,Snack,0,,108,Kiwifruit (1 medium),Fruit,46.0,0.9,11.1,0.4
+700,2026-02-23,Snack,0,,109,Beef Jerky (1 oz),Snack/Processed,116.0,9.4,3.1,7.2
+701,2026-02-23,Snack,0,,110,Figs (2 medium),Fruit,74.0,0.6,19.2,0.3
+702,2026-02-23,Dinner,250,,111,Lobster (3oz steamed),Protein/Seafood,76.0,16.0,0.0,0.7
+703,2026-02-23,Dinner,0,,112,Melted Butter (for lobster),Condiment,200.0,0.2,0.0,22.0
+704,2026-02-23,Dinner,0,,113,Corn on the Cob (1 large),Vegetable,125.0,5.0,29.0,1.5
+705,2026-02-23,Lunch,250,,114,Vegetable Soup (1 can),Meal/Vegetable,140.0,4.0,22.0,4.0
+706,2026-02-23,Lunch,0,,115,Saltine Crackers (5 crackers),Grain/Processed,60.0,1.0,10.0,1.5
+707,2026-02-23,Snack,0,,116,Mango (1 cup slices),Fruit,99.0,1.4,24.7,0.6
+708,2026-02-23,Snack,250,,117,Cheesecake (1 slice),Dessert,320.0,5.0,28.0,21.0
+709,2026-02-23,Dinner,500,,118,Pad Thai (Chicken 1.5 cups),Meal/Pasta,550.0,25.0,60.0,22.0
+710,2026-02-23,Dinner,0,,119,Spring Roll (Veg 2 rolls),Snack/Processed,180.0,4.0,25.0,7.0
+711,2026-02-23,Snack,240,,120,Coconut Water (1 cup),Beverage,46.0,1.7,8.9,0.5
+712,2026-02-23,Side,0,,121,Kimchi (1/2 cup),Vegetable,22.0,1.7,4.0,0.4
+713,2026-02-23,Lunch,0,,122,Sashimi (Salmon 3 pcs),Protein/Fish,120.0,18.0,0.0,5.0
+714,2026-02-23,Lunch,0,,123,Wasabi (1 tsp),Condiment,10.0,0.1,2.2,0.1
+715,2026-02-23,Lunch,0,,124,Seaweed Salad (1/2 cup),Vegetable,60.0,2.0,8.0,3.0
+716,2026-02-23,Lunch,250,,125,French Onion Soup (1 cup),Meal,150.0,6.0,15.0,7.0
+717,2026-02-23,Lunch,0,,126,Croutons (1/4 cup),Grain,50.0,1.5,7.0,2.0
+718,2026-02-23,Dinner,250,,127,Shepherd's Pie (1 serving),Meal/Meat,400.0,20.0,35.0,20.0
+719,2026-02-23,Dinner,0,,128,Green Peas (1/2 cup),Legume,62.0,4.1,11.1,0.2
+720,2026-02-23,Snack,0,,129,Apple Pie (1 slice),Dessert,410.0,3.0,58.0,19.0
+721,2026-02-23,Snack,180,,130,Gin & Tonic (1 drink),Beverage,170.0,0.0,13.0,0.0
+722,2026-02-23,Dinner,0,,131,Red Wine (5 oz glass),Beverage,125.0,0.1,3.8,0.0
+723,2026-02-23,Dinner,250,,132,Halibut (4oz baked),Protein/Fish,125.0,24.0,0.0,2.5
+724,2026-02-23,Lunch,250,,133,Quinoa Salad (1 cup),Meal/Vegetarian,260.0,9.0,32.0,12.0
+725,2026-02-23,Snack,240,,134,Lemonade (1 cup),Beverage,99.0,0.1,26.0,0.0
+726,2026-02-23,Snack,0,,135,Pistachios (1 oz shelled),Nut,159.0,5.7,7.7,12.8
+727,2026-02-23,Breakfast,0,,136,Oat Milk (1 cup),Beverage/Dairy-Alt,120.0,3.0,16.0,5.0
+728,2026-02-23,Breakfast,250,,137,Biscuits and Gravy (1 serving),Meal/Processed,480.0,10.0,45.0,28.0
+729,2026-02-23,Breakfast,0,,138,Avocado (1/2 fruit),Fruit,160.0,2.0,8.5,14.7
+730,2026-02-23,Breakfast,0,,139,Corn Flakes (1 cup),Grain,100.0,2.0,24.0,0.0
+731,2026-02-23,Dinner,0,,140,T-Bone Steak (6oz),Protein/Meat,460.0,38.0,0.0,33.0
+732,2026-02-23,Dinner,0,,141,Creamed Spinach (1/2 cup),Vegetable,190.0,5.0,8.0,16.0
+733,2026-02-23,Snack,0,,142,Pecans (1 oz),Nut,196.0,2.6,3.9,20.4
+734,2026-02-23,Snack,0,,143,Fruit Cocktail (canned 1 cup),Fruit,110.0,1.0,28.0,0.0
+735,2026-02-23,Lunch,500,,144,Ramen (Instant 1 pack),Meal/Processed,380.0,9.0,53.0,14.0
+736,2026-02-23,Snack,473,,145,Mocha Latte (16oz),Beverage,360.0,12.0,48.0,15.0
+737,2026-02-23,Snack,0,,146,Cucumber Slices (1 cup),Vegetable,16.0,0.7,3.6,0.1
+738,2026-02-23,Lunch,0,,147,Feta Cheese (1 oz),Dairy,75.0,4.0,1.2,6.1
+739,2026-02-23,Lunch,0,,148,Olives (Kalamata 5 large),Fruit,35.0,0.2,1.0,3.5
+740,2026-02-23,Dinner,250,,149,Chicken Alfredo (1.5 cups),Meal/Pasta,680.0,35.0,45.0,38.0
+741,2026-02-23,Dinner,0,,150,Breadstick (1 large),Grain,160.0,4.0,28.0,3.0
+742,2026-02-23,Lunch,500,,151,Cobb Salad,Meal/Protein,510.0,30.0,12.0,38.0
+743,2026-02-23,Lunch,0,,152,Blue Cheese Dressing (2 tbsp),Condiment,150.0,1.0,2.0,16.0
+744,2026-02-23,Snack,0,,153,Mandarin Orange (1 medium),Fruit,37.0,0.6,9.3,0.2
+745,2026-02-23,Snack,0,,154,Cashews (1 oz roasted),Nut,163.0,4.3,9.2,13.1
+746,2026-02-23,Breakfast,0,,155,Eggo Waffle (2 waffles),Grain/Processed,180.0,4.0,30.0,5.0
+747,2026-02-23,Lunch,355,,156,Diet Soda (1 can),Beverage,0.0,0.0,0.0,0.0
+748,2026-02-23,Lunch,250,,157,Pulled Pork Sandwich,Meal/Meat,480.0,25.0,48.0,20.0
+749,2026-02-23,Snack,0,,158,Macadamia Nuts (1 oz),Nut,204.0,2.2,3.9,21.5
+750,2026-02-23,Dinner,250,,159,Crab Cakes (2 medium),Meal/Seafood,340.0,20.0,18.0,20.0
+751,2026-02-23,Dinner,0,,160,Tartar Sauce (2 tbsp),Condiment,60.0,0.2,2.0,5.5
+752,2026-02-23,Snack,0,,161,Lemon Bar (1 square),Dessert,150.0,1.5,22.0,6.0
+753,2026-02-23,Breakfast,240,,162,Almond Milk (Unsweetened 1 cup),Beverage/Dairy-Alt,30.0,1.0,1.0,2.5
+754,2026-02-23,Breakfast,0,,163,Rice Krispies (1.5 cups),Grain,160.0,3.0,37.0,0.5
+755,2026-02-23,Breakfast,0,,164,Sugar (1 tsp for cereal),Condiment,16.0,0.0,4.0,0.0
+756,2026-02-23,Lunch,0,,165,Tuna (Canned 3oz in water),Protein/Fish,90.0,20.0,0.0,1.0
+757,2026-02-23,Lunch,0,,166,Mayonnaise (1 tbsp),Condiment,90.0,0.1,0.1,10.0
+758,2026-02-23,Lunch,0,,167,Pickle (1 spear dill),Vegetable,5.0,0.2,1.0,0.1
+759,2026-02-23,Lunch,250,,168,Lobster Bisque (1 cup),Meal/Seafood,250.0,8.0,12.0,18.0
+760,2026-02-23,Lunch,500,,169,Reuben Sandwich,Meal/Processed,650.0,28.0,35.0,40.0
+761,2026-02-23,Lunch,0,,170,Sauerkraut (1/4 cup side),Vegetable,7.0,0.3,1.5,0.0
+762,2026-02-23,Dinner,0,,171,Mushroom (White 1 cup sliced),Vegetable,15.0,2.2,2.3,0.2
+763,2026-02-23,Breakfast,240,,172,Soy Milk (Original 1 cup),Beverage/Dairy-Alt,110.0,8.0,9.0,4.5
+764,2026-02-23,Dinner,250,,173,Chicken Tikka Masala (1.5 cups),Meal/Meat,480.0,30.0,20.0,30.0
+765,2026-02-23,Dinner,0,,174,Naan Bread (1 piece),Grain,260.0,8.0,45.0,5.0
+766,2026-02-23,Dinner,0,,175,Cucumber Salad (1/2 cup),Vegetable,40.0,1.0,5.0,2.0
+767,2026-02-23,Snack,180,,176,Vodka Soda (1 drink),Beverage,100.0,0.0,0.0,0.0
+768,2026-02-23,Breakfast,250,,177,Chocolate Croissant,Dessert,350.0,6.0,40.0,19.0
+769,2026-02-23,Dinner,0,,178,Sweet & Sour Chicken (1 cup),Meal/Processed,380.0,18.0,45.0,15.0
+770,2026-02-23,Dinner,0,,179,Egg Drop Soup (1 cup),Meal/Vegetable,65.0,5.0,6.0,2.0
+771,2026-02-23,Snack,0,,180,String Cheese (1 stick),Dairy,80.0,6.0,1.0,6.0
+772,2026-02-23,Lunch,250,,181,Turkey Burger (1 patty),Protein/Meat,160.0,22.0,2.0,8.0
+773,2026-02-23,Lunch,0,,182,Potato Salad (1/2 cup),Meal/Vegetable,180.0,2.0,19.0,11.0
+774,2026-02-23,Breakfast,240,,183,Cranberry Juice (1 cup),Beverage,130.0,0.0,33.0,0.0
+775,2026-02-23,Dinner,250,,184,Chicken Piccata (1 serving),Meal/Meat,350.0,30.0,10.0,20.0
+776,2026-02-23,Dinner,0,,185,Angel Hair Pasta (1 cup),Grain,200.0,7.0,42.0,1.0
+777,2026-02-23,Dinner,0,,186,Olive Oil (1 tbsp),Condiment,120.0,0.0,0.0,14.0
+778,2026-02-23,Dinner,0,,187,Garlic (1 clove),Vegetable,4.0,0.2,0.9,0.0
+779,2026-02-23,Snack,0,,188,Salami (3 slices),Protein/Processed,110.0,6.0,1.0,9.0
+780,2026-02-23,Snack,0,,189,Provolone Cheese (1 slice),Dairy,100.0,7.0,1.0,8.0
+781,2026-02-23,Snack,355,,190,Ginger Ale (1 can),Beverage,124.0,0.0,32.0,0.0
+782,2026-02-23,Dinner,0,,191,Shrimp Scampi (1 cup),Meal/Seafood,380.0,22.0,40.0,15.0
+783,2026-02-23,Snack,250,,192,Tiramisu (1 slice),Dessert,450.0,7.0,42.0,28.0
+784,2026-02-23,Breakfast,250,,193,Cereal Bar (Fruit),Snack/Processed,140.0,2.0,30.0,3.0
+785,2026-02-23,Dinner,250,,194,Veal Parmesan (1 serving),Meal/Meat,550.0,40.0,30.0,30.0
+786,2026-02-23,Dinner,0,,195,Spaghetti (side),Grain,100.0,3.5,21.0,0.5
+787,2026-02-23,Snack,240,,196,Hot Chocolate (1 cup),Beverage,200.0,3.0,30.0,8.0
+788,2026-02-23,Dinner,0,,197,Coconut Shrimp (5 pcs),Meal/Seafood,320.0,10.0,25.0,20.0
+789,2026-02-23,Dinner,0,,198,Sweet Chili Sauce (2 tbsp),Condiment,70.0,0.0,17.0,0.0
+790,2026-02-23,Dinner,0,,199,White Wine (5 oz glass),Beverage,121.0,0.1,3.8,0.0
+791,2026-02-23,Snack,250,,200,Trail Mix (1/4 cup),Snack/Processed,190.0,5.0,20.0,12.0
+792,2026-02-23,Snack,0,,201,Onion Rings (6 rings),Snack/Processed,280.0,4.0,30.0,16.0
+793,2026-02-23,Breakfast,0,,202,Poached Egg (1 large),Protein,72.0,6.3,0.4,4.8
+794,2026-02-23,Breakfast,0,,203,Canadian Bacon (2 slices),Protein/Meat,80.0,12.0,1.0,3.0
+795,2026-02-23,Breakfast,250,,204,Eggs Benedict (1 serving),Meal/Protein,600.0,25.0,30.0,40.0
+796,2026-02-23,Breakfast,0,,205,Hollandaise Sauce (2 tbsp),Condiment,110.0,1.0,0.5,12.0
+797,2026-02-23,Snack,0,,206,Spinach Artichoke Dip (1/4 cup),Snack/Processed,160.0,5.0,6.0,14.0
+798,2026-02-23,Snack,0,,207,Tortilla Chips (1 oz),Snack/Processed,140.0,2.0,19.0,7.0
+799,2026-02-23,Dinner,250,,208,Chicken Kebab (2 skewers),Meal/Meat,280.0,30.0,8.0,14.0
+800,2026-02-23,Dinner,0,,209,Bell Peppers & Onions (sautéed),Vegetable,60.0,1.5,10.0,2.0
+801,2026-02-23,Lunch,500,,210,Hummus Wrap (large),Meal/Vegetarian,450.0,15.0,60.0,18.0
+802,2026-02-23,Snack,240,,211,Kombucha (1 cup),Beverage,30.0,0.0,7.0,0.0
+803,2026-02-23,Dinner,0,,212,Beef Stroganoff (1.5 cups),Meal/Pasta,550.0,30.0,40.0,28.0
+804,2026-02-23,Dinner,0,,213,Egg Noodles (1 cup cooked),Grain,220.0,8.0,40.0,3.0
+805,2026-02-23,Lunch,250,,214,Cottage Cheese (1 cup low fat),Dairy,160.0,28.0,6.0,2.5
+806,2026-02-23,Lunch,0,,215,Tomato (1 medium sliced),Vegetable,22.0,1.1,4.8,0.2
+807,2026-02-23,Lunch,0,,216,Black Pepper (1 tsp),Condiment,6.0,0.2,1.5,0.1
+808,2026-02-23,Snack,0,,217,Chocolate Pudding (1/2 cup),Dessert,150.0,2.0,28.0,4.0
+809,2026-02-23,Dinner,0,,218,Mackerel (3oz cooked),Protein/Fish,175.0,16.0,0.0,12.0
+810,2026-02-23,Dinner,0,,219,Collard Greens (1 cup cooked),Vegetable,60.0,5.0,10.0,1.0
+811,2026-02-23,Lunch,0,,220,Ham (3oz deli sliced),Protein/Meat,110.0,16.0,2.0,4.0
+812,2026-02-23,Lunch,0,,221,Swiss Cheese (1 slice),Dairy,106.0,7.6,1.0,8.0
+813,2026-02-23,Lunch,0,,222,Rye Bread (1 slice),Grain,83.0,2.7,15.5,1.1
+814,2026-02-23,Lunch,250,,223,Potato Leek Soup (1 cup),Meal/Vegetable,180.0,4.0,25.0,7.0
+815,2026-02-23,Snack,0,,224,Brie Cheese (1 oz),Dairy,95.0,6.0,0.1,7.9
+816,2026-02-23,Snack,0,,225,Water Cracker (5 crackers),Grain/Processed,70.0,1.5,12.0,1.5
+817,2026-02-23,Breakfast,0,,226,Grapefruit (1/2 medium),Fruit,52.0,1.1,13.2,0.2
+818,2026-02-23,Snack,0,,227,Veggie Straws (1 oz),Snack/Processed,130.0,1.0,17.0,7.0
+819,2026-02-23,Dinner,500,,228,Fish Tacos (2 tacos),Meal/Fish,420.0,25.0,40.0,18.0
+820,2026-02-23,Dinner,0,,229,Cabbage Slaw (side),Vegetable,60.0,1.0,8.0,3.0
+821,2026-02-23,Dinner,0,,230,Lime (juice of 1),Condiment,11.0,0.2,3.7,0.0
+822,2026-02-23,Snack,355,,231,Beer (12 oz light),Beverage,103.0,0.9,5.8,0.0
+823,2026-02-23,Breakfast,250,,232,Danish (Cheese 1 medium),Dessert,340.0,7.0,38.0,18.0
+824,2026-02-23,Breakfast,240,,233,Kefir (Plain 1 cup),Beverage/Dairy,104.0,10.0,10.0,2.5
+825,2026-02-23,Dinner,0,,234,Gnocchi (1 cup),Meal/Pasta,210.0,4.5,45.0,1.5
+826,2026-02-23,Dinner,0,,235,Pesto Sauce (1/4 cup),Condiment,260.0,5.0,4.0,26.0
+827,2026-02-23,Dinner,0,,236,Pine Nuts (1 tbsp),Nut,95.0,2.0,2.0,10.0
+828,2026-02-23,Snack,355,,237,Chai Latte (12 oz),Beverage,190.0,7.0,32.0,4.0
+829,2026-02-23,Dinner,0,,238,Manicotti (2 shells cheese),Meal/Pasta,380.0,20.0,35.0,18.0
+830,2026-02-23,Dinner,0,,239,Italian Sausage (1 link),Protein/Meat,200.0,12.0,3.0,16.0
+831,2026-02-23,Snack,0,,240,Jicama (1 cup sticks),Vegetable,46.0,0.9,10.6,0.1
+832,2026-02-23,Snack,0,,241,Chili Powder (1 tsp),Condiment,8.0,0.3,1.4,0.4
+833,2026-02-23,Snack,250,,242,Ants on a Log (4 pcs),Snack,180.0,6.0,12.0,12.0
+834,2026-02-23,Lunch,250,,243,Split Pea Soup (1 cup),Meal/Legume,180.0,11.0,30.0,2.0
+835,2026-02-23,Breakfast,250,,244,Ham & Cheese Croissant,Meal/Processed,400.0,15.0,35.0,22.0
+836,2026-02-23,Breakfast,60,,245,Espresso (double shot),Beverage,5.0,0.5,0.0,0.1
+837,2026-02-23,Dinner,0,,246,Ricotta Cheese (1/4 cup),Dairy,85.0,5.5,2.5,6.0
+838,2026-02-23,Lunch,250,,247,Chicken & Rice Soup (1 can),Meal/Processed,130.0,7.0,18.0,3.0
+839,2026-02-23,Dinner,0,,248,Salt (1/4 tsp),Condiment,0.0,0.0,0.0,0.0
+840,2026-02-23,Snack,0,,249,Guava,Fruit,68.0,2.6,14.3,0.9
+841,2026-02-23,Lunch,500,,250,Club Sandwich,Meal/Processed,580.0,35.0,40.0,30.0
+842,2026-02-23,Snack,0,,251,Pickle (1 whole dill),Vegetable,17.0,0.8,3.7,0.2
+843,2026-02-23,Dinner,250,,252,Turkey Chili (1 cup),Meal/Meat,250.0,22.0,25.0,7.0
+844,2026-02-23,Dinner,0,,253,Sour Cream (2 tbsp),Condiment/Dairy,60.0,0.8,1.3,5.8
+845,2026-02-23,Dinner,0,,254,Shredded Cheese (Cheddar 1/4 cup),Dairy,115.0,7.0,1.0,9.5
+846,2026-02-23,Snack,355,,255,Matcha Latte (12 oz),Beverage,180.0,6.0,28.0,5.0
+847,2026-02-23,Breakfast,0,,256,Chocolate Donut (1 medium),Dessert,300.0,4.0,35.0,17.0
+848,2026-02-23,Lunch,250,,257,Tuna Melt,Meal/Processed,450.0,25.0,32.0,25.0
+849,2026-02-23,Snack,240,,258,Apple Cider (1 cup),Beverage,117.0,0.1,29.0,0.3
+850,2026-02-23,Dinner,500,,259,Beef Burrito (large),Meal/Processed,650.0,30.0,70.0,28.0
+851,2026-02-23,Dinner,0,,260,Pico de Gallo (1/4 cup),Condiment,15.0,0.5,3.0,0.0
+852,2026-02-23,Dinner,0,,261,Corn Tortilla (1 medium),Grain,52.0,1.4,11.2,0.7
+853,2026-02-23,Dinner,0,,262,Mussels (3oz steamed),Protein/Seafood,146.0,20.0,6.0,4.0
+854,2026-02-23,Dinner,0,,263,White Wine Sauce (1/4 cup),Condiment,80.0,1.0,4.0,6.0
+855,2026-02-23,Dinner,0,,264,French Bread (2 slices),Grain,180.0,6.0,36.0,1.0
+856,2026-02-23,Snack,0,,265,Blackberries (1 cup),Fruit,62.0,2.0,13.8,0.7
+857,2026-02-23,Breakfast,250,,266,Cheese Danish,Dessert,340.0,7.0,38.0,18.0
+858,2026-02-23,Lunch,250,,267,Chicken Salad Sandwich,Meal/Processed,420.0,20.0,35.0,20.0
+859,2026-02-23,Breakfast,0,,268,Soyrizo (2 oz),Protein/Vegetarian,140.0,10.0,6.0,9.0
+860,2026-02-23,Breakfast,0,,269,Hash Browns (1 cup),Vegetable,330.0,3.0,38.0,19.0
+861,2026-02-23,Breakfast,0,,270,Ketchup (1 packet),Condiment,10.0,0.1,2.5,0.0
+862,2026-02-23,Lunch,500,,271,Philly Cheesesteak (6 inch),Meal/Processed,500.0,25.0,40.0,28.0
+863,2026-02-23,Lunch,0,,272,Cheese Whiz (2 tbsp),Condiment/Processed,90.0,4.0,3.0,7.0
+864,2026-02-23,Lunch,0,,273,Onions (sautéed 1/4 cup),Vegetable,30.0,0.5,5.0,1.0
+865,2026-02-23,Snack,0,,274,Raspberries (1 cup),Fruit,64.0,1.5,14.7,0.8
+866,2026-02-23,Breakfast,0,,275,Cheesy Grits (1 cup),Meal/Grain,210.0,6.0,34.0,6.0
+867,2026-02-23,Dinner,0,,276,Collard Greens (with ham hock),Vegetable,180.0,10.0,15.0,9.0
+868,2026-02-23,Dinner,0,,277,Fried Okra (1 cup),Vegetable,220.0,4.0,25.0,12.0
+869,2026-02-23,Lunch,473,,278,Sweet Tea (16 oz),Beverage,180.0,0.0,46.0,0.0
+870,2026-02-23,Dinner,250,,279,Gyro (1 sandwich),Meal/Meat,600.0,25.0,55.0,30.0
+871,2026-02-23,Dinner,0,,280,Pita Bread (White 1 large),Grain,220.0,7.0,45.0,2.0
+872,2026-02-23,Dinner,0,,98,Tzatziki Sauce (2 tbsp),Condiment/Dairy,30.0,1.5,2.0,2.0
+873,2026-02-23,Snack,0,,281,Baklava (1 piece),Dessert,280.0,3.0,30.0,18.0
+874,2026-02-23,Snack,0,,282,Coconut (shredded 1/4 cup),Fruit,110.0,1.0,4.5,10.5
+875,2026-02-23,Snack,0,,283,S'more (1 serving),Dessert,140.0,2.0,25.0,4.0
+876,2026-02-23,Snack,0,,284,Graham Cracker (1 large rectangle),Grain/Processed,60.0,1.0,11.0,1.5
+877,2026-02-23,Snack,0,,285,Marshmallow (1 large),Dessert,23.0,0.1,5.8,0.0
+878,2026-02-23,Snack,0,,286,Chocolate (Hershey's bar 1 segment),Dessert,25.0,0.3,3.0,1.5
+879,2026-02-23,Lunch,500,,287,Chicken Parm Sandwich,Meal/Processed,650.0,40.0,55.0,30.0
+880,2026-02-23,Lunch,0,,288,Mozzarella (1 slice),Dairy,80.0,6.0,1.0,6.0
+881,2026-02-23,Lunch,0,,289,Bread Roll (hoagie),Grain,200.0,6.0,38.0,2.0
+882,2026-02-23,Dinner,0,,290,Artichoke (1 medium steamed),Vegetable,60.0,4.2,13.4,0.2
+883,2026-02-23,Dinner,0,,291,Mayonnaise (1 tbsp for dipping),Condiment,90.0,0.1,0.1,10.0
+884,2026-02-23,Dinner,0,,292,Calamari (fried 3oz),Meal/Seafood,150.0,13.0,8.0,7.0
+885,2026-02-23,Dinner,0,,293,Lemon Wedge (for calamari),Condiment,3.0,0.1,1.0,0.0
+886,2026-02-23,Snack,355,,294,Root Beer (1 can),Beverage,150.0,0.0,40.0,0.0
+887,2026-02-23,Lunch,0,,295,Chicken McNuggets (6 pcs),Meal/Processed,270.0,15.0,16.0,16.0
+888,2026-02-23,Lunch,0,,296,BBQ Sauce (2 tbsp),Condiment,60.0,0.5,15.0,0.0
+889,2026-02-23,Breakfast,0,,297,Honey (1 tbsp),Condiment,64.0,0.1,17.3,0.0
+890,2026-02-23,Breakfast,250,,298,Tofu Scramble,Meal/Vegetarian,250.0,20.0,8.0,16.0
+891,2026-02-23,Breakfast,0,,299,Turmeric (1 tsp),Condiment,9.0,0.3,1.9,0.1
+892,2026-02-23,Breakfast,0,,300,Nutritional Yeast (1 tbsp),Condiment,20.0,3.0,2.0,0.0
+893,2026-02-23,Dinner,0,,301,Seitan (3oz),Protein/Vegetarian,90.0,18.0,4.0,1.0
+894,2026-02-23,Dinner,240,,302,Vegetable Broth (1 cup),Beverage,15.0,1.0,3.0,0.0
+895,2026-02-23,Dinner,0,,303,Mashed Cauliflower (1 cup),Vegetable,140.0,5.0,12.0,8.0
+896,2026-02-23,Dinner,0,,304,Peanut Sauce (2 tbsp),Condiment,80.0,2.0,4.0,6.0
+897,2026-02-23,Lunch,0,,305,Tempeh (3oz),Protein/Vegetarian,160.0,16.0,8.0,9.0
+898,2026-02-23,Lunch,0,,306,Sauerkraut (1/2 cup),Vegetable,14.0,0.7,3.1,0.1
+899,2026-02-23,Lunch,0,,307,Rye Crispbread (2 slices),Grain,70.0,2.0,14.0,0.5
+900,2026-02-23,Dinner,0,,308,Capers (1 tbsp),Condiment,2.0,0.2,0.4,0.1
+901,2026-02-23,Dinner,0,,309,Chicken Liver (2 oz cooked),Protein/Meat,91.0,13.6,0.6,3.6
+902,2026-02-23,Dinner,0,,310,Onion (1/2 cup raw chopped),Vegetable,32.0,0.9,7.5,0.1
+903,2026-02-23,Dinner,0,,311,Bok Choy (1 cup steamed),Vegetable,10.0,1.5,2.0,0.1
+904,2026-02-23,Snack,0,,312,Gummy Bears (10 pcs),Snack/Dessert,100.0,2.0,22.0,0.0
+905,2026-02-23,Snack,0,,313,Whiskey (1.5 oz shot),Beverage,105.0,0.0,0.1,0.0
+906,2026-02-23,Snack,0,,314,Dates (2 medium Medjool),Fruit,133.0,0.8,36.0,0.1
+907,2026-02-23,Snack,0,,315,Tahini (1 tbsp),Condiment,89.0,2.6,3.2,8.0
+908,2026-02-23,Lunch,0,,316,Chickpeas (1/2 cup canned),Legume,135.0,7.0,22.0,2.0
+909,2026-02-23,Lunch,0,,317,Lettuce (Romaine 2 cups),Vegetable,16.0,1.0,3.0,0.3
+910,2026-02-23,Lunch,0,,318,Italian Dressing (2 tbsp),Condiment,70.0,0.0,3.0,7.0
+911,2026-02-23,Breakfast,0,,319,Turkey Sausage (1 patty),Protein/Meat,70.0,9.0,1.0,4.0
+912,2026-02-23,Breakfast,0,,320,Maple Syrup (1 tbsp),Condiment,52.0,0.0,13.5,0.0
+913,2026-02-23,Lunch,250,,321,Quesadilla (Cheese 1 medium),Meal/Processed,400.0,18.0,35.0,22.0
+914,2026-02-23,Lunch,0,,322,Sour Cream (1 tbsp),Condiment/Dairy,30.0,0.4,0.6,2.9
+915,2026-02-23,Lunch,0,,323,Salsa (2 tbsp),Condiment,10.0,0.5,2.0,0.0
+916,2026-02-23,Dinner,0,,324,Red Cabbage (1 cup raw),Vegetable,22.0,1.1,5.2,0.1
+917,2026-02-23,Dinner,0,,325,Duck (3oz roasted),Protein/Meat,285.0,16.0,0.0,24.0
+918,2026-02-23,Dinner,0,,326,Orange Sauce (1/4 cup for duck),Condiment,90.0,0.5,22.0,0.0
+919,2026-02-23,Dinner,0,,327,Wild Rice (1 cup cooked),Grain,166.0,6.5,35.0,0.6
+920,2026-02-23,Snack,0,,328,Cupcake (Vanilla 1 medium),Dessert,240.0,2.0,35.0,11.0
+921,2026-02-23,Snack,0,,329,Frosting (Vanilla 2 tbsp),Condiment,140.0,0.0,22.0,6.0
+922,2026-02-23,Breakfast,0,,330,Hot Sauce (1 tsp Tabasco),Condiment,0.0,0.0,0.0,0.0
+923,2026-02-23,Lunch,250,,331,Bison Burger (1 patty),Protein/Meat,150.0,22.0,0.0,7.0
+924,2026-02-23,Lunch,0,,332,Pretzel Bun (1 medium),Grain,230.0,8.0,45.0,2.0
+925,2026-02-23,Lunch,0,,333,Spicy Mustard (1 tbsp),Condiment,10.0,0.5,1.0,0.5
+926,2026-02-23,Lunch,0,,334,Pasta Salad (1 cup),Meal/Pasta,280.0,8.0,30.0,14.0
+927,2026-02-23,Lunch,0,,188,Salami (3 slices),Protein/Processed,110.0,6.0,1.0,9.0
+928,2026-02-23,Lunch,0,,335,Pepperoncini (2 peppers),Vegetable,10.0,0.5,2.0,0.0
+929,2026-02-23,Dinner,0,,336,Coconut Milk (1/4 cup canned),Condiment,111.0,1.1,2.9,11.6
+930,2026-02-23,Dinner,0,,337,Green Curry Paste (1 tbsp),Condiment,30.0,0.5,2.0,2.5
+931,2026-02-23,Dinner,0,,338,Chicken Thigh (1 roasted),Protein/Meat,210.0,24.0,0.0,13.0
+932,2026-02-23,Dinner,0,,339,Jasmine Rice (1 cup cooked),Grain,205.0,4.3,45.0,0.4
+933,2026-02-23,Snack,300,,340,Thai Iced Tea (1 glass),Beverage,250.0,3.0,35.0,12.0
+934,2026-02-23,Snack,0,,341,Papaya (1 cup cubes),Fruit,62.0,0.6,15.7,0.4
+935,2026-02-23,Snack,0,,342,Lime Juice (1 tbsp),Condiment,4.0,0.1,1.3,0.0
+936,2026-02-23,Lunch,0,,343,Macaroni Salad (1 cup),Meal/Pasta,380.0,8.0,30.0,25.0
+937,2026-02-23,Lunch,0,,344,Celery (1 stalk),Vegetable,6.0,0.3,1.2,0.1
+938,2026-02-23,Snack,0,,345,Blue Cheese (1 oz),Dairy,100.0,6.0,0.7,8.0
+939,2026-02-23,Snack,0,,346,Dark Chocolate (1 oz 70%),Dessert,170.0,2.2,13.0,12.0
+940,2026-02-23,Breakfast,250,,347,Acai Bowl (1 serving),Meal/Fruit,350.0,5.0,60.0,12.0
+941,2026-02-23,Breakfast,0,,348,Granola (1/4 cup topping),Grain,120.0,3.0,15.0,6.0
+942,2026-02-23,Breakfast,0,,349,Coconut Flakes (1 tbsp topping),Fruit,35.0,0.3,1.5,3.3
+943,2026-02-23,Breakfast,0,,350,Honey (1 tsp drizzle),Condiment,21.0,0.0,5.8,0.0
+944,2026-02-23,Snack,0,,351,Shrimp Cocktail (4 large shrimp),Protein/Seafood,60.0,10.0,1.0,1.0
+945,2026-02-23,Snack,0,,352,Cocktail Sauce (2 tbsp),Condiment,30.0,0.5,7.0,0.0
+946,2026-02-23,Lunch,0,,353,Pork Bun (1 steamed),Meal/Processed,220.0,8.0,30.0,8.0
+947,2026-02-23,Lunch,0,,354,Dim Sum (Siu Mai 3 pcs),Meal/Processed,180.0,12.0,10.0,10.0
+948,2026-02-23,Lunch,0,,355,Soy Sauce (1 tbsp for dipping),Condiment,9.0,1.0,1.0,0.0
+949,2026-02-23,Dinner,0,,356,Oyster (1 medium raw),Protein/Seafood,8.0,1.0,0.5,0.2
+950,2026-02-23,Dinner,0,,357,Mignonette Sauce (1 tbsp),Condiment,5.0,0.0,1.0,0.0
+951,2026-02-23,Dinner,500,,358,Beef Pho (1 large bowl),Meal/Soup,450.0,30.0,55.0,12.0
+952,2026-02-23,Dinner,0,,359,Bean Sprouts (1/4 cup garnish),Vegetable,8.0,0.8,1.5,0.1
+953,2026-02-23,Dinner,0,,360,Thai Basil (garnish),Condiment,1.0,0.1,0.0,0.0
+954,2026-02-23,Dinner,0,,361,Lime Wedge (garnish),Condiment,3.0,0.1,1.0,0.0
+955,2026-02-23,Dinner,0,,362,Jalapeno (1 tbsp sliced),Vegetable,4.0,0.1,0.8,0.1
+956,2026-02-23,Dinner,0,,363,Hoisin Sauce (1 tbsp),Condiment,35.0,0.3,8.0,0.2
+957,2026-02-23,Dinner,0,,364,Sriracha (1 tsp),Condiment,5.0,0.1,1.0,0.1
+958,2026-02-23,Breakfast,0,,365,Crepe (1 plain),Grain,90.0,3.5,14.0,2.0
+959,2026-02-23,Breakfast,0,,366,Nutella (1 tbsp),Condiment,100.0,1.5,11.0,6.0
+960,2026-02-23,Breakfast,0,,367,Powdered Sugar (1 tsp),Condiment,10.0,0.0,2.5,0.0
+961,2026-02-23,Dinner,0,,368,Sake (3 oz),Beverage,117.0,0.4,3.8,0.0
+962,2026-02-23,Snack,250,,369,Edamame (in pod 1 cup),Legume,120.0,11.0,9.0,5.0
+963,2026-02-23,Snack,0,,370,Sea Salt (coarse 1/4 tsp),Condiment,0.0,0.0,0.0,0.0
+964,2026-02-23,Dinner,0,,371,Biryani (Chicken 1.5 cups),Meal/Meat,520.0,28.0,60.0,18.0
+965,2026-02-23,Dinner,0,,372,Raita (2 tbsp),Condiment/Dairy,30.0,1.0,2.0,2.0
+966,2026-02-23,Snack,240,,373,Lassi (Mango 1 cup),Beverage,180.0,5.0,30.0,4.0
+967,2026-02-23,Snack,0,,374,Samosa (1 piece vegetable),Snack/Processed,130.0,2.0,18.0,6.0
+968,2026-02-23,Snack,0,,375,Tamarind Chutney (1 tbsp),Condiment,20.0,0.1,5.0,0.0
+969,2026-02-23,Snack,0,,376,Mint Chutney (1 tbsp),Condiment,5.0,0.2,0.5,0.0
+970,2026-02-23,Snack,0,,377,Pani Puri (6 pcs),Snack/Processed,200.0,4.0,35.0,5.0
+971,2026-02-23,Snack,0,,378,Passion Fruit (1 fruit),Fruit,17.0,0.4,4.2,0.1
+972,2026-02-23,Dinner,500,,379,Kimchi Jjigae (1 bowl),Meal/Soup,350.0,15.0,20.0,22.0
+973,2026-02-23,Dinner,0,,380,Silken Tofu (3oz in soup),Protein/Vegetarian,45.0,5.0,2.0,2.5
+974,2026-02-23,Dinner,0,,381,Pork Belly (1 oz in soup),Protein/Meat,145.0,3.0,0.0,15.0
+975,2026-02-23,Dinner,0,,382,Gochugaru (1 tsp),Condiment,10.0,0.3,1.8,0.3
+976,2026-02-23,Dinner,0,,383,Gochujang (1 tbsp),Condiment,30.0,0.5,6.0,0.0
+977,2026-02-23,Dinner,0,,384,Sesame Oil (1 tsp),Condiment,40.0,0.0,0.0,4.5
+978,2026-02-23,Dinner,0,,385,Fish Sauce (1 tsp),Condiment,5.0,0.4,0.5,0.0
+979,2026-02-23,Dinner,0,,386,Green Onion (1 tbsp garnish),Vegetable,3.0,0.2,0.7,0.0
+980,2026-02-23,Snack,473,,387,Kombucha (16 oz),Beverage,60.0,0.0,14.0,0.0
+981,2026-02-23,Dinner,0,,388,Beef Wellington (1 slice),Meal/Meat,600.0,30.0,35.0,38.0
+982,2026-02-23,Dinner,0,,389,Pate (Mushroom 2 tbsp),Condiment,70.0,1.0,2.0,7.0
+983,2026-02-23,Dinner,0,,390,Puff Pastry (1 oz wrapper),Grain,115.0,1.5,9.0,8.0
+984,2026-02-23,Dinner,0,,391,Prosciutto (1 slice),Protein/Meat,35.0,4.0,0.0,2.5
+985,2026-02-23,Dinner,0,,392,Asparagus (6 spears roasted),Vegetable,40.0,4.0,4.0,2.0
+986,2026-02-23,Dinner,0,,393,Hollandaise Sauce (1 tbsp),Condiment,55.0,0.5,0.2,6.0
+987,2026-02-23,Snack,0,,394,Flan (1 slice),Dessert,220.0,6.0,35.0,7.0
+988,2026-02-23,Snack,0,,395,Caramel Sauce (1 tbsp),Condiment,60.0,0.0,13.0,1.0
+989,2026-02-23,Breakfast,0,,396,Congee (1 cup plain),Meal/Grain,130.0,2.5,28.0,1.0
+990,2026-02-23,Breakfast,0,,397,Pickled Radish (1/4 cup),Vegetable,15.0,0.5,3.0,0.0
+991,2026-02-23,Breakfast,0,,398,Pork Floss (1 tbsp),Protein/Meat,50.0,4.0,3.0,2.0
+992,2026-02-23,Breakfast,0,,399,Century Egg (1 egg),Protein,100.0,7.0,1.0,7.0
+993,2026-02-23,Lunch,0,,400,Arugula (2 cups),Vegetable,10.0,1.0,0.8,0.2
+994,2026-02-23,Lunch,0,,401,Goat Cheese (1 oz),Dairy,103.0,6.1,0.1,8.5
+995,2026-02-23,Lunch,0,,402,Beets (1/2 cup roasted),Vegetable,30.0,0.8,6.8,0.1
+996,2026-02-23,Lunch,0,,403,Walnuts (1 tbsp chopped),Nut,46.0,1.1,1.0,4.6
+997,2026-02-23,Lunch,0,,404,Balsamic Glaze (1 tbsp),Condiment,40.0,0.0,9.0,0.0
+998,2026-02-23,Dinner,0,,405,Bobotie (1 serving),Meal/Meat,450.0,25.0,30.0,25.0
+999,2026-02-23,Dinner,0,,406,Yellow Rice (1 cup),Grain,230.0,4.0,50.0,1.0
+1000,2026-02-23,Dinner,0,,407,Chutney (Mango 1 tbsp),Condiment,45.0,0.1,11.0,0.1
+1001,2026-02-23,Snack,0,,408,Malva Pudding (1 slice),Dessert,380.0,5.0,60.0,14.0
+1002,2026-02-23,Snack,0,,409,Custard (1/4 cup),Condiment,80.0,3.0,10.0,3.0
+1003,2026-02-23,Snack,473,,410,Bubble Tea (16 oz milk tea),Beverage,320.0,2.0,70.0,4.0
+1004,2026-02-23,Snack,0,,411,Tapioca Pearls (1/4 cup boba),Condiment,100.0,0.0,25.0,0.0
+1005,2026-02-23,Dinner,0,,412,Paella (1.5 cups seafood),Meal/Rice,550.0,30.0,70.0,18.0
+1006,2026-02-23,Dinner,0,,413,Chorizo (1 oz in paella),Protein/Meat,130.0,6.0,1.0,11.0
+1007,2026-02-23,Dinner,0,,414,Saffron (pinch),Condiment,1.0,0.0,0.1,0.0
+1008,2026-02-23,Dinner,0,,415,Aioli (Garlic 1 tbsp),Condiment,95.0,0.1,0.5,10.5
+1009,2026-02-23,Lunch,240,,416,Gazpacho (1 cup),Meal/Soup,90.0,2.0,12.0,4.0
+1010,2026-02-23,Lunch,0,,417,Croutons (Garlic 1/4 cup),Grain,50.0,1.5,7.0,2.0
+1011,2026-02-23,Lunch,0,,418,Olive Oil (1 tsp garnish),Condiment,40.0,0.0,0.0,4.5
+1012,2026-02-23,Snack,0,,419,Churros (2 sticks),Dessert,240.0,3.0,30.0,12.0
+1013,2026-02-23,Snack,0,,420,Chocolate Sauce (1 tbsp dipping),Condiment,50.0,0.5,10.0,1.5
+1014,2026-02-23,Snack,0,,421,Cinnamon Sugar (1 tsp),Condiment,20.0,0.0,5.0,0.0
+1015,2026-02-23,Snack,240,,422,Horchata (1 cup),Beverage,140.0,2.0,25.0,3.0
+1016,2026-02-23,Lunch,0,,423,Ceviche (1 cup fish),Meal/Fish,180.0,25.0,15.0,2.0
+1017,2026-02-23,Lunch,0,,424,Red Onion (1/4 cup in ceviche),Vegetable,16.0,0.3,3.7,0.0
+1018,2026-02-23,Lunch,0,,425,Cilantro (2 tbsp garnish),Condiment,1.0,0.1,0.0,0.0
+1019,2026-02-23,Snack,0,,426,Corn Nuts (1 oz),Snack/Processed,130.0,2.0,23.0,4.0
+1020,2026-02-23,Dinner,0,,427,Lomo Saltado (1.5 cups),Meal/Meat,500.0,35.0,45.0,22.0
+1021,2026-02-23,Dinner,0,,428,French Fries (as side),Vegetable/Processed,200.0,2.0,25.0,10.0
+1022,2026-02-23,Dinner,0,,429,Soy Sauce (1 tbsp in stir-fry),Condiment,9.0,1.0,1.0,0.0
+1023,2026-02-23,Dinner,0,,430,Aji Amarillo Paste (1 tsp),Condiment,5.0,0.1,1.0,0.0
+1024,2026-02-23,Snack,180,,431,Pisco Sour (1 drink),Beverage,250.0,1.0,25.0,0.0
+1025,2026-02-23,Snack,0,,432,Egg White (in drink),Condiment,17.0,3.6,0.2,0.0
+1026,2026-02-23,Snack,0,,433,Angostura Bitters (dash),Condiment,5.0,0.0,0.0,0.0
+1027,2026-02-23,Snack,0,,434,Alfajores (1 cookie),Dessert,180.0,2.0,22.0,10.0
+1028,2026-02-23,Snack,0,,435,Dulce de Leche (1 tbsp filling),Condiment,65.0,1.0,12.0,1.5
+1029,2026-02-23,Snack,0,,436,Coconut (shredded garnish),Fruit,10.0,0.1,0.5,1.0
+1030,2026-02-23,Breakfast,240,,437,Mate (1 cup),Beverage,5.0,0.2,1.0,0.0
+1031,2026-02-23,Breakfast,0,,438,Media Luna (1 pastry),Grain,190.0,4.0,25.0,8.0
+1032,2026-02-23,Dinner,0,,439,Chimichurri (1 tbsp),Condiment,45.0,0.1,0.5,4.5
+1033,2026-02-23,Dinner,0,,440,Skirt Steak (4oz grilled),Protein/Meat,240.0,26.0,0.0,15.0
+1034,2026-02-23,Dinner,0,,441,Provoleta (1 oz grilled cheese),Dairy,100.0,7.0,1.0,8.0
+1035,2026-02-23,Dinner,0,,442,Oregano (1 tsp),Condiment,3.0,0.1,0.7,0.0
+1036,2026-02-23,Lunch,0,,443,Empanada (Beef 1 medium),Meal/Processed,290.0,10.0,28.0,16.0
+1037,2026-02-23,Dinner,0,,444,Chicken Milanesa (1 serving),Meal/Meat,450.0,35.0,30.0,22.0
+1038,2026-02-23,Dinner,0,,445,Mashed Potatoes (side),Vegetable,150.0,3.0,25.0,4.0
+1039,2026-02-23,Lunch,250,,446,Choripan (1 sandwich),Meal/Processed,550.0,20.0,40.0,35.0
+1040,2026-02-23,Lunch,0,,447,Baguette (slice),Grain,70.0,2.5,14.0,0.5
+1041,2026-02-23,Lunch,0,,439,Chimichurri (1 tbsp),Condiment,45.0,0.1,0.5,4.5
+1042,2026-02-23,Dinner,250,,448,Pizza (Margherita 1 slice),Meal/Processed,250.0,12.0,30.0,10.0
+1043,2026-02-23,Dinner,0,,449,Fresh Mozzarella (1 oz),Dairy,72.0,5.0,0.8,5.0
+1044,2026-02-23,Dinner,0,,450,Basil (2 tbsp fresh),Condiment,1.0,0.1,0.1,0.0
+1045,2026-02-23,Dinner,0,,451,Carbonara (1.5 cups),Meal/Pasta,650.0,25.0,60.0,35.0
+1046,2026-02-23,Dinner,0,,452,Guanciale (1 oz),Protein/Meat,170.0,3.0,0.0,18.0
+1047,2026-02-23,Dinner,0,,453,Pecorino Cheese (1 tbsp),Dairy,25.0,1.5,0.1,2.0
+1048,2026-02-23,Dinner,0,,454,Black Pepper (1/4 tsp),Condiment,1.0,0.0,0.2,0.0
+1049,2026-02-23,Dinner,0,,455,Egg Yolk (1 large in sauce),Protein,55.0,2.7,0.6,4.5
+1050,2026-02-23,Snack,0,,456,Supplì (1 piece fried rice ball),Snack/Processed,200.0,8.0,25.0,8.0
+1051,2026-02-23,Snack,150,,457,Aperol Spritz (1 drink),Beverage,180.0,0.0,20.0,0.0
+1052,2026-02-23,Snack,0,,458,Prosecco (3 oz),Beverage,70.0,0.0,2.0,0.0
+1053,2026-02-23,Snack,0,,459,Club Soda (2 oz),Beverage,0.0,0.0,0.0,0.0
+1054,2026-02-23,Snack,0,,460,Orange Slice (garnish),Fruit,5.0,0.1,1.0,0.0
+1055,2026-02-23,Dinner,500,,461,Tagliatelle al Ragù (Bolognese),Meal/Pasta,550.0,28.0,65.0,20.0
+1056,2026-02-23,Dinner,0,,462,Ground Beef (2 oz in sauce),Protein/Meat,140.0,11.0,0.0,10.0
+1057,2026-02-23,Dinner,0,,463,Pancetta (0.5 oz in sauce),Protein/Meat,45.0,1.5,0.0,4.5
+1058,2026-02-23,Dinner,0,,464,Carrot (1/4 minced in sauce),Vegetable,10.0,0.2,2.4,0.1
+1059,2026-02-23,Dinner,0,,465,Celery (1/4 stalk minced),Vegetable,2.0,0.1,0.4,0.0
+1060,2026-02-23,Dinner,0,,466,Onion (1/8 minced in sauce),Vegetable,5.0,0.1,1.2,0.0
+1061,2026-02-23,Dinner,0,,467,Crushed Tomatoes (1/2 cup sauce),Vegetable,20.0,1.0,4.0,0.0
+1062,2026-02-23,Dinner,0,,468,Parmigiano-Reggiano (1 tbsp),Dairy,22.0,2.0,0.2,1.5
+1063,2026-02-23,Snack,0,,469,Cannoli (1 medium),Dessert,240.0,5.0,25.0,13.0
+1064,2026-02-23,Snack,0,,470,Ricotta (filling 1 oz),Dairy,49.0,3.2,0.8,3.8
+1065,2026-02-23,Snack,0,,471,Pistachio (garnish),Nut,10.0,0.4,0.5,0.8
+1066,2026-02-23,Snack,0,,472,Biscotti (1 cookie),Dessert,110.0,2.0,18.0,4.0
+1067,2026-02-23,Snack,30,,473,Espresso (for dipping),Beverage,2.0,0.2,0.0,0.0
+1068,2026-02-23,Lunch,0,,474,Focaccia (1 square),Grain,250.0,8.0,40.0,7.0
+1069,2026-02-23,Lunch,0,,475,Rosemary (1 tsp topping),Condiment,1.0,0.0,0.2,0.0
+1070,2026-02-23,Lunch,0,,476,Coarse Salt (garnish),Condiment,0.0,0.0,0.0,0.0
+1071,2026-02-23,Lunch,0,,477,Olive Oil (1 tbsp drizzle),Condiment,120.0,0.0,0.0,14.0
+1072,2026-02-23,Snack,0,,478,Bruschetta (2 pcs),Snack/Appetizer,180.0,4.0,25.0,7.0
+1073,2026-02-23,Snack,0,,479,Balsamic Glaze (1 tsp),Condiment,13.0,0.0,3.0,0.0
+1074,2026-02-23,Dinner,500,,480,Ribollita (1.5 cups soup),Meal/Soup,350.0,15.0,55.0,8.0
+1075,2026-02-23,Dinner,0,,481,Cannellini Beans (1/2 cup in soup),Legume,105.0,7.0,20.0,0.5
+1076,2026-02-23,Dinner,0,,482,Kale (1 cup in soup),Vegetable,33.0,2.9,6.0,0.6
+1077,2026-02-23,Dinner,0,,483,Stale Bread (1/2 cup in soup),Grain,80.0,3.0,15.0,1.0
+1078,2026-02-23,Dinner,0,,484,Polenta (1 cup creamy),Meal/Grain,150.0,3.0,32.0,1.0
+1079,2026-02-23,Dinner,0,,485,Gorgonzola Cheese (1 oz),Dairy,100.0,6.0,0.7,8.0
+1080,2026-02-23,Snack,90,,486,Negroni (1 drink),Beverage,190.0,0.0,15.0,0.0
+1081,2026-02-23,Snack,0,,487,Gin (1 oz),Beverage,70.0,0.0,0.0,0.0
+1082,2026-02-23,Snack,0,,488,Campari (1 oz),Beverage,80.0,0.0,10.0,0.0
+1083,2026-02-23,Snack,0,,489,Sweet Vermouth (1 oz),Beverage,40.0,0.0,5.0,0.0
+1084,2026-02-23,Snack,0,,490,Orange Peel (garnish),Condiment,1.0,0.0,0.2,0.0
+1085,2026-02-23,Dinner,0,,491,Osso Buco (1 serving),Meal/Meat,550.0,45.0,15.0,30.0
+1086,2026-02-23,Dinner,0,,492,Gremolata (1 tbsp),Condiment,15.0,0.5,1.0,1.0
+1087,2026-02-23,Dinner,0,,493,Risotto alla Milanese (1 cup),Meal/Rice,350.0,10.0,50.0,12.0
+1088,2026-02-23,Dinner,0,,494,Saffron (pinch in risotto),Condiment,1.0,0.0,0.1,0.0
+1089,2026-02-23,Snack,0,,495,Panettone (1 slice),Dessert,320.0,6.0,50.0,12.0
+1090,2026-02-23,Snack,0,,496,Candied Fruit (1 tbsp),Fruit,30.0,0.0,8.0,0.0
+1091,2026-02-23,Snack,0,,497,Amaretti Cookie (2 cookies),Dessert,90.0,2.0,12.0,4.0
+1092,2026-02-23,Snack,0,,498,Limoncello (1.5 oz shot),Beverage,150.0,0.0,18.0,0.0
+1093,2026-02-23,Snack,0,,499,Panna Cotta (1 serving),Dessert,300.0,4.0,25.0,20.0
+1094,2026-02-23,Snack,0,,500,Berry Coulis (1 tbsp),Condiment,20.0,0.0,5.0,0.0
+1095,2026-02-23,Dinner,0,,501,Saltimbocca (1 serving),Meal/Meat,380.0,38.0,5.0,22.0
+1096,2026-02-23,Dinner,0,,502,Prosciutto (1 slice wrapper),Protein/Meat,35.0,4.0,0.0,2.5
+1097,2026-02-23,Dinner,0,,503,Sage (2 leaves),Condiment,1.0,0.0,0.1,0.0
+1098,2026-02-23,Dinner,0,,504,Polenta (grilled 1 slice),Meal/Grain,120.0,2.5,25.0,1.0
+1099,2026-02-23,Dinner,0,,505,Caponata (1/2 cup),Meal/Vegetable,180.0,2.0,15.0,14.0
+1100,2026-02-23,Dinner,0,,506,Eggplant (1/2 cup in caponata),Vegetable,40.0,0.5,6.0,2.0
+1101,2026-02-23,Dinner,0,,507,Pine Nuts (1/2 tbsp),Nut,48.0,1.0,1.0,5.0
+1102,2026-02-23,Dinner,0,,508,Raisins (1 tbsp),Fruit,27.0,0.3,7.0,0.0
+1103,2026-02-23,Snack,0,,509,Gelato (Pistachio 1/2 cup),Dessert,220.0,5.0,24.0,12.0
+1104,2026-02-23,Snack,0,,510,Waffle Cone (1 small),Grain,70.0,1.0,13.0,1.5
+1105,2026-02-23,Dinner,0,,511,Cacio e Pepe (1.5 cups),Meal/Pasta,500.0,18.0,65.0,19.0
+1106,2026-02-23,Dinner,0,,512,Pecorino Romano (1/4 cup),Dairy,110.0,7.5,1.0,8.5
+1107,2026-02-23,Dinner,0,,513,Black Pepper (1/2 tsp),Condiment,3.0,0.1,0.7,0.0
+1108,2026-02-23,Dinner,0,,514,Fiorentina Steak (3oz portion),Protein/Meat,230.0,24.0,0.0,15.0
+1109,2026-02-23,Dinner,0,,477,Olive Oil (1 tbsp drizzle),Condiment,120.0,0.0,0.0,14.0
+1110,2026-02-23,Dinner,0,,515,Rosemary (garnish),Condiment,1.0,0.0,0.2,0.0
+1111,2026-02-23,Dinner,0,,516,White Beans (Tuscan style 1/2 cup),Legume,150.0,8.0,20.0,4.0
+1112,2026-02-23,Dinner,0,,517,Garlic (1 clove in beans),Vegetable,4.0,0.2,0.9,0.0
+1113,2026-02-23,Dinner,0,,518,Sage (in beans),Condiment,1.0,0.0,0.1,0.0
+1114,2026-02-23,Snack,0,,519,Arancini (1 large ball),Snack/Processed,250.0,9.0,30.0,10.0
+1115,2026-02-23,Snack,0,,520,Ragù (filling 1 tbsp),Condiment,25.0,1.5,1.0,1.5
+1116,2026-02-23,Snack,0,,521,Mozzarella (filling 0.5 oz),Dairy,40.0,3.0,0.5,3.0
+1117,2026-02-23,Snack,0,,522,Breadcrumbs (coating),Grain,25.0,0.5,4.0,0.5
+1118,2026-02-23,Snack,150,,523,Campari & Soda (1 drink),Beverage,85.0,0.0,10.0,0.0
+1119,2026-02-23,Snack,0,,524,Olive (garnish),Fruit,5.0,0.0,0.1,0.5
+1120,2026-02-23,Lunch,0,,525,Vitello Tonnato (1 serving),Meal/Meat,380.0,35.0,3.0,25.0
+1121,2026-02-23,Lunch,0,,526,Tuna Sauce (2 tbsp),Condiment,100.0,4.0,1.0,9.0
+1122,2026-02-23,Lunch,0,,527,Capers (garnish),Condiment,2.0,0.2,0.4,0.1
+1123,2026-02-23,Lunch,0,,528,Lemon Slice (garnish),Condiment,1.0,0.0,0.3,0.0
+1124,2026-02-23,Dinner,0,,529,Gnocchi alla Sorrentina (1.5 cups),Meal/Pasta,450.0,15.0,60.0,18.0
+1125,2026-02-23,Dinner,0,,530,Tomato Sauce (1/2 cup),Condiment,40.0,1.5,7.0,1.0
+1126,2026-02-23,Dinner,0,,531,Mozzarella (1 oz melted),Dairy,80.0,6.0,1.0,6.0
+1127,2026-02-23,Dinner,0,,532,Basil (fresh garnish),Condiment,1.0,0.1,0.0,0.0
+1128,2026-02-23,Dinner,0,,533,Pesto (1/4 cup),Condiment,290.0,5.0,4.0,29.0
+1129,2026-02-23,Dinner,0,,534,Pine Nuts (1 tbsp in pesto),Nut,95.0,2.0,2.0,10.0
+1130,2026-02-23,Dinner,0,,535,Garlic (1/2 clove in pesto),Vegetable,2.0,0.1,0.5,0.0
+1131,2026-02-23,Dinner,0,,536,Trofie Pasta (1 cup cooked),Grain,210.0,7.0,43.0,1.0
+1132,2026-02-23,Dinner,0,,537,Green Beans (1/2 cup w/ pasta),Vegetable,15.0,0.9,3.5,0.1
+1133,2026-02-23,Dinner,0,,538,Potato (1/2 w/ pasta),Vegetable,65.0,1.0,15.0,0.1
+1134,2026-02-23,Snack,120,,539,Espresso Martini (1 drink),Beverage,280.0,0.5,25.0,0.0
+1135,2026-02-23,Snack,0,,540,Vodka (1.5 oz),Beverage,97.0,0.0,0.0,0.0
+1136,2026-02-23,Snack,0,,541,Coffee Liqueur (1 oz),Beverage,100.0,0.0,15.0,0.0
+1137,2026-02-23,Snack,0,,542,Espresso (1 oz in drink),Beverage,3.0,0.3,0.0,0.1
+1138,2026-02-23,Snack,0,,543,Simple Syrup (1/2 oz),Condiment,30.0,0.0,8.0,0.0
+1139,2026-02-23,Snack,0,,544,Coffee Beans (3 garnish),Snack,2.0,0.1,0.3,0.0
+1140,2026-02-23,Snack,0,,545,Baba Ganoush (1/4 cup),Meal/Vegetable,100.0,2.0,8.0,7.0
+1141,2026-02-23,Snack,0,,546,Pita Bread (1 white),Grain,165.0,5.5,33.0,1.2
+1142,2026-02-23,Lunch,0,,547,Falafel (3 pieces),Meal/Vegetarian,180.0,6.0,18.0,9.0
+1143,2026-02-23,Lunch,0,,548,Tahini Sauce (1 tbsp),Condiment,30.0,1.0,1.5,2.5
+1144,2026-02-23,Lunch,0,,549,Pickled Turnips (2 tbsp),Vegetable,10.0,0.2,2.0,0.0
+1145,2026-02-23,Lunch,250,,550,Shawarma (Chicken 1 wrap),Meal/Processed,550.0,30.0,50.0,25.0
+1146,2026-02-23,Lunch,0,,551,Garlic Sauce (1 tbsp),Condiment,90.0,0.1,1.0,10.0
+1147,2026-02-23,Lunch,0,,552,Hummus (1/4 cup),Legume,130.0,5.0,10.0,8.0
+1148,2026-02-23,Lunch,0,,553,Tabouli (1/2 cup),Meal/Vegetarian,120.0,3.0,15.0,6.0
+1149,2026-02-23,Lunch,0,,554,Bulgur (1/4 cup in tabouli),Grain,76.0,2.7,16.8,0.2
+1150,2026-02-23,Lunch,0,,555,Parsley (1/4 cup in tabouli),Vegetable,5.0,0.3,1.0,0.1
+1151,2026-02-23,Lunch,0,,556,Mint (1 tbsp in tabouli),Condiment,1.0,0.1,0.1,0.0
+1152,2026-02-23,Lunch,0,,557,Lemon Juice (1 tbsp dressing),Condiment,4.0,0.1,1.3,0.0
+1153,2026-02-23,Lunch,0,,558,Olive Oil (1 tbsp dressing),Condiment,120.0,0.0,0.0,14.0
+1154,2026-02-23,Snack,0,,559,Kibbeh (1 piece fried),Meal/Meat,230.0,9.0,20.0,13.0
+1155,2026-02-23,Snack,0,,560,Pine Nuts (1/2 tbsp filling),Nut,48.0,1.0,1.0,5.0
+1156,2026-02-23,Snack,0,,561,Ground Lamb (1 oz filling),Protein/Meat,80.0,5.5,0.0,6.0
+1157,2026-02-23,Snack,0,,562,Bulgur (1 tbsp shell),Grain,15.0,0.5,3.4,0.0
+1158,2026-02-23,Lunch,250,,563,Lentil Soup (1 cup Middle Eastern),Meal/Legume,200.0,10.0,30.0,5.0
+1159,2026-02-23,Lunch,0,,564,Cumin (1 tsp),Condiment,8.0,0.3,1.5,0.5
+1160,2026-02-23,Lunch,0,,565,Coriander (1 tsp),Condiment,5.0,0.1,1.0,0.2
+1161,2026-02-23,Lunch,0,,566,Lemon Juice (1 tsp in soup),Condiment,1.0,0.0,0.4,0.0
+1162,2026-02-23,Lunch,0,,567,Pita Crisps (1 oz),Snack/Processed,130.0,3.0,18.0,5.0
+1163,2026-02-23,Breakfast,0,,568,Manakeesh (Za'atar 1 small),Meal/Vegetarian,300.0,7.0,45.0,10.0
+1164,2026-02-23,Breakfast,0,,569,Za'atar (1 tbsp),Condiment,40.0,1.0,3.0,3.0
+1165,2026-02-23,Breakfast,0,,570,Olive Oil (1 tbsp on bread),Condiment,120.0,0.0,0.0,14.0
+1166,2026-02-23,Breakfast,0,,571,Labneh (2 tbsp),Dairy,60.0,4.0,2.0,4.0
+1167,2026-02-23,Breakfast,0,,572,Cucumber (1/4 cup side),Vegetable,8.0,0.3,1.8,0.0
+1168,2026-02-23,Breakfast,0,,573,Tomato (1/4 cup side),Vegetable,8.0,0.3,1.8,0.1
+1169,2026-02-23,Breakfast,0,,574,Olives (5 side),Fruit,35.0,0.2,1.0,3.5
+1170,2026-02-23,Breakfast,240,,575,Mint Tea (1 cup),Beverage,2.0,0.1,0.5,0.0
+1171,2026-02-23,Snack,0,,576,Stuffed Grape Leaves (3 pcs),Meal/Vegetarian,150.0,3.0,20.0,7.0
+1172,2026-02-23,Snack,0,,577,Rice (1/4 cup filling),Grain,51.0,1.1,11.1,0.1
+1173,2026-02-23,Snack,60,,578,Turkish Coffee (1 small cup),Beverage,5.0,0.2,0.5,0.0
+1174,2026-02-23,Snack,0,,579,Cardamom (in coffee),Condiment,1.0,0.0,0.2,0.0
+1175,2026-02-23,Dinner,0,,580,Shish Tawook (2 skewers),Meal/Meat,300.0,35.0,5.0,16.0
+1176,2026-02-23,Dinner,0,,581,Garlic Sauce (Toum 1 tbsp),Condiment,90.0,0.1,1.0,10.0
+1177,2026-02-23,Dinner,0,,582,French Fries (side),Vegetable/Processed,340.0,4.0,44.0,17.0
+1178,2026-02-23,Dinner,0,,583,Pickled Cucumber (1/4 cup),Vegetable,10.0,0.5,2.0,0.0
+1179,2026-02-23,Lunch,0,,584,Fattoush Salad (1.5 cups),Meal/Vegetarian,250.0,5.0,25.0,15.0
+1180,2026-02-23,Lunch,0,,585,Fried Pita (1/2 pita in salad),Grain,80.0,2.0,12.0,3.0
+1181,2026-02-23,Lunch,0,,586,Sumac (1/2 tsp dressing),Condiment,5.0,0.1,1.0,0.2
+1182,2026-02-23,Lunch,0,,587,Pomegranate Molasses (1 tsp),Condiment,15.0,0.0,4.0,0.0
+1183,2026-02-23,Breakfast,250,,1,Scrambled Eggs (2 large),Protein/Dairy,180.0,12.0,2.0,14.0
+1184,2026-02-23,Breakfast,0,,2,Whole Wheat Toast (1 slice),Grain,80.0,4.0,14.0,1.0
+1185,2026-02-23,Breakfast,0,,3,Coffee (black),Beverage,5.0,0.3,0.0,0.1
+1186,2026-02-23,Breakfast,0,,4,Banana,Fruit,105.0,1.3,27.0,0.4
+1187,2026-02-23,Lunch,500,,5,Grilled Chicken Salad,Meal/Protein,350.0,30.0,10.0,20.0
+1188,2026-02-23,Snack,0,,6,Apple,Fruit,95.0,0.5,25.0,0.3
+1189,2026-02-23,Dinner,250,,7,Salmon (4oz grilled),Protein/Fish,230.0,25.0,0.0,14.0
+1190,2026-02-23,Dinner,0,,8,Quinoa (1 cup cooked),Grain,222.0,8.0,39.0,3.6
+1191,2026-02-23,Dinner,0,,9,Steamed Broccoli (1 cup),Vegetable,55.0,3.7,11.2,0.6
+1192,2026-02-23,Snack,250,,10,Greek Yogurt (plain 1 cup),Dairy,150.0,25.0,8.0,3.0
+1193,2026-02-23,Breakfast,250,,11,Oatmeal (1 cup cooked),Grain,160.0,6.0,28.0,3.0
+1194,2026-02-23,Breakfast,0,,12,Blueberries (1/2 cup),Fruit,42.0,0.5,11.0,0.2
+1195,2026-02-23,Snack,0,,13,Almonds (1 oz),Nut,164.0,6.0,6.0,14.0
+1196,2026-02-23,Lunch,500,,14,Turkey Sandwich (on wheat),Meal/Processed,340.0,22.0,34.0,12.0
+1197,2026-02-23,Snack,0,,15,Carrot Sticks (1 cup),Vegetable,52.0,1.2,12.3,0.3
+1198,2026-02-23,Dinner,250,,16,Spaghetti Bolognese,Meal/Pasta,460.0,20.0,55.0,18.0
+1199,2026-02-23,Dinner,0,,17,Side Salad (light dressing),Vegetable,70.0,2.0,8.0,4.0
+1200,2026-02-23,Snack,500,,18,Protein Shake (Whey),Supplement,120.0,24.0,3.0,1.0
+1201,2026-02-23,Breakfast,0,,19,Cereal (Frosted Flakes 1 cup),Grain/Processed,130.0,2.0,31.0,0.0
+1202,2026-02-23,Lunch,250,,20,Lentil Soup (1 can),Meal/Legume,230.0,15.0,35.0,3.0
+1203,2026-02-23,Dinner,0,,21,White Rice (1 cup cooked),Grain,204.0,4.2,44.5,0.4
+1204,2026-02-23,Dinner,250,,22,Tofu Stir-fry,Meal/Vegetarian,400.0,18.0,30.0,22.0
+1205,2026-02-23,Snack,0,,23,Orange,Fruit,62.0,1.2,15.4,0.2
+1206,2026-02-23,Breakfast,250,,24,Bagel (plain),Grain,270.0,11.0,55.0,1.5
+1207,2026-02-23,Breakfast,0,,25,Cream Cheese (2 tbsp),Dairy,100.0,2.0,2.0,10.0
+1208,2026-02-23,Lunch,500,,26,Tuna Salad (1/2 cup),Meal/Fish,190.0,19.0,2.0,12.0
+1209,2026-02-23,Lunch,0,,27,Crackers (5 whole wheat),Grain/Processed,90.0,2.0,14.0,3.0
+1210,2026-02-23,Dinner,250,,28,Beef Steak (6oz sirloin),Protein/Meat,270.0,42.0,0.0,10.0
+1211,2026-02-23,Dinner,0,,29,Baked Potato (medium),Vegetable,160.0,4.3,36.0,0.2
+1212,2026-02-23,Snack,0,,30,Ice Cream (1/2 cup vanilla),Dairy/Dessert,145.0,2.5,17.0,7.5
+1213,2026-02-23,Dinner,250,,31,Pizza (1 slice pepperoni),Meal/Processed,290.0,12.0,34.0,12.0
+1214,2026-02-23,Breakfast,500,,32,Avocado Toast (1 slice),Meal/Vegetarian,260.0,7.0,28.0,15.0
+1215,2026-02-23,Snack,0,,33,Hard-Boiled Egg (1 large),Protein,78.0,6.3,0.6,5.3
+1216,2026-02-23,Lunch,250,,34,Chicken Wrap (with tortilla),Meal/Processed,410.0,25.0,38.0,17.0
+1217,2026-02-23,Snack,0,,35,Grapes (1 cup),Fruit,104.0,1.1,27.0,0.2
+1218,2026-02-23,Snack,0,,36,Cottage Cheese (1/2 cup),Dairy,90.0,12.0,5.0,3.0
+1219,2026-02-23,Dinner,500,,37,Burger (cheeseburger),Meal/Processed,550.0,30.0,40.0,30.0
+1220,2026-02-23,Dinner,0,,38,French Fries (medium),Vegetable/Processed,340.0,4.0,44.0,17.0
+1221,2026-02-23,Snack,500,,39,Protein Bar,Supplement/Processed,210.0,20.0,22.0,7.0
+1222,2026-02-23,Lunch,0,,40,Black Beans (1/2 cup),Legume,114.0,7.6,20.4,0.5
+1223,2026-02-23,Lunch,0,,41,Salsa (1/4 cup),Vegetable,20.0,0.8,4.5,0.1
+1224,2026-02-23,Lunch,250,,42,Chicken Noodle Soup (1 can),Meal/Processed,150.0,7.0,18.0,5.0
+1225,2026-02-23,Snack,0,,43,Peanut Butter (2 tbsp),Nut,190.0,7.0,8.0,16.0
+1226,2026-02-23,Snack,0,,44,Celery Sticks (1 cup),Vegetable,14.0,0.6,3.0,0.2
+1227,2026-02-23,Dinner,250,,45,Cod (4oz baked),Protein/Fish,95.0,20.0,0.0,0.8
+1228,2026-02-23,Dinner,0,,46,Green Beans (1 cup),Vegetable,31.0,1.8,7.0,0.2
+1229,2026-02-23,Snack,0,,47,Chocolate Chip Cookie (1 large),Dessert,220.0,2.5,30.0,11.0
+1230,2026-02-23,Dinner,250,,48,Shrimp (3oz steamed),Protein/Fish,84.0,20.0,0.2,0.2
+1231,2026-02-23,Breakfast,0,,49,Pancakes (2 medium),Grain,180.0,5.0,30.0,5.0
+1232,2026-02-23,Breakfast,0,,50,Maple Syrup (2 tbsp),Condiment,104.0,0.0,27.0,0.0
+1233,2026-02-23,Breakfast,0,,51,Sausage Link (1 cooked),Protein/Meat,85.0,5.0,1.0,7.0
+1234,2026-02-23,Breakfast,250,,52,Smoothie (Fruit & Yogurt),Beverage/Meal,280.0,12.0,55.0,3.0
+1235,2026-02-23,Lunch,0,,53,Tofu (4oz firm),Protein/Vegetarian,90.0,10.0,3.0,5.0
+1236,2026-02-23,Lunch,0,,54,Brown Rice (1 cup cooked),Grain,215.0,5.0,45.0,1.8
+1237,2026-02-23,Lunch,0,,55,Bell Pepper (1 medium red),Vegetable,31.0,1.2,6.0,0.3
+1238,2026-02-23,Snack,0,,56,Hummus (2 tbsp),Legume,70.0,2.0,4.0,5.0
+1239,2026-02-23,Snack,0,,57,Pita Bread (1 whole wheat),Grain,170.0,6.0,35.0,1.5
+1240,2026-02-23,Dinner,250,,58,Pork Chop (4oz grilled),Protein/Meat,220.0,30.0,0.0,10.0
+1241,2026-02-23,Dinner,0,,59,Mashed Potatoes (1 cup),Vegetable,230.0,4.0,35.0,8.0
+1242,2026-02-23,Dinner,0,,60,Corn (1 cup),Vegetable,132.0,4.7,30.0,1.8
+1243,2026-02-23,Snack,355,,61,Soda (1 can Coke),Beverage,140.0,0.0,39.0,0.0
+1244,2026-02-23,Snack,0,,62,Pretzels (1 oz),Grain/Processed,110.0,3.0,23.0,1.0
+1245,2026-02-23,Snack,0,,63,Cheddar Cheese (1 oz),Dairy,115.0,7.0,1.0,9.5
+1246,2026-02-23,Lunch,250,,64,Caesar Salad (with chicken),Meal/Protein,470.0,30.0,15.0,30.0
+1247,2026-02-23,Breakfast,240,,65,Orange Juice (1 cup),Beverage,112.0,1.7,25.8,0.5
+1248,2026-02-23,Breakfast,0,,66,Bacon (2 slices cooked),Protein/Meat,86.0,6.0,0.2,6.8
+1249,2026-02-23,Breakfast,0,,67,Waffles (2 homemade),Grain,220.0,6.0,28.0,9.0
+1250,2026-02-23,Snack,0,,68,Pear,Fruit,101.0,0.6,27.0,0.2
+1251,2026-02-23,Lunch,500,,69,Chicken Breast (4oz roasted),Protein/Meat,185.0,35.0,0.0,4.0
+1252,2026-02-23,Snack,0,,70,Mixed Nuts (1/4 cup),Nut,200.0,6.0,8.0,18.0
+1253,2026-02-23,Dinner,0,,71,Tilapia (4oz baked),Protein/Fish,110.0,22.0,0.0,2.5
+1254,2026-02-23,Dinner,0,,72,Asparagus (1 cup steamed),Vegetable,40.0,4.3,7.4,0.4
+1255,2026-02-23,Dinner,0,,73,Sweet Potato (1 medium baked),Vegetable,103.0,2.3,23.6,0.2
+1256,2026-02-23,Snack,250,,74,Popcorn (3 cups air-popped),Grain,93.0,3.0,18.6,1.1
+1257,2026-02-23,Snack,0,,75,Raisins (1/4 cup),Fruit,130.0,1.3,34.0,0.2
+1258,2026-02-23,Lunch,250,,76,Macaroni & Cheese (1 cup),Meal/Pasta,350.0,10.0,40.0,17.0
+1259,2026-02-23,Lunch,0,,77,Tomato Soup (1 can),Meal/Vegetable,170.0,4.0,25.0,6.0
+1260,2026-02-23,Lunch,0,,78,Grilled Cheese Sandwich,Meal/Processed,390.0,15.0,32.0,22.0
+1261,2026-02-23,Dinner,500,,79,Beef Tacos (2 hard shell),Meal/Meat,380.0,18.0,28.0,22.0
+1262,2026-02-23,Dinner,0,,80,Refried Beans (1/2 cup),Legume,115.0,7.0,19.0,1.0
+1263,2026-02-23,Dinner,0,,81,Guacamole (1/4 cup),Vegetable/Condiment,90.0,1.0,4.0,8.0
+1264,2026-02-23,Snack,0,,82,Watermelon (1 cup diced),Fruit,46.0,0.9,11.5,0.2
+1265,2026-02-23,Breakfast,250,,83,English Muffin (whole wheat),Grain,134.0,6.0,26.0,1.0
+1266,2026-02-23,Lunch,250,,84,Peanut Butter & Jelly Sandwich,Meal/Processed,390.0,12.0,50.0,17.0
+1267,2026-02-23,Lunch,0,,85,Clam Chowder (1 cup),Meal/Seafood,200.0,10.0,18.0,9.0
+1268,2026-02-23,Snack,500,,86,Iced Tea (Sweetened 16oz),Beverage,180.0,0.0,46.0,0.0
+1269,2026-02-23,Dinner,250,,87,Lasagna (1 serving meat),Meal/Pasta,350.0,20.0,30.0,17.0
+1270,2026-02-23,Dinner,0,,88,Garlic Bread (1 slice),Grain,150.0,4.0,18.0,7.0
+1271,2026-02-23,Snack,0,,89,Chocolate Milk (1 cup),Beverage/Dairy,200.0,8.0,26.0,8.0
+1272,2026-02-23,Breakfast,0,,90,White Bread (1 slice),Grain,70.0,2.0,13.0,1.0
+1273,2026-02-23,Breakfast,0,,91,Jelly (1 tbsp grape),Condiment,50.0,0.0,13.0,0.0
+1274,2026-02-23,Lunch,250,,92,Veggie Burger (1 patty),Protein/Vegetarian,120.0,11.0,10.0,4.0
+1275,2026-02-23,Lunch,0,,93,Bun (hamburger),Grain,140.0,4.0,26.0,2.0
+1276,2026-02-23,Lunch,0,,94,Ketchup (1 tbsp),Condiment,20.0,0.2,5.0,0.1
+1277,2026-02-23,Breakfast,250,,95,Muffin (Blueberry 1 large),Grain/Dessert,380.0,5.0,55.0,16.0
+1278,2026-02-23,Breakfast,250,,96,Coffee (with cream/sugar),Beverage,50.0,0.5,5.0,3.0
+1279,2026-02-23,Snack,0,,97,Potato Chips (1 oz),Snack/Processed,160.0,2.0,15.0,10.0
+1280,2026-02-23,Dinner,0,,98,Tzatziki Sauce (2 tbsp),Condiment/Dairy,30.0,1.5,2.0,2.0
+1281,2026-02-23,Dinner,0,,99,Scallops (3oz seared),Protein/Seafood,95.0,17.0,5.0,1.0
+1282,2026-02-23,Dinner,0,,100,Risotto (Mushroom 1 cup),Meal/Grain,250.0,7.0,35.0,9.0
+1283,2026-02-23,Lunch,250,,101,Caprese Salad,Meal/Vegetable,240.0,10.0,8.0,18.0
+1284,2026-02-23,Lunch,0,,102,Balsamic Vinaigrette (2 tbsp),Condiment,90.0,0.0,3.0,9.0
+1285,2026-02-23,Snack,0,,103,Cherries (1 cup),Fruit,77.0,1.6,19.0,0.5
+1286,2026-02-23,Breakfast,0,,104,Turkey Bacon (2 slices),Protein/Meat,70.0,6.0,1.0,5.0
+1287,2026-02-23,Breakfast,0,,105,Grits (1 cup cooked),Grain,150.0,3.0,32.0,1.0
+1288,2026-02-23,Breakfast,0,,106,Butter (1 tbsp),Condiment/Dairy,100.0,0.1,0.0,11.0
+1289,2026-02-23,Lunch,500,,107,Meatball Sub (6 inch),Meal/Processed,580.0,28.0,55.0,27.0
+1290,2026-02-23,Snack,0,,108,Kiwifruit (1 medium),Fruit,46.0,0.9,11.1,0.4
+1291,2026-02-23,Snack,0,,109,Beef Jerky (1 oz),Snack/Processed,116.0,9.4,3.1,7.2
+1292,2026-02-23,Snack,0,,110,Figs (2 medium),Fruit,74.0,0.6,19.2,0.3
+1293,2026-02-23,Dinner,250,,111,Lobster (3oz steamed),Protein/Seafood,76.0,16.0,0.0,0.7
+1294,2026-02-23,Dinner,0,,112,Melted Butter (for lobster),Condiment,200.0,0.2,0.0,22.0
+1295,2026-02-23,Dinner,0,,113,Corn on the Cob (1 large),Vegetable,125.0,5.0,29.0,1.5
+1296,2026-02-23,Lunch,250,,114,Vegetable Soup (1 can),Meal/Vegetable,140.0,4.0,22.0,4.0
+1297,2026-02-23,Lunch,0,,115,Saltine Crackers (5 crackers),Grain/Processed,60.0,1.0,10.0,1.5
+1298,2026-02-23,Snack,0,,116,Mango (1 cup slices),Fruit,99.0,1.4,24.7,0.6
+1299,2026-02-23,Snack,250,,117,Cheesecake (1 slice),Dessert,320.0,5.0,28.0,21.0
+1300,2026-02-23,Dinner,500,,118,Pad Thai (Chicken 1.5 cups),Meal/Pasta,550.0,25.0,60.0,22.0
+1301,2026-02-23,Dinner,0,,119,Spring Roll (Veg 2 rolls),Snack/Processed,180.0,4.0,25.0,7.0
+1302,2026-02-23,Snack,240,,120,Coconut Water (1 cup),Beverage,46.0,1.7,8.9,0.5
+1303,2026-02-23,Side,0,,121,Kimchi (1/2 cup),Vegetable,22.0,1.7,4.0,0.4
+1304,2026-02-23,Lunch,0,,122,Sashimi (Salmon 3 pcs),Protein/Fish,120.0,18.0,0.0,5.0
+1305,2026-02-23,Lunch,0,,123,Wasabi (1 tsp),Condiment,10.0,0.1,2.2,0.1
+1306,2026-02-23,Lunch,0,,124,Seaweed Salad (1/2 cup),Vegetable,60.0,2.0,8.0,3.0
+1307,2026-02-23,Lunch,250,,125,French Onion Soup (1 cup),Meal,150.0,6.0,15.0,7.0
+1308,2026-02-23,Lunch,0,,126,Croutons (1/4 cup),Grain,50.0,1.5,7.0,2.0
+1309,2026-02-23,Dinner,250,,127,Shepherd's Pie (1 serving),Meal/Meat,400.0,20.0,35.0,20.0
+1310,2026-02-23,Dinner,0,,128,Green Peas (1/2 cup),Legume,62.0,4.1,11.1,0.2
+1311,2026-02-23,Snack,0,,129,Apple Pie (1 slice),Dessert,410.0,3.0,58.0,19.0
+1312,2026-02-23,Snack,180,,130,Gin & Tonic (1 drink),Beverage,170.0,0.0,13.0,0.0
+1313,2026-02-23,Dinner,0,,131,Red Wine (5 oz glass),Beverage,125.0,0.1,3.8,0.0
+1314,2026-02-23,Dinner,250,,132,Halibut (4oz baked),Protein/Fish,125.0,24.0,0.0,2.5
+1315,2026-02-23,Lunch,250,,133,Quinoa Salad (1 cup),Meal/Vegetarian,260.0,9.0,32.0,12.0
+1316,2026-02-23,Snack,240,,134,Lemonade (1 cup),Beverage,99.0,0.1,26.0,0.0
+1317,2026-02-23,Snack,0,,135,Pistachios (1 oz shelled),Nut,159.0,5.7,7.7,12.8
+1318,2026-02-23,Breakfast,0,,136,Oat Milk (1 cup),Beverage/Dairy-Alt,120.0,3.0,16.0,5.0
+1319,2026-02-23,Breakfast,250,,137,Biscuits and Gravy (1 serving),Meal/Processed,480.0,10.0,45.0,28.0
+1320,2026-02-23,Breakfast,0,,138,Avocado (1/2 fruit),Fruit,160.0,2.0,8.5,14.7
+1321,2026-02-23,Breakfast,0,,139,Corn Flakes (1 cup),Grain,100.0,2.0,24.0,0.0
+1322,2026-02-23,Dinner,0,,140,T-Bone Steak (6oz),Protein/Meat,460.0,38.0,0.0,33.0
+1323,2026-02-23,Dinner,0,,141,Creamed Spinach (1/2 cup),Vegetable,190.0,5.0,8.0,16.0
+1324,2026-02-23,Snack,0,,142,Pecans (1 oz),Nut,196.0,2.6,3.9,20.4
+1325,2026-02-23,Snack,0,,143,Fruit Cocktail (canned 1 cup),Fruit,110.0,1.0,28.0,0.0
+1326,2026-02-23,Lunch,500,,144,Ramen (Instant 1 pack),Meal/Processed,380.0,9.0,53.0,14.0
+1327,2026-02-23,Snack,473,,145,Mocha Latte (16oz),Beverage,360.0,12.0,48.0,15.0
+1328,2026-02-23,Snack,0,,146,Cucumber Slices (1 cup),Vegetable,16.0,0.7,3.6,0.1
+1329,2026-02-23,Lunch,0,,147,Feta Cheese (1 oz),Dairy,75.0,4.0,1.2,6.1
+1330,2026-02-23,Lunch,0,,148,Olives (Kalamata 5 large),Fruit,35.0,0.2,1.0,3.5
+1331,2026-02-23,Dinner,250,,149,Chicken Alfredo (1.5 cups),Meal/Pasta,680.0,35.0,45.0,38.0
+1332,2026-02-23,Dinner,0,,150,Breadstick (1 large),Grain,160.0,4.0,28.0,3.0
+1333,2026-02-23,Lunch,500,,151,Cobb Salad,Meal/Protein,510.0,30.0,12.0,38.0
+1334,2026-02-23,Lunch,0,,152,Blue Cheese Dressing (2 tbsp),Condiment,150.0,1.0,2.0,16.0
+1335,2026-02-23,Snack,0,,153,Mandarin Orange (1 medium),Fruit,37.0,0.6,9.3,0.2
+1336,2026-02-23,Snack,0,,154,Cashews (1 oz roasted),Nut,163.0,4.3,9.2,13.1
+1337,2026-02-23,Breakfast,0,,155,Eggo Waffle (2 waffles),Grain/Processed,180.0,4.0,30.0,5.0
+1338,2026-02-23,Lunch,355,,156,Diet Soda (1 can),Beverage,0.0,0.0,0.0,0.0
+1339,2026-02-23,Lunch,250,,157,Pulled Pork Sandwich,Meal/Meat,480.0,25.0,48.0,20.0
+1340,2026-02-23,Snack,0,,158,Macadamia Nuts (1 oz),Nut,204.0,2.2,3.9,21.5
+1341,2026-02-23,Dinner,250,,159,Crab Cakes (2 medium),Meal/Seafood,340.0,20.0,18.0,20.0
+1342,2026-02-23,Dinner,0,,160,Tartar Sauce (2 tbsp),Condiment,60.0,0.2,2.0,5.5
+1343,2026-02-23,Snack,0,,161,Lemon Bar (1 square),Dessert,150.0,1.5,22.0,6.0
+1344,2026-02-23,Breakfast,240,,162,Almond Milk (Unsweetened 1 cup),Beverage/Dairy-Alt,30.0,1.0,1.0,2.5
+1345,2026-02-23,Breakfast,0,,163,Rice Krispies (1.5 cups),Grain,160.0,3.0,37.0,0.5
+1346,2026-02-23,Breakfast,0,,164,Sugar (1 tsp for cereal),Condiment,16.0,0.0,4.0,0.0
+1347,2026-02-23,Lunch,0,,165,Tuna (Canned 3oz in water),Protein/Fish,90.0,20.0,0.0,1.0
+1348,2026-02-23,Lunch,0,,166,Mayonnaise (1 tbsp),Condiment,90.0,0.1,0.1,10.0
+1349,2026-02-23,Lunch,0,,167,Pickle (1 spear dill),Vegetable,5.0,0.2,1.0,0.1
+1350,2026-02-23,Lunch,250,,168,Lobster Bisque (1 cup),Meal/Seafood,250.0,8.0,12.0,18.0
+1351,2026-02-23,Lunch,500,,169,Reuben Sandwich,Meal/Processed,650.0,28.0,35.0,40.0
+1352,2026-02-23,Lunch,0,,170,Sauerkraut (1/4 cup side),Vegetable,7.0,0.3,1.5,0.0
+1353,2026-02-23,Dinner,0,,171,Mushroom (White 1 cup sliced),Vegetable,15.0,2.2,2.3,0.2
+1354,2026-02-23,Breakfast,240,,172,Soy Milk (Original 1 cup),Beverage/Dairy-Alt,110.0,8.0,9.0,4.5
+1355,2026-02-23,Dinner,250,,173,Chicken Tikka Masala (1.5 cups),Meal/Meat,480.0,30.0,20.0,30.0
+1356,2026-02-23,Dinner,0,,174,Naan Bread (1 piece),Grain,260.0,8.0,45.0,5.0
+1357,2026-02-23,Dinner,0,,175,Cucumber Salad (1/2 cup),Vegetable,40.0,1.0,5.0,2.0
+1358,2026-02-23,Snack,180,,176,Vodka Soda (1 drink),Beverage,100.0,0.0,0.0,0.0
+1359,2026-02-23,Breakfast,250,,177,Chocolate Croissant,Dessert,350.0,6.0,40.0,19.0
+1360,2026-02-23,Dinner,0,,178,Sweet & Sour Chicken (1 cup),Meal/Processed,380.0,18.0,45.0,15.0
+1361,2026-02-23,Dinner,0,,179,Egg Drop Soup (1 cup),Meal/Vegetable,65.0,5.0,6.0,2.0
+1362,2026-02-23,Snack,0,,180,String Cheese (1 stick),Dairy,80.0,6.0,1.0,6.0
+1363,2026-02-23,Lunch,250,,181,Turkey Burger (1 patty),Protein/Meat,160.0,22.0,2.0,8.0
+1364,2026-02-23,Lunch,0,,182,Potato Salad (1/2 cup),Meal/Vegetable,180.0,2.0,19.0,11.0
+1365,2026-02-23,Breakfast,240,,183,Cranberry Juice (1 cup),Beverage,130.0,0.0,33.0,0.0
+1366,2026-02-23,Dinner,250,,184,Chicken Piccata (1 serving),Meal/Meat,350.0,30.0,10.0,20.0
+1367,2026-02-23,Dinner,0,,185,Angel Hair Pasta (1 cup),Grain,200.0,7.0,42.0,1.0
+1368,2026-02-23,Dinner,0,,186,Olive Oil (1 tbsp),Condiment,120.0,0.0,0.0,14.0
+1369,2026-02-23,Dinner,0,,187,Garlic (1 clove),Vegetable,4.0,0.2,0.9,0.0
+1370,2026-02-23,Snack,0,,188,Salami (3 slices),Protein/Processed,110.0,6.0,1.0,9.0
+1371,2026-02-23,Snack,0,,189,Provolone Cheese (1 slice),Dairy,100.0,7.0,1.0,8.0
+1372,2026-02-23,Snack,355,,190,Ginger Ale (1 can),Beverage,124.0,0.0,32.0,0.0
+1373,2026-02-23,Dinner,0,,191,Shrimp Scampi (1 cup),Meal/Seafood,380.0,22.0,40.0,15.0
+1374,2026-02-23,Snack,250,,192,Tiramisu (1 slice),Dessert,450.0,7.0,42.0,28.0
+1375,2026-02-23,Breakfast,250,,193,Cereal Bar (Fruit),Snack/Processed,140.0,2.0,30.0,3.0
+1376,2026-02-23,Dinner,250,,194,Veal Parmesan (1 serving),Meal/Meat,550.0,40.0,30.0,30.0
+1377,2026-02-23,Dinner,0,,195,Spaghetti (side),Grain,100.0,3.5,21.0,0.5
+1378,2026-02-23,Snack,240,,196,Hot Chocolate (1 cup),Beverage,200.0,3.0,30.0,8.0
+1379,2026-02-23,Dinner,0,,197,Coconut Shrimp (5 pcs),Meal/Seafood,320.0,10.0,25.0,20.0
+1380,2026-02-23,Dinner,0,,198,Sweet Chili Sauce (2 tbsp),Condiment,70.0,0.0,17.0,0.0
+1381,2026-02-23,Dinner,0,,199,White Wine (5 oz glass),Beverage,121.0,0.1,3.8,0.0
+1382,2026-02-23,Snack,250,,200,Trail Mix (1/4 cup),Snack/Processed,190.0,5.0,20.0,12.0
+1383,2026-02-23,Snack,0,,201,Onion Rings (6 rings),Snack/Processed,280.0,4.0,30.0,16.0
+1384,2026-02-23,Breakfast,0,,202,Poached Egg (1 large),Protein,72.0,6.3,0.4,4.8
+1385,2026-02-23,Breakfast,0,,203,Canadian Bacon (2 slices),Protein/Meat,80.0,12.0,1.0,3.0
+1386,2026-02-23,Breakfast,250,,204,Eggs Benedict (1 serving),Meal/Protein,600.0,25.0,30.0,40.0
+1387,2026-02-23,Breakfast,0,,205,Hollandaise Sauce (2 tbsp),Condiment,110.0,1.0,0.5,12.0
+1388,2026-02-23,Snack,0,,206,Spinach Artichoke Dip (1/4 cup),Snack/Processed,160.0,5.0,6.0,14.0
+1389,2026-02-23,Snack,0,,207,Tortilla Chips (1 oz),Snack/Processed,140.0,2.0,19.0,7.0
+1390,2026-02-23,Dinner,250,,208,Chicken Kebab (2 skewers),Meal/Meat,280.0,30.0,8.0,14.0
+1391,2026-02-23,Dinner,0,,209,Bell Peppers & Onions (sautéed),Vegetable,60.0,1.5,10.0,2.0
+1392,2026-02-23,Lunch,500,,210,Hummus Wrap (large),Meal/Vegetarian,450.0,15.0,60.0,18.0
+1393,2026-02-23,Snack,240,,211,Kombucha (1 cup),Beverage,30.0,0.0,7.0,0.0
+1394,2026-02-23,Dinner,0,,212,Beef Stroganoff (1.5 cups),Meal/Pasta,550.0,30.0,40.0,28.0
+1395,2026-02-23,Dinner,0,,213,Egg Noodles (1 cup cooked),Grain,220.0,8.0,40.0,3.0
+1396,2026-02-23,Lunch,250,,214,Cottage Cheese (1 cup low fat),Dairy,160.0,28.0,6.0,2.5
+1397,2026-02-23,Lunch,0,,215,Tomato (1 medium sliced),Vegetable,22.0,1.1,4.8,0.2
+1398,2026-02-23,Lunch,0,,216,Black Pepper (1 tsp),Condiment,6.0,0.2,1.5,0.1
+1399,2026-02-23,Snack,0,,217,Chocolate Pudding (1/2 cup),Dessert,150.0,2.0,28.0,4.0
+1400,2026-02-23,Dinner,0,,218,Mackerel (3oz cooked),Protein/Fish,175.0,16.0,0.0,12.0
+1401,2026-02-23,Dinner,0,,219,Collard Greens (1 cup cooked),Vegetable,60.0,5.0,10.0,1.0
+1402,2026-02-23,Lunch,0,,220,Ham (3oz deli sliced),Protein/Meat,110.0,16.0,2.0,4.0
+1403,2026-02-23,Lunch,0,,221,Swiss Cheese (1 slice),Dairy,106.0,7.6,1.0,8.0
+1404,2026-02-23,Lunch,0,,222,Rye Bread (1 slice),Grain,83.0,2.7,15.5,1.1
+1405,2026-02-23,Lunch,250,,223,Potato Leek Soup (1 cup),Meal/Vegetable,180.0,4.0,25.0,7.0
+1406,2026-02-23,Snack,0,,224,Brie Cheese (1 oz),Dairy,95.0,6.0,0.1,7.9
+1407,2026-02-23,Snack,0,,225,Water Cracker (5 crackers),Grain/Processed,70.0,1.5,12.0,1.5
+1408,2026-02-23,Breakfast,0,,226,Grapefruit (1/2 medium),Fruit,52.0,1.1,13.2,0.2
+1409,2026-02-23,Snack,0,,227,Veggie Straws (1 oz),Snack/Processed,130.0,1.0,17.0,7.0
+1410,2026-02-23,Dinner,500,,228,Fish Tacos (2 tacos),Meal/Fish,420.0,25.0,40.0,18.0
+1411,2026-02-23,Dinner,0,,229,Cabbage Slaw (side),Vegetable,60.0,1.0,8.0,3.0
+1412,2026-02-23,Dinner,0,,230,Lime (juice of 1),Condiment,11.0,0.2,3.7,0.0
+1413,2026-02-23,Snack,355,,231,Beer (12 oz light),Beverage,103.0,0.9,5.8,0.0
+1414,2026-02-23,Breakfast,250,,232,Danish (Cheese 1 medium),Dessert,340.0,7.0,38.0,18.0
+1415,2026-02-23,Breakfast,240,,233,Kefir (Plain 1 cup),Beverage/Dairy,104.0,10.0,10.0,2.5
+1416,2026-02-23,Dinner,0,,234,Gnocchi (1 cup),Meal/Pasta,210.0,4.5,45.0,1.5
+1417,2026-02-23,Dinner,0,,235,Pesto Sauce (1/4 cup),Condiment,260.0,5.0,4.0,26.0
+1418,2026-02-23,Dinner,0,,236,Pine Nuts (1 tbsp),Nut,95.0,2.0,2.0,10.0
+1419,2026-02-23,Snack,355,,237,Chai Latte (12 oz),Beverage,190.0,7.0,32.0,4.0
+1420,2026-02-23,Dinner,0,,238,Manicotti (2 shells cheese),Meal/Pasta,380.0,20.0,35.0,18.0
+1421,2026-02-23,Dinner,0,,239,Italian Sausage (1 link),Protein/Meat,200.0,12.0,3.0,16.0
+1422,2026-02-23,Snack,0,,240,Jicama (1 cup sticks),Vegetable,46.0,0.9,10.6,0.1
+1423,2026-02-23,Snack,0,,241,Chili Powder (1 tsp),Condiment,8.0,0.3,1.4,0.4
+1424,2026-02-23,Snack,250,,242,Ants on a Log (4 pcs),Snack,180.0,6.0,12.0,12.0
+1425,2026-02-23,Lunch,250,,243,Split Pea Soup (1 cup),Meal/Legume,180.0,11.0,30.0,2.0
+1426,2026-02-23,Breakfast,250,,244,Ham & Cheese Croissant,Meal/Processed,400.0,15.0,35.0,22.0
+1427,2026-02-23,Breakfast,60,,245,Espresso (double shot),Beverage,5.0,0.5,0.0,0.1
+1428,2026-02-23,Dinner,0,,246,Ricotta Cheese (1/4 cup),Dairy,85.0,5.5,2.5,6.0
+1429,2026-02-23,Lunch,250,,247,Chicken & Rice Soup (1 can),Meal/Processed,130.0,7.0,18.0,3.0
+1430,2026-02-23,Dinner,0,,248,Salt (1/4 tsp),Condiment,0.0,0.0,0.0,0.0
+1431,2026-02-23,Snack,0,,249,Guava,Fruit,68.0,2.6,14.3,0.9
+1432,2026-02-23,Lunch,500,,250,Club Sandwich,Meal/Processed,580.0,35.0,40.0,30.0
+1433,2026-02-23,Snack,0,,251,Pickle (1 whole dill),Vegetable,17.0,0.8,3.7,0.2
+1434,2026-02-23,Dinner,250,,252,Turkey Chili (1 cup),Meal/Meat,250.0,22.0,25.0,7.0
+1435,2026-02-23,Dinner,0,,253,Sour Cream (2 tbsp),Condiment/Dairy,60.0,0.8,1.3,5.8
+1436,2026-02-23,Dinner,0,,254,Shredded Cheese (Cheddar 1/4 cup),Dairy,115.0,7.0,1.0,9.5
+1437,2026-02-23,Snack,355,,255,Matcha Latte (12 oz),Beverage,180.0,6.0,28.0,5.0
+1438,2026-02-23,Breakfast,0,,256,Chocolate Donut (1 medium),Dessert,300.0,4.0,35.0,17.0
+1439,2026-02-23,Lunch,250,,257,Tuna Melt,Meal/Processed,450.0,25.0,32.0,25.0
+1440,2026-02-23,Snack,240,,258,Apple Cider (1 cup),Beverage,117.0,0.1,29.0,0.3
+1441,2026-02-23,Dinner,500,,259,Beef Burrito (large),Meal/Processed,650.0,30.0,70.0,28.0
+1442,2026-02-23,Dinner,0,,260,Pico de Gallo (1/4 cup),Condiment,15.0,0.5,3.0,0.0
+1443,2026-02-23,Dinner,0,,261,Corn Tortilla (1 medium),Grain,52.0,1.4,11.2,0.7
+1444,2026-02-23,Dinner,0,,262,Mussels (3oz steamed),Protein/Seafood,146.0,20.0,6.0,4.0
+1445,2026-02-23,Dinner,0,,263,White Wine Sauce (1/4 cup),Condiment,80.0,1.0,4.0,6.0
+1446,2026-02-23,Dinner,0,,264,French Bread (2 slices),Grain,180.0,6.0,36.0,1.0
+1447,2026-02-23,Snack,0,,265,Blackberries (1 cup),Fruit,62.0,2.0,13.8,0.7
+1448,2026-02-23,Breakfast,250,,266,Cheese Danish,Dessert,340.0,7.0,38.0,18.0
+1449,2026-02-23,Lunch,250,,267,Chicken Salad Sandwich,Meal/Processed,420.0,20.0,35.0,20.0
+1450,2026-02-23,Breakfast,0,,268,Soyrizo (2 oz),Protein/Vegetarian,140.0,10.0,6.0,9.0
+1451,2026-02-23,Breakfast,0,,269,Hash Browns (1 cup),Vegetable,330.0,3.0,38.0,19.0
+1452,2026-02-23,Breakfast,0,,270,Ketchup (1 packet),Condiment,10.0,0.1,2.5,0.0
+1453,2026-02-23,Lunch,500,,271,Philly Cheesesteak (6 inch),Meal/Processed,500.0,25.0,40.0,28.0
+1454,2026-02-23,Lunch,0,,272,Cheese Whiz (2 tbsp),Condiment/Processed,90.0,4.0,3.0,7.0
+1455,2026-02-23,Lunch,0,,273,Onions (sautéed 1/4 cup),Vegetable,30.0,0.5,5.0,1.0
+1456,2026-02-23,Snack,0,,274,Raspberries (1 cup),Fruit,64.0,1.5,14.7,0.8
+1457,2026-02-23,Breakfast,0,,275,Cheesy Grits (1 cup),Meal/Grain,210.0,6.0,34.0,6.0
+1458,2026-02-23,Dinner,0,,276,Collard Greens (with ham hock),Vegetable,180.0,10.0,15.0,9.0
+1459,2026-02-23,Dinner,0,,277,Fried Okra (1 cup),Vegetable,220.0,4.0,25.0,12.0
+1460,2026-02-23,Lunch,473,,278,Sweet Tea (16 oz),Beverage,180.0,0.0,46.0,0.0
+1461,2026-02-23,Dinner,250,,279,Gyro (1 sandwich),Meal/Meat,600.0,25.0,55.0,30.0
+1462,2026-02-23,Dinner,0,,280,Pita Bread (White 1 large),Grain,220.0,7.0,45.0,2.0
+1463,2026-02-23,Dinner,0,,98,Tzatziki Sauce (2 tbsp),Condiment/Dairy,30.0,1.5,2.0,2.0
+1464,2026-02-23,Snack,0,,281,Baklava (1 piece),Dessert,280.0,3.0,30.0,18.0
+1465,2026-02-23,Snack,0,,282,Coconut (shredded 1/4 cup),Fruit,110.0,1.0,4.5,10.5
+1466,2026-02-23,Snack,0,,283,S'more (1 serving),Dessert,140.0,2.0,25.0,4.0
+1467,2026-02-23,Snack,0,,284,Graham Cracker (1 large rectangle),Grain/Processed,60.0,1.0,11.0,1.5
+1468,2026-02-23,Snack,0,,285,Marshmallow (1 large),Dessert,23.0,0.1,5.8,0.0
+1469,2026-02-23,Snack,0,,286,Chocolate (Hershey's bar 1 segment),Dessert,25.0,0.3,3.0,1.5
+1470,2026-02-23,Lunch,500,,287,Chicken Parm Sandwich,Meal/Processed,650.0,40.0,55.0,30.0
+1471,2026-02-23,Lunch,0,,288,Mozzarella (1 slice),Dairy,80.0,6.0,1.0,6.0
+1472,2026-02-23,Lunch,0,,289,Bread Roll (hoagie),Grain,200.0,6.0,38.0,2.0
+1473,2026-02-23,Dinner,0,,290,Artichoke (1 medium steamed),Vegetable,60.0,4.2,13.4,0.2
+1474,2026-02-23,Dinner,0,,291,Mayonnaise (1 tbsp for dipping),Condiment,90.0,0.1,0.1,10.0
+1475,2026-02-23,Dinner,0,,292,Calamari (fried 3oz),Meal/Seafood,150.0,13.0,8.0,7.0
+1476,2026-02-23,Dinner,0,,293,Lemon Wedge (for calamari),Condiment,3.0,0.1,1.0,0.0
+1477,2026-02-23,Snack,355,,294,Root Beer (1 can),Beverage,150.0,0.0,40.0,0.0
+1478,2026-02-23,Lunch,0,,295,Chicken McNuggets (6 pcs),Meal/Processed,270.0,15.0,16.0,16.0
+1479,2026-02-23,Lunch,0,,296,BBQ Sauce (2 tbsp),Condiment,60.0,0.5,15.0,0.0
+1480,2026-02-23,Breakfast,0,,297,Honey (1 tbsp),Condiment,64.0,0.1,17.3,0.0
+1481,2026-02-23,Breakfast,250,,298,Tofu Scramble,Meal/Vegetarian,250.0,20.0,8.0,16.0
+1482,2026-02-23,Breakfast,0,,299,Turmeric (1 tsp),Condiment,9.0,0.3,1.9,0.1
+1483,2026-02-23,Breakfast,0,,300,Nutritional Yeast (1 tbsp),Condiment,20.0,3.0,2.0,0.0
+1484,2026-02-23,Dinner,0,,301,Seitan (3oz),Protein/Vegetarian,90.0,18.0,4.0,1.0
+1485,2026-02-23,Dinner,240,,302,Vegetable Broth (1 cup),Beverage,15.0,1.0,3.0,0.0
+1486,2026-02-23,Dinner,0,,303,Mashed Cauliflower (1 cup),Vegetable,140.0,5.0,12.0,8.0
+1487,2026-02-23,Dinner,0,,304,Peanut Sauce (2 tbsp),Condiment,80.0,2.0,4.0,6.0
+1488,2026-02-23,Lunch,0,,305,Tempeh (3oz),Protein/Vegetarian,160.0,16.0,8.0,9.0
+1489,2026-02-23,Lunch,0,,306,Sauerkraut (1/2 cup),Vegetable,14.0,0.7,3.1,0.1
+1490,2026-02-23,Lunch,0,,307,Rye Crispbread (2 slices),Grain,70.0,2.0,14.0,0.5
+1491,2026-02-23,Dinner,0,,308,Capers (1 tbsp),Condiment,2.0,0.2,0.4,0.1
+1492,2026-02-23,Dinner,0,,309,Chicken Liver (2 oz cooked),Protein/Meat,91.0,13.6,0.6,3.6
+1493,2026-02-23,Dinner,0,,310,Onion (1/2 cup raw chopped),Vegetable,32.0,0.9,7.5,0.1
+1494,2026-02-23,Dinner,0,,311,Bok Choy (1 cup steamed),Vegetable,10.0,1.5,2.0,0.1
+1495,2026-02-23,Snack,0,,312,Gummy Bears (10 pcs),Snack/Dessert,100.0,2.0,22.0,0.0
+1496,2026-02-23,Snack,0,,313,Whiskey (1.5 oz shot),Beverage,105.0,0.0,0.1,0.0
+1497,2026-02-23,Snack,0,,314,Dates (2 medium Medjool),Fruit,133.0,0.8,36.0,0.1
+1498,2026-02-23,Snack,0,,315,Tahini (1 tbsp),Condiment,89.0,2.6,3.2,8.0
+1499,2026-02-23,Lunch,0,,316,Chickpeas (1/2 cup canned),Legume,135.0,7.0,22.0,2.0
+1500,2026-02-23,Lunch,0,,317,Lettuce (Romaine 2 cups),Vegetable,16.0,1.0,3.0,0.3
+1501,2026-02-23,Lunch,0,,318,Italian Dressing (2 tbsp),Condiment,70.0,0.0,3.0,7.0
+1502,2026-02-23,Breakfast,0,,319,Turkey Sausage (1 patty),Protein/Meat,70.0,9.0,1.0,4.0
+1503,2026-02-23,Breakfast,0,,320,Maple Syrup (1 tbsp),Condiment,52.0,0.0,13.5,0.0
+1504,2026-02-23,Lunch,250,,321,Quesadilla (Cheese 1 medium),Meal/Processed,400.0,18.0,35.0,22.0
+1505,2026-02-23,Lunch,0,,322,Sour Cream (1 tbsp),Condiment/Dairy,30.0,0.4,0.6,2.9
+1506,2026-02-23,Lunch,0,,323,Salsa (2 tbsp),Condiment,10.0,0.5,2.0,0.0
+1507,2026-02-23,Dinner,0,,324,Red Cabbage (1 cup raw),Vegetable,22.0,1.1,5.2,0.1
+1508,2026-02-23,Dinner,0,,325,Duck (3oz roasted),Protein/Meat,285.0,16.0,0.0,24.0
+1509,2026-02-23,Dinner,0,,326,Orange Sauce (1/4 cup for duck),Condiment,90.0,0.5,22.0,0.0
+1510,2026-02-23,Dinner,0,,327,Wild Rice (1 cup cooked),Grain,166.0,6.5,35.0,0.6
+1511,2026-02-23,Snack,0,,328,Cupcake (Vanilla 1 medium),Dessert,240.0,2.0,35.0,11.0
+1512,2026-02-23,Snack,0,,329,Frosting (Vanilla 2 tbsp),Condiment,140.0,0.0,22.0,6.0
+1513,2026-02-23,Breakfast,0,,330,Hot Sauce (1 tsp Tabasco),Condiment,0.0,0.0,0.0,0.0
+1514,2026-02-23,Lunch,250,,331,Bison Burger (1 patty),Protein/Meat,150.0,22.0,0.0,7.0
+1515,2026-02-23,Lunch,0,,332,Pretzel Bun (1 medium),Grain,230.0,8.0,45.0,2.0
+1516,2026-02-23,Lunch,0,,333,Spicy Mustard (1 tbsp),Condiment,10.0,0.5,1.0,0.5
+1517,2026-02-23,Lunch,0,,334,Pasta Salad (1 cup),Meal/Pasta,280.0,8.0,30.0,14.0
+1518,2026-02-23,Lunch,0,,188,Salami (3 slices),Protein/Processed,110.0,6.0,1.0,9.0
+1519,2026-02-23,Lunch,0,,335,Pepperoncini (2 peppers),Vegetable,10.0,0.5,2.0,0.0
+1520,2026-02-23,Dinner,0,,336,Coconut Milk (1/4 cup canned),Condiment,111.0,1.1,2.9,11.6
+1521,2026-02-23,Dinner,0,,337,Green Curry Paste (1 tbsp),Condiment,30.0,0.5,2.0,2.5
+1522,2026-02-23,Dinner,0,,338,Chicken Thigh (1 roasted),Protein/Meat,210.0,24.0,0.0,13.0
+1523,2026-02-23,Dinner,0,,339,Jasmine Rice (1 cup cooked),Grain,205.0,4.3,45.0,0.4
+1524,2026-02-23,Snack,300,,340,Thai Iced Tea (1 glass),Beverage,250.0,3.0,35.0,12.0
+1525,2026-02-23,Snack,0,,341,Papaya (1 cup cubes),Fruit,62.0,0.6,15.7,0.4
+1526,2026-02-23,Snack,0,,342,Lime Juice (1 tbsp),Condiment,4.0,0.1,1.3,0.0
+1527,2026-02-23,Lunch,0,,343,Macaroni Salad (1 cup),Meal/Pasta,380.0,8.0,30.0,25.0
+1528,2026-02-23,Lunch,0,,344,Celery (1 stalk),Vegetable,6.0,0.3,1.2,0.1
+1529,2026-02-23,Snack,0,,345,Blue Cheese (1 oz),Dairy,100.0,6.0,0.7,8.0
+1530,2026-02-23,Snack,0,,346,Dark Chocolate (1 oz 70%),Dessert,170.0,2.2,13.0,12.0
+1531,2026-02-23,Breakfast,250,,347,Acai Bowl (1 serving),Meal/Fruit,350.0,5.0,60.0,12.0
+1532,2026-02-23,Breakfast,0,,348,Granola (1/4 cup topping),Grain,120.0,3.0,15.0,6.0
+1533,2026-02-23,Breakfast,0,,349,Coconut Flakes (1 tbsp topping),Fruit,35.0,0.3,1.5,3.3
+1534,2026-02-23,Breakfast,0,,350,Honey (1 tsp drizzle),Condiment,21.0,0.0,5.8,0.0
+1535,2026-02-23,Snack,0,,351,Shrimp Cocktail (4 large shrimp),Protein/Seafood,60.0,10.0,1.0,1.0
+1536,2026-02-23,Snack,0,,352,Cocktail Sauce (2 tbsp),Condiment,30.0,0.5,7.0,0.0
+1537,2026-02-23,Lunch,0,,353,Pork Bun (1 steamed),Meal/Processed,220.0,8.0,30.0,8.0
+1538,2026-02-23,Lunch,0,,354,Dim Sum (Siu Mai 3 pcs),Meal/Processed,180.0,12.0,10.0,10.0
+1539,2026-02-23,Lunch,0,,355,Soy Sauce (1 tbsp for dipping),Condiment,9.0,1.0,1.0,0.0
+1540,2026-02-23,Dinner,0,,356,Oyster (1 medium raw),Protein/Seafood,8.0,1.0,0.5,0.2
+1541,2026-02-23,Dinner,0,,357,Mignonette Sauce (1 tbsp),Condiment,5.0,0.0,1.0,0.0
+1542,2026-02-23,Dinner,500,,358,Beef Pho (1 large bowl),Meal/Soup,450.0,30.0,55.0,12.0
+1543,2026-02-23,Dinner,0,,359,Bean Sprouts (1/4 cup garnish),Vegetable,8.0,0.8,1.5,0.1
+1544,2026-02-23,Dinner,0,,360,Thai Basil (garnish),Condiment,1.0,0.1,0.0,0.0
+1545,2026-02-23,Dinner,0,,361,Lime Wedge (garnish),Condiment,3.0,0.1,1.0,0.0
+1546,2026-02-23,Dinner,0,,362,Jalapeno (1 tbsp sliced),Vegetable,4.0,0.1,0.8,0.1
+1547,2026-02-23,Dinner,0,,363,Hoisin Sauce (1 tbsp),Condiment,35.0,0.3,8.0,0.2
+1548,2026-02-23,Dinner,0,,364,Sriracha (1 tsp),Condiment,5.0,0.1,1.0,0.1
+1549,2026-02-23,Breakfast,0,,365,Crepe (1 plain),Grain,90.0,3.5,14.0,2.0
+1550,2026-02-23,Breakfast,0,,366,Nutella (1 tbsp),Condiment,100.0,1.5,11.0,6.0
+1551,2026-02-23,Breakfast,0,,367,Powdered Sugar (1 tsp),Condiment,10.0,0.0,2.5,0.0
+1552,2026-02-23,Dinner,0,,368,Sake (3 oz),Beverage,117.0,0.4,3.8,0.0
+1553,2026-02-23,Snack,250,,369,Edamame (in pod 1 cup),Legume,120.0,11.0,9.0,5.0
+1554,2026-02-23,Snack,0,,370,Sea Salt (coarse 1/4 tsp),Condiment,0.0,0.0,0.0,0.0
+1555,2026-02-23,Dinner,0,,371,Biryani (Chicken 1.5 cups),Meal/Meat,520.0,28.0,60.0,18.0
+1556,2026-02-23,Dinner,0,,372,Raita (2 tbsp),Condiment/Dairy,30.0,1.0,2.0,2.0
+1557,2026-02-23,Snack,240,,373,Lassi (Mango 1 cup),Beverage,180.0,5.0,30.0,4.0
+1558,2026-02-23,Snack,0,,374,Samosa (1 piece vegetable),Snack/Processed,130.0,2.0,18.0,6.0
+1559,2026-02-23,Snack,0,,375,Tamarind Chutney (1 tbsp),Condiment,20.0,0.1,5.0,0.0
+1560,2026-02-23,Snack,0,,376,Mint Chutney (1 tbsp),Condiment,5.0,0.2,0.5,0.0
+1561,2026-02-23,Snack,0,,377,Pani Puri (6 pcs),Snack/Processed,200.0,4.0,35.0,5.0
+1562,2026-02-23,Snack,0,,378,Passion Fruit (1 fruit),Fruit,17.0,0.4,4.2,0.1
+1563,2026-02-23,Dinner,500,,379,Kimchi Jjigae (1 bowl),Meal/Soup,350.0,15.0,20.0,22.0
+1564,2026-02-23,Dinner,0,,380,Silken Tofu (3oz in soup),Protein/Vegetarian,45.0,5.0,2.0,2.5
+1565,2026-02-23,Dinner,0,,381,Pork Belly (1 oz in soup),Protein/Meat,145.0,3.0,0.0,15.0
+1566,2026-02-23,Dinner,0,,382,Gochugaru (1 tsp),Condiment,10.0,0.3,1.8,0.3
+1567,2026-02-23,Dinner,0,,383,Gochujang (1 tbsp),Condiment,30.0,0.5,6.0,0.0
+1568,2026-02-23,Dinner,0,,384,Sesame Oil (1 tsp),Condiment,40.0,0.0,0.0,4.5
+1569,2026-02-23,Dinner,0,,385,Fish Sauce (1 tsp),Condiment,5.0,0.4,0.5,0.0
+1570,2026-02-23,Dinner,0,,386,Green Onion (1 tbsp garnish),Vegetable,3.0,0.2,0.7,0.0
+1571,2026-02-23,Snack,473,,387,Kombucha (16 oz),Beverage,60.0,0.0,14.0,0.0
+1572,2026-02-23,Dinner,0,,388,Beef Wellington (1 slice),Meal/Meat,600.0,30.0,35.0,38.0
+1573,2026-02-23,Dinner,0,,389,Pate (Mushroom 2 tbsp),Condiment,70.0,1.0,2.0,7.0
+1574,2026-02-23,Dinner,0,,390,Puff Pastry (1 oz wrapper),Grain,115.0,1.5,9.0,8.0
+1575,2026-02-23,Dinner,0,,391,Prosciutto (1 slice),Protein/Meat,35.0,4.0,0.0,2.5
+1576,2026-02-23,Dinner,0,,392,Asparagus (6 spears roasted),Vegetable,40.0,4.0,4.0,2.0
+1577,2026-02-23,Dinner,0,,393,Hollandaise Sauce (1 tbsp),Condiment,55.0,0.5,0.2,6.0
+1578,2026-02-23,Snack,0,,394,Flan (1 slice),Dessert,220.0,6.0,35.0,7.0
+1579,2026-02-23,Snack,0,,395,Caramel Sauce (1 tbsp),Condiment,60.0,0.0,13.0,1.0
+1580,2026-02-23,Breakfast,0,,396,Congee (1 cup plain),Meal/Grain,130.0,2.5,28.0,1.0
+1581,2026-02-23,Breakfast,0,,397,Pickled Radish (1/4 cup),Vegetable,15.0,0.5,3.0,0.0
+1582,2026-02-23,Breakfast,0,,398,Pork Floss (1 tbsp),Protein/Meat,50.0,4.0,3.0,2.0
+1583,2026-02-23,Breakfast,0,,399,Century Egg (1 egg),Protein,100.0,7.0,1.0,7.0
+1584,2026-02-23,Lunch,0,,400,Arugula (2 cups),Vegetable,10.0,1.0,0.8,0.2
+1585,2026-02-23,Lunch,0,,401,Goat Cheese (1 oz),Dairy,103.0,6.1,0.1,8.5
+1586,2026-02-23,Lunch,0,,402,Beets (1/2 cup roasted),Vegetable,30.0,0.8,6.8,0.1
+1587,2026-02-23,Lunch,0,,403,Walnuts (1 tbsp chopped),Nut,46.0,1.1,1.0,4.6
+1588,2026-02-23,Lunch,0,,404,Balsamic Glaze (1 tbsp),Condiment,40.0,0.0,9.0,0.0
+1589,2026-02-23,Dinner,0,,405,Bobotie (1 serving),Meal/Meat,450.0,25.0,30.0,25.0
+1590,2026-02-23,Dinner,0,,406,Yellow Rice (1 cup),Grain,230.0,4.0,50.0,1.0
+1591,2026-02-23,Dinner,0,,407,Chutney (Mango 1 tbsp),Condiment,45.0,0.1,11.0,0.1
+1592,2026-02-23,Snack,0,,408,Malva Pudding (1 slice),Dessert,380.0,5.0,60.0,14.0
+1593,2026-02-23,Snack,0,,409,Custard (1/4 cup),Condiment,80.0,3.0,10.0,3.0
+1594,2026-02-23,Snack,473,,410,Bubble Tea (16 oz milk tea),Beverage,320.0,2.0,70.0,4.0
+1595,2026-02-23,Snack,0,,411,Tapioca Pearls (1/4 cup boba),Condiment,100.0,0.0,25.0,0.0
+1596,2026-02-23,Dinner,0,,412,Paella (1.5 cups seafood),Meal/Rice,550.0,30.0,70.0,18.0
+1597,2026-02-23,Dinner,0,,413,Chorizo (1 oz in paella),Protein/Meat,130.0,6.0,1.0,11.0
+1598,2026-02-23,Dinner,0,,414,Saffron (pinch),Condiment,1.0,0.0,0.1,0.0
+1599,2026-02-23,Dinner,0,,415,Aioli (Garlic 1 tbsp),Condiment,95.0,0.1,0.5,10.5
+1600,2026-02-23,Lunch,240,,416,Gazpacho (1 cup),Meal/Soup,90.0,2.0,12.0,4.0
+1601,2026-02-23,Lunch,0,,417,Croutons (Garlic 1/4 cup),Grain,50.0,1.5,7.0,2.0
+1602,2026-02-23,Lunch,0,,418,Olive Oil (1 tsp garnish),Condiment,40.0,0.0,0.0,4.5
+1603,2026-02-23,Snack,0,,419,Churros (2 sticks),Dessert,240.0,3.0,30.0,12.0
+1604,2026-02-23,Snack,0,,420,Chocolate Sauce (1 tbsp dipping),Condiment,50.0,0.5,10.0,1.5
+1605,2026-02-23,Snack,0,,421,Cinnamon Sugar (1 tsp),Condiment,20.0,0.0,5.0,0.0
+1606,2026-02-23,Snack,240,,422,Horchata (1 cup),Beverage,140.0,2.0,25.0,3.0
+1607,2026-02-23,Lunch,0,,423,Ceviche (1 cup fish),Meal/Fish,180.0,25.0,15.0,2.0
+1608,2026-02-23,Lunch,0,,424,Red Onion (1/4 cup in ceviche),Vegetable,16.0,0.3,3.7,0.0
+1609,2026-02-23,Lunch,0,,425,Cilantro (2 tbsp garnish),Condiment,1.0,0.1,0.0,0.0
+1610,2026-02-23,Snack,0,,426,Corn Nuts (1 oz),Snack/Processed,130.0,2.0,23.0,4.0
+1611,2026-02-23,Dinner,0,,427,Lomo Saltado (1.5 cups),Meal/Meat,500.0,35.0,45.0,22.0
+1612,2026-02-23,Dinner,0,,428,French Fries (as side),Vegetable/Processed,200.0,2.0,25.0,10.0
+1613,2026-02-23,Dinner,0,,429,Soy Sauce (1 tbsp in stir-fry),Condiment,9.0,1.0,1.0,0.0
+1614,2026-02-23,Dinner,0,,430,Aji Amarillo Paste (1 tsp),Condiment,5.0,0.1,1.0,0.0
+1615,2026-02-23,Snack,180,,431,Pisco Sour (1 drink),Beverage,250.0,1.0,25.0,0.0
+1616,2026-02-23,Snack,0,,432,Egg White (in drink),Condiment,17.0,3.6,0.2,0.0
+1617,2026-02-23,Snack,0,,433,Angostura Bitters (dash),Condiment,5.0,0.0,0.0,0.0
+1618,2026-02-23,Snack,0,,434,Alfajores (1 cookie),Dessert,180.0,2.0,22.0,10.0
+1619,2026-02-23,Snack,0,,435,Dulce de Leche (1 tbsp filling),Condiment,65.0,1.0,12.0,1.5
+1620,2026-02-23,Snack,0,,436,Coconut (shredded garnish),Fruit,10.0,0.1,0.5,1.0
+1621,2026-02-23,Breakfast,240,,437,Mate (1 cup),Beverage,5.0,0.2,1.0,0.0
+1622,2026-02-23,Breakfast,0,,438,Media Luna (1 pastry),Grain,190.0,4.0,25.0,8.0
+1623,2026-02-23,Dinner,0,,439,Chimichurri (1 tbsp),Condiment,45.0,0.1,0.5,4.5
+1624,2026-02-23,Dinner,0,,440,Skirt Steak (4oz grilled),Protein/Meat,240.0,26.0,0.0,15.0
+1625,2026-02-23,Dinner,0,,441,Provoleta (1 oz grilled cheese),Dairy,100.0,7.0,1.0,8.0
+1626,2026-02-23,Dinner,0,,442,Oregano (1 tsp),Condiment,3.0,0.1,0.7,0.0
+1627,2026-02-23,Lunch,0,,443,Empanada (Beef 1 medium),Meal/Processed,290.0,10.0,28.0,16.0
+1628,2026-02-23,Dinner,0,,444,Chicken Milanesa (1 serving),Meal/Meat,450.0,35.0,30.0,22.0
+1629,2026-02-23,Dinner,0,,445,Mashed Potatoes (side),Vegetable,150.0,3.0,25.0,4.0
+1630,2026-02-23,Lunch,250,,446,Choripan (1 sandwich),Meal/Processed,550.0,20.0,40.0,35.0
+1631,2026-02-23,Lunch,0,,447,Baguette (slice),Grain,70.0,2.5,14.0,0.5
+1632,2026-02-23,Lunch,0,,439,Chimichurri (1 tbsp),Condiment,45.0,0.1,0.5,4.5
+1633,2026-02-23,Dinner,250,,448,Pizza (Margherita 1 slice),Meal/Processed,250.0,12.0,30.0,10.0
+1634,2026-02-23,Dinner,0,,449,Fresh Mozzarella (1 oz),Dairy,72.0,5.0,0.8,5.0
+1635,2026-02-23,Dinner,0,,450,Basil (2 tbsp fresh),Condiment,1.0,0.1,0.1,0.0
+1636,2026-02-23,Dinner,0,,451,Carbonara (1.5 cups),Meal/Pasta,650.0,25.0,60.0,35.0
+1637,2026-02-23,Dinner,0,,452,Guanciale (1 oz),Protein/Meat,170.0,3.0,0.0,18.0
+1638,2026-02-23,Dinner,0,,453,Pecorino Cheese (1 tbsp),Dairy,25.0,1.5,0.1,2.0
+1639,2026-02-23,Dinner,0,,454,Black Pepper (1/4 tsp),Condiment,1.0,0.0,0.2,0.0
+1640,2026-02-23,Dinner,0,,455,Egg Yolk (1 large in sauce),Protein,55.0,2.7,0.6,4.5
+1641,2026-02-23,Snack,0,,456,Supplì (1 piece fried rice ball),Snack/Processed,200.0,8.0,25.0,8.0
+1642,2026-02-23,Snack,150,,457,Aperol Spritz (1 drink),Beverage,180.0,0.0,20.0,0.0
+1643,2026-02-23,Snack,0,,458,Prosecco (3 oz),Beverage,70.0,0.0,2.0,0.0
+1644,2026-02-23,Snack,0,,459,Club Soda (2 oz),Beverage,0.0,0.0,0.0,0.0
+1645,2026-02-23,Snack,0,,460,Orange Slice (garnish),Fruit,5.0,0.1,1.0,0.0
+1646,2026-02-23,Dinner,500,,461,Tagliatelle al Ragù (Bolognese),Meal/Pasta,550.0,28.0,65.0,20.0
+1647,2026-02-23,Dinner,0,,462,Ground Beef (2 oz in sauce),Protein/Meat,140.0,11.0,0.0,10.0
+1648,2026-02-23,Dinner,0,,463,Pancetta (0.5 oz in sauce),Protein/Meat,45.0,1.5,0.0,4.5
+1649,2026-02-23,Dinner,0,,464,Carrot (1/4 minced in sauce),Vegetable,10.0,0.2,2.4,0.1
+1650,2026-02-23,Dinner,0,,465,Celery (1/4 stalk minced),Vegetable,2.0,0.1,0.4,0.0
+1651,2026-02-23,Dinner,0,,466,Onion (1/8 minced in sauce),Vegetable,5.0,0.1,1.2,0.0
+1652,2026-02-23,Dinner,0,,467,Crushed Tomatoes (1/2 cup sauce),Vegetable,20.0,1.0,4.0,0.0
+1653,2026-02-23,Dinner,0,,468,Parmigiano-Reggiano (1 tbsp),Dairy,22.0,2.0,0.2,1.5
+1654,2026-02-23,Snack,0,,469,Cannoli (1 medium),Dessert,240.0,5.0,25.0,13.0
+1655,2026-02-23,Snack,0,,470,Ricotta (filling 1 oz),Dairy,49.0,3.2,0.8,3.8
+1656,2026-02-23,Snack,0,,471,Pistachio (garnish),Nut,10.0,0.4,0.5,0.8
+1657,2026-02-23,Snack,0,,472,Biscotti (1 cookie),Dessert,110.0,2.0,18.0,4.0
+1658,2026-02-23,Snack,30,,473,Espresso (for dipping),Beverage,2.0,0.2,0.0,0.0
+1659,2026-02-23,Lunch,0,,474,Focaccia (1 square),Grain,250.0,8.0,40.0,7.0
+1660,2026-02-23,Lunch,0,,475,Rosemary (1 tsp topping),Condiment,1.0,0.0,0.2,0.0
+1661,2026-02-23,Lunch,0,,476,Coarse Salt (garnish),Condiment,0.0,0.0,0.0,0.0
+1662,2026-02-23,Lunch,0,,477,Olive Oil (1 tbsp drizzle),Condiment,120.0,0.0,0.0,14.0
+1663,2026-02-23,Snack,0,,478,Bruschetta (2 pcs),Snack/Appetizer,180.0,4.0,25.0,7.0
+1664,2026-02-23,Snack,0,,479,Balsamic Glaze (1 tsp),Condiment,13.0,0.0,3.0,0.0
+1665,2026-02-23,Dinner,500,,480,Ribollita (1.5 cups soup),Meal/Soup,350.0,15.0,55.0,8.0
+1666,2026-02-23,Dinner,0,,481,Cannellini Beans (1/2 cup in soup),Legume,105.0,7.0,20.0,0.5
+1667,2026-02-23,Dinner,0,,482,Kale (1 cup in soup),Vegetable,33.0,2.9,6.0,0.6
+1668,2026-02-23,Dinner,0,,483,Stale Bread (1/2 cup in soup),Grain,80.0,3.0,15.0,1.0
+1669,2026-02-23,Dinner,0,,484,Polenta (1 cup creamy),Meal/Grain,150.0,3.0,32.0,1.0
+1670,2026-02-23,Dinner,0,,485,Gorgonzola Cheese (1 oz),Dairy,100.0,6.0,0.7,8.0
+1671,2026-02-23,Snack,90,,486,Negroni (1 drink),Beverage,190.0,0.0,15.0,0.0
+1672,2026-02-23,Snack,0,,487,Gin (1 oz),Beverage,70.0,0.0,0.0,0.0
+1673,2026-02-23,Snack,0,,488,Campari (1 oz),Beverage,80.0,0.0,10.0,0.0
+1674,2026-02-23,Snack,0,,489,Sweet Vermouth (1 oz),Beverage,40.0,0.0,5.0,0.0
+1675,2026-02-23,Snack,0,,490,Orange Peel (garnish),Condiment,1.0,0.0,0.2,0.0
+1676,2026-02-23,Dinner,0,,491,Osso Buco (1 serving),Meal/Meat,550.0,45.0,15.0,30.0
+1677,2026-02-23,Dinner,0,,492,Gremolata (1 tbsp),Condiment,15.0,0.5,1.0,1.0
+1678,2026-02-23,Dinner,0,,493,Risotto alla Milanese (1 cup),Meal/Rice,350.0,10.0,50.0,12.0
+1679,2026-02-23,Dinner,0,,494,Saffron (pinch in risotto),Condiment,1.0,0.0,0.1,0.0
+1680,2026-02-23,Snack,0,,495,Panettone (1 slice),Dessert,320.0,6.0,50.0,12.0
+1681,2026-02-23,Snack,0,,496,Candied Fruit (1 tbsp),Fruit,30.0,0.0,8.0,0.0
+1682,2026-02-23,Snack,0,,497,Amaretti Cookie (2 cookies),Dessert,90.0,2.0,12.0,4.0
+1683,2026-02-23,Snack,0,,498,Limoncello (1.5 oz shot),Beverage,150.0,0.0,18.0,0.0
+1684,2026-02-23,Snack,0,,499,Panna Cotta (1 serving),Dessert,300.0,4.0,25.0,20.0
+1685,2026-02-23,Snack,0,,500,Berry Coulis (1 tbsp),Condiment,20.0,0.0,5.0,0.0
+1686,2026-02-23,Dinner,0,,501,Saltimbocca (1 serving),Meal/Meat,380.0,38.0,5.0,22.0
+1687,2026-02-23,Dinner,0,,502,Prosciutto (1 slice wrapper),Protein/Meat,35.0,4.0,0.0,2.5
+1688,2026-02-23,Dinner,0,,503,Sage (2 leaves),Condiment,1.0,0.0,0.1,0.0
+1689,2026-02-23,Dinner,0,,504,Polenta (grilled 1 slice),Meal/Grain,120.0,2.5,25.0,1.0
+1690,2026-02-23,Dinner,0,,505,Caponata (1/2 cup),Meal/Vegetable,180.0,2.0,15.0,14.0
+1691,2026-02-23,Dinner,0,,506,Eggplant (1/2 cup in caponata),Vegetable,40.0,0.5,6.0,2.0
+1692,2026-02-23,Dinner,0,,507,Pine Nuts (1/2 tbsp),Nut,48.0,1.0,1.0,5.0
+1693,2026-02-23,Dinner,0,,508,Raisins (1 tbsp),Fruit,27.0,0.3,7.0,0.0
+1694,2026-02-23,Snack,0,,509,Gelato (Pistachio 1/2 cup),Dessert,220.0,5.0,24.0,12.0
+1695,2026-02-23,Snack,0,,510,Waffle Cone (1 small),Grain,70.0,1.0,13.0,1.5
+1696,2026-02-23,Dinner,0,,511,Cacio e Pepe (1.5 cups),Meal/Pasta,500.0,18.0,65.0,19.0
+1697,2026-02-23,Dinner,0,,512,Pecorino Romano (1/4 cup),Dairy,110.0,7.5,1.0,8.5
+1698,2026-02-23,Dinner,0,,513,Black Pepper (1/2 tsp),Condiment,3.0,0.1,0.7,0.0
+1699,2026-02-23,Dinner,0,,514,Fiorentina Steak (3oz portion),Protein/Meat,230.0,24.0,0.0,15.0
+1700,2026-02-23,Dinner,0,,477,Olive Oil (1 tbsp drizzle),Condiment,120.0,0.0,0.0,14.0
+1701,2026-02-23,Dinner,0,,515,Rosemary (garnish),Condiment,1.0,0.0,0.2,0.0
+1702,2026-02-23,Dinner,0,,516,White Beans (Tuscan style 1/2 cup),Legume,150.0,8.0,20.0,4.0
+1703,2026-02-23,Dinner,0,,517,Garlic (1 clove in beans),Vegetable,4.0,0.2,0.9,0.0
+1704,2026-02-23,Dinner,0,,518,Sage (in beans),Condiment,1.0,0.0,0.1,0.0
+1705,2026-02-23,Snack,0,,519,Arancini (1 large ball),Snack/Processed,250.0,9.0,30.0,10.0
+1706,2026-02-23,Snack,0,,520,Ragù (filling 1 tbsp),Condiment,25.0,1.5,1.0,1.5
+1707,2026-02-23,Snack,0,,521,Mozzarella (filling 0.5 oz),Dairy,40.0,3.0,0.5,3.0
+1708,2026-02-23,Snack,0,,522,Breadcrumbs (coating),Grain,25.0,0.5,4.0,0.5
+1709,2026-02-23,Snack,150,,523,Campari & Soda (1 drink),Beverage,85.0,0.0,10.0,0.0
+1710,2026-02-23,Snack,0,,524,Olive (garnish),Fruit,5.0,0.0,0.1,0.5
+1711,2026-02-23,Lunch,0,,525,Vitello Tonnato (1 serving),Meal/Meat,380.0,35.0,3.0,25.0
+1712,2026-02-23,Lunch,0,,526,Tuna Sauce (2 tbsp),Condiment,100.0,4.0,1.0,9.0
+1713,2026-02-23,Lunch,0,,527,Capers (garnish),Condiment,2.0,0.2,0.4,0.1
+1714,2026-02-23,Lunch,0,,528,Lemon Slice (garnish),Condiment,1.0,0.0,0.3,0.0
+1715,2026-02-23,Dinner,0,,529,Gnocchi alla Sorrentina (1.5 cups),Meal/Pasta,450.0,15.0,60.0,18.0
+1716,2026-02-23,Dinner,0,,530,Tomato Sauce (1/2 cup),Condiment,40.0,1.5,7.0,1.0
+1717,2026-02-23,Dinner,0,,531,Mozzarella (1 oz melted),Dairy,80.0,6.0,1.0,6.0
+1718,2026-02-23,Dinner,0,,532,Basil (fresh garnish),Condiment,1.0,0.1,0.0,0.0
+1719,2026-02-23,Dinner,0,,533,Pesto (1/4 cup),Condiment,290.0,5.0,4.0,29.0
+1720,2026-02-23,Dinner,0,,534,Pine Nuts (1 tbsp in pesto),Nut,95.0,2.0,2.0,10.0
+1721,2026-02-23,Dinner,0,,535,Garlic (1/2 clove in pesto),Vegetable,2.0,0.1,0.5,0.0
+1722,2026-02-23,Dinner,0,,536,Trofie Pasta (1 cup cooked),Grain,210.0,7.0,43.0,1.0
+1723,2026-02-23,Dinner,0,,537,Green Beans (1/2 cup w/ pasta),Vegetable,15.0,0.9,3.5,0.1
+1724,2026-02-23,Dinner,0,,538,Potato (1/2 w/ pasta),Vegetable,65.0,1.0,15.0,0.1
+1725,2026-02-23,Snack,120,,539,Espresso Martini (1 drink),Beverage,280.0,0.5,25.0,0.0
+1726,2026-02-23,Snack,0,,540,Vodka (1.5 oz),Beverage,97.0,0.0,0.0,0.0
+1727,2026-02-23,Snack,0,,541,Coffee Liqueur (1 oz),Beverage,100.0,0.0,15.0,0.0
+1728,2026-02-23,Snack,0,,542,Espresso (1 oz in drink),Beverage,3.0,0.3,0.0,0.1
+1729,2026-02-23,Snack,0,,543,Simple Syrup (1/2 oz),Condiment,30.0,0.0,8.0,0.0
+1730,2026-02-23,Snack,0,,544,Coffee Beans (3 garnish),Snack,2.0,0.1,0.3,0.0
+1731,2026-02-23,Snack,0,,545,Baba Ganoush (1/4 cup),Meal/Vegetable,100.0,2.0,8.0,7.0
+1732,2026-02-23,Snack,0,,546,Pita Bread (1 white),Grain,165.0,5.5,33.0,1.2
+1733,2026-02-23,Lunch,0,,547,Falafel (3 pieces),Meal/Vegetarian,180.0,6.0,18.0,9.0
+1734,2026-02-23,Lunch,0,,548,Tahini Sauce (1 tbsp),Condiment,30.0,1.0,1.5,2.5
+1735,2026-02-23,Lunch,0,,549,Pickled Turnips (2 tbsp),Vegetable,10.0,0.2,2.0,0.0
+1736,2026-02-23,Lunch,250,,550,Shawarma (Chicken 1 wrap),Meal/Processed,550.0,30.0,50.0,25.0
+1737,2026-02-23,Lunch,0,,551,Garlic Sauce (1 tbsp),Condiment,90.0,0.1,1.0,10.0
+1738,2026-02-23,Lunch,0,,552,Hummus (1/4 cup),Legume,130.0,5.0,10.0,8.0
+1739,2026-02-23,Lunch,0,,553,Tabouli (1/2 cup),Meal/Vegetarian,120.0,3.0,15.0,6.0
+1740,2026-02-23,Lunch,0,,554,Bulgur (1/4 cup in tabouli),Grain,76.0,2.7,16.8,0.2
+1741,2026-02-23,Lunch,0,,555,Parsley (1/4 cup in tabouli),Vegetable,5.0,0.3,1.0,0.1
+1742,2026-02-23,Lunch,0,,556,Mint (1 tbsp in tabouli),Condiment,1.0,0.1,0.1,0.0
+1743,2026-02-23,Lunch,0,,557,Lemon Juice (1 tbsp dressing),Condiment,4.0,0.1,1.3,0.0
+1744,2026-02-23,Lunch,0,,558,Olive Oil (1 tbsp dressing),Condiment,120.0,0.0,0.0,14.0
+1745,2026-02-23,Snack,0,,559,Kibbeh (1 piece fried),Meal/Meat,230.0,9.0,20.0,13.0
+1746,2026-02-23,Snack,0,,560,Pine Nuts (1/2 tbsp filling),Nut,48.0,1.0,1.0,5.0
+1747,2026-02-23,Snack,0,,561,Ground Lamb (1 oz filling),Protein/Meat,80.0,5.5,0.0,6.0
+1748,2026-02-23,Snack,0,,562,Bulgur (1 tbsp shell),Grain,15.0,0.5,3.4,0.0
+1749,2026-02-23,Lunch,250,,563,Lentil Soup (1 cup Middle Eastern),Meal/Legume,200.0,10.0,30.0,5.0
+1750,2026-02-23,Lunch,0,,564,Cumin (1 tsp),Condiment,8.0,0.3,1.5,0.5
+1751,2026-02-23,Lunch,0,,565,Coriander (1 tsp),Condiment,5.0,0.1,1.0,0.2
+1752,2026-02-23,Lunch,0,,566,Lemon Juice (1 tsp in soup),Condiment,1.0,0.0,0.4,0.0
+1753,2026-02-23,Lunch,0,,567,Pita Crisps (1 oz),Snack/Processed,130.0,3.0,18.0,5.0
+1754,2026-02-23,Breakfast,0,,568,Manakeesh (Za'atar 1 small),Meal/Vegetarian,300.0,7.0,45.0,10.0
+1755,2026-02-23,Breakfast,0,,569,Za'atar (1 tbsp),Condiment,40.0,1.0,3.0,3.0
+1756,2026-02-23,Breakfast,0,,570,Olive Oil (1 tbsp on bread),Condiment,120.0,0.0,0.0,14.0
+1757,2026-02-23,Breakfast,0,,571,Labneh (2 tbsp),Dairy,60.0,4.0,2.0,4.0
+1758,2026-02-23,Breakfast,0,,572,Cucumber (1/4 cup side),Vegetable,8.0,0.3,1.8,0.0
+1759,2026-02-23,Breakfast,0,,573,Tomato (1/4 cup side),Vegetable,8.0,0.3,1.8,0.1
+1760,2026-02-23,Breakfast,0,,574,Olives (5 side),Fruit,35.0,0.2,1.0,3.5
+1761,2026-02-23,Breakfast,240,,575,Mint Tea (1 cup),Beverage,2.0,0.1,0.5,0.0
+1762,2026-02-23,Snack,0,,576,Stuffed Grape Leaves (3 pcs),Meal/Vegetarian,150.0,3.0,20.0,7.0
+1763,2026-02-23,Snack,0,,577,Rice (1/4 cup filling),Grain,51.0,1.1,11.1,0.1
+1764,2026-02-23,Snack,60,,578,Turkish Coffee (1 small cup),Beverage,5.0,0.2,0.5,0.0
+1765,2026-02-23,Snack,0,,579,Cardamom (in coffee),Condiment,1.0,0.0,0.2,0.0
+1766,2026-02-23,Dinner,0,,580,Shish Tawook (2 skewers),Meal/Meat,300.0,35.0,5.0,16.0
+1767,2026-02-23,Dinner,0,,581,Garlic Sauce (Toum 1 tbsp),Condiment,90.0,0.1,1.0,10.0
+1768,2026-02-23,Dinner,0,,582,French Fries (side),Vegetable/Processed,340.0,4.0,44.0,17.0
+1769,2026-02-23,Dinner,0,,583,Pickled Cucumber (1/4 cup),Vegetable,10.0,0.5,2.0,0.0
+1770,2026-02-23,Lunch,0,,584,Fattoush Salad (1.5 cups),Meal/Vegetarian,250.0,5.0,25.0,15.0
+1771,2026-02-23,Lunch,0,,585,Fried Pita (1/2 pita in salad),Grain,80.0,2.0,12.0,3.0
+1772,2026-02-23,Lunch,0,,586,Sumac (1/2 tsp dressing),Condiment,5.0,0.1,1.0,0.2
+1773,2026-02-23,Lunch,0,,587,Pomegranate Molasses (1 tsp),Condiment,15.0,0.0,4.0,0.0
