@@ -1,0 +1,15 @@
+id_run,pipeline_name,started_at,ended_at,status,rows_read,rows_inserted,rows_rejected,missing_values_count,duplicates_count,error_message
+7,fitness_ingest,2026-02-23 08:28:28.222158,2026-02-23 08:28:37.500389,SUCCESS,1800,1581,36,498,0,
+6,nutrition_ingest,2026-02-23 08:28:27.721062,2026-02-23 08:28:28.216144,SUCCESS,651,591,0,0,54,
+5,fitness_ingest,2026-02-23 08:25:05.862444,2026-02-23 08:25:05.918480,FAILED,1800,0,36,498,0,"(psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint ""uq_user_session_date""
+DETAIL:  Key (id_user, session_date)=(5, 2026-02-23) already exists.
+
+[SQL: INSERT INTO session_sport (id_user, session_date, weight_kg, max_bpm, avg_bpm, resting_bpm, session_duration_hours, calories_burned, workout_type, fat_percentage, water_intake_liters, workout_frequency_days_per_week, bmi) SELECT p0::INTEGER, p1::DATE ... 855 characters truncated ... ) ORDER BY sen_counter RETURNING session_sport.id_session, session_sport.id_session AS id_session__1]
+[parameters: {'bmi__0': 49.84, 'calories_burned__0': 802.0, 'weight_kg__0': 82.9, 'session_date__0': datetime.date(2026, 2, 23), 'avg_bpm__0': 169, 'resting_bpm__0': 64, 'workout_frequency_days_per_week__0': 3, 'max_bpm__0': 174, 'id_user__0': 9, 'session_duration_hours__0': 0.77, 'fat_percentage__0': 27.8, 'water_intake_liters__0': 2.2, 'workout_type__0': 'HIIT', 'bmi__1': 12.32, 'calories_burned__1': 1231.0, 'weight_kg__1': 65.9, 'session_date__1': datetime.date(2026, 2, 23), 'avg_bpm__1': 169, 'resting_bpm__1': 73, 'workout_frequency_days_per_week__1': 5, 'max_bpm__1': 195, 'id_user__1': 5, 'session_duration_hours__1': 2.0, 'fat_percentage__1': 30.5, 'water_intake_liters__1': 3.2, 'workout_type__1': 'Yoga'}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)"
+4,nutrition_ingest,2026-02-23 08:25:04.498153,2026-02-23 08:25:05.856257,SUCCESS,651,591,0,0,54,
+3,nutrition_ingest,2026-02-23 08:22:30.517043,2026-02-23 08:22:30.548057,FAILED,0,0,0,0,0,"Error tokenizing data. C error: Expected 12 fields in line 21, saw 13
+"
+2,nutrition_ingest,2026-02-23 08:21:42.721230,2026-02-23 08:21:42.753572,FAILED,0,0,0,0,0,"Error tokenizing data. C error: Expected 12 fields in line 21, saw 13
+"
+1,nutrition_ingest,2026-02-23 08:20:56.047545,2026-02-23 08:20:56.082522,FAILED,0,0,0,0,0,[Errno 2] No such file or directory: '/app/data/raw/daily_food_nutrition.csv'
