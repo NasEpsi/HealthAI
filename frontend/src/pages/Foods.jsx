@@ -120,11 +120,11 @@ export default function Foods() {
           <tr>
             <th>ID</th>
             <th>Food</th>
-            <th>Category</th>
-            <th>Calories</th>
-            <th>Protein</th>
-            <th>Carbs</th>
-            <th>Fat</th>
+            <th>Category(kcal)</th>
+            <th>Calories(g)</th>
+            <th>Protein(g)</th>
+            <th>Carbs(g)</th>
+            <th>Fat(g)</th>
             <th>Source</th>
             <th>Actions</th>
           </tr>

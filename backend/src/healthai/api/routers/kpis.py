@@ -9,7 +9,6 @@ router = APIRouter(prefix="/kpis", tags=["KPIs"], dependencies=[Depends(require_
 
 @router.get("/quality")
 def kpi_quality(db: Session = Depends(get_db)):
-    # Dernières exécutions ETL
     q = text("""
         SELECT
           id_run, pipeline_name, started_at, ended_at, status,
@@ -24,7 +23,6 @@ def kpi_quality(db: Session = Depends(get_db)):
 
 @router.get("/users")
 def kpi_users(db: Session = Depends(get_db)):
-    # Répartition par âge + genre + niveau
     q_age = text("""
         SELECT
           CASE

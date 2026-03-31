@@ -7,7 +7,7 @@ from healthai.api.routers.foods import router as foods_router
 from healthai.api.routers.sessions import router as sessions_router
 from fastapi.middleware.cors import CORSMiddleware
 
-app = FastAPI(title="HealthAI Backend")
+app = FastAPI(title="HealthAI API")
 app.include_router(kpis_router)
 app.include_router(exports_router)
 app.include_router(users_router)

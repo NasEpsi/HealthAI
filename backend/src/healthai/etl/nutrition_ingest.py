@@ -42,13 +42,13 @@ def run_nutrition_ingest() -> None:
     try:
         df = pd.read_csv(
             path,
-            engine="python",           # plus tolérant
+            engine="python",        
             sep=",",
-            on_bad_lines="skip"        # skip lignes cassées
+            on_bad_lines="skip"        
         )
-        # Lecture brute pour compter le total de lignes fichier (hors header)
+        # Lecture pour compter le total de lignes fichier 
         with open(path, "r", encoding="utf-8", errors="ignore") as f:
-            total_lines = sum(1 for _ in f) - 1  # - header
+            total_lines = sum(1 for _ in f) - 1 
 
         rows_read = total_lines
         rows_parsed = len(df)
@@ -76,19 +76,16 @@ def run_nutrition_ingest() -> None:
         df["Cholesterol (mg)"] = _to_num(df["Cholesterol (mg)"])
         df["Water_Intake (ml)"] = pd.to_numeric(df["Water_Intake (ml)"], errors="coerce")
 
-        # stats qualité
         missing_values = int(df.isna().sum().sum())
 
-        # déduplication sur l'identité de l'aliment + meal_type + water intake (simple)
         before = len(df)
         df = df.drop_duplicates(subset=["Food_Item", "Category", "Meal_Type", "Water_Intake (ml)"])
         duplicates = before - len(df)
 
-        # règle : Food_Item obligatoire
+        # Food_Item obligatoire
         df_valid = df[df["Food_Item"].notna() & (df["Food_Item"].str.len() > 0)].copy()
         rows_rejected = len(df) - len(df_valid)
 
-        # upsert aliments (par food_item)
         inserted_logs = 0
 
         for _, r in df_valid.iterrows():
@@ -113,12 +110,11 @@ def run_nutrition_ingest() -> None:
                     source="Daily Food & Nutrition Dataset",
                 )
                 db.add(food)
-                db.flush()  # pour récupérer id_food
+                db.flush()  
                 food_id = food.id_food
             else:
                 food_id = existing_food_id
 
-            # nutrition_log sans user (id_user null) + date d'import
             log = NutritionLog(
                 id_user=None,
                 id_food=food_id,

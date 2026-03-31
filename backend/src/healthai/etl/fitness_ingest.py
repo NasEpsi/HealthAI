@@ -1,13 +1,10 @@
 from __future__ import annotations
-
 import os
 from datetime import date
 from typing import Optional
-
 import pandas as pd
 from sqlalchemy import select
 from sqlalchemy.orm import Session
-
 from healthai.db import SessionLocal
 from healthai.etl.quality import finish_run, start_run
 from healthai.etl.validators import validate_columns
@@ -32,8 +29,6 @@ REQUIRED_COLS = [
     "BMI",
 ]
 
-
-# ---------------------------
 # Helpers
 # ---------------------------
 def _to_num(series: pd.Series) -> pd.Series:
@@ -75,9 +70,6 @@ def _mode_or_none(g: pd.DataFrame, col: str) -> Optional[str]:
     return None if vc.empty else str(vc.index[0])
 
 
-# ---------------------------
-# Main ETL
-# ---------------------------
 def run_fitness_ingest() -> None:
     path = os.getenv("FITNESS_CSV", "/app/data/raw/fitness_tracker.csv")
     import_date = date.today()
@@ -99,16 +91,13 @@ def run_fitness_ingest() -> None:
         if not vr.ok:
             raise ValueError(f"Missing columns in fitness CSV: {vr.missing_columns}")
 
-        # ---- Normalize text columns
         df["Gender"] = _clean_str(df["Gender"])
         df["Workout_Type"] = _clean_str(df["Workout_Type"])
         df["Experience_Level"] = _clean_str(df["Experience_Level"])
 
-        # Business rule: Experience_Level must be explicit
         # If missing, use "UNKNOWN"
         df["Experience_Level"] = df["Experience_Level"].fillna("UNKNOWN")
 
-        # ---- Numeric conversions
         df["Age"] = _to_num(df["Age"])
         df["Weight (kg)"] = _to_num(df["Weight (kg)"])
         df["Height (m)"] = _to_num(df["Height (m)"])
@@ -122,15 +111,13 @@ def run_fitness_ingest() -> None:
         df["Workout_Frequency (days/week)"] = _to_num(df["Workout_Frequency (days/week)"])
         df["BMI"] = _to_num(df["BMI"])
 
-        # ---- Fix incoherent values (soft-clean)
+        #  Fix incoherent values
         # If duration > 15 minutes (0.25h) AND calories == 0, treat calories as missing (NULL)
         bad_cal = (df["Session_Duration (hours)"] > 0.25) & (df["Calories_Burned"] == 0)
         df.loc[bad_cal, "Calories_Burned"] = pd.NA
 
-        # ---- Missing values count after normalization
         missing_values = int(df.isna().sum().sum())
 
-        # ---- Deduplication (approx: same profile + same session signature)
         before = len(df)
         df = df.drop_duplicates(
             subset=[
@@ -145,8 +132,6 @@ def run_fitness_ingest() -> None:
         )
         duplicates = before - len(df)
 
-        # ---- Minimal reject rules (hard validation)
-        # Keep dataset “reasonable”, reject rows outside bounds
         df_valid = df[
             df["Age"].between(10, 100, inclusive="both")
             & df["Height (m)"].between(1.0, 2.5, inclusive="both")
@@ -154,8 +139,7 @@ def run_fitness_ingest() -> None:
 
         rows_rejected = len(df) - len(df_valid)
 
-        # ---- Group by user profile to enforce UNIQUE(id_user, session_date)
-        # One “daily aggregated session” per user and import_date
+
         groups = df_valid.groupby(
             ["Age", "Gender", "Height (m)", "Experience_Level"],
             dropna=False,
@@ -173,7 +157,6 @@ def run_fitness_ingest() -> None:
             if age_i is None or gender_s is None or height_f is None:
                 continue
 
-            # Find / create user
             user_id = db.execute(
                 select(Utilisateur.id_user).where(
                     Utilisateur.age == age_i,
@@ -194,8 +177,6 @@ def run_fitness_ingest() -> None:
                 db.flush()
                 user_id = user.id_user
 
-            # Aggregations (daily)
-            # calories/duration/water: sum (daily totals)
             calories_sum = g["Calories_Burned"].sum(skipna=True)
             calories_sum = None if pd.isna(calories_sum) else float(calories_sum)
 
@@ -205,15 +186,12 @@ def run_fitness_ingest() -> None:
             water_sum = g["Water_Intake (liters)"].sum(skipna=True)
             water_sum = None if pd.isna(water_sum) else float(water_sum)
 
-            # workout_type: mode
             workout_mode = _mode_or_none(g, "Workout_Type")
 
-            # frequency: mode (integer)
             freq_mode = None
             if "Workout_Frequency (days/week)" in g.columns:
                 vc2 = g["Workout_Frequency (days/week)"].dropna()
                 if not vc2.empty:
-                    # round to int because data may be float after to_numeric
                     vc2_int = vc2.round().astype(int).value_counts()
                     freq_mode = None if vc2_int.empty else int(vc2_int.index[0])
 

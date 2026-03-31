@@ -51,11 +51,29 @@ table {
   width: 100%;
   border-collapse: collapse;
   background: white;
-  text-align: center;   /* 👈 centre tout le texte */
+  text-align: center; 
 }
 
 th, td {
   padding: 10px;
   border-bottom: 1px solid #ddd;
-  text-align: center;   /* 👈 centre colonnes */
+  text-align: center;   
+}
+
+.card {
+  background: white;
+  padding: 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+
+.bi-frame {
+  width: 100%;
+  height: 80vh; 
+  border: 0;
+}
+
+button:focus {
+  outline: 3px solid #2563eb;
+  outline-offset: 2px;
 }

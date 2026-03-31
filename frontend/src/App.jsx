@@ -25,6 +25,7 @@ export default function App() {
         {page === "sessions" && <Sessions />}
         {page === "exports" && <Exports />}
         {page === "foods" && <Foods />}
+        {page === "bi" && <BIDashboard />}
       </main>
     </div>
   );
