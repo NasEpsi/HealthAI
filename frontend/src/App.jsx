@@ -1,32 +1,54 @@
-import { useState } from "react";
-import Dashboard from "./pages/Dashboard";
-import Exports from "./pages/Exports";
-import Users from "./pages/Users";
-import Sessions from "./pages/Sessions";
-import Foods from "./pages/Foods";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { AppProvider } from "./context/AppContext";
+import DashboardLayout from "./components/DashboardLayout";
+import { ProtectedRoute, AuthRoute } from "./components/ProtectedRoute";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+import Home from "./pages/Home";
+import Scanner from "./pages/Scanner";
+import Journal from "./pages/Journal";
+import MealPlans from "./pages/MealPlans";
+import Sport from "./pages/Sport";
+import Profile from "./pages/Profile";
 
 export default function App() {
-  const [page, setPage] = useState("dashboard");
-
   return (
-    <div className="layout">
-      <aside className="sidebar">
-        <h2>HealthAI Admin</h2>
-        <button onClick={() => setPage("dashboard")}>Dashboard</button>
-        <button onClick={() => setPage("users")}>Users</button>
-        <button onClick={() => setPage("sessions")}>Sessions</button>
-        <button onClick={() => setPage("exports")}>Exports</button>
-        <button onClick={() => setPage("foods")}>Foods</button>
-      </aside>
-
-      <main className="content">
-        {page === "dashboard" && <Dashboard />}
-        {page === "users" && <Users />}
-        {page === "sessions" && <Sessions />}
-        {page === "exports" && <Exports />}
-        {page === "foods" && <Foods />}
-        {page === "bi" && <BIDashboard />}
-      </main>
-    </div>
+    <AppProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route
+            path="/login"
+            element={
+              <AuthRoute>
+                <Login />
+              </AuthRoute>
+            }
+          />
+          <Route
+            path="/inscription"
+            element={
+              <AuthRoute>
+                <Register />
+              </AuthRoute>
+            }
+          />
+          <Route
+            element={
+              <ProtectedRoute>
+                <DashboardLayout />
+              </ProtectedRoute>
+            }
+          >
+            <Route index element={<Home />} />
+            <Route path="scanner" element={<Scanner />} />
+            <Route path="journal" element={<Journal />} />
+            <Route path="plans-repas" element={<MealPlans />} />
+            <Route path="sport" element={<Sport />} />
+            <Route path="profil" element={<Profile />} />
+          </Route>
+          <Route path="*" element={<Navigate to="/login" replace />} />
+        </Routes>
+      </BrowserRouter>
+    </AppProvider>
   );
 }
