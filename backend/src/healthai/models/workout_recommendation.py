@@ -9,7 +9,7 @@ class WorkoutRecommendation(Base):
     __tablename__ = "workout_recommendation"
 
     id = Column(Integer, primary_key=True, index=True)
-    user_id = Column(Integer, ForeignKey("utilisateur.id", ondelete="CASCADE"), nullable=False)
+    user_id = Column(Integer, ForeignKey("utilisateur.id_user", ondelete="CASCADE"), nullable=False)
 
     goal_context = Column(String(100), nullable=True)
     fitness_level = Column(String(50), nullable=True)

@@ -11,3 +11,10 @@ engine = create_engine(
     connect_args={"options": "-csearch_path=healthai"}
 )
 SessionLocal = sessionmaker(bind=engine, autoflush=False, autocommit=False)
+
+def get_db():
+    db = SessionLocal()
+    try:
+        yield db
+    finally:
+        db.close()

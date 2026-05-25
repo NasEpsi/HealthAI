@@ -8,8 +8,8 @@ from healthai.db import Base
 class MealAnalysis(Base):
     __tablename__ = "meal_analysis"
 
-    id = Column(Integer, primary_key=True, index=True)
-    user_id = Column(Integer, ForeignKey("utilisateur.id", ondelete="CASCADE"), nullable=False)
+    id_meal = Column(Integer, primary_key=True, index=True)
+    user_id = Column(Integer, ForeignKey("utilisateur.id_user", ondelete="CASCADE"), nullable=False)
 
     image_url = Column(String, nullable=True)
     submitted_at = Column(DateTime(timezone=True), server_default=func.now(), nullable=False)

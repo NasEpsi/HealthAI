@@ -8,7 +8,7 @@ class UserProfile(Base):
     __tablename__ = "user_profile"
 
     id = Column(Integer, primary_key=True, index=True)
-    user_id = Column(Integer, ForeignKey("utilisateur.id", ondelete="CASCADE"), unique=True, nullable=False)
+    user_id = Column(Integer, ForeignKey("utilisateur.id_user", ondelete="CASCADE"), unique=True, nullable=False)
 
     age = Column(Integer, nullable=True)
     sex = Column(String(20), nullable=True)

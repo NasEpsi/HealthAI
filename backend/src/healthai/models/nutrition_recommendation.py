@@ -9,8 +9,8 @@ class NutritionRecommendation(Base):
     __tablename__ = "nutrition_recommendation"
 
     id = Column(Integer, primary_key=True, index=True)
-    user_id = Column(Integer, ForeignKey("utilisateur.id", ondelete="CASCADE"), nullable=False)
-    meal_analysis_id = Column(Integer, ForeignKey("meal_analysis.id", ondelete="SET NULL"), nullable=True)
+    user_id = Column(Integer, ForeignKey("utilisateur.id_user", ondelete="CASCADE"), nullable=False)
+    meal_analysis_id = Column(Integer, ForeignKey("meal_analysis.id_meal", ondelete="SET NULL"), nullable=True)
 
     goal_context = Column(String(100), nullable=True)
     budget_constraint = Column(String(100), nullable=True)

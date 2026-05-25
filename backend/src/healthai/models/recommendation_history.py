@@ -8,7 +8,7 @@ class RecommendationHistory(Base):
     __tablename__ = "recommendation_history"
 
     id = Column(Integer, primary_key=True, index=True)
-    user_id = Column(Integer, ForeignKey("utilisateur.id", ondelete="CASCADE"), nullable=False)
+    user_id = Column(Integer, ForeignKey("utilisateur.id_user", ondelete="CASCADE"), nullable=False)
 
     recommendation_type = Column(String(30), nullable=False)
     reference_id = Column(Integer, nullable=True)
