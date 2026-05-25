@@ -5,9 +5,10 @@ WORKDIR /app
 COPY pyproject.toml /app/pyproject.toml
 
 RUN pip install --no-cache-dir -U pip \
-    && pip install --no-cache-dir fastapi uvicorn pymongo
+    && pip install --no-cache-dir fastapi uvicorn pymongo pytest httpx pytest-cov python-multipart
 
 COPY src /app/src
+COPY tests /app/tests
 
 ENV PYTHONPATH=/app/src
 
