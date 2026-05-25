@@ -1,16 +1,41 @@
-# React + Vite
+# HealthAI Coach — Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Interface React (Vite) conforme aux maquettes HealthAI Coach.
 
-Currently, two official plugins are available:
+## Lancer le projet
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```bash
+cd frontend
+npm install
+npm run dev
+```
 
-## React Compiler
+Ouvrir [http://localhost:5173](http://localhost:5173).
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Parcours
 
-## Expanding the ESLint configuration
+1. **Connexion** (`/login`) — authentification locale (mock, sans backend).
+2. **Inscription** (`/inscription`) — onboarding en 4 étapes : données, objectif, nutrition, sport.
+3. **Dashboard** — Accueil, Scanner, Journal, Plans repas, Sport, Profil.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Les données sont persistées dans `localStorage` (clé `healthai_coach`).
+
+## Charte graphique
+
+| Usage | Couleur |
+|-------|---------|
+| Fond | `#F8F5F0` |
+| Primaire | `#5BA5DF` |
+| Hover / secondaire | `#3B82F6` |
+| Texte | `#000` |
+| Texte secondaire | `#6B7280` |
+| Cartes / bordures | `#E5E7EB` |
+
+**Polices :** Dosis (titres), Ubuntu (menu & corps).
+
+## Stack
+
+- React 19 + React Router
+- Lucide React (icônes)
+- Recharts (graphique journal)
+- Données mockées côté client uniquement
