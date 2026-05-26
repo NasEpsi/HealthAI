@@ -128,3 +128,34 @@ def kpi_nutrition(db: Session = Depends(get_db)):
         "top_foods": list(db.execute(q_top_food).mappings().all()),
         "meal_types": list(db.execute(q_meals).mappings().all()),
     }
+    
+from healthai.models.meal_analysis import MealAnalysis
+
+
+@router.get("/dashboard/{user_id}")
+def dashboard_summary(
+    user_id: int,
+    db: Session = Depends(get_db),
+):
+    meals = (
+        db.query(MealAnalysis)
+        .filter(MealAnalysis.user_id == user_id)
+        .all()
+    )
+
+    return {
+        "daily": {
+            "calories": round(
+                sum(m.estimated_calories or 0 for m in meals)
+            ),
+            "protein": round(
+                sum(m.estimated_proteins or 0 for m in meals)
+            ),
+            "carbs": round(
+                sum(m.estimated_carbs or 0 for m in meals)
+            ),
+            "fat": round(
+                sum(m.estimated_fats or 0 for m in meals)
+            ),
+        }
+    }

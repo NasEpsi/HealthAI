@@ -1,5 +1,5 @@
 from pydantic import BaseModel
-from typing import List, Optional
+from typing import List, Optional, Any
 
 
 class NutritionRequest(BaseModel):
@@ -16,3 +16,4 @@ class NutritionResponse(BaseModel):
     summary: str
     actions: List[str]
     score: float
+    meal_plan: List[Any] = []

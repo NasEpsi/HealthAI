@@ -10,19 +10,19 @@ export default function Login() {
   const { login, profile } = useApp();
   const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setError("");
-    if (!login(email, password)) {
-      setError("Veuillez remplir tous les champs.");
-      return;
-    }
-    if (profile.onboardingComplete) {
-      navigate("/");
-    } else {
-      navigate("/inscription");
-    }
-  };
+const handleSubmit = async (e) => {
+  e.preventDefault();
+  setError("");
+
+  const ok = await login(email, password);
+
+  if (!ok) {
+    setError("Email ou mot de passe incorrect.");
+    return;
+  }
+
+  navigate("/");
+};
 
   return (
     <div className="auth-page">

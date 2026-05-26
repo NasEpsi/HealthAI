@@ -3,6 +3,8 @@ from typing import Optional
 
 
 class UserBase(BaseModel):
+    email: str
+    password: str
     age: int = Field(..., ge=10, le=100)
     gender: str
     height_m: Optional[float] = Field(None, ge=1.0, le=2.5)
@@ -14,6 +16,8 @@ class UserCreate(UserBase):
 
 
 class UserUpdate(BaseModel):
+    email: str
+    password: str
     age: Optional[int] = Field(None, ge=10, le=100)
     gender: Optional[str] = None
     height_m: Optional[float] = Field(None, ge=1.0, le=2.5)

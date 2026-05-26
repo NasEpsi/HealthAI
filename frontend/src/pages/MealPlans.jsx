@@ -1,58 +1,128 @@
-import { Sparkles, Trash2 } from "lucide-react";
+import { useState } from "react";
+import { Sparkles, Utensils } from "lucide-react";
 import { useApp } from "../context/AppContext";
+import { generateNutritionPlan } from "../api";
 
 export default function MealPlans() {
-  const { mealPlan, generateMealPlan, deleteMealPlan } = useApp();
+  const { currentUser, profile } = useApp();
+
+  const [loading, setLoading] = useState(false);
+  const [recommendation, setRecommendation] = useState(null);
+  const [error, setError] = useState("");
+
+  const handleGenerate = async () => {
+    try {
+      setLoading(true);
+      setError("");
+
+      const userId = currentUser?.id_user;
+
+      if (!userId) {
+        setError("Utilisateur non connecté.");
+        return;
+      }
+
+      const payload = {
+        user_id: userId,
+        goal:
+          profile?.goal === "Prise de masse"
+            ? "muscle_gain"
+            : profile?.goal === "Perte de poids"
+            ? "weight_loss"
+            : "maintain",
+        calories: profile?.targetCalories || 2200,
+        proteins: 80,
+        carbs: 220,
+        fats: 70,
+        detected_foods: [],
+      };
+
+      const result = await generateNutritionPlan(payload);
+      setRecommendation(result.ai_result || result);
+    } catch (err) {
+      console.error(err);
+      setError("Impossible de générer le plan alimentaire.");
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <>
       <header className="page-header">
         <div>
-          <h1 className="page-header__title title-font">Plans de repas</h1>
+          <h1 className="page-header__title title-font">Plan alimentaire</h1>
           <p className="page-header__subtitle">
-            Personnalisés selon votre profil et budget
+            Généré automatiquement selon votre profil
           </p>
-          {mealPlan && <span className="plan-badge">{mealPlan.title}</span>}
         </div>
-        <button type="button" className="btn btn--primary" onClick={generateMealPlan}>
+
+        <button
+          type="button"
+          className="btn btn--primary"
+          onClick={handleGenerate}
+          disabled={loading}
+        >
           <Sparkles size={18} />
-          Générer un plan
+          {loading ? "Génération..." : "Générer un plan"}
         </button>
       </header>
 
-      {!mealPlan ? (
-        <div className="card card--empty">
-          Aucun plan généré. Cliquez sur « Générer un plan » pour démarrer.
+      {error && (
+        <div className="card" style={{ color: "crimson", marginBottom: 16 }}>
+          {error}
+        </div>
+      )}
+
+      {!recommendation ? (
+        <div className="card card--empty" style={{ flexDirection: "column" }}>
+          <Utensils className="empty-state-icon" size={48} />
+          Aucun plan alimentaire généré.
         </div>
       ) : (
-        <>
-          <div className="plan-header">
-            <h2 className="plan-header__title title-font">{mealPlan.title}</h2>
-            <button
-              type="button"
-              className="program-overview__delete"
-              onClick={deleteMealPlan}
-              aria-label="Supprimer le plan"
-            >
-              <Trash2 size={20} />
-            </button>
-          </div>
-          <div className="plan-grid">
-            {mealPlan.days.map(({ day, meals }) => (
-              <div key={day} className="day-card">
-                <h3 className="day-card__name title-font">{day}</h3>
-                {meals.map((meal) => (
-                  <div key={`${day}-${meal.type}`} className="meal-item">
-                    <div className="meal-item__type">{meal.type}</div>
-                    <div className="meal-item__name">{meal.name}</div>
-                    <div className="meal-item__kcal">{meal.kcal} kcal</div>
-                    <div className="meal-item__desc">{meal.desc}</div>
-                  </div>
-                ))}
+        <div className="card">
+          <h2 className="title-font">Recommandation nutritionnelle</h2>
+
+          <p style={{ marginTop: 16, marginBottom: 16, lineHeight: 1.6 }}>
+            {recommendation.summary}
+          </p>
+
+          <p>
+            <strong>Score IA :</strong> {recommendation.score}
+          </p>
+
+          <h3 style={{ marginTop: 24, marginBottom: 12 }}>Conseils :</h3>
+
+          <ul style={{ paddingLeft: 20 }}>
+            {(recommendation.actions || []).map((action, idx) => (
+              <li key={idx} style={{ marginBottom: 8 }}>
+                {action}
+              </li>
+            ))}
+          </ul>
+
+          <h3 style={{ marginTop: 24, marginBottom: 12 }}>
+            Plan de repas proposé :
+          </h3>
+
+          <div className="sessions-grid">
+            {(recommendation.meal_plan || []).map((meal, idx) => (
+              <div key={idx} className="card">
+                <h3>{meal.meal}</h3>
+
+                <ul style={{ paddingLeft: 20, marginTop: 12 }}>
+                  {(meal.items || []).map((item, i) => (
+                    <li key={i}>{item}</li>
+                  ))}
+                </ul>
+
+                <p style={{ marginTop: 12 }}>
+                  Environ {meal.calories} kcal
+                </p>
               </div>
             ))}
           </div>
-        </>
+        </div>
       )}
     </>
   );

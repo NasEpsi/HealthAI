@@ -1,6 +1,8 @@
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Flame, Beef, Wheat, Droplet, Camera, BookOpen, UtensilsCrossed, Dumbbell } from "lucide-react";
 import { useApp } from "../context/AppContext";
+import { getDashboardSummary } from "../api";
 
 function CalorieRing({ current, target }) {
   const pct = target > 0 ? Math.min(100, (current / target) * 100) : 0;
@@ -40,7 +42,40 @@ const quickLinks = [
 ];
 
 export default function Home() {
-  const { profile, daily, macroTargets } = useApp();
+  const { profile, currentUser } = useApp();
+
+  const [daily, setDaily] = useState({
+    calories: 0,
+    protein: 0,
+    carbs: 0,
+    fat: 0,
+  });
+
+  const macroTargets = {
+    protein: 120,
+    carbs: 250,
+    fat: 70,
+  };
+  
+
+  useEffect(() => {
+    async function loadDashboard() {
+      try {
+        const userId = currentUser?.id_user;
+
+        if (!userId) return;
+
+        const data = await getDashboardSummary(userId);
+
+        setDaily(data.daily);
+      } catch (err) {
+        console.error(err);
+      }
+    }
+
+    loadDashboard();
+  }, [currentUser]);
+
   const navigate = useNavigate();
   const remaining = Math.max(0, profile.targetCalories - daily.calories);
 

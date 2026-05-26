@@ -6,9 +6,17 @@ class Utilisateur(Base):
     __tablename__ = "utilisateur"
 
     id_user: Mapped[int] = mapped_column(primary_key=True)
+
+    email: Mapped[str] = mapped_column(String(255), unique=True, nullable=False)
+
+    password: Mapped[str] = mapped_column(String(255), nullable=False)
+
     age: Mapped[int] = mapped_column(Integer, nullable=False)
+
     gender: Mapped[str] = mapped_column(String(20), nullable=False)
+
     height_m: Mapped[float | None] = mapped_column(Numeric(4,2), nullable=True)
+
     experience_level: Mapped[str | None] = mapped_column(String(50), nullable=True)
 
     __table_args__ = (

@@ -1,5 +1,4 @@
-import { useMemo, useState } from "react";
-import {
+import { useMemo, useState, useEffect } from "react";import {
   LineChart,
   Line,
   XAxis,
@@ -9,6 +8,7 @@ import {
   ResponsiveContainer,
 } from "recharts";
 import { useApp } from "../context/AppContext";
+import { getMealHistory } from "../api";
 
 function formatDate(d) {
   const day = String(d.getDate()).padStart(2, "0");
@@ -17,10 +17,38 @@ function formatDate(d) {
 }
 
 export default function Journal() {
-  const { meals } = useApp();
+  const { currentUser } = useApp();
+  const [meals, setMeals] = useState([]);
   const [daysFilter, setDaysFilter] = useState(7);
   const [typeFilter, setTypeFilter] = useState("Tous");
 
+  useEffect(() => {
+    async function loadMeals() {
+      try {
+        const userId = currentUser?.id_user;
+
+        if (!userId) return;
+
+        const data = await getMealHistory(userId);
+
+        const formatted = data.map((m) => ({
+          id: m.id_meal,
+          mealType: "Repas analysé",
+          date: m.submitted_at,
+          name: Array.isArray(m.detected_foods_json)
+            ? m.detected_foods_json.map((f) => f.name).join(", ")
+            : "Repas analysé",
+          calories: Number(m.estimated_calories || 0),
+        }));
+
+        setMeals(formatted);
+      } catch (err) {
+        console.error(err);
+      }
+    }
+
+    loadMeals();
+  }, [currentUser]);
   const chartData = useMemo(() => {
     const data = [];
     for (let i = daysFilter - 1; i >= 0; i--) {

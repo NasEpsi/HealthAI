@@ -1,50 +1,82 @@
 import { useRef, useState } from "react";
 import { Camera } from "lucide-react";
 import { useApp } from "../context/AppContext";
+import { analyzeMealImage, saveMealAnalysis } from "../api";
 
 const MEAL_TYPES = ["Petit-déj", "Déjeuner", "Diner", "Collation"];
-
-const MOCK_ANALYSIS = [
-  { name: "Poulet grillé", calories: 220, protein: 35, carbs: 0, fat: 8 },
-  { name: "Riz complet", calories: 180, protein: 4, carbs: 38, fat: 2 },
-  { name: "Brocoli vapeur", calories: 55, protein: 4, carbs: 8, fat: 1 },
-];
 
 export default function Scanner() {
   const [mealType, setMealType] = useState("Déjeuner");
   const [preview, setPreview] = useState(null);
   const [analyzing, setAnalyzing] = useState(false);
   const [result, setResult] = useState(null);
+  const [error, setError] = useState("");
   const fileRef = useRef(null);
-  const { addMeal } = useApp();
+  const { addMeal, currentUser } = useApp();
 
-  const handleFile = (file) => {
+  const handleFile = async (file) => {
     if (!file || !file.type.startsWith("image/")) return;
+
     if (file.size > 8 * 1024 * 1024) {
       alert("Fichier trop volumineux (max 8 Mo)");
       return;
     }
+
     const url = URL.createObjectURL(file);
     setPreview(url);
     setAnalyzing(true);
     setResult(null);
-    setTimeout(() => {
-      const total = MOCK_ANALYSIS.reduce(
-        (acc, f) => ({
-          calories: acc.calories + f.calories,
-          protein: acc.protein + f.protein,
-          carbs: acc.carbs + f.carbs,
-          fat: acc.fat + f.fat,
-        }),
-        { calories: 0, protein: 0, carbs: 0, fat: 0 }
-      );
-      setResult({ foods: MOCK_ANALYSIS, ...total, mealType });
+    setError("");
+
+    try {
+      const userId = currentUser?.id_user;
+      if (!userId) {
+        setError("Utilisateur non connecté.");
+        setAnalyzing(false);
+        return;
+      }
+      const goal =
+        currentUser?.health_goal ||
+        "maintain";
+
+      const analysis = await analyzeMealImage(file, userId, goal);
+
+      const formattedResult = {
+        mealType,
+        foods: analysis.detected_foods.map((food) => ({
+          name: food.label,
+          calories: food.calories,
+          protein: food.proteins,
+          carbs: food.carbs,
+          fat: food.fats,
+        })),
+        calories: analysis.totals.calories,
+        protein: analysis.totals.proteins,
+        carbs: analysis.totals.carbs,
+        fat: analysis.totals.fats,
+        advice: analysis.advice,
+        score: analysis.score,
+      };
+
+      setResult(formattedResult);
+    } catch (err) {
+      console.error(err);
+      setError(err.message || "Impossible d'analyser l'image pour le moment.");
+    } finally {
       setAnalyzing(false);
-    }, 1500);
+    }
   };
 
-  const saveMeal = () => {
+  const saveMeal = async () => {
     if (!result) return;
+
+    const userId = currentUser?.id_user;
+
+    if (!userId) {
+      setError("Utilisateur non connecté.");
+      return;
+    }
+
     addMeal({
       mealType: result.mealType,
       name: result.foods.map((f) => f.name).join(", "),
@@ -53,6 +85,20 @@ export default function Scanner() {
       carbs: result.carbs,
       fat: result.fat,
     });
+
+    await saveMealAnalysis({
+      user_id: userId,
+      image_url: preview,
+      detected_foods_json: result.foods,
+      estimated_calories: result.calories,
+      estimated_proteins: result.protein,
+      estimated_carbs: result.carbs,
+      estimated_fats: result.fat,
+      analysis_status: "success",
+      analysis_source: "healthai_ai_service",
+      raw_ai_response: result,
+    });
+
     setPreview(null);
     setResult(null);
   };
@@ -106,15 +152,25 @@ export default function Scanner() {
           ) : (
             <Camera className="dropzone__icon" size={48} />
           )}
+
           <p className="dropzone__title">
             {analyzing ? "Analyse en cours..." : "Prendre / Téléverser une photo"}
           </p>
-          <p className="dropzone__hint">JPG, PNG (max 8 Mo)</p>
+          <p className="dropzone__hint">JPG, PNG, WEBP (max 8 Mo)</p>
         </div>
+
+        {error && (
+          <p style={{ color: "crimson", marginTop: 16 }}>
+            {error}
+          </p>
+        )}
 
         {result && (
           <div className="scan-result">
-            <p className="scan-result__title">Résultat de l&apos;analyse ({result.mealType})</p>
+            <p className="scan-result__title">
+              Résultat de l&apos;analyse ({result.mealType})
+            </p>
+
             <ul style={{ marginBottom: 16, paddingLeft: 20 }}>
               {result.foods.map((f) => (
                 <li key={f.name} style={{ marginBottom: 4, color: "var(--text-secondary)" }}>
@@ -122,10 +178,18 @@ export default function Scanner() {
                 </li>
               ))}
             </ul>
+
             <p style={{ fontWeight: 600, marginBottom: 12 }}>
               Total : {result.calories} kcal · P {result.protein}g · G {result.carbs}g · L{" "}
               {result.fat}g
             </p>
+
+            {result.advice && (
+              <p style={{ marginBottom: 16, color: "var(--text-secondary)" }}>
+                {result.advice}
+              </p>
+            )}
+
             <button type="button" className="btn btn--primary" onClick={saveMeal}>
               Enregistrer dans le journal
             </button>

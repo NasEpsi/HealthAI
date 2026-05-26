@@ -63,9 +63,14 @@ export default function Register() {
   const next = () => setStep((s) => Math.min(4, s + 1));
   const prev = () => setStep((s) => Math.max(1, s - 1));
 
-  const finish = () => {
-    completeOnboarding(form);
-    navigate("/");
+  const finish = async () => {
+    try {
+      await completeOnboarding(form);
+      navigate("/");
+    } catch (err) {
+      console.error(err);
+      alert("Erreur lors de l'inscription");
+    }
   };
 
   return (
@@ -88,6 +93,28 @@ export default function Register() {
                 placeholder="Votre prénom"
               />
             </div>
+
+            <div className="form-group">
+            <label>Email</label>
+            <input
+              type="email"
+              className="input"
+              value={form.email}
+              onChange={(e) => update("email", e.target.value)}
+              placeholder="email@exemple.com"
+            />
+          </div>
+
+          <div className="form-group">
+            <label>Mot de passe</label>
+            <input
+              type="password"
+              className="input"
+              value={form.password}
+              onChange={(e) => update("password", e.target.value)}
+              placeholder="********"
+            />
+          </div>
             <div className="form-group">
               <label>Âge</label>
               <input

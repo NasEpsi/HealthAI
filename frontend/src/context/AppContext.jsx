@@ -1,4 +1,9 @@
 import { createContext, useContext, useState, useEffect, useCallback } from "react";
+import {
+  registerUser,
+  getUsers,
+  createProfile,
+} from "../api";
 
 const STORAGE_KEY = "healthai_coach";
 
@@ -49,6 +54,7 @@ function saveState(state) {
 
 export function AppProvider({ children }) {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [currentUser, setCurrentUser] = useState(null);
   const [profile, setProfile] = useState(defaultProfile);
   const [daily, setDaily] = useState(defaultDaily);
   const [meals, setMeals] = useState([]);
@@ -65,6 +71,7 @@ export function AppProvider({ children }) {
       setMeals(saved.meals ?? []);
       setMealPlan(saved.mealPlan ?? null);
       setSportProgram(saved.sportProgram ?? null);
+      setCurrentUser(saved.currentUser ?? null);
     }
   }, []);
 
@@ -76,38 +83,102 @@ export function AppProvider({ children }) {
       meals,
       mealPlan,
       sportProgram,
+      currentUser,
     });
-  }, [isAuthenticated, profile, daily, meals, mealPlan, sportProgram]);
+  }, [isAuthenticated, profile, daily, meals, mealPlan, sportProgram, currentUser]);
 
   const showToast = useCallback((message) => {
     setToast(message);
     setTimeout(() => setToast(null), 3000);
   }, []);
 
-  const login = useCallback((email, password) => {
-    if (!email || !password) return false;
-    setProfile((p) => ({ ...p, email }));
-    setIsAuthenticated(true);
-    return true;
+  const login = useCallback(async (email, password) => {
+    try {
+      const users = await getUsers();
+
+      const existing = users.find(
+        (u) =>
+          String(u.email).toLowerCase() === String(email).toLowerCase() &&
+          String(u.password) === String(password)
+      );
+
+      if (!existing) {
+        return false;
+      }
+
+      setCurrentUser(existing);
+
+      setProfile((p) => ({
+        ...defaultProfile,
+        ...p,
+        email: existing.email,
+        age: existing.age,
+        sex: existing.gender,
+        height: existing.height_m ? Number(existing.height_m) * 100 : p.height,
+        sportLevel: existing.experience_level || p.sportLevel,
+        id_user: existing.id_user,
+        onboardingComplete: true,
+      }));
+
+      setIsAuthenticated(true);
+      return true;
+    } catch (error) {
+      console.error("Erreur login:", error);
+      return false;
+    }
   }, []);
 
   const logout = useCallback(() => {
     setIsAuthenticated(false);
+    setCurrentUser(null);
+    setProfile(defaultProfile);
+    localStorage.removeItem(STORAGE_KEY);
   }, []);
 
   const updateProfile = useCallback((updates) => {
     setProfile((p) => ({ ...p, ...updates }));
   }, []);
 
-  const completeOnboarding = useCallback((data) => {
+  const completeOnboarding = useCallback(async (data) => {
     const targetCalories = calculateCalories(data);
+
+    const createdUser = await registerUser({
+      email: data.email,
+      password: data.password,
+      age: Number(data.age),
+      gender: data.sex,
+      height_m: Number(data.height) / 100,
+      experience_level: data.sportLevel,
+    });
+    setCurrentUser(createdUser);
+
+    await createProfile({
+      user_id: createdUser.id_user,
+      age: Number(data.age),
+      sex: data.sex,
+      height_cm: Number(data.height),
+      weight_kg: Number(data.weight),
+      activity_level: data.activityLevel,
+      health_goal: data.goal,
+      daily_calorie_target: targetCalories,
+      allergies: data.allergies,
+      dietary_preferences: data.preferences,
+      injuries: data.injuries,
+      available_equipment: data.equipment,
+      session_duration_pref: Number(data.sessionMinutes),
+    });
+
     setProfile((p) => ({
       ...p,
       ...data,
+      id_user: createdUser.id_user,
       targetCalories,
       onboardingComplete: true,
     }));
+
     setIsAuthenticated(true);
+
+    return true;
   }, []);
 
   const addMeal = useCallback((meal) => {
@@ -159,6 +230,7 @@ export function AppProvider({ children }) {
         sportProgram,
         macroTargets,
         toast,
+        currentUser,
         login,
         logout,
         updateProfile,
