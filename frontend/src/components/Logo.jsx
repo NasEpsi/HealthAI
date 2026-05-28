@@ -1,6 +1,6 @@
 import logoImg from "@logo";
 
-const SIZES = { sm: 56, md: 88, lg: 112 };
+const SIZES = { sm: 104, md: 140, lg: 192 };
 
 export default function Logo({ size = "md", centered = false }) {
   const height = SIZES[size] ?? SIZES.md;

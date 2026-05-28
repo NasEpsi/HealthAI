@@ -20,24 +20,28 @@ const navItems = [
   { to: "/profil", icon: User, label: "Profil" },
 ];
 
-export default function Sidebar() {
+export default function Sidebar({ isOpen = false, onNavigate }) {
   const { logout } = useApp();
   const navigate = useNavigate();
 
   const handleLogout = () => {
     logout();
+    onNavigate?.();
     navigate("/login");
   };
 
   return (
-    <aside className="sidebar">
-      <Logo size="sm" />
+    <aside className={`sidebar${isOpen ? " sidebar--open" : ""}`}>
+      <div className="sidebar__brand">
+        <Logo size="md" />
+      </div>
       <nav className="sidebar__nav">
         {navItems.map(({ to, icon: Icon, label, end }) => (
           <NavLink
             key={to}
             to={to}
             end={end}
+            onClick={onNavigate}
             className={({ isActive }) =>
               `sidebar__link${isActive ? " sidebar__link--active" : ""}`
             }
