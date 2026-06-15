@@ -5,8 +5,8 @@ WORKDIR /app
 COPY pyproject.toml /app/pyproject.toml
 
 RUN pip install --no-cache-dir -U pip \
-    && pip install --no-cache-dir fastapi uvicorn pymongo pytest httpx pytest-cov python-multipart
-
+    && pip install --no-cache-dir fastapi uvicorn pymongo pytest httpx pytest-cov python-multipart prometheus-fastapi-instrumentator
+    
 COPY src /app/src
 COPY tests /app/tests
 

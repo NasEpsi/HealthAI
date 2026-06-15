@@ -9,7 +9,8 @@ dependencies = [
   "alembic>=1.13",
   "pandas>=2.0",
   "python-dotenv>=1.0",
-  "requests"
+  "requests",
+  "prometheus-client"
 ]
 
 [build-system]
