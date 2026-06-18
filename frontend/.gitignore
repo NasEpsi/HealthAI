@@ -11,6 +11,13 @@ node_modules
 dist
 dist-ssr
 *.local
+.env
+
+# Capacitor
+android/app/build
+android/.gradle
+ios/App/build
+ios/App/Pods
 
 # Editor directories and files
 .vscode/*

@@ -10,7 +10,7 @@ from healthai.api.routers.foods import router as foods_router
 from healthai.api.routers.sessions import router as sessions_router
 
 # routers IA
-from healthai.api.routers import profiles, meals, recommendations
+from healthai.api.routers import profiles, meals, recommendations, posts, media
 
 # DB
 from healthai.db import Base, engine
@@ -26,6 +26,7 @@ from healthai.models.meal_analysis import MealAnalysis
 from healthai.models.nutrition_recommendation import NutritionRecommendation
 from healthai.models.workout_recommendation import WorkoutRecommendation
 from healthai.models.recommendation_history import RecommendationHistory
+from healthai.models.social import Post, Comment, PostLike
 
 
 app = FastAPI(title="HealthAI API")
@@ -43,14 +44,16 @@ app.include_router(sessions_router)
 app.include_router(profiles.router)
 app.include_router(meals.router)
 app.include_router(recommendations.router)
+app.include_router(posts.router)
+app.include_router(media.router)
 
 # CORS
+import os
+from healthai.config import CORS_ORIGINS
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:5173",
-        "http://127.0.0.1:5173",
-    ],
+    allow_origins=CORS_ORIGINS,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

@@ -3,6 +3,9 @@ import { Outlet, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import Sidebar from "./Sidebar";
 import Logo from "./Logo";
+import BottomNav from "./BottomNav";
+import MobileHeader from "./MobileHeader";
+import { isNative } from "../utils/platform";
 
 export default function DashboardLayout() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -18,6 +21,18 @@ export default function DashboardLayout() {
       document.body.style.overflow = "";
     };
   }, [menuOpen]);
+
+  if (isNative) {
+    return (
+      <div className="app-layout app-layout--native">
+        <MobileHeader />
+        <main className="main-content main-content--native">
+          <Outlet />
+        </main>
+        <BottomNav />
+      </div>
+    );
+  }
 
   return (
     <div className="app-layout">
