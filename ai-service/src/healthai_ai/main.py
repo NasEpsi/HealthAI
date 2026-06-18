@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from healthai_ai.routers import nutrition, workout, vision
 from fastapi.middleware.cors import CORSMiddleware
-
+from prometheus_fastapi_instrumentator import Instrumentator
 import logging
 
 logging.basicConfig(
@@ -26,6 +26,13 @@ app.add_middleware(
 app.include_router(nutrition.router)
 app.include_router(workout.router)
 app.include_router(vision.router)
+
+Instrumentator(
+    should_group_status_codes=True,
+    should_ignore_untemplated=True,
+    excluded_handlers=["/metrics"]
+).instrument(app).expose(app)
+
 
 
 @app.get("/health")

@@ -24,27 +24,29 @@ def kpi_quality(db: Session = Depends(get_db)):
 @router.get("/users")
 def kpi_users(db: Session = Depends(get_db)):
     q_age = text("""
-        SELECT
-          CASE
-            WHEN age < 18 THEN '<18'
-            WHEN age BETWEEN 18 AND 24 THEN '18-24'
-            WHEN age BETWEEN 25 AND 34 THEN '25-34'
-            WHEN age BETWEEN 35 AND 44 THEN '35-44'
-            WHEN age BETWEEN 45 AND 54 THEN '45-54'
-            ELSE '55+'
-          END AS age_group,
-          COUNT(*)::int AS count
-        FROM utilisateur
+        SELECT age_group, COUNT(*)::int AS count
+        FROM (
+            SELECT
+                CASE
+                    WHEN age < 18 THEN '<18'
+                    WHEN age BETWEEN 18 AND 24 THEN '18-24'
+                    WHEN age BETWEEN 25 AND 34 THEN '25-34'
+                    WHEN age BETWEEN 35 AND 44 THEN '35-44'
+                    WHEN age BETWEEN 45 AND 54 THEN '45-54'
+                    ELSE '55+'
+                END AS age_group
+            FROM utilisateur
+        ) AS grouped_users
         GROUP BY age_group
         ORDER BY
-          CASE age_group
-            WHEN '<18' THEN 1
-            WHEN '18-24' THEN 2
-            WHEN '25-34' THEN 3
-            WHEN '35-44' THEN 4
-            WHEN '45-54' THEN 5
-            ELSE 6
-          END;
+            CASE age_group
+                WHEN '<18' THEN 1
+                WHEN '18-24' THEN 2
+                WHEN '25-34' THEN 3
+                WHEN '35-44' THEN 4
+                WHEN '45-54' THEN 5
+                ELSE 6
+            END;
     """)
     q_gender = text("""
         SELECT gender, COUNT(*)::int AS count
