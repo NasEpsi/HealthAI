@@ -299,9 +299,9 @@ function calculateCalories(data) {
   const sexFactor = data.sex === "Homme" ? 5 : -161;
   const bmr = 10 * weight + 6.25 * height - 5 * age + sexFactor;
   const activityMap = {
-    S?dentaire: 1.2,
-    L?ger: 1.375,
-    Mod?r?: 1.55,
+    Sédentaire: 1.2,
+    Léger: 1.375,
+    Modéré: 1.55,
     Actif: 1.725,
     "Tr?s actif": 1.9,
   };
