@@ -4,6 +4,7 @@ import { Camera, CameraResultType, CameraSource } from "@capacitor/camera";
 import { useApp } from "../context/AppContext";
 import { analyzeMealImage, saveMealAnalysis } from "../api";
 import { isNative } from "../utils/platform";
+import UpgradePrompt from "../components/UpgradePrompt";
 
 const MEAL_TYPES = ["Petit-déj", "Déjeuner", "Diner", "Collation"];
 
@@ -38,7 +39,8 @@ export default function Scanner() {
   const [result, setResult] = useState(null);
   const [error, setError] = useState("");
   const fileRef = useRef(null);
-  const { addMeal, profile } = useApp();
+  const { addMeal, profile, hasFeature, showToast } = useApp();
+  const canScan = hasFeature("meal_scanner");
 
   const backendUserId = profile?.id_user;
 
@@ -81,6 +83,10 @@ export default function Scanner() {
   };
 
   const handleFile = async (file) => {
+    if (!canScan) {
+      showToast("Le scanner IA nécessite l'abonnement Premium.");
+      return;
+    }
     if (!file || !file.type.startsWith("image/")) return;
 
     if (file.size > 8 * 1024 * 1024) {
@@ -159,6 +165,13 @@ export default function Scanner() {
           </p>
         </div>
       </header>
+
+      {!canScan && (
+        <UpgradePrompt
+          title="Scanner de repas IA — Premium"
+          message="Analysez vos assiettes par photo avec l'intelligence artificielle en passant à Premium (9,99 €/mois)."
+        />
+      )}
 
       <div className="card">
         <div className="meal-tabs">

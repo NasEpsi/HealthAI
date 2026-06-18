@@ -11,6 +11,7 @@ import MealPlans from "./pages/MealPlans";
 import Sport from "./pages/Sport";
 import Profile from "./pages/Profile";
 import Feed from "./pages/Feed";
+import Subscriptions from "./pages/Subscriptions";
 
 export default function App() {
   return (
@@ -46,6 +47,7 @@ export default function App() {
             <Route path="plans-repas" element={<MealPlans />} />
             <Route path="sport" element={<Sport />} />
             <Route path="fil" element={<Feed />} />
+            <Route path="abonnements" element={<Subscriptions />} />
             <Route path="profil" element={<Profile />} />
           </Route>
           <Route path="*" element={<Navigate to="/login" replace />} />

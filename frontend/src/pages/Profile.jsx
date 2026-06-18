@@ -1,8 +1,10 @@
 import { useRef, useState, useEffect } from "react";
-import { Camera, User, Moon, Sun, Monitor } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Camera, User, Moon, Sun, Monitor, CreditCard } from "lucide-react";
 import { useApp } from "../context/AppContext";
 import { uploadAvatar } from "../services/cloudinary";
 import { isNative } from "../utils/platform";
+import { tierLabel } from "../services/subscription";
 
 const GOALS = [
   "Perte de poids",
@@ -19,7 +21,7 @@ const THEME_OPTIONS = [
 ];
 
 export default function Profile() {
-  const { profile, avatar, updateProfile, setUserAvatar, updatePassword, showToast, themePreference, setThemePreference, userId } = useApp();
+  const { profile, avatar, updateProfile, setUserAvatar, updatePassword, showToast, themePreference, setThemePreference, userId, subscription } = useApp();
 
   const [form, setForm] = useState({ ...profile });
   const [passwordForm, setPasswordForm] = useState({
@@ -87,6 +89,10 @@ export default function Profile() {
     <>
       <header className="page-header">
         <h1 className="page-header__title title-font">Mon profil</h1>
+        <Link to="/abonnements" className="subscription-badge subscription-badge--link">
+          <CreditCard size={16} aria-hidden />
+          {tierLabel(subscription)}
+        </Link>
       </header>
 
       <div className="card profile-card">

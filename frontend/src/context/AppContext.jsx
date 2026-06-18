@@ -17,6 +17,12 @@ import {
   applyTheme,
 } from "../services/theme";
 import { syncSocialProfile } from "../services/social";
+import {
+  TIERS,
+  loadSubscription,
+  saveSubscription,
+  hasFeature as checkFeature,
+} from "../services/subscription";
 
 const defaultProfile = {
   email: "",
@@ -86,6 +92,7 @@ export function AppProvider({ children }) {
   const [meals, setMeals] = useState([]);
   const [mealPlan, setMealPlan] = useState(null);
   const [sportProgram, setSportProgram] = useState(null);
+  const [subscription, setSubscriptionState] = useState(TIERS.FREEMIUM);
   const [toast, setToast] = useState(null);
   const [themePreference, setThemePreference] = useState(loadThemePreference);
 
@@ -104,6 +111,8 @@ export function AppProvider({ children }) {
     setMealPlan(appData.mealPlan);
     setSportProgram(appData.sportProgram);
     setIsAuthenticated(true);
+    const tier = await loadSubscription(user.id);
+    setSubscriptionState(tier);
     await pushSocialProfile(user, showToast);
   }, [showToast]);
 
@@ -158,7 +167,22 @@ export function AppProvider({ children }) {
     setMeals([]);
     setMealPlan(null);
     setSportProgram(null);
+    setSubscriptionState(TIERS.FREEMIUM);
   }, []);
+
+  const setSubscription = useCallback(
+    async (tier) => {
+      if (!userId) return;
+      await saveSubscription(userId, tier);
+      setSubscriptionState(tier);
+    },
+    [userId]
+  );
+
+  const hasFeature = useCallback(
+    (feature) => checkFeature(subscription, feature),
+    [subscription]
+  );
 
   const updateProfile = useCallback(
     async (updates) => {
@@ -235,7 +259,11 @@ export function AppProvider({ children }) {
   const generateSportProgram = useCallback(() => {
     const program = buildSportProgram(profile);
     setSportProgram(program);
+<<<<<<< HEAD
     showToast("Programme g�n�r� !");
+=======
+    showToast("Programme g?n?r? !");
+>>>>>>> 15c34f4 (feat: page abonnements Freemium, Premium, Premium+ et B2B)
   }, [profile, showToast]);
 
   const deleteSportProgram = useCallback(() => setSportProgram(null), []);
@@ -258,6 +286,9 @@ export function AppProvider({ children }) {
         meals,
         mealPlan,
         sportProgram,
+        subscription,
+        setSubscription,
+        hasFeature,
         macroTargets,
         themePreference,
         setThemePreference,

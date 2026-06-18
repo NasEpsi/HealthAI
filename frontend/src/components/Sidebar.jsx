@@ -8,6 +8,7 @@ import {
   Users,
   User,
   LogOut,
+  CreditCard,
 } from "lucide-react";
 import Logo from "./Logo";
 import { useApp } from "../context/AppContext";
@@ -19,6 +20,7 @@ const navItems = [
   { to: "/plans-repas", icon: UtensilsCrossed, label: "Plans repas" },
   { to: "/sport", icon: Dumbbell, label: "Sport" },
   { to: "/fil", icon: Users, label: "Fil" },
+  { to: "/abonnements", icon: CreditCard, label: "Abonnements" },
   { to: "/profil", icon: User, label: "Profil" },
 ];
 

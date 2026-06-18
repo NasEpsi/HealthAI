@@ -3,15 +3,21 @@ import { Sparkles, Dumbbell } from "lucide-react";
 
 import { useApp } from "../context/AppContext";
 import { generateWorkoutPlan } from "../api";
+import UpgradePrompt from "../components/UpgradePrompt";
 
 export default function Sport() {
-  const { currentUser, profile } = useApp();
+  const { currentUser, profile, hasFeature, showToast } = useApp();
+  const canUseAi = hasFeature("detailed_sport_plans");
 
   const [loading, setLoading] = useState(false);
   const [program, setProgram] = useState(null);
   const [error, setError] = useState("");
 
   const handleGenerate = async () => {
+    if (!canUseAi) {
+      showToast("Cette fonctionnalité nécessite l'abonnement Premium.");
+      return;
+    }
     try {
       setLoading(true);
       setError("");
@@ -73,7 +79,7 @@ export default function Sport() {
           type="button"
           className="btn btn--primary"
           onClick={handleGenerate}
-          disabled={loading}
+          disabled={loading || !canUseAi}
         >
           <Sparkles size={18} />
           {loading
@@ -81,6 +87,13 @@ export default function Sport() {
             : "Générer le programme"}
         </button>
       </header>
+
+      {!canUseAi && (
+        <UpgradePrompt
+          title="Programmes sportifs IA — Premium"
+          message="Passez à Premium (9,99 €/mois) pour générer des programmes d'entraînement personnalisés."
+        />
+      )}
 
       {error && (
         <div

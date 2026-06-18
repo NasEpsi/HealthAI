@@ -1757,3 +1757,232 @@ h3,
     grid-template-columns: 1fr;
   }
 }
+
+/* ── Abonnements / pricing ── */
+
+.subscription-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: var(--bg-beige);
+  border: 1px solid var(--border);
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+.subscription-badge strong {
+  color: var(--text);
+}
+
+.subscription-badge--link {
+  text-decoration: none;
+  color: var(--text-secondary);
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.subscription-badge--link:hover {
+  border-color: var(--primary-blue);
+  color: var(--primary-blue);
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  margin-bottom: 28px;
+}
+
+.pricing-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--card-shadow);
+}
+
+.pricing-card--featured {
+  border-color: var(--primary-blue);
+  box-shadow: 0 8px 32px rgba(91, 165, 223, 0.15);
+}
+
+.pricing-card--current {
+  border-color: var(--primary-green, #6ab04c);
+}
+
+.pricing-card--b2b {
+  background: linear-gradient(180deg, var(--white) 0%, var(--bg-beige) 100%);
+}
+
+.pricing-card__ribbon {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  background: var(--primary-blue);
+  color: #fff;
+}
+
+.pricing-card__ribbon--current {
+  background: var(--primary-green, #6ab04c);
+}
+
+.pricing-card__header {
+  margin-bottom: 16px;
+}
+
+.pricing-card__icon-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: var(--bg-beige);
+  color: var(--primary-blue);
+  margin-bottom: 12px;
+}
+
+.pricing-card__name {
+  font-size: 1.25rem;
+  margin-bottom: 8px;
+}
+
+.pricing-card__desc {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.pricing-card__price {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.pricing-card__amount {
+  font-size: 1.75rem;
+  font-weight: 700;
+  font-family: var(--font-title);
+}
+
+.pricing-card__period {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-left: 4px;
+}
+
+.pricing-card__features {
+  list-style: none;
+  margin: 0 0 24px;
+  padding: 0;
+  flex: 1;
+}
+
+.pricing-card__features li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.88rem;
+  line-height: 1.45;
+  margin-bottom: 10px;
+  color: var(--text);
+}
+
+.pricing-card__features li svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: var(--primary-blue);
+}
+
+.subscription-compare {
+  margin-bottom: 24px;
+}
+
+.subscription-compare__title {
+  margin-bottom: 16px;
+  font-size: 1.1rem;
+}
+
+.subscription-compare__table-wrap {
+  overflow-x: auto;
+}
+
+.subscription-compare__table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+}
+
+.subscription-compare__table th,
+.subscription-compare__table td {
+  padding: 12px 14px;
+  text-align: center;
+  border-bottom: 1px solid var(--border);
+}
+
+.subscription-compare__table th:first-child,
+.subscription-compare__table td:first-child {
+  text-align: left;
+  font-weight: 500;
+}
+
+.subscription-compare__table th {
+  font-weight: 700;
+  background: var(--bg-beige);
+}
+
+.check-yes {
+  color: var(--primary-blue);
+  vertical-align: middle;
+}
+
+.upgrade-prompt {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 16px 20px;
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, rgba(91, 165, 223, 0.12) 0%, var(--bg-beige) 100%);
+  border: 1px solid rgba(91, 165, 223, 0.35);
+  border-radius: var(--radius-md);
+}
+
+.upgrade-prompt__icon {
+  flex-shrink: 0;
+  color: var(--primary-blue);
+}
+
+.upgrade-prompt__body {
+  flex: 1;
+  min-width: 180px;
+}
+
+.upgrade-prompt__title {
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 4px;
+}
+
+.upgrade-prompt__text {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.45;
+}
+
+.form-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}

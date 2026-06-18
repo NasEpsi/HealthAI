@@ -2,15 +2,21 @@ import { useState } from "react";
 import { Sparkles, Utensils } from "lucide-react";
 import { useApp } from "../context/AppContext";
 import { generateNutritionPlan } from "../api";
+import UpgradePrompt from "../components/UpgradePrompt";
 
 export default function MealPlans() {
-  const { currentUser, profile } = useApp();
+  const { currentUser, profile, hasFeature, showToast } = useApp();
+  const canUseAi = hasFeature("detailed_meal_plans");
 
   const [loading, setLoading] = useState(false);
   const [recommendation, setRecommendation] = useState(null);
   const [error, setError] = useState("");
 
   const handleGenerate = async () => {
+    if (!canUseAi) {
+      showToast("Cette fonctionnalité nécessite l'abonnement Premium.");
+      return;
+    }
     try {
       setLoading(true);
       setError("");
@@ -61,12 +67,19 @@ export default function MealPlans() {
           type="button"
           className="btn btn--primary"
           onClick={handleGenerate}
-          disabled={loading}
+          disabled={loading || !canUseAi}
         >
           <Sparkles size={18} />
           {loading ? "Génération..." : "Générer un plan"}
         </button>
       </header>
+
+      {!canUseAi && (
+        <UpgradePrompt
+          title="Plans nutritionnels IA — Premium"
+          message="Passez à Premium (9,99 €/mois) pour générer des plans alimentaires personnalisés par intelligence artificielle."
+        />
+      )}
 
       {error && (
         <div className="card" style={{ color: "crimson", marginBottom: 16 }}>
