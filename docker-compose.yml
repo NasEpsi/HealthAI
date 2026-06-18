@@ -23,10 +23,15 @@ services:
     environment:
       DATABASE_URL: ${DATABASE_URL}
       API_KEY: ${API_KEY}
+      NUTRITION_CSV: ${NUTRITION_CSV:-/app/data/raw/daily_food_nutrition.csv}
+      FITNESS_CSV: ${FITNESS_CSV:-/app/data/raw/fitness_tracker.csv}
+      EXPORT_DIR: ${EXPORT_DIR:-/app/data/cleaned}
+      CORS_ORIGINS: ${CORS_ORIGINS:-}
       CLOUDINARY_CLOUD_NAME: ${CLOUDINARY_CLOUD_NAME:-}
       CLOUDINARY_UPLOAD_PRESET: ${CLOUDINARY_UPLOAD_PRESET:-}
       CLOUDINARY_API_KEY: ${CLOUDINARY_API_KEY:-}
       CLOUDINARY_API_SECRET: ${CLOUDINARY_API_SECRET:-}
+    command: uvicorn healthai.api.main:app --host 0.0.0.0 --port 8000 --reload
     ports:
       - "${API_PORT}:8000"
     depends_on:
@@ -41,6 +46,8 @@ services:
   ai_service:
     build: ./ai-service
     container_name: healthai_ai
+    environment:
+      CORS_ORIGINS: ${CORS_ORIGINS:-}
     ports:
       - "8001:8000"
     depends_on:

@@ -64,15 +64,15 @@ async function saveUserAppData(userId, data) {
   await storageSet(appDataKey(userId), JSON.stringify(data));
 }
 
-async function pushSocialProfile(user) {
+async function pushSocialProfile(user, onError) {
   try {
     await syncSocialProfile(user.id, {
       email: user.profile?.email || user.email,
       name: user.profile?.name || "Utilisateur",
       avatar_url: user.avatar ?? null,
     });
-  } catch {
-    /* backend indisponible */
+  } catch (err) {
+    onError?.(`Profil social non synchronis? : ${err.message || "backend indisponible"}`);
   }
 }
 
@@ -104,8 +104,8 @@ export function AppProvider({ children }) {
     setMealPlan(appData.mealPlan);
     setSportProgram(appData.sportProgram);
     setIsAuthenticated(true);
-    await pushSocialProfile(user);
-  }, []);
+    await pushSocialProfile(user, showToast);
+  }, [showToast]);
 
   useEffect(() => {
     (async () => {
@@ -165,9 +165,9 @@ export function AppProvider({ children }) {
       if (!profile.email) return;
       const user = await updateUserProfile(profile.email, updates);
       setProfile({ ...defaultProfile, ...user.profile });
-      await pushSocialProfile(user);
+      await pushSocialProfile(user, showToast);
     },
-    [profile.email]
+    [profile.email, showToast]
   );
 
   const setUserAvatar = useCallback(
@@ -175,9 +175,9 @@ export function AppProvider({ children }) {
       if (!profile.email) return;
       const user = await updateUserAvatar(profile.email, dataUrl);
       setAvatar(user.avatar);
-      await pushSocialProfile(user);
+      await pushSocialProfile(user, showToast);
     },
-    [profile.email]
+    [profile.email, showToast]
   );
 
   const updatePassword = useCallback(
@@ -235,7 +235,7 @@ export function AppProvider({ children }) {
   const generateSportProgram = useCallback(() => {
     const program = buildSportProgram(profile);
     setSportProgram(program);
-    showToast("Programme g?n?r? !");
+    showToast("Programme g�n�r� !");
   }, [profile, showToast]);
 
   const deleteSportProgram = useCallback(() => setSportProgram(null), []);

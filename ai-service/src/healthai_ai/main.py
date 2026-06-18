@@ -3,6 +3,7 @@ from healthai_ai.routers import nutrition, workout, vision
 from fastapi.middleware.cors import CORSMiddleware
 from prometheus_fastapi_instrumentator import Instrumentator
 import logging
+import os
 
 logging.basicConfig(
     level=logging.INFO,
@@ -11,13 +12,22 @@ logging.basicConfig(
 
 logger = logging.getLogger(__name__)
 
+_DEFAULT_CORS = [
+    "http://localhost:5173",
+    "http://127.0.0.1:5173",
+    "https://localhost",
+    "capacitor://localhost",
+    "ionic://localhost",
+    "http://localhost",
+]
+
+_extra = os.getenv("CORS_ORIGINS", "")
+CORS_ORIGINS = _DEFAULT_CORS + [o.strip() for o in _extra.split(",") if o.strip()]
+
 app = FastAPI(title="HealthAI API Recommendation")
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:5173",
-        "http://127.0.0.1:5173",
-    ],
+    allow_origins=CORS_ORIGINS,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
