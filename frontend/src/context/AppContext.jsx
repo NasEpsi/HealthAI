@@ -259,11 +259,7 @@ export function AppProvider({ children }) {
   const generateSportProgram = useCallback(() => {
     const program = buildSportProgram(profile);
     setSportProgram(program);
-<<<<<<< HEAD
-    showToast("Programme gï¿½nï¿½rï¿½ !");
-=======
-    showToast("Programme g?n?r? !");
->>>>>>> 15c34f4 (feat: page abonnements Freemium, Premium, Premium+ et B2B)
+    showToast("Programme généré !");
   }, [profile, showToast]);
 
   const deleteSportProgram = useCallback(() => setSportProgram(null), []);
@@ -330,9 +326,9 @@ function calculateCalories(data) {
   const sexFactor = data.sex === "Homme" ? 5 : -161;
   const bmr = 10 * weight + 6.25 * height - 5 * age + sexFactor;
   const activityMap = {
-    SÃ©dentaire: 1.2,
-    LÃ©ger: 1.375,
-    ModÃ©rÃ©: 1.55,
+    Sédentaire: 1.2,
+    Léger: 1.375,
+    Modéré: 1.55,
     Actif: 1.725,
     "Tr?s actif": 1.9,
   };
@@ -341,7 +337,7 @@ function calculateCalories(data) {
   const goalMap = {
     "Perte de poids": -400,
     "Prise de masse": 300,
-    "Ã‰quilibre nutritionnel": 0,
+    "Équilibre nutritionnel": 0,
     "Performance sportive": 200,
     Maintien: 0,
   };
