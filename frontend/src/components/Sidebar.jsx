@@ -1,3 +1,4 @@
+import { createElement } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import {
   Home,
@@ -38,7 +39,7 @@ export default function Sidebar({ isOpen = false, onNavigate }) {
         <Logo size="md" />
       </div>
       <nav className="sidebar__nav">
-        {navItems.map(({ to, icon: Icon, label, end }) => (
+        {navItems.map(({ to, icon, label, end }) => (
           <NavLink
             key={to}
             to={to}
@@ -48,7 +49,7 @@ export default function Sidebar({ isOpen = false, onNavigate }) {
               `sidebar__link${isActive ? " sidebar__link--active" : ""}`
             }
           >
-            <Icon size={20} strokeWidth={2} />
+            {createElement(icon, { size: 20, strokeWidth: 2 })}
             {label}
           </NavLink>
         ))}

@@ -2,7 +2,7 @@ from datetime import datetime, UTC
 import logging
 
 from fastapi import APIRouter
-from healthai_ai.mongo import workout_collection
+from healthai_ai.mongo import workout_collection, safe_insert_one
 from healthai_ai.schemas.workout import WorkoutRequest, WorkoutResponse
 from healthai_ai.services.workout_engine import generate_workout_plan
 
@@ -13,18 +13,22 @@ router = APIRouter(prefix="/ai/workout", tags=["AI Workout"])
 
 @router.post("/recommend", response_model=WorkoutResponse)
 def recommend(payload: WorkoutRequest):
+    data = payload.model_dump()
     try:
-        data = payload.model_dump()
         result = generate_workout_plan(data)
 
-        workout_collection.insert_one({
-            "type": "workout",
-            "status": "success",
-            "engine_version": "v1.0-rule-based",
-            "input": data,
-            "output": result,
-            "created_at": datetime.now(UTC),
-        })
+        safe_insert_one(
+            workout_collection,
+            {
+                "type": "workout",
+                "status": "success",
+                "engine_version": "v1.0-rule-based",
+                "input": data,
+                "output": result,
+                "created_at": datetime.now(UTC),
+            },
+            "workout recommendation",
+        )
 
         return result
 
@@ -38,14 +42,18 @@ def recommend(payload: WorkoutRequest):
             "score": 0,
         }
 
-        workout_collection.insert_one({
-            "type": "workout",
-            "status": "fallback",
-            "engine_version": "v1.0-rule-based",
-            "error": str(exc),
-            "input": payload.model_dump(),
-            "output": fallback,
-            "created_at": datetime.now(UTC),
-        })
+        safe_insert_one(
+            workout_collection,
+            {
+                "type": "workout",
+                "status": "fallback",
+                "engine_version": "v1.0-rule-based",
+                "error": str(exc),
+                "input": data,
+                "output": fallback,
+                "created_at": datetime.now(UTC),
+            },
+            "workout fallback",
+        )
 
         return fallback

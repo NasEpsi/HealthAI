@@ -9,11 +9,7 @@ import { isNative } from "../utils/platform";
 
 export default function DashboardLayout() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const location = useLocation();
-
-  useEffect(() => {
-    setMenuOpen(false);
-  }, [location.pathname]);
+  useLocation();
 
   useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : "";

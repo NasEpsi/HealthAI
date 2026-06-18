@@ -1,9 +1,12 @@
-from fastapi import FastAPI
-from healthai_ai.routers import nutrition, workout, vision
-from fastapi.middleware.cors import CORSMiddleware
-from prometheus_fastapi_instrumentator import Instrumentator
 import logging
 import os
+import time
+
+from fastapi import FastAPI, Request, Response
+from fastapi.middleware.cors import CORSMiddleware
+from prometheus_client import CONTENT_TYPE_LATEST, Counter, generate_latest
+
+from healthai_ai.routers import nutrition, workout, vision
 
 logging.basicConfig(
     level=logging.INFO,
@@ -22,7 +25,7 @@ _DEFAULT_CORS = [
 ]
 
 _extra = os.getenv("CORS_ORIGINS", "")
-CORS_ORIGINS = _DEFAULT_CORS + [o.strip() for o in _extra.split(",") if o.strip()]
+CORS_ORIGINS = _DEFAULT_CORS + [origin.strip() for origin in _extra.split(",") if origin.strip()]
 
 app = FastAPI(title="HealthAI API Recommendation")
 app.add_middleware(
@@ -37,12 +40,36 @@ app.include_router(nutrition.router)
 app.include_router(workout.router)
 app.include_router(vision.router)
 
-Instrumentator(
-    should_group_status_codes=True,
-    should_ignore_untemplated=True,
-    excluded_handlers=["/metrics"]
-).instrument(app).expose(app)
+REQUEST_COUNT = Counter(
+    "healthai_ai_requests_total",
+    "Nombre total de requetes du microservice IA",
+    ["method", "endpoint", "status_code"],
+)
 
+
+@app.middleware("http")
+async def prometheus_middleware(request: Request, call_next):
+    start_time = time.time()
+    response = await call_next(request)
+
+    REQUEST_COUNT.labels(
+        method=request.method,
+        endpoint=request.url.path,
+        status_code=response.status_code,
+    ).inc()
+
+    logger.debug(
+        "Handled %s %s in %.3fs",
+        request.method,
+        request.url.path,
+        time.time() - start_time,
+    )
+    return response
+
+
+@app.get("/metrics", include_in_schema=False)
+def metrics():
+    return Response(generate_latest(), media_type=CONTENT_TYPE_LATEST)
 
 
 @app.get("/health")

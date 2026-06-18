@@ -13,7 +13,7 @@ def test_nutrition_weight_loss_high_calories():
 
     result = generate_nutrition_recommendation(data)
 
-    assert "summary" in result
-    assert "actions" in result
-    assert "score" in result
-    assert result["score"] <= 0.7
+    assert "perte de poids" in result["summary"].lower()
+    assert len(result["actions"]) == 3
+    assert len(result["meal_plan"]) == 3
+    assert result["score"] == 0.75

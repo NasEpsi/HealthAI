@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { createElement, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Flame, Beef, Wheat, Droplet, Camera, BookOpen, UtensilsCrossed, Dumbbell } from "lucide-react";
 import { useApp } from "../context/AppContext";
@@ -106,10 +106,10 @@ export default function Home() {
             { label: "Protéines", icon: Beef, current: daily.protein, target: macroTargets.protein },
             { label: "Glucides", icon: Wheat, current: daily.carbs, target: macroTargets.carbs },
             { label: "Lipides", icon: Droplet, current: daily.fat, target: macroTargets.fat },
-          ].map(({ label, icon: Icon, current, target }) => (
+          ].map(({ label, icon, current, target }) => (
             <div key={label} className="macro-item">
               <div className="macro-item__header">
-                <Icon size={16} color="#5BA5DF" />
+                {createElement(icon, { size: 16, color: "#5BA5DF" })}
                 {label}
               </div>
               <div className="macro-item__value">
@@ -127,14 +127,14 @@ export default function Home() {
       </div>
 
       <div className="quick-actions">
-        {quickLinks.map(({ to, icon: Icon, title, desc }) => (
+        {quickLinks.map(({ to, icon, title, desc }) => (
           <button
             key={to}
             type="button"
             className="quick-action"
             onClick={() => navigate(to)}
           >
-            <Icon className="quick-action__icon" size={28} />
+            {createElement(icon, { className: "quick-action__icon", size: 28 })}
             <div className="quick-action__title">{title}</div>
             <div className="quick-action__desc">{desc}</div>
           </button>

@@ -1,29 +1,69 @@
-# HealthAI Coach
+# HealthAI Coach MSPR TPRE601
 
-Application de coaching nutrition et sport avec fil social communautaire.
+HealthAI Coach est une plateforme de coaching nutrition et sport composee de trois briques principales :
+
+- un frontend React/Vite pour l'experience utilisateur web et mobile Capacitor
+- une API FastAPI pour la logique metier, les profils, le fil social et l'acces PostgreSQL
+- un microservice FastAPI dedie aux recommandations IA nutrition, sport et analyse de repas
+
+Le projet est pense pour une demonstration locale simple avec Docker Compose pour les services backend et un lancement separe du frontend.
 
 ## Sommaire
 
+- [Presentation du projet](#presentation-du-projet)
+- [Architecture globale](#architecture-globale)
+- [Stack technique](#stack-technique)
 - [Guide d'installation](#guide-dinstallation)
-- [Guide de déploiement](#guide-de-déploiement)
-- [Réinitialisation](#réinitialisation)
-- [Fonctionnalités sociales](#fonctionnalités-sociales)
+- [Guide de deploiement](#guide-de-deploiement)
+- [Monitoring](#monitoring)
+- [URLs utiles](#urls-utiles)
+- [Structure du projet](#structure-du-projet)
+- [Reinitialisation](#reinitialisation)
+- [Fonctionnalites sociales](#fonctionnalites-sociales)
 - [Configuration Cloudinary](#configuration-cloudinary)
-- [Guide de dépannage](#guide-de-dépannage)
+- [Guide de depannage](#guide-de-depannage)
+- [Documentation complementaire](#documentation-complementaire)
 
----
+## Presentation du projet
+
+Le produit couvre les usages suivants :
+
+- suivi utilisateur et profil sante
+- journal alimentaire et recommandations nutritionnelles
+- recommandations d'entrainement
+- fil social avec posts, commentaires, likes et medias
+- observabilite locale avec Prometheus, Grafana et cAdvisor
+
+## Architecture globale
+
+- `frontend/` : interface React/Vite et application mobile Capacitor
+- `backend/` : API principale FastAPI, acces PostgreSQL, routes metier et sociales
+- `ai-service/` : microservice IA FastAPI, recommandations et mode degrade
+- `monitoring/` : configuration Prometheus
+- `docs/` : documentation de deploiement, architecture, tests, CI/CD et monitoring
+
+Un schema detaille est disponible dans [docs/architecture.md](docs/architecture.md).
+
+## Stack technique
+
+- Frontend : React 19, Vite, React Router, Capacitor
+- Backend : Python 3.12, FastAPI, SQLAlchemy, PostgreSQL
+- IA : FastAPI, moteur de recommandations rule-based, MongoDB
+- Monitoring : Prometheus, Grafana, cAdvisor
+- Conteneurisation : Docker Compose
+- CI/CD : GitHub Actions
 
 ## Guide d'installation
 
-### Prérequis
+### Prerequis
 
 | Outil | Version minimale | Usage |
 |-------|------------------|-------|
-| [Docker Desktop](https://www.docker.com/products/docker-desktop/) | récent | Backend, PostgreSQL, MongoDB, service IA |
+| [Docker Desktop](https://www.docker.com/products/docker-desktop/) | recent | Backend, PostgreSQL, MongoDB, service IA |
 | [Node.js](https://nodejs.org/) | 18+ | Frontend web / Capacitor |
-| Git | — | Cloner le dépôt |
+| Git | - | Cloner le depot |
 
-Optionnel : Android Studio / Xcode pour les builds mobiles (voir `docs/MOBILE.md`).
+Optionnel : Android Studio / Xcode pour les builds mobiles. Voir `docs/MOBILE.md`.
 
 ### 1. Cloner le projet
 
@@ -34,44 +74,55 @@ cd HealthAI
 
 ### 2. Configurer l'environnement
 
-**Racine** — créer un fichier `.env` :
+Racine :
 
-```env
-POSTGRES_DB=healthai
-POSTGRES_USER=healthai
-POSTGRES_PASSWORD=healthai_pass
-POSTGRES_PORT=5432
-
-API_PORT=8000
-API_KEY=healthai
-DATABASE_URL=postgresql+psycopg2://healthai:healthai_pass@db:5432/healthai
-
-NUTRITION_CSV=/app/data/raw/daily_food_nutrition.csv
-FITNESS_CSV=/app/data/raw/fitness_tracker.csv
-EXPORT_DIR=/app/data/cleaned
-
-CLOUDINARY_CLOUD_NAME=votre_cloud_name
-CLOUDINARY_UPLOAD_PRESET=votre_preset
-CLOUDINARY_API_KEY=
-CLOUDINARY_API_SECRET=
+```powershell
+Copy-Item .env.example .env
 ```
 
-**Frontend** — copier le modèle et l'adapter :
+Frontend :
 
-```bash
-cp frontend/.env.example frontend/.env
+```powershell
+Copy-Item frontend/.env.example frontend/.env
 ```
 
-### 3. Démarrer le backend
+Variables principales du `.env` :
+
+- `POSTGRES_DB`
+- `POSTGRES_USER`
+- `POSTGRES_PASSWORD`
+- `POSTGRES_PORT`
+- `DATABASE_URL`
+- `API_PORT`
+- `API_KEY`
+- `CLOUDINARY_CLOUD_NAME`
+- `CLOUDINARY_UPLOAD_PRESET`
+- `CLOUDINARY_API_KEY`
+- `CLOUDINARY_API_SECRET`
+- `MONGO_URL`
+- `MONGO_DB_NAME`
+
+Variables frontend dans `frontend/.env` :
+
+- `VITE_API_URL`
+- `VITE_API_KEY`
+- `VITE_CLOUDINARY_CLOUD_NAME`
+- `VITE_CLOUDINARY_UPLOAD_PRESET`
+
+### 3. Demarrer le backend
 
 ```bash
 docker compose up --build -d
 ```
 
-Vérifier que l'API répond : http://localhost:8000/health  
-Documentation Swagger : http://localhost:8000/docs
+Verifier :
 
-### 4. Importer les données (ETL)
+- API : [http://localhost:8000/health](http://localhost:8000/health)
+- Swagger backend : [http://localhost:8000/docs](http://localhost:8000/docs)
+- API IA : [http://localhost:8001/health](http://localhost:8001/health)
+- Swagger IA : [http://localhost:8001/docs](http://localhost:8001/docs)
+
+### 4. Importer les donnees ETL
 
 Les CSV sources sont dans `data/raw/`. Lancer le pipeline :
 
@@ -79,117 +130,145 @@ Les CSV sources sont dans `data/raw/`. Lancer le pipeline :
 docker compose exec api python -m healthai.etl.run_pipeline
 ```
 
-Les exports générés apparaissent dans `data/cleaned/`.
+Les exports generes apparaissent dans `data/cleaned/`.
 
-### 5. Démarrer le frontend
+### 5. Demarrer le frontend
 
 ```bash
 cd frontend
-npm install
+npm ci
 npm run dev
 ```
 
-Ouvrir http://localhost:5173
+Ouvrir [http://localhost:5173](http://localhost:5173).
 
 ### Services et ports
 
-| Service | Conteneur | Port hôte | Rôle |
+| Service | Conteneur | Port hote | Role |
 |---------|-----------|-----------|------|
 | `api` | `healthai_api` | 8000 | API FastAPI |
 | `ai_service` | `healthai_ai` | 8001 | Recommandations IA + vision repas |
 | `db` | `healthai_db` | 5432 | PostgreSQL |
 | `mongo` | `healthai_mongo` | 27017 | Stockage recommandations IA |
-| `pgadmin` | `healthai_pgadmin` | 5050 | Interface PostgreSQL (admin@nas.com / admin) |
+| `pgadmin` | `healthai_pgadmin` | 5050 | Interface PostgreSQL |
+| `prometheus` | `healthai_prometheus` | 9090 | Collecte des metriques |
+| `cadvisor` | `healthai_cadvisor` | 8080 | Metriques Docker |
+| `grafana` | `healthai_grafana` | 3000 | Visualisation monitoring |
 
----
+## Guide de deploiement
 
-## Guide de déploiement
-
-### Déploiement local (développement)
+### Deploiement local
 
 ```bash
-# Backend + bases de données
-docker compose up --build -d
-
-# Frontend en mode dev (hot-reload)
-cd frontend && npm install && npm run dev
+docker compose up --build
 ```
 
-### Build frontend (production web)
+Frontend dans un second terminal :
 
 ```bash
 cd frontend
-npm install
-npm run build        # sortie dans frontend/dist/
-npm run preview      # prévisualisation locale
+npm ci
+npm run dev
 ```
 
-Servir le dossier `frontend/dist/` avec nginx, Apache ou un hébergeur statique. Configurer `VITE_API_URL` au moment du build pour pointer vers l'API en production.
+Arret :
 
-### Déploiement Docker (backend)
-
-Le `docker-compose.yml` à la racine lance l'ensemble du stack. En production :
-
-1. Modifier les mots de passe PostgreSQL et `API_KEY` dans `.env`
-2. Restreindre les ports exposés (ne pas publier PostgreSQL/MongoDB publiquement)
-3. Ajouter un reverse proxy (nginx, Traefik) avec HTTPS devant l'API
-4. Configurer `CORS_ORIGINS` dans `.env` avec l'URL du frontend :
-
-```env
-CORS_ORIGINS=https://votre-domaine.com
+```bash
+docker compose down
 ```
 
-### Application mobile (Capacitor)
+### Build frontend
 
 ```bash
 cd frontend
-npm run cap:sync          # build + synchronisation native
-npm run cap:android       # ouvre Android Studio
-npm run cap:ios           # ouvre Xcode (macOS)
+npm ci
+npm run build
+npm run preview
 ```
 
-Sur émulateur Android, utiliser `VITE_API_URL=http://10.0.2.2:8000` dans `frontend/.env`.  
-Sur appareil physique, utiliser l'IP locale du PC (`http://192.168.x.x:8000`).
+### Application mobile Capacitor
 
-Guide détaillé : `docs/MOBILE.md`
+```bash
+cd frontend
+npm run cap:sync
+npm run cap:android
+npm run cap:ios
+```
 
-### Variables d'environnement
+Sur emulateur Android, utiliser `VITE_API_URL=http://10.0.2.2:8000`.  
+Sur appareil physique, utiliser l'IP locale du PC.
 
-| Variable | Où | Description |
-|----------|-----|-------------|
-| `DATABASE_URL` | racine `.env` | Connexion PostgreSQL |
-| `API_KEY` | racine `.env` | Clé pour les routes protégées (`x-api-key`) |
-| `CLOUDINARY_*` | racine `.env` | Upload et purge des médias sociaux |
-| `VITE_API_URL` | `frontend/.env` | URL de l'API vue par le navigateur |
-| `VITE_CLOUDINARY_*` | `frontend/.env` | Upload direct depuis le frontend |
-| `CORS_ORIGINS` | racine `.env` | Origines supplémentaires autorisées |
+Guide detaille : `docs/MOBILE.md`
 
----
+## Monitoring
 
-## Réinitialisation
+Le monitoring local repose sur :
 
-Un script manuel permet de remettre à zéro la base de données, MongoDB et le stockage.
+- Prometheus pour le scraping des metriques
+- Grafana pour la visualisation
+- cAdvisor pour les metriques conteneurs Docker
 
-### Ce qui est réinitialisé
+Prometheus surveille actuellement :
+
+- `api:8000/metrics`
+- `ai_service:8000/metrics`
+- `cadvisor:8080`
+
+Documentation detaillee : [docs/monitoring.md](docs/monitoring.md).
+
+## URLs utiles
+
+- Frontend Vite : [http://localhost:5173](http://localhost:5173)
+- API backend : [http://localhost:8000](http://localhost:8000)
+- Swagger backend : [http://localhost:8000/docs](http://localhost:8000/docs)
+- API IA : [http://localhost:8001](http://localhost:8001)
+- Swagger IA : [http://localhost:8001/docs](http://localhost:8001/docs)
+- URL cAdvisor : [http://localhost:8080](http://localhost:8080)
+- URL Prometheus targets : [http://localhost:9090/targets](http://localhost:9090/targets)
+- Prometheus UI : [http://localhost:9090](http://localhost:9090)
+- URL Grafana : [http://localhost:3000](http://localhost:3000)
+- pgAdmin : [http://localhost:5050](http://localhost:5050)
+
+## Structure du projet
+
+```text
+HealthAI/
+|-- ai-service/
+|-- backend/
+|-- data/
+|-- docs/
+|-- frontend/
+|-- monitoring/
+|-- scripts/
+|-- docker-compose.yml
+|-- .env.example
+`-- README.md
+```
+
+## Reinitialisation
+
+Un script manuel permet de remettre a zero la base de donnees, MongoDB et le stockage.
+
+### Ce qui est reinitialise
 
 | Cible | Action |
 |-------|--------|
-| **PostgreSQL** | Vide toutes les tables du schéma `healthai` |
-| **MongoDB** | Supprime la base `healthai_ai` (recommandations IA) |
-| **Exports locaux** | Efface `data/cleaned/` |
-| **Cloudinary** | Purge le dossier `healthai/` (nécessite `CLOUDINARY_API_KEY` + `CLOUDINARY_API_SECRET`) |
+| PostgreSQL | Vide les tables du schema `healthai` |
+| MongoDB | Supprime la base `healthai_ai` |
+| Exports locaux | Efface `data/cleaned/` |
+| Cloudinary | Purge le dossier `healthai/` si les cles sont configurees |
 
-Les comptes utilisateurs **côté navigateur** (localStorage) ne sont pas effacés automatiquement.
+Les comptes utilisateurs stockes cote navigateur ne sont pas effaces automatiquement.
 
 ### Lancer le script
 
-**Windows (PowerShell) :**
+Windows :
 
 ```powershell
 .\scripts\reset.ps1
 ```
 
-**Linux / macOS :**
+Linux / macOS :
 
 ```bash
 chmod +x scripts/reset.sh
@@ -203,66 +282,34 @@ Le script demande de taper `RESET` pour confirmer.
 | Option | PowerShell | Bash | Description |
 |--------|------------|------|-------------|
 | Sans invite | `-Confirm` | `--confirm` | Passe la confirmation interactive |
-| Réimport ETL | `-Seed` | `--seed` | Relance le pipeline après reset |
-| Volumes Docker | `-FullVolumes` | `--full-volumes` | `docker compose down -v` puis redémarrage |
+| Reimport ETL | `-Seed` | `--seed` | Relance le pipeline apres reset |
+| Volumes Docker | `-FullVolumes` | `--full-volumes` | `docker compose down -v` puis redemarrage |
 | Ignorer Cloudinary | `-SkipCloudinary` | `--skip-cloudinary` | Ne purge pas le stockage distant |
 
-Exemples :
+## Fonctionnalites sociales
 
-```powershell
-.\scripts\reset.ps1 -Confirm -Seed
-.\scripts\reset.ps1 -Confirm -FullVolumes -Seed
-```
+- Posts : creation, modification, suppression, fil pagine
+- Commentaires : ajout, modification, suppression, reponses imbriquees
+- Likes : like/unlike, compteur, historique personnel
+- Medias : images et videos via Cloudinary, avatars utilisateur
+- Recherche : trouver un utilisateur par nom ou email
 
-```bash
-./scripts/reset.sh --confirm --seed
-```
-
-### Commandes manuelles (avancé)
-
-```bash
-# Base PostgreSQL uniquement
-docker compose exec api python -m healthai.scripts.reset --db --confirm
-
-# Stockage uniquement
-docker compose exec api python -m healthai.scripts.reset --storage --confirm
-
-# MongoDB uniquement
-docker compose exec mongo mongosh --eval "db.getSiblingDB('healthai_ai').dropDatabase()"
-```
-
----
-
-## Fonctionnalités sociales
-
-- **Posts** : création, modification, suppression, fil paginé
-- **Commentaires** : ajout, modification, suppression, réponses imbriquées
-- **Likes** : like/unlike, compteur, historique personnel
-- **Médias** : images et vidéos via **Cloudinary**, avatars utilisateur
-- **Recherche** : trouver un utilisateur par nom ou email
-
-Page : `/fil` (menu **Fil**)
-
----
+Page : `/fil`
 
 ## Configuration Cloudinary
 
-1. Créez un compte sur [cloudinary.com](https://cloudinary.com)
-2. Dashboard → **Settings → Upload → Upload presets**
-3. Créez un preset **unsigned** (mode signing : Unsigned)
-4. Renseignez les variables dans `.env` (racine) et `frontend/.env`
+1. Creer un compte sur [cloudinary.com](https://cloudinary.com)
+2. Ouvrir `Settings -> Upload -> Upload presets`
+3. Creer un preset `unsigned`
+4. Renseigner les variables dans `.env` et `frontend/.env`
 
-Si seul le backend est configuré, le frontend récupère la config via `GET /media/cloudinary-config`.
+Si seul le backend est configure, le frontend recupere la config via `GET /media/cloudinary-config`.
 
-Pour que le script de réinitialisation purge aussi Cloudinary, renseignez `CLOUDINARY_API_KEY` et `CLOUDINARY_API_SECRET`.
+Pour que le script de reinitialisation purge aussi Cloudinary, renseigner `CLOUDINARY_API_KEY` et `CLOUDINARY_API_SECRET`.
 
----
+## Guide de depannage
 
-## Guide de dépannage
-
-### Après un `git pull`, rien ne semble avoir changé
-
-Les correctifs backend nécessitent un redémarrage des conteneurs :
+### Apres un `git pull`, rien ne semble avoir change
 
 ```bash
 git pull
@@ -270,85 +317,49 @@ docker compose up -d --build
 docker compose restart api ai_service
 ```
 
-Côté frontend : rafraîchir la page (`Ctrl+Shift+R`) ou relancer `npm run dev`.
+Cote frontend, rafraichir la page ou relancer `npm run dev`.
 
-L'API tourne avec `--reload` en développement : les changements Python dans `backend/src/` sont pris en compte automatiquement après un court délai.
-
-### L'API ne démarre pas ou les tables sont absentes
-
-PostgreSQL utilise le schéma `healthai`. S'il n'existe pas encore :
+### L'API ne demarre pas ou les tables sont absentes
 
 ```bash
 docker compose exec db psql -U healthai -d healthai -c "CREATE SCHEMA IF NOT EXISTS healthai;"
 docker compose restart api
 ```
 
-### `docker compose up` échoue (port déjà utilisé)
+### `docker compose up` echoue
 
-Un autre service utilise le port 8000, 5432 ou 5173. Modifier `API_PORT` ou `POSTGRES_PORT` dans `.env`, ou arrêter le processus conflictuel.
+Verifier qu'aucun autre service n'utilise deja les ports 8000, 5432, 5173, 8080, 9090 ou 3000.
 
-### Le fil social ne charge pas / erreurs réseau
+### Le fil social ne charge pas
 
-1. Vérifier que l'API tourne : http://localhost:8000/health
-2. Vérifier `VITE_API_URL` dans `frontend/.env` (doit correspondre à l'URL accessible depuis le navigateur)
-3. Sur mobile ou autre appareil du réseau, ajouter l'IP dans `CORS_ORIGINS` :
+1. Verifier [http://localhost:8000/health](http://localhost:8000/health)
+2. Verifier `VITE_API_URL` dans `frontend/.env`
+3. Sur un autre appareil du reseau, ajouter l'IP dans `CORS_ORIGINS`
 
-```env
-CORS_ORIGINS=http://192.168.1.10:5173
-```
+### Les uploads d'images ou videos echouent
 
-### Les uploads d'images/vidéos échouent
+- verifier `CLOUDINARY_CLOUD_NAME` et `CLOUDINARY_UPLOAD_PRESET`
+- le preset doit etre en mode `unsigned`
+- redemarrer l'API apres modification du `.env`
 
-- Vérifier `CLOUDINARY_CLOUD_NAME` et `CLOUDINARY_UPLOAD_PRESET` dans `.env` et `frontend/.env`
-- Le preset doit être en mode **unsigned**
-- Redémarrer l'API après modification du `.env` : `docker compose restart api`
-
-### Le scanner de repas (vision IA) ne fonctionne pas
-
-Le frontend appelle directement le service IA sur le port **8001**. Vérifier :
+### Le scanner de repas ne fonctionne pas
 
 ```bash
 curl http://localhost:8001/health
 docker compose ps ai_service
 ```
 
-### Les exports ETL échouent partiellement
+### Les donnees persistent apres un reset serveur
 
-Certains fichiers KPI dépendent de vues SQL (`v_*`) non définies dans le dépôt. L'ingestion des CSV et les endpoints `/kpis` restent utilisables. Relancer :
+L'authentification est stockee cote client. Vider le stockage navigateur ou reinitialiser l'application mobile.
 
-```bash
-docker compose exec api python -m healthai.etl.run_all
-```
+## Documentation complementaire
 
-### Les données persistent après un reset de la base
-
-L'authentification est stockée **côté client** (`localStorage` ou Capacitor Preferences). Après un reset serveur :
-
-- Navigateur : vider le stockage du site ou se déconnecter / recréer un compte
-- Mobile : désinstaller l'app ou effacer les données de l'application
-
-### pgAdmin : connexion à PostgreSQL
-
-- URL : http://localhost:5050
-- Identifiants pgAdmin : `admin@nas.com` / `admin`
-- Serveur PostgreSQL : hôte `db`, port `5432`, user `healthai`, mot de passe `healthai_pass`, base `healthai`
-
-### Logs utiles
-
-```bash
-docker compose logs api --tail 50
-docker compose logs ai_service --tail 50
-docker compose logs db --tail 20
-```
-
----
-
-## Documentation complémentaire
-
-| Fichier | Contenu |
-|---------|---------|
-| `frontend/README.md` | Routes, auth client, design system |
-| `docs/MOBILE.md` | Build Android / iOS |
-| `docs/architecture.md` | Architecture V2 |
-| `docs/api.md` | Endpoints et intégration Power BI |
-| `docs/model_donnee.md` | Modèle de données |
+- [Architecture](docs/architecture.md)
+- [Deploiement](docs/deployment.md)
+- [Monitoring](docs/monitoring.md)
+- [Tests](docs/tests.md)
+- [CI/CD](docs/ci-cd.md)
+- [Sprint report](docs/sprint-report.md)
+- [Guide mobile](docs/MOBILE.md)
+- [Documentation API](docs/api.md)

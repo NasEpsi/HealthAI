@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import {
   fetchComments,
   createComment,
@@ -123,7 +123,7 @@ export default function CommentSection({ postId, currentUserId, onComment }) {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
 
-  const load = async () => {
+  const load = useCallback(async () => {
     setLoading(true);
     setError("");
     try {
@@ -134,11 +134,11 @@ export default function CommentSection({ postId, currentUserId, onComment }) {
     } finally {
       setLoading(false);
     }
-  };
+  }, [postId]);
 
   useEffect(() => {
     load();
-  }, [postId]);
+  }, [load]);
 
   const submit = async () => {
     if (!newComment.trim()) return;

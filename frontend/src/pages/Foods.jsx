@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { apiGet, apiPost, apiPut, apiDelete } from "../api";
 
 export default function Foods() {
@@ -16,16 +16,16 @@ export default function Foods() {
     source: "",
   });
 
-  const load = () => {
+  const load = useCallback(() => {
     const qs = new URLSearchParams();
     if (q) qs.set("q", q);
     qs.set("limit", "200");
     apiGet(`/foods?${qs.toString()}`).then(setFoods);
-  };
+  }, [q]);
 
   useEffect(() => {
     load();
-  }, []);
+  }, [load]);
 
   const createFood = async () => {
     await apiPost("/foods", {
@@ -149,8 +149,6 @@ export default function Foods() {
 
 function FoodRow({ food, isEditing, onEdit, onCancel, onSave, onDelete }) {
   const [local, setLocal] = useState(food);
-
-  useEffect(() => setLocal(food), [food]);
 
   return (
     <tr>

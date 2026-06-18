@@ -1,4 +1,4 @@
-import { useRef, useState, useEffect } from "react";
+import { createElement, useRef, useState, useEffect } from "react";
 import { Camera, User, Moon, Sun, Monitor } from "lucide-react";
 import { useApp } from "../context/AppContext";
 import { uploadAvatar } from "../services/cloudinary";
@@ -128,14 +128,14 @@ export default function Profile() {
         <section className="profile-section">
           <h2 className="profile-section__title">Apparence</h2>
           <div className="theme-options">
-            {THEME_OPTIONS.map(({ id, label, icon: Icon }) => (
+            {THEME_OPTIONS.map(({ id, label, icon }) => (
               <button
                 key={id}
                 type="button"
                 className={`theme-option${themePreference === id ? " theme-option--active" : ""}`}
                 onClick={() => setThemePreference(id)}
               >
-                <Icon size={18} />
+                {createElement(icon, { size: 18 })}
                 {label}
               </button>
             ))}

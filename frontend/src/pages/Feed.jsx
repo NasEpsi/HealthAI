@@ -56,7 +56,7 @@ export default function Feed() {
 
   useEffect(() => {
     if (userId) loadFeed(1);
-  }, [avatar, userId]);
+  }, [avatar, userId, loadFeed]);
 
   const scrollToPost = (postId) => {
     setShowHistory(false);

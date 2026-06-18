@@ -2,7 +2,7 @@ from datetime import datetime, UTC
 import logging
 
 from fastapi import APIRouter
-from healthai_ai.mongo import nutrition_collection
+from healthai_ai.mongo import nutrition_collection, safe_insert_one
 from healthai_ai.schemas.nutrition import NutritionRequest, NutritionResponse
 from healthai_ai.services.nutrition_engine import generate_nutrition_recommendation
 
@@ -13,18 +13,22 @@ router = APIRouter(prefix="/ai/nutrition", tags=["AI Nutrition"])
 
 @router.post("/recommend", response_model=NutritionResponse)
 def recommend(payload: NutritionRequest):
+    data = payload.model_dump()
     try:
-        data = payload.model_dump()
         result = generate_nutrition_recommendation(data)
 
-        nutrition_collection.insert_one({
-            "type": "nutrition",
-            "status": "success",
-            "engine_version": "v1.0-rule-based",
-            "input": data,
-            "output": result,
-            "created_at": datetime.now(UTC),
-        })
+        safe_insert_one(
+            nutrition_collection,
+            {
+                "type": "nutrition",
+                "status": "success",
+                "engine_version": "v1.0-rule-based",
+                "input": data,
+                "output": result,
+                "created_at": datetime.now(UTC),
+            },
+            "nutrition recommendation",
+        )
 
         return result
 
@@ -35,16 +39,21 @@ def recommend(payload: NutritionRequest):
             "summary": "Service IA indisponible, recommandation nutritionnelle générique appliquée.",
             "actions": ["Privilégier un repas équilibré avec protéines, légumes et féculents adaptés."],
             "score": 0,
+            "meal_plan": [],
         }
 
-        nutrition_collection.insert_one({
-            "type": "nutrition",
-            "status": "fallback",
-            "engine_version": "v1.0-rule-based",
-            "error": str(exc),
-            "input": payload.model_dump(),
-            "output": fallback,
-            "created_at": datetime.now(UTC),
-        })
+        safe_insert_one(
+            nutrition_collection,
+            {
+                "type": "nutrition",
+                "status": "fallback",
+                "engine_version": "v1.0-rule-based",
+                "error": str(exc),
+                "input": data,
+                "output": fallback,
+                "created_at": datetime.now(UTC),
+            },
+            "nutrition fallback",
+        )
 
         return fallback

@@ -3,7 +3,7 @@ import logging
 
 from fastapi import APIRouter, UploadFile, File, Form
 
-from healthai_ai.mongo import nutrition_collection
+from healthai_ai.mongo import nutrition_collection, safe_insert_one
 from healthai_ai.schemas.vision import MealImageAnalysisResponse
 from healthai_ai.services.food_detection import detect_foods_from_image, calculate_totals
 from healthai_ai.services.llm_generator import generate_meal_advice
@@ -32,18 +32,22 @@ async def analyze_meal_image(
             "score": 0.75,
         }
 
-        nutrition_collection.insert_one({
-            "type": "meal_image_analysis",
-            "status": "success",
-            "engine_version": "v1.0-simulated-vision",
-            "user_id": user_id,
-            "input": {
-                "filename": file.filename,
-                "goal": goal,
+        safe_insert_one(
+            nutrition_collection,
+            {
+                "type": "meal_image_analysis",
+                "status": "success",
+                "engine_version": "v1.0-simulated-vision",
+                "user_id": user_id,
+                "input": {
+                    "filename": file.filename,
+                    "goal": goal,
+                },
+                "output": result,
+                "created_at": datetime.now(UTC),
             },
-            "output": result,
-            "created_at": datetime.now(UTC),
-        })
+            "meal image analysis",
+        )
 
         return result
 
@@ -63,13 +67,17 @@ async def analyze_meal_image(
             "score": 0,
         }
 
-        nutrition_collection.insert_one({
-            "type": "meal_image_analysis",
-            "status": "fallback",
-            "engine_version": "v1.0-simulated-vision",
-            "user_id": user_id,
-            "error": str(exc),
-            "created_at": datetime.now(UTC),
-        })
+        safe_insert_one(
+            nutrition_collection,
+            {
+                "type": "meal_image_analysis",
+                "status": "fallback",
+                "engine_version": "v1.0-simulated-vision",
+                "user_id": user_id,
+                "error": str(exc),
+                "created_at": datetime.now(UTC),
+            },
+            "meal image fallback",
+        )
 
         return fallback

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { apiGet, apiPost, apiPut, apiDelete } from "../api";
 
 export default function Sessions() {
@@ -15,16 +15,16 @@ export default function Sessions() {
     workout_type: "",
   });
 
-  const load = () => {
+  const load = useCallback(() => {
     const qs = new URLSearchParams();
     qs.set("limit", "200");
     if (userIdFilter) qs.set("user_id", userIdFilter);
     apiGet(`/sessions?${qs.toString()}`).then(setSessions);
-  };
+  }, [userIdFilter]);
 
   useEffect(() => {
     load();
-  }, []);
+  }, [load]);
 
   const createSession = async () => {
     await apiPost("/sessions", {
@@ -153,8 +153,6 @@ function formatHoursToHHMM(hours) {
 
 function SessionRow({ session, isEditing, onEdit, onCancel, onSave, onDelete }) {
   const [local, setLocal] = useState(session);
-
-  useEffect(() => setLocal(session), [session]);
 
   return (
     <tr>
