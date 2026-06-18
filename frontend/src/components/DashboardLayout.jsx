@@ -37,7 +37,7 @@ export default function DashboardLayout() {
   return (
     <div className="app-layout">
       <header className="mobile-header">
-        <Logo size="md" />
+        <Logo size="xs" />
         <button
           type="button"
           className="burger-btn"

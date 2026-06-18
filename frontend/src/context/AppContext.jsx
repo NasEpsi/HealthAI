@@ -299,18 +299,18 @@ function calculateCalories(data) {
   const sexFactor = data.sex === "Homme" ? 5 : -161;
   const bmr = 10 * weight + 6.25 * height - 5 * age + sexFactor;
   const activityMap = {
-    S?dentaire: 1.2,
-    L?ger: 1.375,
-    Mod?r?: 1.55,
-    Actif: 1.725,
-    "Tr?s actif": 1.9,
+    "Sédentaire": 1.2,
+    "Léger": 1.375,
+    "Modéré": 1.55,
+    "Actif": 1.725,
+    "Très actif": 1.9,
   };
   const factor = activityMap[data.activityLevel] || 1.55;
   let tdee = Math.round(bmr * factor);
   const goalMap = {
     "Perte de poids": -400,
     "Prise de masse": 300,
-    "?quilibre nutritionnel": 0,
+    "Équilibre nutritionnel": 0,
     "Performance sportive": 200,
     Maintien: 0,
   };

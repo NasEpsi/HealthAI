@@ -10,7 +10,11 @@ function authHeaders(userId) {
 async function handleResponse(res) {
   if (!res.ok) {
     const err = await res.json().catch(() => ({}));
-    throw new Error(err.detail || "Erreur serveur");
+    const detail = err.detail;
+    const message = Array.isArray(detail)
+      ? detail.map((d) => d.msg).join(", ")
+      : detail || "Erreur serveur";
+    throw new Error(message);
   }
   if (res.status === 204) return null;
   return res.json();

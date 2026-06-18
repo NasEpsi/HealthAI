@@ -14,7 +14,7 @@ export default function MobileHeader() {
 
   return (
     <header className="mobile-header">
-      <Logo size="sm" />
+      <Logo size="xs" />
       <button
         type="button"
         className="mobile-header__logout"

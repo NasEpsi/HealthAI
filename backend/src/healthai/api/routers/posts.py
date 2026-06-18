@@ -8,6 +8,7 @@ from healthai.api.schemas.social import (
     CommentRead,
     CommentUpdate,
     LikeRead,
+    LikeWithPostRead,
     LikeAction,
     PostCreate,
     PostFeedResponse,
@@ -15,10 +16,32 @@ from healthai.api.schemas.social import (
     PostUpdate,
 )
 from healthai.db import get_db
-from healthai.models.social import Comment, Post, PostLike
+from healthai.models.social import Comment, Post, PostLike, SocialUser
 from healthai.services.cloudinary_service import delete_media
 
 router = APIRouter(prefix="/posts", tags=["posts"])
+
+
+def _author_profile(db: Session, user_id: str, name: str, avatar_url: str | None) -> tuple[str, str | None]:
+    social = db.query(SocialUser).filter(SocialUser.user_id == user_id).first()
+    if not social:
+        return name, avatar_url
+    return social.name or name, social.avatar_url or avatar_url
+
+
+def _comment_to_read(comment: Comment) -> CommentRead:
+    return CommentRead(
+        id=comment.id,
+        post_id=comment.post_id,
+        user_id=comment.user_id,
+        user_name=comment.user_name,
+        user_avatar_url=comment.user_avatar_url,
+        parent_id=comment.parent_id,
+        content=comment.content,
+        created_at=comment.created_at,
+        updated_at=comment.updated_at,
+        replies=[],
+    )
 
 
 def _serialize_post(post: Post, db: Session, current_user_id: str | None = None) -> PostRead:
@@ -32,11 +55,14 @@ def _serialize_post(post: Post, db: Session, current_user_id: str | None = None)
             .first()
             is not None
         )
+    user_name, user_avatar_url = _author_profile(
+        db, post.user_id, post.user_name, post.user_avatar_url
+    )
     return PostRead(
         id=post.id,
         user_id=post.user_id,
-        user_name=post.user_name,
-        user_avatar_url=post.user_avatar_url,
+        user_name=user_name,
+        user_avatar_url=user_avatar_url,
         content=post.content,
         media_type=post.media_type,
         media_url=post.media_url,
@@ -49,17 +75,18 @@ def _serialize_post(post: Post, db: Session, current_user_id: str | None = None)
     )
 
 
-def _build_comment_tree(comments: list[Comment]) -> list[CommentRead]:
+def _build_comment_tree(comments: list[Comment], db: Session) -> list[CommentRead]:
     by_id: dict[int, CommentRead] = {}
     roots: list[CommentRead] = []
 
     for c in comments:
+        user_name, user_avatar_url = _author_profile(db, c.user_id, c.user_name, c.user_avatar_url)
         by_id[c.id] = CommentRead(
             id=c.id,
             post_id=c.post_id,
             user_id=c.user_id,
-            user_name=c.user_name,
-            user_avatar_url=c.user_avatar_url,
+            user_name=user_name,
+            user_avatar_url=user_avatar_url,
             parent_id=c.parent_id,
             content=c.content,
             created_at=c.created_at,
@@ -102,7 +129,7 @@ def list_posts(
     )
 
 
-@router.get("/users/{target_user_id}/likes", response_model=list[LikeRead])
+@router.get("/users/{target_user_id}/likes", response_model=list[LikeWithPostRead])
 def list_user_likes(
     target_user_id: str,
     page: int = Query(1, ge=1),
@@ -122,7 +149,20 @@ def list_user_likes(
         .limit(limit)
         .all()
     )
-    return [LikeRead.model_validate(like) for like in likes]
+    result: list[LikeWithPostRead] = []
+    for like in likes:
+        post = db.query(Post).filter(Post.id == like.post_id).first()
+        result.append(
+            LikeWithPostRead(
+                id=like.id,
+                post_id=like.post_id,
+                user_id=like.user_id,
+                user_name=like.user_name,
+                created_at=like.created_at,
+                post=_serialize_post(post, db, user_id) if post else None,
+            )
+        )
+    return result
 
 
 @router.post("", response_model=PostRead, status_code=201)
@@ -265,7 +305,7 @@ def list_comments(post_id: int, db: Session = Depends(get_db)):
         .order_by(Comment.created_at.asc())
         .all()
     )
-    return _build_comment_tree(comments)
+    return _build_comment_tree(comments, db)
 
 
 @router.post("/{post_id}/comments", response_model=CommentRead, status_code=201)
@@ -284,18 +324,22 @@ def create_comment(
         if not parent:
             raise HTTPException(status_code=400, detail="Commentaire parent introuvable.")
 
+    user_name, user_avatar_url = _author_profile(
+        db, user_id, payload.user_name, payload.user_avatar_url
+    )
+
     comment = Comment(
         post_id=post_id,
         user_id=user_id,
-        user_name=payload.user_name,
-        user_avatar_url=payload.user_avatar_url,
+        user_name=user_name,
+        user_avatar_url=user_avatar_url,
         parent_id=payload.parent_id,
         content=payload.content.strip(),
     )
     db.add(comment)
     db.commit()
     db.refresh(comment)
-    return CommentRead.model_validate(comment)
+    return _comment_to_read(comment)
 
 
 @router.put("/comments/{comment_id}", response_model=CommentRead)
@@ -314,7 +358,7 @@ def update_comment(
     comment.content = payload.content.strip()
     db.commit()
     db.refresh(comment)
-    return CommentRead.model_validate(comment)
+    return _comment_to_read(comment)
 
 
 @router.delete("/comments/{comment_id}", status_code=204)
