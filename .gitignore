@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Env & secrets
+.env
+frontend/.env
+
+# Node
+node_modules/
+frontend/dist/
+
+# IDE
+.idea/
+.vscode/
+*.sw?
+
+# Capacitor builds
+frontend/android/app/build/
+frontend/android/.gradle/
+frontend/ios/App/build/
+frontend/ios/App/Pods/

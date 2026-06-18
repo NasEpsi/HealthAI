@@ -42,41 +42,30 @@ const quickLinks = [
 ];
 
 export default function Home() {
-  const { profile, currentUser } = useApp();
-
-  const [daily, setDaily] = useState({
-    calories: 0,
-    protein: 0,
-    carbs: 0,
-    fat: 0,
-  });
-
-  const macroTargets = {
-    protein: 120,
-    carbs: 250,
-    fat: 70,
-  };
-  
+  const { profile, daily: contextDaily, macroTargets, avatar, profile: userProfile } = useApp();
+  const [daily, setDaily] = useState(contextDaily);
+  const navigate = useNavigate();
 
   useEffect(() => {
+    setDaily(contextDaily);
+  }, [contextDaily]);
+
+  useEffect(() => {
+    const backendUserId = userProfile?.id_user;
+    if (!backendUserId) return;
+
     async function loadDashboard() {
       try {
-        const userId = currentUser?.id_user;
-
-        if (!userId) return;
-
-        const data = await getDashboardSummary(userId);
-
-        setDaily(data.daily);
+        const data = await getDashboardSummary(backendUserId);
+        if (data?.daily) setDaily(data.daily);
       } catch (err) {
         console.error(err);
       }
     }
 
     loadDashboard();
-  }, [currentUser]);
+  }, [userProfile?.id_user]);
 
-  const navigate = useNavigate();
   const remaining = Math.max(0, profile.targetCalories - daily.calories);
 
   const macroPct = (current, target) =>
@@ -85,10 +74,17 @@ export default function Home() {
   return (
     <>
       <header style={{ marginBottom: 28 }}>
-        <p className="greeting__label">Bonjour</p>
-        <h1 className="greeting__name title-font">
-          {profile.name || "Utilisateur"}
-        </h1>
+        <div className="greeting__row">
+          {avatar && (
+            <img src={avatar} alt="" className="greeting__avatar" />
+          )}
+          <div>
+            <p className="greeting__label">Bonjour</p>
+            <h1 className="greeting__name title-font">
+              {profile.name || "Utilisateur"}
+            </h1>
+          </div>
+        </div>
       </header>
 
       <div className="card today-card">

@@ -1,5 +1,4 @@
-const API_URL = "http://localhost:8000";
-const API_KEY = "healthai"; // adapte si tu modifies .env
+import { API_URL, API_KEY } from "./config";
 
 export async function apiGet(path) {
   const res = await fetch(`${API_URL}${path}`, {

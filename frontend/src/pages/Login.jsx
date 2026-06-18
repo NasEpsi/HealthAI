@@ -7,22 +7,27 @@ export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
-  const { login, profile } = useApp();
+  const [loading, setLoading] = useState(false);
+  const { login } = useApp();
   const navigate = useNavigate();
 
-const handleSubmit = async (e) => {
-  e.preventDefault();
-  setError("");
-
-  const ok = await login(email, password);
-
-  if (!ok) {
-    setError("Email ou mot de passe incorrect.");
-    return;
-  }
-
-  navigate("/");
-};
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setError("");
+    setLoading(true);
+    try {
+      const userProfile = await login(email, password);
+      if (userProfile.onboardingComplete) {
+        navigate("/");
+      } else {
+        navigate("/inscription");
+      }
+    } catch (err) {
+      setError(err.message || "Connexion impossible.");
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <div className="auth-page">
@@ -44,6 +49,8 @@ const handleSubmit = async (e) => {
               placeholder="Ex : nom@email.com"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
+              autoComplete="email"
+              required
             />
           </div>
           <div className="form-group">
@@ -55,15 +62,13 @@ const handleSubmit = async (e) => {
               placeholder="••••••••"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
+              autoComplete="current-password"
+              required
             />
           </div>
-          {error && (
-            <p style={{ color: "#ef4444", fontSize: "0.9rem", marginBottom: 12 }}>
-              {error}
-            </p>
-          )}
-          <button type="submit" className="btn btn--primary btn--full">
-            Connectez-vous
+          {error && <p className="form-error">{error}</p>}
+          <button type="submit" className="btn btn--primary btn--full" disabled={loading}>
+            {loading ? "Connexion…" : "Connectez-vous"}
           </button>
         </form>
 
