@@ -33,7 +33,7 @@ export default function PostCard({
   };
 
   return (
-    <article className="card post-card">
+    <article className="card post-card" id={`post-${post.id}`}>
       <header className="post-card__header">
         <div className="post-card__author">
           {post.user_avatar_url ? (
