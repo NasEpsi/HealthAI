@@ -102,6 +102,29 @@ def list_posts(
     )
 
 
+@router.get("/users/{target_user_id}/likes", response_model=list[LikeRead])
+def list_user_likes(
+    target_user_id: str,
+    page: int = Query(1, ge=1),
+    limit: int = Query(20, ge=1, le=100),
+    db: Session = Depends(get_db),
+    user_id: str = Depends(get_current_user_id),
+):
+    if target_user_id != user_id:
+        raise HTTPException(status_code=403, detail="Accès non autorisé.")
+
+    offset = (page - 1) * limit
+    likes = (
+        db.query(PostLike)
+        .filter(PostLike.user_id == target_user_id)
+        .order_by(PostLike.created_at.desc())
+        .offset(offset)
+        .limit(limit)
+        .all()
+    )
+    return [LikeRead.model_validate(like) for like in likes]
+
+
 @router.post("", response_model=PostRead, status_code=201)
 def create_post(
     payload: PostCreate,
@@ -308,26 +331,3 @@ def delete_comment(
 
     db.delete(comment)
     db.commit()
-
-
-@router.get("/users/{target_user_id}/likes", response_model=list[LikeRead])
-def list_user_likes(
-    target_user_id: str,
-    page: int = Query(1, ge=1),
-    limit: int = Query(20, ge=1, le=100),
-    db: Session = Depends(get_db),
-    user_id: str = Depends(get_current_user_id),
-):
-    if target_user_id != user_id:
-        raise HTTPException(status_code=403, detail="Accès non autorisé.")
-
-    offset = (page - 1) * limit
-    likes = (
-        db.query(PostLike)
-        .filter(PostLike.user_id == target_user_id)
-        .order_by(PostLike.created_at.desc())
-        .offset(offset)
-        .limit(limit)
-        .all()
-    )
-    return [LikeRead.model_validate(like) for like in likes]

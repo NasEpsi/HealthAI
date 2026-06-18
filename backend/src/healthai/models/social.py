@@ -55,3 +55,17 @@ class PostLike(Base):
     created_at = Column(DateTime(timezone=True), server_default=func.now(), nullable=False)
 
     post = relationship("Post", back_populates="likes")
+
+
+class SocialUser(Base):
+    """Profil public synchronisé depuis le client (auth locale UUID)."""
+
+    __tablename__ = "social_user"
+
+    user_id = Column(String(64), primary_key=True)
+    email = Column(String(255), nullable=False, unique=True, index=True)
+    name = Column(String(120), nullable=False, index=True)
+    avatar_url = Column(String(512), nullable=True)
+    updated_at = Column(
+        DateTime(timezone=True), server_default=func.now(), onupdate=func.now(), nullable=False
+    )

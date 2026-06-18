@@ -104,3 +104,20 @@ export async function fetchUserLikes(userId, page = 1, limit = 20) {
   );
   return handleResponse(res);
 }
+
+export async function syncSocialProfile(userId, { email, name, avatar_url }) {
+  const res = await fetch(`${API_URL}/social/users/me`, {
+    method: "PUT",
+    headers: authHeaders(userId),
+    body: JSON.stringify({ email, name, avatar_url }),
+  });
+  return handleResponse(res);
+}
+
+export async function searchUsers(userId, query) {
+  const q = encodeURIComponent(query.trim());
+  const res = await fetch(`${API_URL}/social/users/search?q=${q}`, {
+    headers: authHeaders(userId),
+  });
+  return handleResponse(res);
+}

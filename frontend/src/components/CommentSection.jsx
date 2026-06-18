@@ -7,7 +7,7 @@ import {
 } from "../services/social";
 import { useApp } from "../context/AppContext";
 
-function CommentItem({ comment, currentUserId, onRefresh, depth = 0 }) {
+function CommentItem({ comment, currentUserId, onRefresh, onComment, depth = 0 }) {
   const { profile, avatar } = useApp();
   const [replying, setReplying] = useState(false);
   const [editing, setEditing] = useState(false);
@@ -25,18 +25,20 @@ function CommentItem({ comment, currentUserId, onRefresh, depth = 0 }) {
     });
     setReplyText("");
     setReplying(false);
-    onRefresh();
+    await onRefresh();
+    onComment?.();
   };
 
   const saveEdit = async () => {
     await updateComment(currentUserId, comment.id, text.trim());
     setEditing(false);
-    onRefresh();
+    await onRefresh();
   };
 
   const remove = async () => {
     await deleteComment(currentUserId, comment.id);
-    onRefresh();
+    await onRefresh();
+    onComment?.();
   };
 
   return (
@@ -84,6 +86,7 @@ function CommentItem({ comment, currentUserId, onRefresh, depth = 0 }) {
           comment={r}
           currentUserId={currentUserId}
           onRefresh={onRefresh}
+          onComment={onComment}
           depth={depth + 1}
         />
       ))}
@@ -102,7 +105,6 @@ export default function CommentSection({ postId, currentUserId, onComment }) {
     try {
       const data = await fetchComments(postId);
       setComments(data);
-      onComment?.();
     } finally {
       setLoading(false);
     }
@@ -121,6 +123,7 @@ export default function CommentSection({ postId, currentUserId, onComment }) {
     });
     setNewComment("");
     await load();
+    onComment?.();
   };
 
   return (
@@ -143,12 +146,13 @@ export default function CommentSection({ postId, currentUserId, onComment }) {
         <p className="comment-section__empty">Aucun commentaire.</p>
       ) : (
         comments.map((c) => (
-          <CommentItem
-            key={c.id}
-            comment={c}
-            currentUserId={currentUserId}
-            onRefresh={load}
-          />
+        <CommentItem
+          key={c.id}
+          comment={c}
+          currentUserId={currentUserId}
+          onRefresh={load}
+          onComment={onComment}
+        />
         ))
       )}
     </div>
