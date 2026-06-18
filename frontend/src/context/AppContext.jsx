@@ -310,7 +310,7 @@ function calculateCalories(data) {
   const goalMap = {
     "Perte de poids": -400,
     "Prise de masse": 300,
-    "?quilibre nutritionnel": 0,
+    "Équilibre nutritionnel": 0,
     "Performance sportive": 200,
     Maintien: 0,
   };

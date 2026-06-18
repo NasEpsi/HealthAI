@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
-import { Plus, History, User } from "lucide-react";
+import { Plus, History } from "lucide-react";
 import { useApp } from "../context/AppContext";
 import PostCard from "../components/PostCard";
 import CreatePostModal from "../components/CreatePostModal";
@@ -54,6 +54,17 @@ export default function Feed() {
     loadFeed(1);
   }, [loadFeed]);
 
+  useEffect(() => {
+    if (userId) loadFeed(1);
+  }, [avatar, userId]);
+
+  const scrollToPost = (postId) => {
+    setShowHistory(false);
+    window.setTimeout(() => {
+      document.getElementById(`post-${postId}`)?.scrollIntoView({ behavior: "smooth", block: "center" });
+    }, 150);
+  };
+
   const handleCreate = async (data) => {
     const post = await createPost(userId, { ...data, ...authorPayload });
     setPosts((prev) => [post, ...prev]);
@@ -107,26 +118,34 @@ export default function Feed() {
         </div>
       </header>
 
-      <UserSearchBar userId={userId} onSelect={setSelectedUser} />
+      <UserSearchBar
+        userId={userId}
+        onSelect={setSelectedUser}
+        onSearchActive={() => setSelectedUser(null)}
+      />
 
       {selectedUser && (
-        <div className="card user-profile-card" style={{ marginBottom: 16 }}>
+        <div className="card user-profile-card">
           <div className="user-profile-card__header">
             {selectedUser.avatar_url ? (
               <img src={selectedUser.avatar_url} alt="" className="post-card__avatar" />
             ) : (
-              <div className="post-card__avatar post-card__avatar--placeholder">
-                <User size={20} />
+              <div className="post-card__avatar post-card__avatar--placeholder" aria-hidden>
+                {(selectedUser.name || "?")
+                  .split(/\s+/)
+                  .map((w) => w[0])
+                  .join("")
+                  .slice(0, 2)
+                  .toUpperCase()}
               </div>
             )}
-            <div>
+            <div className="user-profile-card__info">
               <p className="post-card__name">{selectedUser.name}</p>
               <p className="post-card__date">{selectedUser.email}</p>
             </div>
             <button
               type="button"
-              className="btn btn--secondary btn--sm"
-              style={{ marginLeft: "auto" }}
+              className="btn btn--secondary btn--sm user-profile-card__close"
               onClick={() => setSelectedUser(null)}
             >
               Fermer
@@ -187,7 +206,7 @@ export default function Feed() {
 
       {showHistory && (
         <div className="modal-overlay" onClick={() => setShowHistory(false)} role="presentation">
-          <div className="modal-card" onClick={(e) => e.stopPropagation()}>
+          <div className="modal-card modal-card--wide" onClick={(e) => e.stopPropagation()}>
             <h2 className="title-font" style={{ marginBottom: 16 }}>
               Historique de mes likes
             </h2>
@@ -195,11 +214,49 @@ export default function Feed() {
               <p className="comment-section__empty">Aucun like pour le moment.</p>
             ) : (
               <ul className="likes-history">
-                {likesHistory.map((like) => (
-                  <li key={like.id}>
-                    Post #{like.post_id} — {new Date(like.created_at).toLocaleString("fr-FR")}
-                  </li>
-                ))}
+                {likesHistory.map((like) => {
+                  const post = like.post;
+                  return (
+                    <li key={like.id} className="likes-history__item">
+                      {post ? (
+                        <>
+                          <div className="likes-history__post-header">
+                            {post.user_avatar_url ? (
+                              <img src={post.user_avatar_url} alt="" className="post-card__avatar" />
+                            ) : (
+                              <div className="post-card__avatar post-card__avatar--placeholder" />
+                            )}
+                            <div>
+                              <p className="post-card__name">{post.user_name}</p>
+                              <p className="post-card__date">
+                                Liké le {new Date(like.created_at).toLocaleString("fr-FR")}
+                              </p>
+                            </div>
+                          </div>
+                          <p className="likes-history__content">{post.content}</p>
+                          {post.media_url && (
+                            <div className="likes-history__media">
+                              {post.media_type === "video" ? (
+                                <video src={post.media_url} className="likes-history__media-el" muted />
+                              ) : (
+                                <img src={post.media_url} alt="" className="likes-history__media-el" />
+                              )}
+                            </div>
+                          )}
+                          <button
+                            type="button"
+                            className="btn btn--secondary btn--sm"
+                            onClick={() => scrollToPost(post.id)}
+                          >
+                            Voir dans le fil
+                          </button>
+                        </>
+                      ) : (
+                        <p>Post #{like.post_id} — {new Date(like.created_at).toLocaleString("fr-FR")}</p>
+                      )}
+                    </li>
+                  );
+                })}
               </ul>
             )}
             <button

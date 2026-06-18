@@ -82,6 +82,10 @@ class LikeRead(BaseModel):
     model_config = {"from_attributes": True}
 
 
+class LikeWithPostRead(LikeRead):
+    post: Optional[PostRead] = None
+
+
 class CloudinaryConfigRead(BaseModel):
     cloud_name: str
     upload_preset: str
