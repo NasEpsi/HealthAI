@@ -2,6 +2,7 @@ from fastapi import FastAPI, Depends
 from fastapi.middleware.cors import CORSMiddleware
 from healthai.api.security import require_api_key
 
+
 # Routers
 from healthai.api.routers.kpis import router as kpis_router
 from healthai.api.routers.exports import router as exports_router
@@ -28,8 +29,8 @@ from healthai.models.workout_recommendation import WorkoutRecommendation
 from healthai.models.recommendation_history import RecommendationHistory
 from healthai.models.social import Post, Comment, PostLike, SocialUser
 
-
 app = FastAPI(title="HealthAI API")
+
 
 # Création des tables
 Base.metadata.create_all(bind=engine)
@@ -59,6 +60,33 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+from prometheus_client import Counter, generate_latest, CONTENT_TYPE_LATEST
+from fastapi import Response, Request
+import time
+
+REQUEST_COUNT = Counter(
+    "healthai_api_requests_total",
+    "Nombre total de requêtes API",
+    ["method", "endpoint", "status_code"]
+)
+
+@app.middleware("http")
+async def prometheus_middleware(request: Request, call_next):
+    start_time = time.time()
+    response = await call_next(request)
+
+    REQUEST_COUNT.labels(
+        method=request.method,
+        endpoint=request.url.path,
+        status_code=response.status_code
+    ).inc()
+
+    return response
+
+@app.get("/metrics", include_in_schema=False)
+def metrics():
+    return Response(generate_latest(), media_type=CONTENT_TYPE_LATEST)
 
 # Routes
 @app.get("/health")

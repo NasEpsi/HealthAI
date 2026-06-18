@@ -235,7 +235,7 @@ export function AppProvider({ children }) {
   const generateSportProgram = useCallback(() => {
     const program = buildSportProgram(profile);
     setSportProgram(program);
-    showToast("Programme gÈnÈrÈ !");
+    showToast("Programme gÔøΩnÔøΩrÔøΩ !");
   }, [profile, showToast]);
 
   const deleteSportProgram = useCallback(() => setSportProgram(null), []);
@@ -299,10 +299,10 @@ function calculateCalories(data) {
   const sexFactor = data.sex === "Homme" ? 5 : -161;
   const bmr = 10 * weight + 6.25 * height - 5 * age + sexFactor;
   const activityMap = {
-    "S?dentaire": 1.2,
-    "L?ger": 1.375,
-    "Mod?r?": 1.55,
-    "Actif": 1.725,
+    S√©dentaire: 1.2,
+    L√©ger: 1.375,
+    Mod√©r√©: 1.55,
+    Actif: 1.725,
     "Tr?s actif": 1.9,
   };
   const factor = activityMap[data.activityLevel] || 1.55;
@@ -310,7 +310,7 @@ function calculateCalories(data) {
   const goalMap = {
     "Perte de poids": -400,
     "Prise de masse": 300,
-    "?quilibre nutritionnel": 0,
+    "√âquilibre nutritionnel": 0,
     "Performance sportive": 200,
     Maintien: 0,
   };
