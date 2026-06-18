@@ -1,9 +1,35 @@
 import { useRef, useState } from "react";
-import { Camera } from "lucide-react";
+import { Camera as CameraIcon } from "lucide-react";
+import { Camera, CameraResultType, CameraSource } from "@capacitor/camera";
 import { useApp } from "../context/AppContext";
 import { analyzeMealImage, saveMealAnalysis } from "../api";
+import { isNative } from "../utils/platform";
 
 const MEAL_TYPES = ["Petit-déj", "Déjeuner", "Diner", "Collation"];
+
+const MOCK_ANALYSIS = [
+  { name: "Poulet grillé", calories: 220, protein: 35, carbs: 0, fat: 8 },
+  { name: "Riz complet", calories: 180, protein: 4, carbs: 38, fat: 2 },
+  { name: "Brocoli vapeur", calories: 55, protein: 4, carbs: 8, fat: 1 },
+];
+
+function runMockAnalysis(setAnalyzing, setResult, mealType) {
+  setAnalyzing(true);
+  setResult(null);
+  setTimeout(() => {
+    const total = MOCK_ANALYSIS.reduce(
+      (acc, f) => ({
+        calories: acc.calories + f.calories,
+        protein: acc.protein + f.protein,
+        carbs: acc.carbs + f.carbs,
+        fat: acc.fat + f.fat,
+      }),
+      { calories: 0, protein: 0, carbs: 0, fat: 0 }
+    );
+    setResult({ foods: MOCK_ANALYSIS, ...total, mealType });
+    setAnalyzing(false);
+  }, 1500);
+}
 
 export default function Scanner() {
   const [mealType, setMealType] = useState("Déjeuner");
@@ -12,36 +38,25 @@ export default function Scanner() {
   const [result, setResult] = useState(null);
   const [error, setError] = useState("");
   const fileRef = useRef(null);
-  const { addMeal, currentUser } = useApp();
+  const { addMeal, profile } = useApp();
 
-  const handleFile = async (file) => {
-    if (!file || !file.type.startsWith("image/")) return;
+  const backendUserId = profile?.id_user;
 
-    if (file.size > 8 * 1024 * 1024) {
-      alert("Fichier trop volumineux (max 8 Mo)");
-      return;
-    }
-
-    const url = URL.createObjectURL(file);
-    setPreview(url);
+  const analyzeFile = async (file) => {
     setAnalyzing(true);
     setResult(null);
     setError("");
 
+    if (!backendUserId) {
+      runMockAnalysis(setAnalyzing, setResult, mealType);
+      return;
+    }
+
     try {
-      const userId = currentUser?.id_user;
-      if (!userId) {
-        setError("Utilisateur non connecté.");
-        setAnalyzing(false);
-        return;
-      }
-      const goal =
-        currentUser?.health_goal ||
-        "maintain";
+      const goal = profile?.goal || "maintain";
+      const analysis = await analyzeMealImage(file, backendUserId, goal);
 
-      const analysis = await analyzeMealImage(file, userId, goal);
-
-      const formattedResult = {
+      setResult({
         mealType,
         foods: analysis.detected_foods.map((food) => ({
           name: food.label,
@@ -56,9 +71,7 @@ export default function Scanner() {
         fat: analysis.totals.fats,
         advice: analysis.advice,
         score: analysis.score,
-      };
-
-      setResult(formattedResult);
+      });
     } catch (err) {
       console.error(err);
       setError(err.message || "Impossible d'analyser l'image pour le moment.");
@@ -67,15 +80,42 @@ export default function Scanner() {
     }
   };
 
-  const saveMeal = async () => {
-    if (!result) return;
+  const handleFile = async (file) => {
+    if (!file || !file.type.startsWith("image/")) return;
 
-    const userId = currentUser?.id_user;
-
-    if (!userId) {
-      setError("Utilisateur non connecté.");
+    if (file.size > 8 * 1024 * 1024) {
+      alert("Fichier trop volumineux (max 8 Mo)");
       return;
     }
+
+    const url = URL.createObjectURL(file);
+    setPreview(url);
+    await analyzeFile(file);
+  };
+
+  const openPicker = async () => {
+    if (isNative) {
+      try {
+        const photo = await Camera.getPhoto({
+          quality: 85,
+          allowEditing: false,
+          resultType: CameraResultType.DataUrl,
+          source: CameraSource.Prompt,
+        });
+        if (photo.dataUrl) {
+          setPreview(photo.dataUrl);
+          runMockAnalysis(setAnalyzing, setResult, mealType);
+        }
+      } catch {
+        /* annulé par l'utilisateur */
+      }
+      return;
+    }
+    fileRef.current?.click();
+  };
+
+  const saveMeal = async () => {
+    if (!result) return;
 
     addMeal({
       mealType: result.mealType,
@@ -86,18 +126,24 @@ export default function Scanner() {
       fat: result.fat,
     });
 
-    await saveMealAnalysis({
-      user_id: userId,
-      image_url: preview,
-      detected_foods_json: result.foods,
-      estimated_calories: result.calories,
-      estimated_proteins: result.protein,
-      estimated_carbs: result.carbs,
-      estimated_fats: result.fat,
-      analysis_status: "success",
-      analysis_source: "healthai_ai_service",
-      raw_ai_response: result,
-    });
+    if (backendUserId) {
+      try {
+        await saveMealAnalysis({
+          user_id: backendUserId,
+          image_url: preview,
+          detected_foods_json: result.foods,
+          estimated_calories: result.calories,
+          estimated_proteins: result.protein,
+          estimated_carbs: result.carbs,
+          estimated_fats: result.fat,
+          analysis_status: "success",
+          analysis_source: "healthai_ai_service",
+          raw_ai_response: result,
+        });
+      } catch (err) {
+        console.error(err);
+      }
+    }
 
     setPreview(null);
     setResult(null);
@@ -132,6 +178,7 @@ export default function Scanner() {
           ref={fileRef}
           type="file"
           accept="image/jpeg,image/png,image/webp"
+          capture="environment"
           hidden
           onChange={(e) => handleFile(e.target.files?.[0])}
         />
@@ -140,8 +187,8 @@ export default function Scanner() {
           className="dropzone"
           role="button"
           tabIndex={0}
-          onClick={() => fileRef.current?.click()}
-          onKeyDown={(e) => e.key === "Enter" && fileRef.current?.click()}
+          onClick={openPicker}
+          onKeyDown={(e) => e.key === "Enter" && openPicker()}
         >
           {preview ? (
             <img
@@ -150,7 +197,7 @@ export default function Scanner() {
               style={{ maxHeight: 200, borderRadius: 8, marginBottom: 16 }}
             />
           ) : (
-            <Camera className="dropzone__icon" size={48} />
+            <CameraIcon className="dropzone__icon" size={48} />
           )}
 
           <p className="dropzone__title">

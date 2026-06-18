@@ -5,6 +5,7 @@ import {
   BookOpen,
   UtensilsCrossed,
   Dumbbell,
+  Users,
   User,
   LogOut,
 } from "lucide-react";
@@ -17,6 +18,7 @@ const navItems = [
   { to: "/journal", icon: BookOpen, label: "Journal" },
   { to: "/plans-repas", icon: UtensilsCrossed, label: "Plans repas" },
   { to: "/sport", icon: Dumbbell, label: "Sport" },
+  { to: "/fil", icon: Users, label: "Fil" },
   { to: "/profil", icon: User, label: "Profil" },
 ];
 
@@ -24,8 +26,8 @@ export default function Sidebar({ isOpen = false, onNavigate }) {
   const { logout } = useApp();
   const navigate = useNavigate();
 
-  const handleLogout = () => {
-    logout();
+  const handleLogout = async () => {
+    await logout();
     onNavigate?.();
     navigate("/login");
   };

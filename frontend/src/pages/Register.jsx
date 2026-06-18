@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import Logo from "../components/Logo";
 import ProgressBar from "../components/ProgressBar";
 import { useApp } from "../context/AppContext";
+import { validateEmail, validatePassword } from "../services/auth";
 
 const GOALS = [
   "Perte de poids",
@@ -26,6 +27,7 @@ const initialForm = {
   name: "",
   email: "",
   password: "",
+  confirmPassword: "",
   age: 30,
   sex: "Femme",
   height: 170,
@@ -46,6 +48,8 @@ const initialForm = {
 export default function Register() {
   const [step, setStep] = useState(1);
   const [form, setForm] = useState(initialForm);
+  const [error, setError] = useState("");
+  const [loading, setLoading] = useState(false);
   const { completeOnboarding } = useApp();
   const navigate = useNavigate();
 
@@ -60,16 +64,50 @@ export default function Register() {
     }));
   };
 
-  const next = () => setStep((s) => Math.min(4, s + 1));
-  const prev = () => setStep((s) => Math.max(1, s - 1));
+  const validateStep1 = () => {
+    const emailErr = validateEmail(form.email);
+    if (emailErr) return emailErr;
+    const passErr = validatePassword(form.password);
+    if (passErr) return passErr;
+    if (form.password !== form.confirmPassword) {
+      return "Les mots de passe ne correspondent pas.";
+    }
+    if (!form.name.trim()) return "Veuillez indiquer votre nom.";
+    return null;
+  };
+
+  const next = () => {
+    if (step === 1) {
+      const err = validateStep1();
+      if (err) {
+        setError(err);
+        return;
+      }
+    }
+    setError("");
+    setStep((s) => Math.min(4, s + 1));
+  };
+  const prev = () => {
+    setError("");
+    setStep((s) => Math.max(1, s - 1));
+  };
 
   const finish = async () => {
+    const err = validateStep1();
+    if (err) {
+      setError(err);
+      setStep(1);
+      return;
+    }
+    setLoading(true);
+    setError("");
     try {
       await completeOnboarding(form);
       navigate("/");
-    } catch (err) {
-      console.error(err);
-      alert("Erreur lors de l'inscription");
+    } catch (e) {
+      setError(e.message || "Inscription impossible.");
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -85,6 +123,40 @@ export default function Register() {
           <>
             <h2 className="onboarding-title">Vos données</h2>
             <div className="form-group">
+              <label>Adresse mail</label>
+              <input
+                type="email"
+                className="input"
+                value={form.email}
+                onChange={(e) => update("email", e.target.value)}
+                placeholder="nom@email.com"
+                autoComplete="email"
+              />
+            </div>
+            <div className="form-row">
+              <div className="form-group">
+                <label>Mot de passe</label>
+                <input
+                  type="password"
+                  className="input"
+                  value={form.password}
+                  onChange={(e) => update("password", e.target.value)}
+                  autoComplete="new-password"
+                  placeholder="8 car. min., lettre + chiffre"
+                />
+              </div>
+              <div className="form-group">
+                <label>Confirmer</label>
+                <input
+                  type="password"
+                  className="input"
+                  value={form.confirmPassword}
+                  onChange={(e) => update("confirmPassword", e.target.value)}
+                  autoComplete="new-password"
+                />
+              </div>
+            </div>
+            <div className="form-group">
               <label>Nom</label>
               <input
                 className="input"
@@ -93,28 +165,6 @@ export default function Register() {
                 placeholder="Votre prénom"
               />
             </div>
-
-            <div className="form-group">
-            <label>Email</label>
-            <input
-              type="email"
-              className="input"
-              value={form.email}
-              onChange={(e) => update("email", e.target.value)}
-              placeholder="email@exemple.com"
-            />
-          </div>
-
-          <div className="form-group">
-            <label>Mot de passe</label>
-            <input
-              type="password"
-              className="input"
-              value={form.password}
-              onChange={(e) => update("password", e.target.value)}
-              placeholder="********"
-            />
-          </div>
             <div className="form-group">
               <label>Âge</label>
               <input
@@ -299,6 +349,8 @@ export default function Register() {
           </>
         )}
 
+        {error && <p className="form-error">{error}</p>}
+
         <div className="onboarding-nav">
           {step > 1 ? (
             <button type="button" className="btn btn--secondary" onClick={prev}>
@@ -314,8 +366,8 @@ export default function Register() {
               Suivant &gt;
             </button>
           ) : (
-            <button type="button" className="btn btn--primary" onClick={finish}>
-              Terminer
+            <button type="button" className="btn btn--primary" onClick={finish} disabled={loading}>
+              {loading ? "Création…" : "Terminer"}
             </button>
           )}
         </div>

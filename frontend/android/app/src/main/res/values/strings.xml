@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">HealthAI Coach</string>
+    <string name="title_activity_main">HealthAI Coach</string>
+    <string name="package_name">com.healthai.coach</string>
+    <string name="custom_url_scheme">com.healthai.coach</string>
+</resources>

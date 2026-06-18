@@ -1,11 +1,21 @@
 import { createContext, useContext, useState, useEffect, useCallback } from "react";
 import {
+  loginUser,
+  logoutUser,
   registerUser,
-  getUsers,
-  createProfile,
-} from "../api";
-
-const STORAGE_KEY = "healthai_coach";
+  getCurrentUser,
+  updateUserProfile,
+  updateUserAvatar,
+  changePassword,
+  appDataKey,
+} from "../services/auth";
+import { storageGet, storageSet } from "../services/storage";
+import {
+  loadThemePreference,
+  saveThemePreference,
+  resolveTheme,
+  applyTheme,
+} from "../services/theme";
 
 const defaultProfile = {
   email: "",
@@ -29,169 +39,174 @@ const defaultProfile = {
   onboardingComplete: false,
 };
 
-const defaultDaily = {
-  calories: 0,
-  protein: 0,
-  carbs: 0,
-  fat: 0,
-};
+const defaultDaily = { calories: 0, protein: 0, carbs: 0, fat: 0 };
 
 const AppContext = createContext(null);
 
-function loadState() {
+async function loadUserAppData(userId) {
+  const raw = await storageGet(appDataKey(userId));
+  if (!raw) return { daily: defaultDaily, meals: [], mealPlan: null, sportProgram: null };
   try {
-    const raw = localStorage.getItem(STORAGE_KEY);
-    if (raw) return JSON.parse(raw);
+    const data = JSON.parse(raw);
+    return {
+      daily: { ...defaultDaily, ...data.daily },
+      meals: data.meals ?? [],
+      mealPlan: data.mealPlan ?? null,
+      sportProgram: data.sportProgram ?? null,
+    };
   } catch {
-    /* ignore */
+    return { daily: defaultDaily, meals: [], mealPlan: null, sportProgram: null };
   }
-  return null;
 }
 
-function saveState(state) {
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+async function saveUserAppData(userId, data) {
+  await storageSet(appDataKey(userId), JSON.stringify(data));
 }
 
 export function AppProvider({ children }) {
+  const [authLoading, setAuthLoading] = useState(true);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const [currentUser, setCurrentUser] = useState(null);
+  const [userId, setUserId] = useState(null);
+  const [avatar, setAvatar] = useState(null);
   const [profile, setProfile] = useState(defaultProfile);
   const [daily, setDaily] = useState(defaultDaily);
   const [meals, setMeals] = useState([]);
   const [mealPlan, setMealPlan] = useState(null);
   const [sportProgram, setSportProgram] = useState(null);
   const [toast, setToast] = useState(null);
-
-  useEffect(() => {
-    const saved = loadState();
-    if (saved) {
-      setIsAuthenticated(saved.isAuthenticated ?? false);
-      setProfile({ ...defaultProfile, ...saved.profile });
-      setDaily({ ...defaultDaily, ...saved.daily });
-      setMeals(saved.meals ?? []);
-      setMealPlan(saved.mealPlan ?? null);
-      setSportProgram(saved.sportProgram ?? null);
-      setCurrentUser(saved.currentUser ?? null);
-    }
-  }, []);
-
-  useEffect(() => {
-    saveState({
-      isAuthenticated,
-      profile,
-      daily,
-      meals,
-      mealPlan,
-      sportProgram,
-      currentUser,
-    });
-  }, [isAuthenticated, profile, daily, meals, mealPlan, sportProgram, currentUser]);
+  const [themePreference, setThemePreference] = useState(loadThemePreference);
 
   const showToast = useCallback((message) => {
     setToast(message);
     setTimeout(() => setToast(null), 3000);
   }, []);
 
-  const login = useCallback(async (email, password) => {
-    try {
-      const users = await getUsers();
-
-      const existing = users.find(
-        (u) =>
-          String(u.email).toLowerCase() === String(email).toLowerCase() &&
-          String(u.password) === String(password)
-      );
-
-      if (!existing) {
-        return false;
-      }
-
-      setCurrentUser(existing);
-
-      setProfile((p) => ({
-        ...defaultProfile,
-        ...p,
-        email: existing.email,
-        age: existing.age,
-        sex: existing.gender,
-        height: existing.height_m ? Number(existing.height_m) * 100 : p.height,
-        sportLevel: existing.experience_level || p.sportLevel,
-        id_user: existing.id_user,
-        onboardingComplete: true,
-      }));
-
-      setIsAuthenticated(true);
-      return true;
-    } catch (error) {
-      console.error("Erreur login:", error);
-      return false;
-    }
-  }, []);
-
-  const logout = useCallback(() => {
-    setIsAuthenticated(false);
-    setCurrentUser(null);
-    setProfile(defaultProfile);
-    localStorage.removeItem(STORAGE_KEY);
-  }, []);
-
-  const updateProfile = useCallback((updates) => {
-    setProfile((p) => ({ ...p, ...updates }));
-  }, []);
-
-  const completeOnboarding = useCallback(async (data) => {
-    const targetCalories = calculateCalories(data);
-
-    const createdUser = await registerUser({
-      email: data.email,
-      password: data.password,
-      age: Number(data.age),
-      gender: data.sex,
-      height_m: Number(data.height) / 100,
-      experience_level: data.sportLevel,
-    });
-    setCurrentUser(createdUser);
-
-    await createProfile({
-      user_id: createdUser.id_user,
-      age: Number(data.age),
-      sex: data.sex,
-      height_cm: Number(data.height),
-      weight_kg: Number(data.weight),
-      activity_level: data.activityLevel,
-      health_goal: data.goal,
-      daily_calorie_target: targetCalories,
-      allergies: data.allergies,
-      dietary_preferences: data.preferences,
-      injuries: data.injuries,
-      available_equipment: data.equipment,
-      session_duration_pref: Number(data.sessionMinutes),
-    });
-
-    setProfile((p) => ({
-      ...p,
-      ...data,
-      id_user: createdUser.id_user,
-      targetCalories,
-      onboardingComplete: true,
-    }));
-
+  const hydrateUser = useCallback(async (user) => {
+    const appData = await loadUserAppData(user.id);
+    setUserId(user.id);
+    setAvatar(user.avatar ?? null);
+    setProfile({ ...defaultProfile, ...user.profile });
+    setDaily(appData.daily);
+    setMeals(appData.meals);
+    setMealPlan(appData.mealPlan);
+    setSportProgram(appData.sportProgram);
     setIsAuthenticated(true);
-
-    return true;
   }, []);
 
-  const addMeal = useCallback((meal) => {
-    const newMeal = { ...meal, id: Date.now(), date: new Date().toISOString() };
-    setMeals((m) => [newMeal, ...m]);
-    setDaily((d) => ({
-      calories: d.calories + (meal.calories || 0),
-      protein: d.protein + (meal.protein || 0),
-      carbs: d.carbs + (meal.carbs || 0),
-      fat: d.fat + (meal.fat || 0),
-    }));
-    showToast("Repas enregistré !");
-  }, [showToast]);
+  useEffect(() => {
+    (async () => {
+      try {
+        const user = await getCurrentUser();
+        if (user) await hydrateUser(user);
+      } finally {
+        setAuthLoading(false);
+      }
+    })();
+  }, [hydrateUser]);
+
+  useEffect(() => {
+    if (!userId) return;
+    saveUserAppData(userId, { daily, meals, mealPlan, sportProgram });
+  }, [userId, daily, meals, mealPlan, sportProgram]);
+
+  useEffect(() => {
+    applyTheme(resolveTheme(themePreference));
+    saveThemePreference(themePreference);
+  }, [themePreference]);
+
+  useEffect(() => {
+    const mq = window.matchMedia("(prefers-color-scheme: dark)");
+    const handler = () => {
+      if (themePreference === "system") {
+        applyTheme(resolveTheme("system"));
+      }
+    };
+    mq.addEventListener("change", handler);
+    return () => mq.removeEventListener("change", handler);
+  }, [themePreference]);
+
+  const login = useCallback(
+    async (email, password) => {
+      const user = await loginUser(email, password);
+      await hydrateUser(user);
+      return user.profile;
+    },
+    [hydrateUser]
+  );
+
+  const logout = useCallback(async () => {
+    await logoutUser();
+    setIsAuthenticated(false);
+    setUserId(null);
+    setAvatar(null);
+    setProfile(defaultProfile);
+    setDaily(defaultDaily);
+    setMeals([]);
+    setMealPlan(null);
+    setSportProgram(null);
+  }, []);
+
+  const updateProfile = useCallback(
+    async (updates) => {
+      if (!profile.email) return;
+      const user = await updateUserProfile(profile.email, updates);
+      setProfile({ ...defaultProfile, ...user.profile });
+    },
+    [profile.email]
+  );
+
+  const setUserAvatar = useCallback(
+    async (dataUrl) => {
+      if (!profile.email) return;
+      const user = await updateUserAvatar(profile.email, dataUrl);
+      setAvatar(user.avatar);
+    },
+    [profile.email]
+  );
+
+  const updatePassword = useCallback(
+    async (currentPassword, newPassword) => {
+      if (!profile.email) return;
+      await changePassword(profile.email, currentPassword, newPassword);
+    },
+    [profile.email]
+  );
+
+  const completeOnboarding = useCallback(
+    async (data) => {
+      const targetCalories = calculateCalories(data);
+      const profileData = {
+        ...data,
+        targetCalories,
+        onboardingComplete: true,
+      };
+
+      const user = await registerUser({
+        email: data.email,
+        password: data.password,
+        profile: profileData,
+      });
+
+      await hydrateUser(user);
+      return user;
+    },
+    [hydrateUser]
+  );
+
+  const addMeal = useCallback(
+    (meal) => {
+      const newMeal = { ...meal, id: Date.now(), date: new Date().toISOString() };
+      setMeals((m) => [newMeal, ...m]);
+      setDaily((d) => ({
+        calories: d.calories + (meal.calories || 0),
+        protein: d.protein + (meal.protein || 0),
+        carbs: d.carbs + (meal.carbs || 0),
+        fat: d.fat + (meal.fat || 0),
+      }));
+      showToast("Repas enregistré !");
+    },
+    [showToast]
+  );
 
   const generateMealPlan = useCallback(() => {
     const plan = buildMealPlan(profile.targetCalories);
@@ -199,9 +214,7 @@ export function AppProvider({ children }) {
     showToast("Plan de repas généré !");
   }, [profile.targetCalories, showToast]);
 
-  const deleteMealPlan = useCallback(() => {
-    setMealPlan(null);
-  }, []);
+  const deleteMealPlan = useCallback(() => setMealPlan(null), []);
 
   const generateSportProgram = useCallback(() => {
     const program = buildSportProgram(profile);
@@ -209,9 +222,7 @@ export function AppProvider({ children }) {
     showToast("Programme généré !");
   }, [profile, showToast]);
 
-  const deleteSportProgram = useCallback(() => {
-    setSportProgram(null);
-  }, []);
+  const deleteSportProgram = useCallback(() => setSportProgram(null), []);
 
   const macroTargets = {
     protein: Math.round((profile.targetCalories * 0.3) / 4),
@@ -222,18 +233,24 @@ export function AppProvider({ children }) {
   return (
     <AppContext.Provider
       value={{
+        authLoading,
         isAuthenticated,
+        userId,
+        avatar,
         profile,
         daily,
         meals,
         mealPlan,
         sportProgram,
         macroTargets,
+        themePreference,
+        setThemePreference,
         toast,
-        currentUser,
         login,
         logout,
         updateProfile,
+        setUserAvatar,
+        updatePassword,
         completeOnboarding,
         addMeal,
         generateMealPlan,

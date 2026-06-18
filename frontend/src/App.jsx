@@ -10,6 +10,7 @@ import Journal from "./pages/Journal";
 import MealPlans from "./pages/MealPlans";
 import Sport from "./pages/Sport";
 import Profile from "./pages/Profile";
+import Feed from "./pages/Feed";
 
 export default function App() {
   return (
@@ -44,6 +45,7 @@ export default function App() {
             <Route path="journal" element={<Journal />} />
             <Route path="plans-repas" element={<MealPlans />} />
             <Route path="sport" element={<Sport />} />
+            <Route path="fil" element={<Feed />} />
             <Route path="profil" element={<Profile />} />
           </Route>
           <Route path="*" element={<Navigate to="/login" replace />} />
