@@ -91,4 +91,19 @@ class LikeAction(BaseModel):
     user_name: str
 
 
+class SocialUserSync(BaseModel):
+    email: str = Field(min_length=3, max_length=255)
+    name: str = Field(min_length=1, max_length=120)
+    avatar_url: Optional[str] = None
+
+
+class SocialUserRead(BaseModel):
+    user_id: str
+    email: str
+    name: str
+    avatar_url: Optional[str] = None
+
+    model_config = {"from_attributes": True}
+
+
 CommentRead.model_rebuild()

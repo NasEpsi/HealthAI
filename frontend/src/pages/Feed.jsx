@@ -1,8 +1,9 @@
 import { useCallback, useEffect, useState } from "react";
-import { Plus, History } from "lucide-react";
+import { Plus, History, User } from "lucide-react";
 import { useApp } from "../context/AppContext";
 import PostCard from "../components/PostCard";
 import CreatePostModal from "../components/CreatePostModal";
+import UserSearchBar from "../components/UserSearchBar";
 import {
   fetchFeed,
   createPost,
@@ -23,6 +24,7 @@ export default function Feed() {
   const [showHistory, setShowHistory] = useState(false);
   const [likesHistory, setLikesHistory] = useState([]);
   const [error, setError] = useState("");
+  const [selectedUser, setSelectedUser] = useState(null);
 
   const authorPayload = {
     user_name: profile.name || "Utilisateur",
@@ -104,6 +106,34 @@ export default function Feed() {
           </button>
         </div>
       </header>
+
+      <UserSearchBar userId={userId} onSelect={setSelectedUser} />
+
+      {selectedUser && (
+        <div className="card user-profile-card" style={{ marginBottom: 16 }}>
+          <div className="user-profile-card__header">
+            {selectedUser.avatar_url ? (
+              <img src={selectedUser.avatar_url} alt="" className="post-card__avatar" />
+            ) : (
+              <div className="post-card__avatar post-card__avatar--placeholder">
+                <User size={20} />
+              </div>
+            )}
+            <div>
+              <p className="post-card__name">{selectedUser.name}</p>
+              <p className="post-card__date">{selectedUser.email}</p>
+            </div>
+            <button
+              type="button"
+              className="btn btn--secondary btn--sm"
+              style={{ marginLeft: "auto" }}
+              onClick={() => setSelectedUser(null)}
+            >
+              Fermer
+            </button>
+          </div>
+        </div>
+      )}
 
       {error && (
         <div className="card card--empty" style={{ marginBottom: 16 }}>
