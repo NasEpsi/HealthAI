@@ -323,7 +323,13 @@ h3,
 }
 
 .post-card__avatar--placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: var(--border);
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  font-weight: 700;
 }
 
 .post-card__name {
@@ -714,14 +720,25 @@ h3,
 }
 
 .user-search__input {
-  padding-left: 42px;
+  padding: 12px 16px 12px 46px;
 }
 
-.user-search__hint {
+.user-search__input--busy {
+  padding-right: 44px;
+}
+
+.user-search__spinner {
   position: absolute;
   right: 14px;
-  font-size: 0.8rem;
   color: var(--text-secondary);
+  pointer-events: none;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .user-search__results {
@@ -790,10 +807,27 @@ h3,
   color: var(--text-secondary);
 }
 
+.user-profile-card {
+  position: relative;
+  z-index: 1;
+  isolation: isolate;
+  margin-bottom: 16px;
+}
+
 .user-profile-card__header {
   display: flex;
   align-items: center;
   gap: 12px;
+}
+
+.user-profile-card__info {
+  flex: 1;
+  min-width: 0;
+}
+
+.user-profile-card__close {
+  flex-shrink: 0;
+  margin-left: auto;
 }
 
 .greeting__label {

@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import { Search, User } from "lucide-react";
+import { Loader2, Search, User } from "lucide-react";
 import { searchUsers } from "../services/social";
 
-export default function UserSearchBar({ userId, onSelect }) {
+export default function UserSearchBar({ userId, onSelect, onSearchActive }) {
   const [query, setQuery] = useState("");
   const [results, setResults] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -46,14 +46,20 @@ export default function UserSearchBar({ userId, onSelect }) {
       <div className="user-search__input-wrap">
         <Search size={18} className="user-search__icon" />
         <input
-          type="search"
-          className="input user-search__input"
+          type="text"
+          className={`input user-search__input${loading ? " user-search__input--busy" : ""}`}
           placeholder="Rechercher un utilisateur (nom ou email)…"
           value={query}
-          onChange={(e) => setQuery(e.target.value)}
+          onChange={(e) => {
+            const value = e.target.value;
+            setQuery(value);
+            if (value.trim().length >= 2) onSearchActive?.();
+          }}
           onFocus={() => results.length > 0 && setOpen(true)}
+          autoComplete="off"
+          spellCheck={false}
         />
-        {loading && <span className="user-search__hint">Recherche…</span>}
+        {loading && <Loader2 size={16} className="user-search__spinner" aria-hidden />}
       </div>
 
       {error && <p className="form-error">{error}</p>}

@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
-import { Plus, History, User } from "lucide-react";
+import { Plus, History } from "lucide-react";
 import { useApp } from "../context/AppContext";
 import PostCard from "../components/PostCard";
 import CreatePostModal from "../components/CreatePostModal";
@@ -118,26 +118,34 @@ export default function Feed() {
         </div>
       </header>
 
-      <UserSearchBar userId={userId} onSelect={setSelectedUser} />
+      <UserSearchBar
+        userId={userId}
+        onSelect={setSelectedUser}
+        onSearchActive={() => setSelectedUser(null)}
+      />
 
       {selectedUser && (
-        <div className="card user-profile-card" style={{ marginBottom: 16 }}>
+        <div className="card user-profile-card">
           <div className="user-profile-card__header">
             {selectedUser.avatar_url ? (
               <img src={selectedUser.avatar_url} alt="" className="post-card__avatar" />
             ) : (
-              <div className="post-card__avatar post-card__avatar--placeholder">
-                <User size={20} />
+              <div className="post-card__avatar post-card__avatar--placeholder" aria-hidden>
+                {(selectedUser.name || "?")
+                  .split(/\s+/)
+                  .map((w) => w[0])
+                  .join("")
+                  .slice(0, 2)
+                  .toUpperCase()}
               </div>
             )}
-            <div>
+            <div className="user-profile-card__info">
               <p className="post-card__name">{selectedUser.name}</p>
               <p className="post-card__date">{selectedUser.email}</p>
             </div>
             <button
               type="button"
-              className="btn btn--secondary btn--sm"
-              style={{ marginLeft: "auto" }}
+              className="btn btn--secondary btn--sm user-profile-card__close"
               onClick={() => setSelectedUser(null)}
             >
               Fermer
